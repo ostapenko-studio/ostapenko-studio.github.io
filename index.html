@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ostapenko Studio</title>
+  <meta name="description" content="Ostapenko Studio — an independent Australian app studio. Small, calm apps that do one thing well.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --ink: #22201c;
+      --muted: #6f6a61;
+      --line: #e7e2d9;
+      --accent: #4a90e2;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 4rem;
+    }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      letter-spacing: -0.01em;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.125rem;
+      margin-top: 0.75rem;
+      max-width: 32rem;
+    }
+    .apps {
+      margin-top: 5rem;
+      border-top: 1px solid var(--line);
+      padding-top: 2.5rem;
+    }
+    .apps h2, .contact h2 {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .app {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      margin-top: 1.75rem;
+    }
+    .app img {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    }
+    .app h3 { font-size: 1.25rem; font-weight: 600; }
+    .app p { color: var(--muted); margin-top: 0.125rem; }
+    .status {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8125rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .contact {
+      margin-top: 4rem;
+      border-top: 1px solid var(--line);
+      padding-top: 2.5rem;
+    }
+    .contact p { margin-top: 1rem; }
+    a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+    a:hover { text-decoration-color: var(--ink); }
+    footer {
+      margin-top: 5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.875rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: space-between;
+    }
+    footer nav { display: flex; gap: 1.5rem; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Ostapenko Studio</h1>
+    <p class="tagline">An independent app studio in Australia. We make small, calm apps that do one thing well — and then get out of your way.</p>
+
+    <section class="apps">
+      <h2>Apps</h2>
+      <div class="app">
+        <img src="/uv-index-icon.png" alt="UV Index app icon" width="72" height="72">
+        <div>
+          <h3>UV Index</h3>
+          <p>The UV index for where you are — calm, accurate, and free of clutter.</p>
+          <span class="status">Coming soon to the App&nbsp;Store and Google&nbsp;Play</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Questions, feedback, or support: <a href="mailto:support@ostapenko.com.au">support@ostapenko.com.au</a></p>
+    </section>
+
+    <footer>
+      <span>© 2026 Ostapenko Studio</span>
+      <nav>
+        <a href="https://ostapenko-studio.github.io/uv-index-legal/privacy.html">Privacy</a>
+        <a href="https://ostapenko-studio.github.io/uv-index-legal/terms.html">Terms</a>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
