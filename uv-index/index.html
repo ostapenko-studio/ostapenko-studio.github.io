@@ -11,6 +11,10 @@
   <meta property="og:title" content="UV Index — Sun Safety">
   <meta property="og:description" content="The UV index for where you are — calm, accurate, and free of clutter.">
   <meta property="og:image" content="https://ostapenko.studio/uv-index/og-image.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="UV Index — today's UV at a glance">
+  <meta property="og:site_name" content="Ostapenko Studio">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -23,7 +27,8 @@
       --ink: #22201c;
       --muted: #6f6a61;
       --line: #e7e2d9;
-      --accent: #4a90e2;
+      --accent: #2d6fc7;
+      --link-underline: #8a7d68;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -101,7 +106,7 @@
       font-size: 0.8125rem;
       color: var(--muted);
     }
-    a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+    a { color: var(--ink); text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
     a:hover { text-decoration-color: var(--ink); }
     .legal { margin-top: 1rem; font-size: 0.8125rem; }
     .legal a { color: var(--muted); }
@@ -135,7 +140,7 @@
     <p class="back"><a href="/">← Ostapenko Studio</a></p>
 
     <header class="hero">
-      <img src="/uv-index-icon.png" alt="UV Index app icon" width="72" height="72">
+      <img src="/uv-index-icon-216.png" alt="UV Index app icon" width="72" height="72">
       <div>
         <h1>UV Index</h1>
         <p class="tagline">The UV index for where you are — calm, accurate, and free of clutter.</p>
@@ -145,7 +150,7 @@
 
     <section class="shots-section">
       <h2>The app</h2>
-      <div class="shots">
+      <div class="shots" tabindex="0" role="group" aria-label="App screenshots">
         <figure>
           <img src="shots/low.jpg" alt="UV Index showing a low reading on a blue background" width="560" height="1216" loading="lazy">
           <figcaption>Low — the background is the reading.</figcaption>
@@ -172,7 +177,7 @@
         <li>Plain, practical advice for each level, in the spirit of Slip, Slop, Slap.</li>
         <li>An hourly forecast for today and tomorrow, so you can plan the walk, the beach, or the garden around the harsh part of the day.</li>
         <li>Skin-type personalisation (Fitzpatrick I–VI): set yours once and the advice shifts to suit you.</li>
-        <li>An optional daily reminder at a time you choose. Off by default — we won't nag you.</li>
+        <li>An optional daily reminder at a time you choose. Off by default — we won’t nag you.</li>
       </ul>
     </section>
 
