@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UV Index — Sun Safety | Ostapenko Studio</title>
+  <meta name="description" content="The UV index for where you are — calm, accurate, and free of clutter. An Australian sun-safety app with no accounts, no tracking, and no subscriptions.">
+  <link rel="canonical" href="https://ostapenko.studio/uv-index/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ostapenko.studio/uv-index/">
+  <meta property="og:title" content="UV Index — Sun Safety">
+  <meta property="og:description" content="The UV index for where you are — calm, accurate, and free of clutter.">
+  <meta property="og:image" content="https://ostapenko.studio/uv-index/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --ink: #22201c;
+      --muted: #6f6a61;
+      --line: #e7e2d9;
+      --accent: #4a90e2;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .back { font-size: 0.875rem; margin-bottom: 3rem; }
+    .back a { color: var(--muted); text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+    .hero { display: flex; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap; }
+    .hero img {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    }
+    .hero > div { flex: 1 1 16rem; }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(2.25rem, 7vw, 3rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .tagline { color: var(--muted); font-size: 1.125rem; margin-top: 0.5rem; }
+    .status {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    section { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
+    section h2 {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    section p + p { margin-top: 1rem; }
+    ul { list-style: none; }
+    li { position: relative; padding-left: 1.25rem; margin-top: 0.875rem; }
+    li::before { content: "·"; position: absolute; left: 0.25rem; color: var(--muted); }
+    .shots {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      margin-inline: -1.5rem;
+      padding: 0 1.5rem 0.5rem;
+    }
+    .shots figure { margin: 0; flex: 0 0 58%; scroll-snap-align: start; }
+    .shots img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      display: block;
+    }
+    .shots figcaption {
+      margin-top: 0.625rem;
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+    a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+    a:hover { text-decoration-color: var(--ink); }
+    .legal { margin-top: 1rem; font-size: 0.8125rem; }
+    .legal a { color: var(--muted); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.875rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: space-between;
+    }
+    footer a { color: var(--muted); }
+    @media (min-width: 40rem) {
+      .shots {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem 1.25rem;
+        overflow: visible;
+        margin-inline: 0;
+        padding: 0;
+      }
+      .shots figure { flex: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="back"><a href="/">← Ostapenko Studio</a></p>
+
+    <header class="hero">
+      <img src="/uv-index-icon.png" alt="UV Index app icon" width="72" height="72">
+      <div>
+        <h1>UV Index</h1>
+        <p class="tagline">The UV index for where you are — calm, accurate, and free of clutter.</p>
+        <span class="status">Coming soon to the App&nbsp;Store and Google&nbsp;Play</span>
+      </div>
+    </header>
+
+    <section class="shots-section">
+      <h2>The app</h2>
+      <div class="shots">
+        <figure>
+          <img src="shots/low.jpg" alt="UV Index showing a low reading on a blue background" width="560" height="1216" loading="lazy">
+          <figcaption>Low — the background is the reading.</figcaption>
+        </figure>
+        <figure>
+          <img src="shots/extreme.jpg" alt="UV Index showing an extreme reading of 12 on a deep purple background" width="560" height="1216" loading="lazy">
+          <figcaption>Extreme — a normal Brisbane lunchtime.</figcaption>
+        </figure>
+        <figure>
+          <img src="shots/forecast.jpg" alt="Hourly UV forecast for today and tomorrow" width="560" height="1216" loading="lazy">
+          <figcaption>Hourly forecast, today and tomorrow.</figcaption>
+        </figure>
+        <figure>
+          <img src="shots/settings.jpg" alt="Settings screen showing skin type and reminder options" width="560" height="1216" loading="lazy">
+          <figcaption>Skin type and an optional reminder.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>What you get</h2>
+      <ul>
+        <li>The current UV index as one clear number, with the background colour telling you the level at a glance — blue for low, through to deep purple for extreme.</li>
+        <li>Plain, practical advice for each level, in the spirit of Slip, Slop, Slap.</li>
+        <li>An hourly forecast for today and tomorrow, so you can plan the walk, the beach, or the garden around the harsh part of the day.</li>
+        <li>Skin-type personalisation (Fitzpatrick I–VI): set yours once and the advice shifts to suit you.</li>
+        <li>An optional daily reminder at a time you choose. Off by default — we won't nag you.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Built for Australia</h2>
+      <p>UV here is not a northern-hemisphere afterthought. An “extreme” reading is a normal summer afternoon in Queensland, and the app treats it that way — useful and matter-of-fact, never alarmist.</p>
+    </section>
+
+    <section>
+      <h2>Quietly respectful</h2>
+      <p>No tracking. No data sales. Your location goes straight to the weather service to fetch the forecast and nowhere else — we run no servers and collect nothing.</p>
+      <p>Free with a single unobtrusive banner; one small one-time purchase removes it forever. No subscriptions, ever.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions, feedback, or support: <a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+      <p class="legal"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    </section>
+
+    <footer>
+      <span>© 2026 Ostapenko Studio</span>
+      <nav><a href="/">All apps</a></nav>
+    </footer>
+  </main>
+</body>
+</html>
