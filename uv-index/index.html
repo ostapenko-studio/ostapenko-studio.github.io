@@ -80,6 +80,9 @@
     /* The official badge artwork carries its own padding; the negative
        margin trims it so the badge aligns optically with the text column. */
     .store-links img { display: block; height: 52px; width: auto; margin-left: -8px; }
+    /* Apple's badge artwork is trimmed tight, so no compensating margin;
+       40px matches the visible height of the padded Play badge. */
+    .store-links img.appstore { height: 40px; margin-left: 0; }
     .store-links .status { margin-top: 0; }
     section { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
     section h2 {
@@ -156,7 +159,7 @@
         <p class="tagline">The UV index for where you are — calm, accurate, and free of clutter.</p>
         <div class="store-links">
           <a href="https://play.google.com/store/apps/details?id=studio.ostapenko.uvindex"><img src="/badges/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
-          <span class="status">Coming soon to the App&nbsp;Store</span>
+          <a href="https://apps.apple.com/app/uv-index-sun-safety/id6799116431"><img class="appstore" src="/badges/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
         </div>
       </div>
     </header>
@@ -212,7 +215,7 @@
     </section>
 
     <footer>
-      <span>© 2026 Ostapenko Studio · a trading name of I&nbsp;Ostapenko &amp; Y&nbsp;Ostapenko · ABN&nbsp;18&nbsp;901&nbsp;484&nbsp;459<br>Google Play and the Google Play logo are trademarks of Google&nbsp;LLC.</span>
+      <span>© 2026 Ostapenko Studio · a trading name of I&nbsp;Ostapenko &amp; Y&nbsp;Ostapenko · ABN&nbsp;18&nbsp;901&nbsp;484&nbsp;459<br>Google Play and the Google Play logo are trademarks of Google&nbsp;LLC. Apple and the Apple logo are trademarks of Apple&nbsp;Inc. App&nbsp;Store is a service mark of Apple&nbsp;Inc.</span>
       <nav><a href="/">All apps</a></nav>
     </footer>
   </main>
