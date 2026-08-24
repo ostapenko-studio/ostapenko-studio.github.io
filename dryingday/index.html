@@ -71,6 +71,16 @@
       color: var(--accent);
       font-weight: 500;
     }
+    .store-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    /* The official badge artwork carries its own padding; the negative
+       margin trims it so the badge aligns optically with the text column. */
+    .store-links img { display: block; height: 52px; width: auto; margin-left: -8px; }
+    .store-links .status { margin-top: 0; }
     section { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
     section h2 {
       font-size: 0.8125rem;
@@ -144,7 +154,10 @@
       <div>
         <h1>Drying Day</h1>
         <p class="tagline">Can I hang the laundry outside today — and when should it come back in?</p>
-        <span class="status">Coming soon to the App&nbsp;Store and Google&nbsp;Play</span>
+        <div class="store-links">
+          <a href="https://play.google.com/store/apps/details?id=studio.ostapenko.dryingday"><img src="/badges/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
+          <span class="status">App&nbsp;Store coming soon</span>
+        </div>
       </div>
     </header>
 
