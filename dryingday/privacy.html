@@ -132,23 +132,23 @@ them on, and you can turn them off again at any time in Settings.</p>
 
 <h2>Advertising</h2>
 <p>The free version of the app shows a single banner ad served by Google
-AdMob. Ads are configured as <strong>non-personalised</strong>: the app
-requests non-personalised ads only, so Google is not asked to select ads
-using your interests or an advertising profile. Google still receives the
-information described below to serve and measure the ad, and decides on its
-own how it uses that information under its policies. To serve and measure ads,
-Google may still collect certain device information (such as IP address and
-device identifiers) as described in
+AdMob. Ads run in Google's <strong>limited ads</strong> mode: not
+personalised, and with no advertising identifier used to profile you. We
+do not request ads based on your interests or a profile of you, anywhere in
+the world. See
 <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
 <a href="https://policies.google.com/technologies/partner-sites">How Google
-uses information from sites or apps that use its services</a>.
-In the European Economic Area, the United Kingdom and Switzerland, a consent
-form (Google's User Messaging Platform) is shown before any ad is requested,
-and you can change your choice at any time from Settings → Privacy options.
-Purchasing Remove Ads removes advertising — and AdMob's data collection with
-it — entirely.</p>
-<p>You can reset or limit the advertising identifier at any time in your
-device's own settings (iOS: Settings → Privacy &amp; Security → Tracking /
+uses information from sites or apps that use its services</a>.</p>
+<p>Because nothing is personalised and no advertising identifier is used to
+profile you, the app shows no advertising consent form. Two things do still happen, and
+we would rather state them plainly than leave them to be discovered: Google
+uses your device's IP address to deliver the ad, and it may store a small
+amount of data on the device for the sole purpose of detecting invalid
+traffic and fraud. Neither is used to build a profile of you or to follow
+you across other apps or websites.</p>
+<p>Purchasing Remove Ads removes advertising — and AdMob's data collection
+with it — entirely.</p>
+<p>You can reset or limit the advertising identifier at any time in your device's own settings (iOS: Settings → Privacy &amp; Security → Tracking /
 Apple Advertising; Android: Settings → Privacy → Ads), and purchasing Remove
 Ads stops the advertising SDK from running at all. The app does not respond
 to browser "Do Not Track" signals, because it is not a website and has no
@@ -163,7 +163,7 @@ information.</p>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Who receives it</th><th>Retention</th></tr>
 <tr><td>Approximate location (coordinates)</td><td>Fetching the weather forecast for your area — the app cannot judge the drying weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
-<tr><td>Device information for advertising (IP address, device identifiers, ad interactions)</td><td>Serving and measuring the single banner ad in the free version</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
+<tr><td>Device information for advertising (IP address, invalid-traffic signals, ad interactions — no advertising identifier)</td><td>Serving and measuring the single banner ad in the free version</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
 <tr><td>Settings and the latest forecast</td><td>Opening instantly on your last verdict</td><td>Nobody — stays on your device</td><td>Until you delete the app</td></tr>
 <tr><td>Scheduled laundry alerts</td><td>Reminding you about good drying days and approaching rain, if you turn alerts on</td><td>Nobody — scheduled by your device's operating system</td><td>Until they fire, you turn alerts off, or you delete the app</td></tr>
 <tr><td>Purchase status of Remove Ads</td><td>Hiding ads after purchase</td><td>Apple / Google process the purchase; the app stores only a yes/no flag</td><td>Until you delete the app; the store keeps its own record</td></tr>
@@ -194,9 +194,11 @@ may complain to the Office of the Australian Information Commissioner
 <p><strong>European Economic Area, United Kingdom and Switzerland.</strong>
 Where the GDPR or UK GDPR applies, the legal basis for sending your
 coordinates to the weather service is performance of the service you asked
-for (Article 6(1)(b)); advertising in the free version relies on your
-consent given through the consent form (Article 6(1)(a)), which you may
-withdraw at any time from Settings. You have the rights of access,
+for (Article 6(1)(b)); advertising in the free version relies on our
+legitimate interests in funding a free app (Article 6(1)(f)), which you may
+object to at any time, and which Remove Ads ends outright. The small amount of
+data stored on your device to detect invalid traffic and fraud is treated as
+strictly necessary for a service you asked for. You have the rights of access,
 rectification, erasure, restriction, portability and objection, and the
 right to lodge a complaint with your local supervisory authority (in the UK,
 the ICO). Because we hold no personal data, there is nothing for us to
@@ -211,7 +213,8 @@ by contacting us; we do not discriminate for doing so.</p>
 Questions or complaints may also be directed to the Office of the Privacy
 Commissioner of Canada.</p>
 <p><strong>Brazil.</strong> Under the LGPD, the legal bases are performance of
-the service (Article 7, V) and consent for advertising where required. Our
+the service (Article 7, V) and legitimate interests for advertising
+(Article 7, IX). Our
 contact for data-protection matters (<em>encarregado</em>) is the address
 below. Complaints may be made to the ANPD. Under Article 18 of the LGPD you
 may ask us to confirm whether we process your personal data and to access,
