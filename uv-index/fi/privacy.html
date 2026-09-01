@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tietosuojaseloste — UV Index</title>
+<style>
+  body {
+    background: #F7F5F0;
+    color: #2B2A26;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: 0.4rem; }
+  .meta { color: #726E66; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #B23A6B; }
+  .scroll { overflow-x: auto; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.88rem; }
+  th, td { border-bottom: 1px solid #DFDACF; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; color: #4A473F; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .draft { background: #FFE9A8; padding: 0 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Tietosuojaseloste</h1>
+<p class="meta">UV Index, Ostapenko Studiolta · Voimassa 26. elokuuta 2026 alkaen · Päivitetty viimeksi 26. elokuuta 2026</p>
+
+<h2>Lyhyt versio</h2>
+<p>UV Index näyttää nykyisen ja ennustetun UV-indeksin siellä, missä olet. Sovellus
+on rakennettu keräämään mahdollisimman vähän tietoa.</p>
+<ul>
+<li>Tilejä ei ole, rekisteröitymistä ei ole, analytiikkaa ei ole,
+  kaatumisraportointia ei ole, emmekä ylläpidä palvelimia. <strong>Meillä ei ole
+  sinusta lainkaan henkilötietoja.</strong></li>
+<li>Laitteeltasi lähtee kolme asiaa, eikä yksikään niistä päädy meille:
+  <strong>likimääräiset koordinaattisi</strong> menevät sääpalvelun tarjoajalle
+  ennusteen hakemista varten ja puhelimesi käyttöjärjestelmälle, jotta niistä
+  saadaan paikkakunnan nimi; ja ilmaisversiossa <strong>laite- ja
+  mainostiedot</strong> menevät Googlelle bannerimainoksen näyttämistä varten.</li>
+<li>Pyöristämme koordinaattisi tarkoituksella <strong>kahteen desimaaliin (noin
+  1,1 km)</strong>, ennen kuin lähetämme ne minnekään. UV vaihtelee kymmenien
+  kilometrien mitassa, joten ylimääräisestä tarkkuudesta ei ole hyötyä emmekä
+  lähetä sitä.</li>
+<li>Pyydämme mainokset <strong>ei-personoituina</strong>. Alueilla, joilla
+  suostumus vaaditaan, mainokset näkyvät vain, jos hyväksyt ne sovelluksen
+  kysymyksessä, ja voit muuttaa mieltäsi milloin tahansa kohdassa
+  <strong>Asetukset → Tietosuoja-asetukset</strong>. Ostos <strong>Poista
+  mainokset</strong> pysäyttää mainospyynnöt kokonaan.</li>
+<li>Asetuksesi, välimuistiin tallennettu ennuste, muistutuksesi ja aloitusnäytön
+  widget pysyvät laitteessasi. Kun poistat sovelluksen, ne poistuvat.</li>
+</ul>
+<p>Loppu sivusta kertoo tämän kaiken yksityiskohtaisesti: kuka saa mitäkin, millä
+oikeusperusteella, mihin maihin tieto menee ja mitä oikeuksia sinulla on.</p>
+
+<h2>Keitä me olemme</h2>
+<p><strong>Ostapenko Studio</strong>, joka on <strong>I Ostapenko &amp;
+Y Ostapenko</strong> -nimisen, Australiassa rekisteröidyn henkilöyhtiön
+toiminimi, <strong>ABN 18 901 484 459</strong>. Me olemme alla kuvattujen
+henkilötietojen rekisterinpitäjä — eli me päätämme, miksi niitä kerätään ja minne
+ne menevät — vaikka yksikään niistä ei päädy meille.</p>
+<p>Sähköposti (myös tietosuojaa koskevat kysymykset):
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>Käsittelemme henkilötietoja <strong>Australiassa</strong>. Emme ole nimenneet
+tietosuojavastaavaa (Data Protection Officer): olemme kahden hengen yhtiö, emme
+ole viranomainen, eivätkä ydintoimintamme sisällä laajamittaista henkilöiden
+seurantaa tai laajamittaista erityisten tietoryhmien käsittelyä.</p>
+
+<h2>Mitä laitteeltasi lähtee ja miksi</h2>
+<p>Tämä taulukko on koko kuva. Jos jotakin siirtoa ei ole siinä, sitä ei
+tapahdu.</p>
+
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Mitä</th><th>Miksi</th><th>Oikeusperuste</th><th>Kuka sen saa</th><th>Minne se menee</th><th>Kuinka kauan</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>Likimääräiset koordinaatit, pyöristettynä 2 desimaaliin (~1,1 km)</td>
+  <td>Alueesi UV-ennusteen hakemiseen</td>
+  <td>Pyytämäsi palvelun toteuttaminen</td>
+  <td><a href="https://www.weatherapi.com/">WeatherAPI.com</a>, jota ylläpitää Zoomash Ltd</td>
+  <td>Yhdistynyt kuningaskunta; Zoomashin oma seloste kertoo mahdollisesta edelleensiirrosta Yhdysvaltoihin, Venäjälle, Japaniin, Kiinaan ja Intiaan</td>
+  <td>Me emme säilytä mitään. Zoomash toteaa vain, että tietoja ”shall not be kept for longer than is necessary” (ei säilytetä pidempään kuin on tarpeen)</td>
+</tr>
+<tr>
+  <td>Likimääräiset koordinaatit</td>
+  <td>Jotta koordinaateista saadaan näytöllä näkyvä paikkakunnan tai kaupunginosan nimi</td>
+  <td>Pyytämäsi palvelun toteuttaminen</td>
+  <td>Laitteesi käyttöjärjestelmän toimittaja — <a href="https://www.apple.com/legal/privacy/">Apple</a> iOSissa, <a href="https://policies.google.com/privacy">Google</a> Androidissa</td>
+  <td>Yhdysvallat ja muut maat, joissa Apple ja Google toimivat</td>
+  <td>Me emme säilytä mitään. Katso Applen ja Googlen selosteet</td>
+</tr>
+<tr>
+  <td>Laitetiedot, IP-osoite, mainostunniste</td>
+  <td>Ilmaisversion bannerimainoksen näyttämiseen ja mittaamiseen</td>
+  <td><strong>Suostumus</strong>, joka annetaan sovelluksen Google-kysymyksen kautta siellä, missä se näytetään</td>
+  <td><a href="https://policies.google.com/privacy">Google AdMob</a></td>
+  <td>Yhdysvallat ja muut maat, joissa Google toimii</td>
+  <td>Me emme säilytä mitään. Katso Googlen seloste</td>
+</tr>
+<tr>
+  <td>Ostoksesi ”Poista mainokset”</td>
+  <td>Maksun vastaanottamiseen ja ostoksen palauttamiseen muihin laitteisiisi</td>
+  <td>Kauppasopimuksen täyttäminen</td>
+  <td>Apple (App Store) tai Google (Google Play) myyjänä (merchant of record)</td>
+  <td>Yhdysvallat ja muut maat, joissa Apple ja Google toimivat</td>
+  <td>Applen tai Googlen määrittämä. Me emme näe koskaan nimeäsi, maksutietojasi emmekä laskutustietojasi</td>
+</tr>
+<tr>
+  <td>Asetukset, välimuistiin tallennettu ennuste, päivittäinen muistutus, aloitusnäytön widget, aikavyöhyke</td>
+  <td>Jotta sovellus avautuu heti ja toimii ilman verkkoyhteyttä</td>
+  <td>Ei siirretä — luovutusta ei tapahdu</td>
+  <td><strong>Ei kukaan. Tämä ei lähde koskaan laitteeltasi.</strong></td>
+  <td>Vain laitteesi</td>
+  <td>Kunnes muutat sitä tai poistat sovelluksen. Välimuistiin tallennettu ennuste korvautuu jokaisella päivityksellä</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>CalOPPA:n käsittein yllä olevat luokat ovat sovelluksen kautta kerättävien
+henkilökohtaisesti tunnistettavien tietojen luokat, ja kolmansien osapuolten
+luokat, joiden kanssa niitä voidaan jakaa, ovat: <strong>säätietojen
+toimittaja</strong>, <strong>mainonnan toimittaja</strong>,
+<strong>käyttöjärjestelmien ja alustojen toimittajat</strong> sekä
+<strong>maksunvälittäjät</strong>.</p>
+
+<h3>Sijainti, suoraan sanottuna</h3>
+<p>Sovellus pyytää käyttöjärjestelmältä <strong>likimääräisen (karkean)</strong>
+sijaintisi — se ei pyydä koskaan tarkkaa paikannusta. Ennen kuin koordinaattisi
+lähtevät minnekään, pyöristämme ne kahteen desimaaliin, noin 1,1 kilometriin. Tuo
+pyöristys on tarkoituksellista tietojen minimointia: UV-ennusteen hila on paljon
+kilometriä karkeampi, joten ylimääräiset numerot kertoisivat kolmannelle
+osapuolelle, missä olet, kertomatta sovellukselle mitään, mitä se tarvitsee.</p>
+<p>Sijainti on <strong>pois päältä, kunnes otat sen käyttöön.</strong> Sovellus ei
+voi lukea sijaintiasi, ennen kuin annat sijaintiluvan käyttöjärjestelmän
+kysymyksessä, ja voit peruuttaa tuon luvan milloin tahansa laitteesi asetuksista.
+Sijainnin antaminen ei ole lakisääteistä, emmekä mekään vaadi sitä — mutta jos
+kieltäydyt, sovellus ei voi näyttää UV-indeksiä siellä, missä olet.</p>
+<p>Sovellus ei seuraa liikkeitäsi, ei toimi taustalla eikä kerää minkäänlaista
+historiaa siitä, missä olet käynyt.</p>
+
+<h3>Oikaisu paikkakunnan nimestä</h3>
+<p>Tämän selosteen aiempi versio sanoi, että paikkakunnan tai kaupunginosan nimi
+selvitetään ”laitteessasi”. Se oli väärin, ja olemme korjanneet sen. Sovellus
+pyytää käyttöjärjestelmää tekemään koordinaateista paikannimen, ja sekä iOSissa
+että Androidissa tuo haku hoidetaan verkon yli: <strong>koordinaattisi lähetetään
+Applelle tai Googlelle</strong>, ja takaisin tulee paikannimi. Sanomme sen
+mieluummin suoraan kuin jätämme paikalleen rauhoittavan lauseen, jota koodi ei
+tue.</p>
+
+<h3>Mitä emme koskaan saa</h3>
+<p><strong>Me</strong> — Ostapenko Studio — emme koskaan saa, tallenna emmekä
+lokita sijaintiasi, laitetunnisteitasi emmekä IP-osoitettasi. Tämä on väite
+meistä, ei taulukossa nimetyistä kolmansista osapuolista, jotka saavat sen, minkä
+taulukko sanoo niiden saavan, suoraan laitteeltasi.</p>
+
+<h2>Mainonta ja sen taustalla oleva suostumus</h2>
+<p>Ilmaisversio näyttää yhden ainoan bannerimainoksen, jonka toimittaa Google
+AdMob. Pyydämme mainokset <strong>ei-personoituina</strong>: emme pyydä mainoksia
+kiinnostuksenkohteidesi tai sinusta muodostetun profiilin perusteella emmekä
+käytä sijaintiasi mainonnan kohdentamiseen.</p>
+<p>Jo ei-personoidun mainoksen näyttäminen tarkoittaa, että Googlen mainos-SDK
+tallentaa tai lukee tietoa laitteessasi ja saa laitetiedot, IP-osoitteesi ja
+mainostunnisteen. Koska tähän sisältyy tiedon tallentaminen laitteeseesi ja siihen
+pääsy, oikeusperuste on <strong>suostumus</strong> — ei ”oikeutettu etu” eikä se,
+että mainokset ovat ei-personoituja. Hankimme tuon suostumuksen sovelluksen
+<strong>Google User Messaging Platform</strong> -kysymyksellä, joka näytetään
+käyttäjille ETA-alueella, Yhdistyneessä kuningaskunnassa ja Sveitsissä.</p>
+<p>Google kertoo myös voivansa arvioida yleisen sijaintisi IP-osoitteestasi
+mainontaa varten. Tuo arvio on Googlen oma, on erillinen yllä kuvatuista
+koordinaateista ja tapahtuu riippumatta siitä, oletko antanut sovellukselle
+sijaintiluvan.</p>
+<p><strong>Tämä on sinun hallinnassasi:</strong></p>
+<ul>
+<li>Voit muuttaa tai peruuttaa suostumuksesi milloin tahansa kohdassa
+  <strong>Asetukset → Tietosuoja-asetukset</strong>. Peruuttaminen ei vaikuta sen
+  lainmukaisuuteen, mitä tehtiin suostumuksen ollessa voimassa, ja peruutuksesi
+  välitetään Googlelle.</li>
+<li>Lisäksi pätevät laitteesi omat mainosasetukset (mainostunnisteen nollaaminen
+  tai rajoittaminen).</li>
+<li>Ostos <strong>Poista mainokset</strong> pysäyttää mainospyynnöt kokonaan —
+  mainos-SDK ei tee enää pyyntöjä, ja Googlen tiedonkeruu tämän sovelluksen
+  kautta loppuu sen mukana.</li>
+</ul>
+<p>Kun käytät tätä sovellusta, <strong>mainonnan toimittaja voi kerätä tietoa
+toiminnastasi ajan mittaan ja eri sovelluksissa ja palveluissa.</strong> Me emme
+tee sitä itse emmekä saa siitä mitään muuta kuin koostettua tuottoa.</p>
+
+<h3>Myymmekö tai jaammeko tietojasi?</h3>
+<p>Sanottuna tosiasiana eikä oikeudellisena johtopäätöksenä: emme saa sinusta
+mitään henkilötietoja, joten meillä ei ole mitään myytävää. Pyydämme mainokset
+ei-personoituina. Mainonnan toimittaja saa laitetiedot, IP-osoitteesi ja
+mainostunnisteen <strong>suoraan laitteeltasi</strong>, yllä kuvatun suostumuksen
+perusteella. Me saamme vain koostettua tuottoa. <strong>Emme saa rahaa siitä, että
+luovuttaisimme tietoja sinusta — saamme mainostuottoa.</strong></p>
+
+<h3>Do Not Track</h3>
+<p>Sovellus ei ole verkkoselain eikä saa selaimen ”Do Not Track” -signaalia, joten
+sellaista signaalia, johon vastata, ei ole. Emme seuraa sinua muissa sovelluksissa
+tai verkkosivustoilla. Hallintakeinot, jotka täällä oikeasti toimivat, ovat yllä
+luetellut: suostumuskysymys, Asetukset → Tietosuoja-asetukset, laitteesi
+mainosasetukset ja Poista mainokset.</p>
+
+<h2>Ostokset</h2>
+<p>Kertaluonteisen ostoksen Poista mainokset käsittelee kokonaan Applen App Store
+tai Google Play, jotka ovat myyjä (merchant of record). Emme näe koskaan nimeäsi,
+maksutietojasi emmekä laskutustietojasi. Kaupasta saamme vain vahvistuksen siitä,
+että ostos on olemassa, ja juuri se antaa sovelluksen piilottaa bannerin ja
+palauttaa ostoksesi muihin laitteisiisi.</p>
+
+<h2>Ilmoitukset ja widget</h2>
+<p>Valinnaisen päivittäisen UV-muistutuksen ajastaa paikallisesti laitteessasi
+käyttöjärjestelmä. Mitkään ilmoitustiedot eivät lähde laitteeltasi, eikä meillä
+ole mitään mahdollisuutta lähettää sinulle push-viestejä. Aloitusnäytön widget
+piirretään ennusteesta, joka on jo laitteesi välimuistissa.</p>
+
+<h2>Kuinka kauan mitäkin säilytetään ja miten se hävitetään</h2>
+<ul>
+<li><strong>Me emme säilytä mitään.</strong> Meidän puolellamme ei ole palvelinta,
+  tietokantaa eikä lokitiedostoa, joten meillä ei ole mitään säilytettävää, ja
+  meidän käsittelymme päättyy, kun suljet sovelluksen.</li>
+<li><strong>Laitteessasi:</strong> asetuksesi säilyvät, kunnes muutat niitä;
+  välimuistin ennuste korvautuu joka kerta, kun sovellus päivittyy. Molemmat
+  häviävät, samoin kuin kaikki muu, mitä sovellus tallentaa, kun
+  <strong>poistat sovelluksen</strong> — se on poistomekanismi kaikelle
+  sovelluksen hallussa olevalle tiedolle, ja se on kokonaan sinun käsissäsi.</li>
+<li><strong>Kolmannet osapuolet</strong> säilyttävät sen, minkä säilyttävät omien
+  selosteidensa mukaan; linkit ovat yllä olevassa taulukossa.</li>
+</ul>
+
+<h2>Tietojen lähettäminen ulkomaille</h2>
+<p>Tämä on erillinen toteamus, ja tarkoituksella: tämän sovelluksen käyttäminen
+<strong>tarkoittaa väistämättä tietojen lähettämistä maasi ulkopuolelle</strong>.</p>
+<p>Me olemme Australiassa. Vastaanottajat ja kohteet ovat:</p>
+<ul>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> — <strong>Yhdistynyt
+  kuningaskunta</strong>. Sen julkaistu tietosuojaseloste kertoo, että sen
+  keräämiä tietoja voidaan siirtää edelleen <strong>Yhdysvaltoihin, Venäjälle,
+  Japaniin, Kiinaan ja Intiaan</strong>. Nojaamme siihen, että siirto on tarpeen
+  pyytämääsi palvelua varten, sekä koordinaattien pyöristämiseen noin 1,1
+  kilometriin minimointitoimena. Zoomash ei julkaise
+  tietojenkäsittelysopimusta eikä vakiolausekkeita; sanomme sen sen sijaan, että
+  vihjaisimme suojatoimeen, jota meillä ei ole.</li>
+<li><strong>Apple</strong> ja <strong>Google</strong> (paikannimen haku, mainonta
+  ja laskutus) — <strong>Yhdysvallat</strong> ja muut maat, joissa ne toimivat.
+  Molemmat julkaisevat siirtojen suojatoimet omissa tietosuojaselosteissaan,
+  joihin on linkit yllä; mainonnan osalta nojaamme lisäksi suostumukseesi.</li>
+</ul>
+<p>Jos haluat jäljennöksen näihin siirtoihin sovelletuista suojatoimista tai
+lisätietoja niistä, kirjoita meille, niin annamme sen, mitä meillä on.</p>
+
+<h2>Turvallisuus</h2>
+<p>Turvatoimemme ovat vaatimattomat, koska riskipintammekin on vaatimaton, ja
+kuvaamme ne mieluummin kuin vihjaamme enempään. Jokainen sovelluksen tekemä pyyntö
+kulkee HTTPS:n yli. Emme ylläpidä palvelinta emmekä pidä hallussa henkilötietoja,
+joten meidän puolellamme ei ole käyttäjätietojen varastoa, johon murtautua. Tilejä
+ei ole eikä salasanoja ole. Laitteessasi olevia tietoja suojaavat laitteesi oman
+käyttöjärjestelmän suojaukset.</p>
+
+<h2>Automaattiset päätökset</h2>
+<p>Automaattista päätöksentekoa, jolla olisi sinua koskevia oikeusvaikutuksia tai
+vastaavalla tavalla merkittäviä vaikutuksia, ei ole, eikä profilointia ole.
+Sovellus laskee ennustetusta luvusta UV-kaistan ja siirtää tuota kaistaa, jos olet
+asettanut ihotyypin — se on näytölläsi näkyvää laskentaa, ei sinua koskeva
+päätös.</p>
+
+<h2>Oikeutesi</h2>
+<p>Riippuen siitä, missä asut, sinulla on jotkin tai kaikki seuraavista
+oikeuksista sinua koskeviin henkilötietoihin:</p>
+<ul>
+<li><strong>Pääsy</strong> — saada tietää, käsitelläänkö sinua koskevia
+  henkilötietoja, ja saada niistä jäljennös.</li>
+<li><strong>Oikaisu</strong> — saada virheelliset tiedot korjatuiksi.</li>
+<li><strong>Poistaminen</strong> — saada tiedot poistetuiksi.</li>
+<li><strong>Rajoittaminen</strong> — saada käsittely keskeytetyksi.</li>
+<li><strong>Vastustaminen</strong> — vastustaa käsittelyä.</li>
+<li><strong>Siirrettävyys</strong> — saada tiedot siirrettävässä muodossa.</li>
+<li><strong>Suostumuksen peruuttaminen</strong> — milloin tahansa, vaikuttamatta
+  siihen, mikä oli lainmukaista ennen peruuttamista.</li>
+<li><strong>Valitus</strong> — valittaa meille ja tietosuojaviranomaiselle. Katso
+  alta.</li>
+</ul>
+<p>Siellä, missä LGPD:tä sovelletaan, tähän sisältyvät nimenomaisesti 18 artiklan
+oikeudet: käsittelyn vahvistaminen; pääsy; korjaaminen; tarpeettomien tai
+liiallisten tai lainvastaisesti käsiteltyjen tietojen anonymisointi, estäminen tai
+poistaminen; siirrettävyys; suostumuksen perusteella käsiteltyjen tietojen
+poistaminen; <strong>tieto niistä julkisista ja yksityisistä toimijoista, joiden
+kanssa olemme jakaneet tietojasi</strong> — se on yllä oleva taulukko; tieto
+mahdollisuudesta kieltäytyä suostumuksesta ja kieltäytymisen seurauksista; sekä
+suostumuksen peruuttaminen.</p>
+
+<h3>Mitä voimme oikeasti tehdä puolestasi — ja mitä emme</h3>
+<p>Tämä on se rehellinen osa. Koska meidän puolellamme ei ole tilejä eikä
+tallenteita, <strong>emme voi tunnistaa sinua</strong>, eikä meillä ole mitään
+annettavaa, korjattavaa tai poistettavaa. Emme saa kerätä sinulta lisätietoja vain
+yrittääksemme löytää sinut tiedoista, joita meillä ei ole. Useimmissa pyynnöissä
+hyödyllisintä, mitä voimme tehdä, on siis ohjata sinut sille taholle, jolla
+tosiaan on jotakin:</p>
+<ul>
+<li><strong>Google</strong> (mainonta ja paikannimen haku Androidissa) —
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>,
+  ja Google-tilisi tietosuoja-asetukset.</li>
+<li><strong>Apple</strong> (paikannimen haku iOSissa ja App Store -ostokset) —
+  <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>,
+  ja <a href="https://privacy.apple.com">privacy.apple.com</a>.</li>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> —
+  <a href="https://www.weatherapi.com/privacy.aspx">weatherapi.com/privacy.aspx</a>.
+  Sen seloste ei nimeä tietosuojayhteyshenkilöä; jos et tavoita heitä, kerro
+  meille, niin yritämme puolestasi.</li>
+</ul>
+<p>Kaikkeen, mikä on omassa laitteessasi — asetukset, välimuistin ennuste,
+muistutukset, widget — sinulla on suora hallinta: muuta se sovelluksessa tai
+poista sovellus hävittääksesi sen. Pääsykeino on itse sovellus.</p>
+<p>Emme aseta henkilötietoja minkään lähipiiriin kuuluvan organisaation
+saataville, koska meillä ei ole sellaista: Ostapenko Studiolla ei ole emoyhtiötä,
+tytäryhtiötä eikä osakkuusyhteisöä.</p>
+
+<h3>Näin teet pyynnön tai valituksen</h3>
+<p>Kirjoita osoitteeseen
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a> tai yllä
+olevaan postiosoitteeseen. Kerro meille, mitä haluat ja miten sinulle vastataan.
+Vahvistamme vastaanoton 7 päivän kuluessa ja vastaamme 30 päivän kuluessa — tai
+kerromme, miksi tarvitsemme pidempään ja kuinka paljon pidempään. Maksua ei
+peritä.</p>
+<p>Jos et ole tyytyväinen vastaukseemme, voit viedä asiaa eteenpäin:</p>
+<ul>
+<li><strong>Australia</strong> — Office of the Australian Information
+  Commissioner,
+  <a href="https://www.oaic.gov.au/privacy/privacy-complaints">oaic.gov.au/privacy/privacy-complaints</a>.</li>
+<li><strong>EU/ETA</strong> — paikallinen valvontaviranomaisesi; luettelo on
+  osoitteessa
+  <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
+<li><strong>Yhdistynyt kuningaskunta</strong> — Information Commissioner’s Office,
+  <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>.</li>
+<li><strong>Muualla</strong> — kansallinen tai osavaltiollinen
+  tietosuojaviranomaisesi. Jos kerrot meille, missä olet, ohjaamme sinut oikeaan
+  osoitteeseen.</li>
+</ul>
+
+<h2>Lapset ja nuoret</h2>
+<p>UV Index on <strong>yleisölle tarkoitettu</strong> sovellus. Sitä ei ole
+suunnattu lapsille, sitä ei ole suunniteltu vetoamaan lapsiin, emmekä kerää
+tietoisesti henkilötietoja lapselta. Kantamme vähimmäisikään on, että sovellus on
+tarkoitettu <strong>13 vuotta täyttäneille</strong>, ja niillä lainkäyttöalueilla,
+jotka asettavat suostumukselle korkeamman kynnyksen — niiden joukossa Brasilia,
+joka kattaa lasten lisäksi nuoret, ja Intia — tuon kynnyksen alapuolella olevan
+tulisi käyttää sovellusta vain vanhemman tai huoltajan myötävaikutuksella.</p>
+<p>Koska sovellusta käyttävät nuoret auringossa, pidämme tästä kiinni riippumatta
+siitä, kuka sitä käyttää:</p>
+<ul>
+<li>Mainokset ovat <strong>ei-personoituja</strong>, eikä
+  <strong>profilointia</strong> ole.</li>
+<li>Sijaintia käytetään <strong>vain</strong> UV-lukeman ja paikannimen
+  tuottamiseen. Sitä ei käytetä <strong>koskaan</strong> mainonnan
+  kohdentamiseen, emmekä me säilytä sitä koskaan.</li>
+<li>Mitään sovelluksessa ei ole suunniteltu pitämään sinua kiinni käytössä —
+  putkia ei ole, tuuppauksia ei ole eikä sitouttamisilmoituksia ole.</li>
+</ul>
+<p>Sovelluksessa <strong>ei ole ikärajatarkistusta</strong>. Jos olet vanhempi tai
+huoltaja ja uskot, että lapsi on antanut henkilötietoja sovelluksen kautta, ota
+meihin yhteyttä, niin autamme — vaikka, kuten yllä on todettu, meillä ei ole
+mitään poistettavaa, ja sovelluksen poistaminen poistaa kaiken, mitä se on
+tallentanut.</p>
+
+<h2>Missä olet</h2>
+<p>Tämä seloste kokonaisuudessaan koskee kaikkia. Nämä huomautukset lisäävät sen,
+mitä yksittäiset lait vaativat.</p>
+
+<h3>Australia</h3>
+<p>Olemme australialainen henkilöyhtiö. Meidän tulkintamme mukaan olemme
+<strong>small business operator</strong> <em>Privacy Act 1988</em> (Cth) -lain
+s 6D:n mukaan emmekä siten ole APP entity — mutta tuolla poikkeuksella on omat
+poikkeuksensa, emmekä nojaa siihen syynä kertoa sinulle vähemmän. <strong>Tämä
+seloste annetaan vapaaehtoisesti sillä tasolla, jota Australian Privacy Principles
+edellyttää</strong>, mukaan lukien yllä oleva toteamus ulkomaille luovuttamisesta,
+pääsy ja oikaisu sekä valitusmenettely. Siellä, missä sanomme ”noudatamme”, lue se
+sitoumuksena, jonka olemme itse päättäneet ottaa.</p>
+
+<h3>Euroopan unioni ja ETA</h3>
+<p>Siellä, missä yleistä tietosuoja-asetusta (GDPR) sovelletaan, me olemme
+rekisterinpitäjä, oikeusperusteet ovat yllä olevassa taulukossa, ja oikeutesi ovat
+yllä luetellut 15–22 artiklan oikeudet, mukaan lukien oikeus tehdä valitus sen
+maan valvontaviranomaiselle, jossa asut, jossa työskentelet tai jossa mielestäsi
+ongelma tapahtui.</p>
+
+<h3>Yhdistynyt kuningaskunta</h3>
+<p>Siellä, missä UK GDPR:ää sovelletaan, kaikki EU-huomautuksessa sanottu pätee,
+valvontaviranomainen on <strong>Information Commissioner’s Office</strong>, ja
+sinulla on lisäksi oikeus <strong>valittaa ensin meille</strong> — menettely on
+kuvattu yllä kohdassa ”Näin teet pyynnön tai valituksen” — ennen ICO:lle
+valittamista tai sen sijaan.</p>
+
+<h3>Yhdysvallat</h3>
+<p>CalOPPA:n edellyttämät tiedot ovat tässä asiakirjassa: tietojen luokat ja
+kolmansien osapuolten luokat ovat yllä olevassa taulukossa; toteamus
+sovellusrajat ylittävästä keräämisestä, Do Not Track -toteamus ja
+myyntiä/jakamista koskeva toteamus ovat kohdassa ”Mainonta”; muutosmenettely on
+kohdassa ”Tämän selosteen muutokset”; ja voimaantulopäivä on ylhäällä.</p>
+<p><strong>Tietojesi tarkastelu ja muuttaminen.</strong> Meillä ei ole sinusta
+mitään henkilökohtaisesti tunnistettavaa tietoa, joten meillä ei ole mitään
+tarkasteltavaa tai muutettavaa. Asetuksesi ja välimuistin tiedot elävät vain
+laitteessasi ja poistuvat, kun poistat sovelluksen.</p>
+<p><strong>Osavaltioiden tietosuojaoikeudet.</strong> Kantamme on, ettemme ole
+covered business emmekä controller minkään Yhdysvaltain osavaltion
+tietosuojalain nojalla — mutta annamme sinulle mieluummin keinon kuin kiistelemme
+kynnysarvoista. Tarkkaa sijaintitietoa käsitellään useissa osavaltiolaeissa
+<strong>arkaluonteisena tietona</strong>. Tässä sovelluksessa sijaintia käytetään
+vain UV-ennusteen ja paikannimen hakemiseen; se karkeistetaan noin 1,1 kilometriin
+ennen lähettämistä; sitä ei myydä, sitä ei käytetä kohdennettuun mainontaan, sitä
+ei käytetä profilointiin, emmekä me säilytä sitä. Jos asut Yhdysvaltain
+osavaltiossa, jossa on tietosuojalaki, ja haluat käyttää siihen perustuvaa
+oikeutta, kirjoita osoitteeseen
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a>, niin
+käsittelemme sen samalla tavalla kuin minkä tahansa muun pyynnön.</p>
+
+<h3>Kanada, mukaan lukien Quebec</h3>
+<p>Vaatimustenmukaisuudestamme vastaava henkilö on nimetty kohdassa ”Keitä me
+olemme”, ja siellä on postiosoite ja puhelinnumero. Hallussamme olevien
+henkilötietojen tyyppi on <strong>ei mitään</strong>; yleinen kuvaus niiden
+käytöstä on, että koordinaatit kulkevat laitteesi kautta taulukossa mainituille
+osapuolille siellä mainittuihin tarkoituksiin; emmekä aseta henkilötietoja
+lähipiiriin kuuluvien organisaatioiden saataville, koska meillä ei ole sellaisia.
+Keino saada pääsy sinusta pidettäviin tietoihin on kirjoittaa yllä olevaan
+osoitteeseen — ja rehellinen vastaus on, ettei meillä ole mitään.</p>
+<p><strong>Quebec.</strong> Tämä sovellus käyttää tekniikkaa, joka sisältää
+toiminnon, jonka avulla sinut voidaan <strong>paikantaa</strong>. Tuo toiminto on
+oletuksena pois käytöstä: se aktivoituu vain, kun annat sijaintiluvan laitteesi
+omassa lupakysymyksessä, ja poistat sen käytöstä peruuttamalla tuon luvan laitteesi
+asetuksista — jolloin sovellus lakkaa pyytämästä sijaintiasi. Tämän sovelluksen
+kautta käsiteltäviä henkilötietoja voidaan <strong>luovuttaa Quebecin
+ulkopuolelle</strong>, niille vastaanottajille ja niihin maihin, jotka on nimetty
+kohdassa ”Tietojen lähettäminen ulkomaille”.</p>
+
+<h3>Brasilia</h3>
+<p><strong>Käsittelyn kesto.</strong> Meidän käsittelymme kestää vain sen ajan,
+jonka pyyntö on matkalla — sen jälkeen emme säilytä mitään. Laitteessa olevat
+tiedot säilyvät, kunnes muutat niitä tai poistat sovelluksen. Kolmansien
+osapuolten säilytystä ohjaavat niiden omat selosteet, joihin on linkit yllä.</p>
+<p><strong>Kuka vastaa mistäkin osasta.</strong> Ostapenko Studio vastaa
+sovelluksesta ja päätöksestä tehdä kukin näistä pyynnöistä. <strong>Zoomash
+Ltd</strong> vastaa ennusteen hausta. <strong>Google</strong> vastaa mainonnasta
+ja paikannimen hausta Androidissa. <strong>Apple</strong> vastaa paikannimen
+hausta iOSissa. <strong>Apple ja Google</strong> vastaavat kumpikin laskutuksesta
+omassa kaupassaan.</p>
+<p>18 artiklan oikeudet on lueteltu kokonaisuudessaan kohdassa ”Oikeutesi”.
+Siirtojen kansainvälinen luonne on esitetty erikseen kohdassa ”Tietojen
+lähettäminen ulkomaille”, kuten pitääkin.</p>
+
+<h3>Japani</h3>
+<p>Henkilötietoja käsittelevän yrityksen nimi ja osoite ovat kohdassa ”Keitä me
+olemme”. Käytön tarkoitus on: <strong>hakea sijaintiisi UV-ennuste ja näyttää se
+sinulle</strong>. Meillä ei ole säilytettyjä henkilötietoja. Menettely
+henkilötietoja koskevan pyynnön tekemiseksi on kohdassa ”Näin teet pyynnön tai
+valituksen”. Koordinaattien antaminen kolmannelle osapuolelle ulkomailla — Zoomash
+Ltd Yhdistyneessä kuningaskunnassa sekä Apple tai Google paikannimen hakua varten
+— on kuvattu kohdassa ”Tietojen lähettäminen ulkomaille” yhdessä kyseessä olevien
+maiden kanssa; suojatoimet, joita nuo vastaanottajat toteuttavat, ovat ne, jotka
+on esitetty niiden omissa julkaistuissa tietosuojaselosteissa, joihin on linkit
+taulukossa.</p>
+
+
+<h3>Kaikkialla muualla</h3>
+<p>Tämä luettelo ei ole tyhjentävä eikä sen ole tarkoituskaan olla. Jos olet
+jossakin, jota ei ole yllä mainittu, sinulla voi silti olla oikeuksia paikallisen
+tietosuojalakisi nojalla. Ota yhteyttä, niin autamme sinua käyttämään niitä —
+mikä, koska meillä ei ole mitään, tarkoittaa yleensä sinun ohjaamistasi oikealle
+taholle ja oikealle viranomaiselle, ja teemme sen mielellämme.</p>
+
+<h2>Kolmannet osapuolet, jotka saavat tietoja tämän sovelluksen kautta</h2>
+<p>Ainoat kolmannet osapuolet, jotka saavat tietoja tämän sovelluksen kautta, ovat
+yllä olevassa taulukossa nimetyt: <strong>Zoomash Ltd</strong> (WeatherAPI.com),
+<strong>Google</strong> ja <strong>Apple</strong>. Jokaisen niistä on annettava
+noille tiedoille sama tai vastaava suoja kuin tässä selosteessa on ilmoitettu, ja
+jokainen julkaisee oman tietosuojaselosteensa, jossa se kertoo, miten se niitä
+käsittelee. Yksikään niistä ei saa käyttää tämän sovelluksen kautta saatuja
+tietoja mihinkään muuhun tarkoitukseen kuin taulukossa mainittuun. Sovelluksessa
+ei ole analytiikka-SDK:ita, kaatumisraportointia, attribuutio-SDK:ita eikä mitään
+muuta kolmannen osapuolen koodia, joka saisi tietojasi.</p>
+
+<h2>Tämän selosteen muutokset</h2>
+<p>Jos tämä seloste muuttuu, päivitetty versio julkaistaan tässä osoitteessa —
+samalla tavalla kuin tämä versio julkaistiin — uudella voimaantulopäivällä ja
+lyhyellä huomautuksella siitä, mikä muuttui. Olennaiset muutokset mainitaan myös
+sovelluksen julkaisutiedoissa.</p>
+<p>Jos muutos vähentäisi olennaisesti sitä suojaa, jonka tämä seloste sinulle
+antaa, tai käyttäisi tietoja tavalla, jota tämä seloste ei nykyisin salli,
+<strong>pyydämme ensin suostumustasi</strong> sen sijaan, että tekisimme muutoksen
+hiljaisesti. Sovelluksen käytön jatkaminen sellaisen muutoksen jälkeen, joka ei
+vähennä suojaasi, tarkoittaa, että päivitetty seloste on voimassa.</p>
+
+<h2>Kielet</h2>
+<p>Tämä englanninkielinen teksti on tämän selosteen kanoninen versio. Käännökset
+tarjotaan käytännön syistä. Kun käännös poikkeaa tästä englanninkielisestä
+tekstistä, englanninkielinen teksti on ratkaiseva siinä laajuudessa kuin
+paikallinen laki sallii. Jos löydät versioiden välillä eron, kerro meille, niin
+korjaamme sen.</p>
+<p>Saatavilla olevat versiot: <a href="../privacy.html">English</a> (kanoninen) ·
+Suomi (tämä sivu).</p>
+
+<h2>Yhteystiedot</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+
+</body>
+</html>

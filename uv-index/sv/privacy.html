@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integritetspolicy — UV Index</title>
+<style>
+  body {
+    background: #F7F5F0;
+    color: #2B2A26;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: 0.4rem; }
+  .meta { color: #726E66; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #B23A6B; }
+  .scroll { overflow-x: auto; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.88rem; }
+  th, td { border-bottom: 1px solid #DFDACF; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; color: #4A473F; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .draft { background: #FFE9A8; padding: 0 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Integritetspolicy</h1>
+<p class="meta">UV Index, från Ostapenko Studio · Gäller från 26 augusti 2026 · Senast uppdaterad 26 augusti 2026</p>
+
+<h2>Den korta versionen</h2>
+<p>UV Index visar det aktuella och prognosticerade UV-indexet där du är. Appen är
+byggd för att samla in så lite data som möjligt.</p>
+<ul>
+<li>Det finns inga konton, ingen registrering, ingen analys, ingen
+  kraschrapportering, och vi driver inga servrar. <strong>Vi har inga
+  personuppgifter alls om dig.</strong></li>
+<li>Tre saker lämnar din enhet, och ingen av dem kommer till oss: dina
+  <strong>ungefärliga koordinater</strong> går till väderleverantören för att
+  hämta en prognos och till telefonens operativsystem för att bli ett ortnamn;
+  och i gratisversionen går <strong>enhets- och annonsinformation</strong> till
+  Google för att visa en bannerannons.</li>
+<li>Dina koordinater <strong>avrundas medvetet till två decimaler (ungefär
+  1,1 km)</strong> innan de skickas någonstans. UV varierar över tiotals
+  kilometer, så den extra precisionen ger ingenting och vi skickar den inte.</li>
+<li>Annonser begärs <strong>icke-personaliserade</strong>. I regioner där
+  samtycke krävs visas de bara om du godkänner i appens dialogruta, och du kan
+  ändra dig när som helst under <strong>Inställningar →
+  Integritetsalternativ</strong>. Att köpa <strong>Ta bort annonser</strong>
+  stoppar annonsförfrågningarna helt.</li>
+<li>Dina inställningar, din cachade prognos, din påminnelse och din
+  hemskärmswidget stannar på din enhet. Raderar du appen försvinner de.</li>
+</ul>
+<p>Resten av den här sidan går igenom allt det i detalj: vem som får vad, på
+vilken rättslig grund, till vilka länder det går och vilka rättigheter du har.</p>
+
+<h2>Vilka vi är</h2>
+<p><strong>Ostapenko Studio</strong>, ett firmanamn för <strong>I Ostapenko &amp;
+Y Ostapenko</strong>, ett handelsbolag registrerat i Australien,
+<strong>ABN 18 901 484 459</strong>. Vi är personuppgiftsansvariga för de personuppgifter som
+beskrivs nedan — det vill säga vi bestämmer varför de samlas in och vart de går —
+även om ingen av dem når oss.</p>
+<p>E-post (även för integritetsfrågor):
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>Vi behandlar personuppgifter i <strong>Australien</strong>. Vi har inte utsett
+något dataskyddsombud (Data Protection Officer): vi är ett tvåmannabolag, vi är
+inte en myndighet, och vår kärnverksamhet innebär varken storskalig övervakning
+av personer eller storskalig behandling av särskilda kategorier av uppgifter.</p>
+
+<h2>Vad som lämnar din enhet, och varför</h2>
+<p>Den här tabellen är hela bilden. Finns ett flöde inte med, sker det inte.</p>
+
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Vad</th><th>Varför</th><th>Rättslig grund</th><th>Vem som tar emot det</th><th>Vart det går</th><th>Hur länge</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>Ungefärliga koordinater, avrundade till 2 decimaler (~1,1 km)</td>
+  <td>För att hämta UV-prognosen för ditt område</td>
+  <td>Fullgörande av den tjänst du bett om</td>
+  <td><a href="https://www.weatherapi.com/">WeatherAPI.com</a>, som drivs av Zoomash Ltd</td>
+  <td>Storbritannien; Zoomashs egen policy uppger möjlig vidare överföring till USA, Ryssland, Japan, Kina och Indien</td>
+  <td>Vi behåller ingenting. Zoomash uppger bara att uppgifter ”shall not be kept for longer than is necessary” (inte ska sparas längre än nödvändigt)</td>
+</tr>
+<tr>
+  <td>Ungefärliga koordinater</td>
+  <td>För att göra koordinaterna till det ort- eller stadsdelsnamn som visas på skärmen</td>
+  <td>Fullgörande av den tjänst du bett om</td>
+  <td>Leverantören av din enhets operativsystem — <a href="https://www.apple.com/legal/privacy/">Apple</a> på iOS, <a href="https://policies.google.com/privacy">Google</a> på Android</td>
+  <td>USA och andra länder där Apple och Google verkar</td>
+  <td>Vi behåller ingenting. Se Apples och Googles policyer</td>
+</tr>
+<tr>
+  <td>Enhetsinformation, IP-adress, annons-ID</td>
+  <td>För att visa och mäta bannerannonsen i gratisversionen</td>
+  <td><strong>Samtycke</strong>, lämnat via Googles dialogruta i appen där den visas</td>
+  <td><a href="https://policies.google.com/privacy">Google AdMob</a></td>
+  <td>USA och andra länder där Google verkar</td>
+  <td>Vi behåller ingenting. Se Googles policy</td>
+</tr>
+<tr>
+  <td>Ditt köp av ”Ta bort annonser”</td>
+  <td>För att ta emot betalning och återställa köpet på dina andra enheter</td>
+  <td>Fullgörande av köpavtalet</td>
+  <td>Apple (App Store) eller Google (Google Play), som säljare (merchant of record)</td>
+  <td>USA och andra länder där Apple och Google verkar</td>
+  <td>Bestäms av Apple eller Google. Vi ser aldrig ditt namn, dina betaluppgifter eller dina faktureringsuppgifter</td>
+</tr>
+<tr>
+  <td>Inställningar, cachad prognos, daglig påminnelse, hemskärmswidget, tidszon</td>
+  <td>Så att appen öppnas direkt och fungerar offline</td>
+  <td>Överförs inte — inget utlämnande sker</td>
+  <td><strong>Ingen. Det här lämnar aldrig din enhet.</strong></td>
+  <td>Bara din enhet</td>
+  <td>Tills du ändrar det eller raderar appen. Den cachade prognosen skrivs över vid varje uppdatering</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>I CalOPPA:s termer är kategorierna ovan de kategorier av personligt
+identifierbar information som samlas in genom appen, och kategorierna av tredje
+parter som de kan delas med är: en <strong>väderdataleverantör</strong>, en
+<strong>annonsleverantör</strong>, <strong>operativsystems- och
+plattformsleverantörer</strong> och <strong>betalningsförmedlare</strong>.</p>
+
+<h3>Platsen, i klartext</h3>
+<p>Appen ber ditt operativsystem om din <strong>ungefärliga (grova)</strong>
+position — den begär aldrig en exakt positionsbestämning. Innan dina koordinater
+skickas någonstans avrundas de till två decimaler, ungefär 1,1 km. Den
+avrundningen är medveten uppgiftsminimering: rutnätet i en UV-prognos är mycket
+grövre än en kilometer, så de extra siffrorna skulle tala om för en tredje part
+var du är utan att tala om något för appen som den behöver.</p>
+<p>Platsen är <strong>avstängd tills du slår på den.</strong> Appen kan inte läsa
+din position förrän du ger platsbehörighet i operativsystemets dialogruta, och du
+kan när som helst återkalla den behörigheten i enhetens inställningar. Att uppge
+din plats krävs inte enligt lag och vi kräver det inte heller — men om du säger
+nej kan appen inte visa UV-indexet där du är.</p>
+<p>Appen spårar inte dina förflyttningar, körs inte i bakgrunden och bygger ingen
+historik över var du har varit.</p>
+
+<h3>En rättelse om ortnamnet</h3>
+<p>En tidigare version av den här policyn sa att ort- eller stadsdelsnamnet togs
+fram ”på din enhet”. Det var fel, och vi har rättat det. Appen ber
+operativsystemet att göra koordinater till ett ortnamn, och på både iOS och
+Android besvaras den uppslagningen över nätet: <strong>dina koordinater skickas
+till Apple eller till Google</strong> och ett ortnamn kommer tillbaka. Vi säger
+hellre det rakt ut än låter en lugnande mening stå kvar som koden inte stödjer.</p>
+
+<h3>Vad vi aldrig tar emot</h3>
+<p><strong>Vi</strong> — Ostapenko Studio — tar aldrig emot, lagrar eller loggar
+din plats, dina enhets-ID:n eller din IP-adress. Det är ett påstående om oss,
+inte om de tredje parter som anges i tabellen, vilka tar emot det tabellen säger
+att de tar emot, direkt från din enhet.</p>
+
+<h2>Annonseringen, och samtycket bakom den</h2>
+<p>Gratisversionen visar en enda bannerannons som levereras av Google AdMob.
+Annonser begärs <strong>icke-personaliserade</strong>: vi begär inte annonser
+utifrån dina intressen eller en profil av dig, och vi använder inte din plats för
+att rikta annonser.</p>
+<p>Att visa även en icke-personaliserad annons innebär att Googles annons-SDK
+lagrar eller läser information på din enhet och tar emot enhetsinformation, din
+IP-adress och ett annons-ID. Eftersom det innebär lagring av och åtkomst till
+information på din enhet är den rättsliga grunden <strong>samtycke</strong> —
+inte ”berättigat intresse”, och inte det faktum att annonserna är
+icke-personaliserade. Vi inhämtar det samtycket via dialogrutan från
+<strong>Google User Messaging Platform</strong> i appen, som visas för användare i
+EES, Storbritannien och Schweiz.</p>
+<p>Google uppger också att de kan uppskatta din ungefärliga plats utifrån din
+IP-adress i annonssyfte. Den uppskattningen är Googles, är skild från
+koordinaterna ovan och sker oavsett om du har gett appen platsbehörighet eller
+inte.</p>
+<p><strong>Du styr det här:</strong></p>
+<ul>
+<li>Du kan ändra eller återkalla ditt samtycke när som helst under
+  <strong>Inställningar → Integritetsalternativ</strong>. Ett återkallande
+  påverkar inte lagligheten i det som gjordes medan samtycket gällde, och ditt
+  återkallande förs vidare till Google.</li>
+<li>Enhetens egna annonsinställningar (återställa eller begränsa annons-ID:t)
+  gäller också.</li>
+<li>Att köpa <strong>Ta bort annonser</strong> stoppar annonsförfrågningarna helt
+  — annons-SDK:n gör inga fler förfrågningar, och Googles insamling genom den här
+  appen upphör med den.</li>
+</ul>
+<p>När du använder den här appen <strong>kan annonsleverantören samla in
+information om din aktivitet över tid och över olika appar och tjänster.</strong>
+Vi gör inte det själva och vi får ingenting av det utom aggregerade intäkter.</p>
+
+<h3>Säljer eller delar vi din information?</h3>
+<p>Sagt som ett faktum och inte som en rättslig slutsats: vi tar inte emot några
+personuppgifter om dig, så det finns inget för oss att sälja. Annonser begärs
+icke-personaliserade. Annonsleverantören tar emot enhetsinformation, din
+IP-adress och ett annons-ID <strong>direkt från din enhet</strong>, med stöd av
+det samtycke som beskrivs ovan. Vi får bara aggregerade intäkter. <strong>Vi får
+inte pengar i utbyte mot att lämna ut information om dig — vi får
+annonsintäkter.</strong></p>
+
+<h3>Do Not Track</h3>
+<p>Appen är ingen webbläsare och tar inte emot någon ”Do Not Track”-signal från
+en webbläsare, så det finns ingen sådan signal för den att svara på. Vi spårar
+dig inte över andra appar eller webbplatser. De kontroller som faktiskt fungerar
+här är de som räknas upp ovan: samtyckesdialogen, Inställningar →
+Integritetsalternativ, enhetens annonsinställningar och Ta bort annonser.</p>
+
+<h2>Köp</h2>
+<p>Engångsköpet Ta bort annonser hanteras helt av Apples App Store eller Google
+Play, som är säljare (merchant of record). Vi ser aldrig ditt namn, dina
+betaluppgifter eller dina faktureringsuppgifter. Från butiken får vi bara en
+bekräftelse på att köpet finns, och det är det som gör att appen kan dölja
+bannern och återställa ditt köp på dina andra enheter.</p>
+
+<h2>Aviseringar och widgeten</h2>
+<p>Den valfria dagliga UV-påminnelsen schemaläggs lokalt på din enhet av
+operativsystemet. Inga aviseringsdata lämnar din enhet, och vi har ingen
+möjlighet att skicka pushmeddelanden till dig. Hemskärmswidgeten ritas från den
+prognos som redan finns cachad på din enhet.</p>
+
+<h2>Hur länge något sparas, och hur det förstörs</h2>
+<ul>
+<li><strong>Vi sparar ingenting.</strong> På vår sida finns ingen server, ingen
+  databas och ingen loggfil, så det finns inget för oss att spara, och vår
+  behandling upphör när du stänger appen.</li>
+<li><strong>På din enhet:</strong> dina inställningar ligger kvar tills du ändrar
+  dem; den cachade prognosen skrivs över varje gång appen uppdaterar. Båda
+  förstörs, tillsammans med allt annat appen lagrar, när du <strong>raderar
+  appen</strong> — vilket är raderingsmekanismen för alla uppgifter appen håller,
+  och den ligger helt i dina händer.</li>
+<li><strong>Tredje parter</strong> sparar det de sparar enligt sina egna
+  policyer, länkade i tabellen ovan.</li>
+</ul>
+
+<h2>Att skicka information utomlands</h2>
+<p>Det här är ett eget uttalande, och det är medvetet: att använda den här appen
+<strong>innebär med nödvändighet att information skickas ut ur ditt
+land</strong>.</p>
+<p>Vi finns i Australien. Mottagarna och destinationerna är:</p>
+<ul>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> — <strong>Storbritannien</strong>.
+  Deras publicerade integritetspolicy uppger att den information de samlar in kan
+  överföras vidare till <strong>USA, Ryssland, Japan, Kina och Indien</strong>. Vi
+  stödjer oss på att överföringen är nödvändig för den tjänst du bett om, och på
+  avrundningen av koordinaterna till ~1,1 km som en minimeringsåtgärd. Zoomash
+  publicerar inget personuppgiftsbiträdesavtal och inga standardavtalsklausuler;
+  vi säger det hellre än antyder en skyddsåtgärd vi inte har.</li>
+<li><strong>Apple</strong> och <strong>Google</strong> (ortnamnsuppslagning,
+  annonsering och betalning) — <strong>USA</strong> och de andra länder där de
+  verkar. Båda publicerar skyddsåtgärder för överföringar i sina egna
+  integritetspolicyer, länkade ovan; för annonsering stödjer vi oss dessutom på
+  ditt samtycke.</li>
+</ul>
+<p>Vill du ha en kopia av, eller mer information om, de skyddsåtgärder som
+åberopas för någon av dessa överföringar, skriv till oss så lämnar vi det vi
+har.</p>
+
+<h2>Säkerhet</h2>
+<p>Våra säkerhetsåtgärder är blygsamma därför att vår exponering är blygsam, och
+vi beskriver dem hellre än antyder mer. Varje förfrågan appen gör går över HTTPS.
+Vi driver ingen server och håller inga personuppgifter, så det finns inget lager
+av användardata på vår sida att göra intrång i. Det finns inga konton och inga
+lösenord. Uppgifterna på din enhet skyddas av enhetens eget operativsystems
+skydd.</p>
+
+<h2>Automatiserade beslut</h2>
+<p>Det förekommer inget automatiserat beslutsfattande med rättsliga följder eller
+på liknande sätt betydande följder för dig, och ingen profilering. Appen räknar
+ut ett UV-band från ett prognostiserat tal och, om du har ställt in en hudtyp,
+förskjuter det bandet — det är aritmetik som visas för dig på skärmen, inte ett
+beslut om dig.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Beroende på var du bor har du några eller alla av följande rättigheter när det
+gäller personuppgifter om dig:</p>
+<ul>
+<li><strong>Tillgång</strong> — att få veta om personuppgifter om dig behandlas
+  och att få en kopia.</li>
+<li><strong>Rättelse</strong> — att få felaktiga uppgifter rättade.</li>
+<li><strong>Radering</strong> — att få uppgifter raderade.</li>
+<li><strong>Begränsning</strong> — att få behandlingen pausad.</li>
+<li><strong>Invändning</strong> — att invända mot behandlingen.</li>
+<li><strong>Dataportabilitet</strong> — att få uppgifterna i en portabel
+  form.</li>
+<li><strong>Återkallande av samtycke</strong> — när som helst, utan att det
+  påverkar det som var lagligt innan du återkallade.</li>
+<li><strong>Klagomål</strong> — att klaga till oss och till en
+  dataskyddsmyndighet. Se nedan.</li>
+</ul>
+<p>Där LGPD gäller omfattar detta uttryckligen rättigheterna i art. 18:
+bekräftelse av behandling; tillgång; rättelse; anonymisering, blockering eller
+radering av onödiga eller alltför omfattande uppgifter eller uppgifter som
+behandlats olagligt; portabilitet; radering av uppgifter som behandlats med
+samtycke; <strong>information om de offentliga och privata organ som vi har delat
+dina uppgifter med</strong> — vilket är tabellen ovan; information om möjligheten
+att neka samtycke och om följderna av att neka; och återkallande av samtycke.</p>
+
+<h3>Vad vi faktiskt kan göra för dig — och vad vi inte kan</h3>
+<p>Det här är den ärliga delen. Eftersom det inte finns några konton och inga
+register på vår sida <strong>kan vi inte identifiera dig</strong>, och vi har
+ingenting att ge dig, rätta eller radera. Vi får inte samla in ytterligare
+uppgifter från dig enbart för att försöka hitta dig i uppgifter vi inte har. För
+de flesta förfrågningar är därför det mest användbara vi kan göra att hänvisa dig
+till den part som faktiskt har något:</p>
+<ul>
+<li><strong>Google</strong> (annonsering, och ortnamnsuppslagning på Android) —
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>,
+  och integritetsinställningarna i ditt Google-konto.</li>
+<li><strong>Apple</strong> (ortnamnsuppslagning på iOS, och App Store-köp) —
+  <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>,
+  och <a href="https://privacy.apple.com">privacy.apple.com</a>.</li>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> —
+  <a href="https://www.weatherapi.com/privacy.aspx">weatherapi.com/privacy.aspx</a>.
+  Deras policy anger ingen dataskyddskontakt; når du dem inte, säg till oss så
+  försöker vi för din räkning.</li>
+</ul>
+<p>Allt som ligger på din egen enhet — inställningar, cachad prognos,
+påminnelser, widget — styr du direkt: ändra det i appen, eller radera appen för
+att förstöra det. Åtkomstsättet är appen själv.</p>
+<p>Vi gör inga personuppgifter tillgängliga för någon närstående organisation,
+för vi har ingen: Ostapenko Studio har inget moderbolag, dotterbolag eller
+närstående enhet.</p>
+
+<h3>Så gör du en begäran eller ett klagomål</h3>
+<p>Skriv till <a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a>
+eller till postadressen ovan. Berätta vad du vill och hur vi ska svara dig. Vi
+bekräftar inom 7 dagar och svarar inom 30 dagar — eller berättar varför vi
+behöver längre tid och hur mycket längre. Det kostar ingenting.</p>
+<p>Är du inte nöjd med vårt svar kan du gå vidare:</p>
+<ul>
+<li><strong>Australien</strong> — Office of the Australian Information
+  Commissioner,
+  <a href="https://www.oaic.gov.au/privacy/privacy-complaints">oaic.gov.au/privacy/privacy-complaints</a>.</li>
+<li><strong>EU/EES</strong> — din lokala tillsynsmyndighet; listan finns på
+  <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
+<li><strong>Storbritannien</strong> — Information Commissioner’s Office,
+  <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>.</li>
+<li><strong>Övriga</strong> — din nationella eller delstatliga
+  dataskyddsmyndighet. Berättar du var du är hänvisar vi dig rätt.</li>
+</ul>
+
+<h2>Barn och unga</h2>
+<p>UV Index är en app för <strong>allmänheten</strong>. Den riktar sig inte till
+barn, den är inte utformad för att tilltala barn, och vi samlar inte medvetet in
+personuppgifter från ett barn. Vår hållning om lägsta ålder är att appen är
+avsedd för personer från <strong>13 år och uppåt</strong>, och i jurisdiktioner
+som sätter en högre tröskel för samtycke — däribland Brasilien, som utöver barn
+även omfattar ungdomar, och Indien — bör den som är under den tröskeln använda
+appen endast med en förälders eller vårdnadshavares medverkan.</p>
+<p>Eftersom appen används av unga i solen håller vi oss till det här oavsett vem
+som använder den:</p>
+<ul>
+<li>Annonser är <strong>icke-personaliserade</strong> och det förekommer
+  <strong>ingen profilering</strong>.</li>
+<li>Platsen används <strong>bara</strong> för att ta fram UV-värdet och
+  ortnamnet. Den används <strong>aldrig</strong> för att rikta annonser, och
+  sparas aldrig av oss.</li>
+<li>Inget i appen är utformat för att hålla dig kvar — det finns inga svit-räknare,
+  inga puffar och inga engagemangsaviseringar.</li>
+</ul>
+<p>Appen har <strong>ingen åldersgrind</strong>. Är du förälder eller
+vårdnadshavare och tror att ett barn har lämnat personuppgifter genom appen,
+kontakta oss så hjälper vi till — även om vi, som beskrivits ovan, inte har något
+att radera, och att radera appen tar bort allt den har lagrat.</p>
+
+<h2>Var du är</h2>
+<p>Hela den här policyn gäller för alla. De här noteringarna lägger till det som
+enskilda lagar kräver.</p>
+
+<h3>Australien</h3>
+<p>Vi är ett australiskt handelsbolag. Som vi läser det är vi en <strong>small
+business operator</strong> enligt s 6D i <em>Privacy Act 1988</em> (Cth) och
+därmed inte en APP entity — men det undantaget har egna undantag, och vi lutar oss
+inte mot det som skäl att berätta mindre för dig. <strong>Den här policyn lämnas
+frivilligt på den nivå som Australian Privacy Principles kräver</strong>,
+inklusive uttalandet om utlämnande utomlands ovan, tillgång och rättelse, och
+klagomålsförfarandet. Där vi skriver ”vi följer”, läs det som ett åtagande vi
+själva har valt att göra.</p>
+
+<h3>Europeiska unionen och EES</h3>
+<p>Där GDPR gäller är vi personuppgiftsansvariga, de rättsliga grunderna är de i
+tabellen ovan, och dina rättigheter är de i art. 15–22 som räknas upp ovan,
+inklusive rätten att lämna in klagomål till tillsynsmyndigheten i det land där du
+bor, där du arbetar eller där du tror att problemet uppstod.</p>
+
+<h3>Storbritannien</h3>
+<p>Där UK GDPR gäller gäller allt i EU-noteringen, tillsynsmyndigheten är
+<strong>Information Commissioner’s Office</strong>, och du har dessutom rätt att
+<strong>klaga till oss först</strong> — förfarandet står under ”Så gör du en
+begäran eller ett klagomål” ovan — före eller i stället för att klaga till
+ICO.</p>
+
+<h3>USA</h3>
+<p>CalOPPA-upplysningarna finns i det här dokumentet: kategorierna av information
+och kategorierna av tredje parter finns i tabellen ovan; uttalandet om insamling
+över appar, Do Not Track-uttalandet och uttalandet om försäljning/delning finns
+under ”Annonseringen”; ändringsförfarandet under ”Ändringar i den här policyn”;
+och ikraftträdandedatumet högst upp.</p>
+<p><strong>Att granska och ändra din information.</strong> Vi håller ingen
+personligt identifierbar information om dig, så det finns inget för oss att
+granska eller ändra. Dina inställningar och cachade uppgifter finns bara på din
+enhet och tas bort när du raderar appen.</p>
+<p><strong>Delstatliga integritetsrättigheter.</strong> Vår hållning är att vi
+inte är en covered business eller controller enligt någon amerikansk delstatlig
+integritetslag — men vi ger dig hellre mekanismen än argumenterar om trösklar.
+Exakt geolokalisering behandlas som <strong>känsliga uppgifter</strong> enligt
+flera delstatslagar. I den här appen används platsen bara för att hämta
+UV-prognosen och ortnamnet; den grovhugges till ungefär 1,1 km innan den skickas;
+den säljs inte, används inte för riktad annonsering, används inte för profilering
+och sparas inte av oss. Bor du i en amerikansk delstat med en integritetslag och
+vill utöva en rättighet enligt den, skriv till
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a> så
+hanterar vi det på samma sätt som varje annan begäran.</p>
+
+<h3>Kanada, inklusive Quebec</h3>
+<p>Den person som ansvarar för att vi följer reglerna anges under ”Vilka vi är”,
+med postadress och telefonnummer. Den typ av personuppgifter vi håller är
+<strong>ingen</strong>; den allmänna beskrivningen av användningen är att
+koordinater passerar genom din enhet till parterna i tabellen för de ändamål som
+anges där; och vi gör inga personuppgifter tillgängliga för närstående
+organisationer, för vi har inga. Sättet att få tillgång till information som hålls
+om dig är att skriva till adressen ovan — och det ärliga svaret blir att vi inte
+håller något.</p>
+<p><strong>Quebec.</strong> Den här appen använder teknik som innehåller en
+funktion som gör att du kan <strong>lokaliseras</strong>. Den funktionen är
+avstängd som standard: den aktiveras bara när du ger platsbehörighet i din enhets
+egen behörighetsdialog, och du stänger av den genom att återkalla den
+behörigheten i enhetens inställningar — varvid appen slutar begära din position.
+Personuppgifter som behandlas genom den här appen kan <strong>lämnas ut utanför
+Quebec</strong>, till de mottagare och länder som anges under ”Att skicka
+information utomlands”.</p>
+
+<h3>Brasilien</h3>
+<p><strong>Behandlingens varaktighet.</strong> Vår behandling varar bara så länge
+en förfrågan är på väg — därefter sparar vi ingenting. Uppgifter på enheten finns
+kvar tills du ändrar dem eller raderar appen. Tredje parters lagring styrs av
+deras policyer, länkade ovan.</p>
+<p><strong>Vem som ansvarar för vilken del.</strong> Ostapenko Studio ansvarar för
+appen och för beslutet att göra var och en av dessa förfrågningar.
+<strong>Zoomash Ltd</strong> ansvarar för prognosuppslagningen.
+<strong>Google</strong> ansvarar för annonseringen och för
+ortnamnsuppslagningen på Android. <strong>Apple</strong> ansvarar för
+ortnamnsuppslagningen på iOS. <strong>Apple och Google</strong> ansvarar var för
+sig för betalningen i sin egen butik.</p>
+<p>Rättigheterna i art. 18 räknas upp i sin helhet under ”Dina rättigheter”.
+Överföringarnas internationella karaktär redovisas separat under ”Att skicka
+information utomlands”, som sig bör.</p>
+
+<h3>Japan</h3>
+<p>Namn och adress för det företag som hanterar personuppgifter finns under
+”Vilka vi är”. Ändamålet med användningen är: <strong>att hämta en UV-prognos för
+din plats och visa den för dig</strong>. Vi håller inga lagrade personuppgifter.
+Förfarandet för att göra en begäran om personuppgifter finns under ”Så gör du en
+begäran eller ett klagomål”. Lämnandet av koordinater till en tredje part i ett
+främmande land — Zoomash Ltd i Storbritannien, och Apple eller Google för
+ortnamnsuppslagningen — beskrivs under ”Att skicka information utomlands”,
+tillsammans med de länder som berörs; de skyddsåtgärder dessa mottagare vidtar är
+de som anges i deras egna publicerade integritetspolicyer, länkade i tabellen.</p>
+
+
+<h3>Överallt annars</h3>
+<p>Den här listan är inte uttömmande och är inte tänkt att vara det. Är du någon
+annanstans än de platser som nämns ovan kan du ändå ha rättigheter enligt din
+lokala dataskyddslag. Hör av dig så hjälper vi dig att utöva dem — vilket,
+eftersom vi inte håller något, oftast handlar om att peka dig mot rätt part och
+rätt myndighet, och det gör vi gärna.</p>
+
+<h2>Tredje parter som får data genom den här appen</h2>
+<p>De enda tredje parter som får data genom den här appen är de som anges i
+tabellen ovan: <strong>Zoomash Ltd</strong> (WeatherAPI.com),
+<strong>Google</strong> och <strong>Apple</strong>. Var och en av dem är skyldig
+att ge dessa uppgifter samma eller likvärdigt skydd som anges i den här policyn,
+och var och en publicerar sin egen integritetspolicy som redogör för hur de
+hanterar dem. Ingen av dem får använda data som mottagits genom den här appen för
+något annat ändamål än det som anges i tabellen. Det finns inga analys-SDK:er,
+ingen kraschrapportering, inga attributions-SDK:er och ingen annan tredjepartskod
+i appen som tar emot dina uppgifter.</p>
+
+<h2>Ändringar i den här policyn</h2>
+<p>Om den här policyn ändras publiceras den uppdaterade versionen på den här
+adressen — på samma sätt som den här versionen publicerades — med ett nytt
+ikraftträdandedatum och en kort notering om vad som ändrats. Väsentliga ändringar
+noteras även i appens versionsinformation.</p>
+<p>Om en ändring skulle minska det skydd den här policyn ger dig väsentligt, eller
+använda information på ett sätt som den här policyn inte tillåter i dag,
+<strong>frågar vi dig först om ditt medgivande</strong> i stället för att göra
+ändringen i tysthet. Att fortsätta använda appen efter en ändring som inte
+minskar ditt skydd innebär att den uppdaterade policyn gäller.</p>
+
+<h2>Språk</h2>
+<p>Den här engelska texten är den kanoniska versionen av den här policyn.
+Översättningar tillhandahålls för bekvämlighets skull. Där en översättning
+avviker från den här engelska texten gäller den engelska texten, i den
+utsträckning lokal lag tillåter. Hittar du en skillnad mellan versionerna, säg
+till oss så rättar vi den.</p>
+<p>Tillgängliga versioner: <a href="../privacy.html">English</a> (kanonisk) ·
+Svenska (den här sidan).</p>
+
+<h2>Kontakt</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+
+</body>
+</html>

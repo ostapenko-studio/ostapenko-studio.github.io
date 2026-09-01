@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany osobních údajů — UV Index</title>
+<style>
+  body {
+    background: #F7F5F0;
+    color: #2B2A26;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: 0.4rem; }
+  .meta { color: #726E66; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #B23A6B; }
+  .scroll { overflow-x: auto; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.88rem; }
+  th, td { border-bottom: 1px solid #DFDACF; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; color: #4A473F; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .draft { background: #FFE9A8; padding: 0 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Zásady ochrany osobních údajů</h1>
+<p class="meta">UV Index, od Ostapenko Studio · Účinnost od 26. srpna 2026 · Poslední aktualizace 26. srpna 2026</p>
+
+<h2>Krátká verze</h2>
+<p>UV Index ukazuje aktuální a předpovídaný UV index pro místo, kde jste. Byl
+postaven tak, aby shromažďoval co nejméně údajů.</p>
+<ul>
+<li>Nejsou tu žádné účty, žádná registrace, žádná analytika, žádné hlášení pádů a
+  neprovozujeme žádné servery. <strong>Nemáme o vás vůbec žádné osobní
+  údaje.</strong></li>
+<li>Ze zařízení odcházejí tři věci a žádná z nich k nám nedorazí: vaše
+  <strong>přibližné souřadnice</strong> jdou poskytovateli počasí, aby se
+  stáhla předpověď, a operačnímu systému telefonu, aby se z nich stal název
+  obce; a v bezplatné verzi jdou <strong>údaje o zařízení a o reklamě</strong>
+  společnosti Google, aby se zobrazil reklamní banner.</li>
+<li>Vaše souřadnice se před odesláním kamkoli záměrně <strong>zaokrouhlují na dvě
+  desetinná místa (asi 1,1 km)</strong>. UV se mění v řádu desítek kilometrů,
+  takže přesnost navíc není k ničemu a neodesíláme ji.</li>
+<li>Reklama se vyžaduje <strong>nepersonalizovaná</strong>. V regionech, kde je
+  potřeba souhlas, běží jen tehdy, pokud souhlasíte prostřednictvím výzvy v
+  aplikaci, a kdykoli to můžete změnit v <strong>Nastavení → Možnosti
+  soukromí</strong>. Zakoupení <strong>Odstranit reklamy</strong> zastaví
+  reklamní požadavky úplně.</li>
+<li>Vaše nastavení, uložená předpověď, připomenutí i widget na domovské obrazovce
+  zůstávají ve vašem zařízení. Smazáním aplikace se smažou.</li>
+</ul>
+<p>Zbytek této stránky to celé rozepisuje podrobně: kdo co dostává, na jakém
+právním základě, do jakých zemí to jde a jaká máte práva.</p>
+
+<h2>Kdo jsme</h2>
+<p><strong>Ostapenko Studio</strong>, obchodní název osobní společnosti
+<strong>I Ostapenko &amp; Y Ostapenko</strong> registrované v Austrálii,
+<strong>ABN 18 901 484 459</strong>. Jsme správcem osobních údajů popsaných níže
+— tedy rozhodujeme, proč se shromažďují a kam jdou — přestože k nám žádný z nich
+nedorazí.</p>
+<p>E-mail (včetně dotazů k ochraně údajů):
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>Osobní údaje zpracováváme v <strong>Austrálii</strong>. Nejmenovali jsme
+pověřence pro ochranu osobních údajů (Data Protection Officer): jsme dvoučlenná
+osobní společnost, nejsme orgán veřejné moci a naše hlavní činnosti nezahrnují
+rozsáhlé sledování osob ani rozsáhlé zpracování zvláštních kategorií údajů.</p>
+
+<h2>Co odchází z vašeho zařízení a proč</h2>
+<p>Tato tabulka je úplný obrázek. Pokud v ní nějaký tok není, neprobíhá.</p>
+
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Co</th><th>Proč</th><th>Právní základ</th><th>Kdo to dostává</th><th>Kam to jde</th><th>Jak dlouho</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>Přibližné souřadnice, zaokrouhlené na 2 desetinná místa (~1,1 km)</td>
+  <td>Aby se stáhla předpověď UV pro vaši oblast</td>
+  <td>Plnění služby, kterou požadujete</td>
+  <td><a href="https://www.weatherapi.com/">WeatherAPI.com</a>, provozuje Zoomash Ltd</td>
+  <td>Spojené království; vlastní zásady společnosti Zoomash uvádějí možné další předání do Spojených států, Ruska, Japonska, Číny a Indie</td>
+  <td>My si neuchováváme nic. Zoomash pouze uvádí, že údaje „shall not be kept for longer than is necessary“ (nebudou uchovávány déle, než je nezbytné)</td>
+</tr>
+<tr>
+  <td>Přibližné souřadnice</td>
+  <td>Aby se ze souřadnic stal název obce nebo čtvrti zobrazený na displeji</td>
+  <td>Plnění služby, kterou požadujete</td>
+  <td>Dodavatel operačního systému vašeho zařízení — <a href="https://www.apple.com/legal/privacy/">Apple</a> na iOS, <a href="https://policies.google.com/privacy">Google</a> na Androidu</td>
+  <td>Spojené státy a další země, kde Apple a Google působí</td>
+  <td>My si neuchováváme nic. Viz zásady společností Apple a Google</td>
+</tr>
+<tr>
+  <td>Údaje o zařízení, IP adresa, reklamní identifikátor</td>
+  <td>Aby se zobrazil a změřil reklamní banner v bezplatné verzi</td>
+  <td><strong>Souhlas</strong>, udělený prostřednictvím výzvy Google v aplikaci tam, kde se zobrazuje</td>
+  <td><a href="https://policies.google.com/privacy">Google AdMob</a></td>
+  <td>Spojené státy a další země, kde Google působí</td>
+  <td>My si neuchováváme nic. Viz zásady společnosti Google</td>
+</tr>
+<tr>
+  <td>Váš nákup „Odstranit reklamy“</td>
+  <td>Aby se přijala platba a nákup se obnovil na vašich dalších zařízeních</td>
+  <td>Plnění kupní smlouvy</td>
+  <td>Apple (App Store) nebo Google (Google Play) jako prodejce (merchant of record)</td>
+  <td>Spojené státy a další země, kde Apple a Google působí</td>
+  <td>Stanoví Apple nebo Google. Vaše jméno, platební ani fakturační údaje nikdy nevidíme</td>
+</tr>
+<tr>
+  <td>Nastavení, uložená předpověď, denní připomenutí, widget na domovské obrazovce, časové pásmo</td>
+  <td>Aby se aplikace otevřela okamžitě a fungovala offline</td>
+  <td>Nepředává se — k žádnému zpřístupnění nedochází</td>
+  <td><strong>Nikdo. Tohle vaše zařízení nikdy neopustí.</strong></td>
+  <td>Pouze vaše zařízení</td>
+  <td>Dokud to nezměníte nebo aplikaci nesmažete. Uložená předpověď se při každé aktualizaci přepíše</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>V pojmech CalOPPA jsou výše uvedené kategorie kategoriemi osobně
+identifikovatelných informací shromažďovaných prostřednictvím aplikace a
+kategorie třetích stran, s nimiž mohou být sdíleny, jsou:
+<strong>poskytovatel meteorologických dat</strong>, <strong>poskytovatel
+reklamy</strong>, <strong>poskytovatelé operačních systémů a platforem</strong> a
+<strong>zpracovatelé plateb</strong>.</p>
+
+<h3>Poloha, řečeno srozumitelně</h3>
+<p>Aplikace si od operačního systému vyžádá vaši <strong>přibližnou (hrubou)</strong>
+polohu — o přesné určení nežádá nikdy. Než se vaše souřadnice kamkoli odešlou,
+zaokrouhlí se na dvě desetinná místa, zhruba 1,1 km. To zaokrouhlení je záměrná
+minimalizace údajů: síť předpovědi UV je mnohem hrubší než kilometr, takže číslice
+navíc by třetí straně řekly, kde jste, aniž by aplikaci řekly cokoli, co
+potřebuje.</p>
+<p>Poloha je <strong>vypnutá, dokud ji nezapnete.</strong> Aplikace nemůže vaši
+polohu číst, dokud ve výzvě operačního systému neudělíte oprávnění k poloze, a
+toto oprávnění můžete kdykoli odebrat v nastavení zařízení. Poskytnutí polohy
+není zákonná povinnost a ani my ho nevyžadujeme — pokud ho ale odmítnete,
+aplikace nemůže ukázat UV index tam, kde jste.</p>
+<p>Aplikace nesleduje váš pohyb, neběží na pozadí a nevytváří žádnou historii
+míst, kde jste se pohybovali.</p>
+
+<h3>Oprava k názvu obce</h3>
+<p>Dřívější verze těchto zásad uváděla, že se název obce nebo čtvrti určuje „ve
+vašem zařízení“. To bylo špatně a opravili jsme to. Aplikace požádá operační
+systém, aby ze souřadnic udělal název místa, a na iOS i na Androidu se tento
+dotaz obsluhuje po síti: <strong>vaše souřadnice se odešlou společnosti Apple
+nebo Google</strong> a vrátí se název místa. Raději to řekneme na rovinu, než
+abychom nechali stát uklidňující větu, kterou kód nepodporuje.</p>
+
+<h3>Co nikdy nedostaneme</h3>
+<p><strong>My</strong> — Ostapenko Studio — nikdy nedostáváme, neukládáme ani
+nelogujeme vaši polohu, identifikátory vašeho zařízení ani vaši IP adresu. To je
+tvrzení o nás, ne o třetích stranách uvedených v tabulce, které dostávají to, co
+tabulka uvádí, přímo z vašeho zařízení.</p>
+
+<h2>Reklama a souhlas, který za ní stojí</h2>
+<p>Bezplatná verze zobrazuje jediný reklamní banner doručovaný službou Google
+AdMob. Reklama se vyžaduje <strong>nepersonalizovaná</strong>: nežádáme reklamu
+podle vašich zájmů ani podle profilu o vás a nepoužíváme vaši polohu k cílení
+reklamy.</p>
+<p>Už samotné doručení nepersonalizované reklamy znamená, že reklamní SDK
+společnosti Google ukládá nebo čte informace ve vašem zařízení a dostává údaje o
+zařízení, vaši IP adresu a reklamní identifikátor. Protože to zahrnuje ukládání
+informací ve vašem zařízení a přístup k nim, právním základem je
+<strong>souhlas</strong> — nikoli „oprávněný zájem“ a ani to, že je reklama
+nepersonalizovaná. Tento souhlas získáváme prostřednictvím výzvy <strong>Google
+User Messaging Platform</strong> v aplikaci, která se zobrazuje uživatelům v
+EHP, ve Spojeném království a ve Švýcarsku.</p>
+<p>Google také uvádí, že pro reklamní účely může odhadnout vaši obecnou polohu z
+vaší IP adresy. Tento odhad je jeho vlastní, je oddělený od souřadnic popsaných
+výše a probíhá bez ohledu na to, zda jste aplikaci udělili oprávnění k
+poloze.</p>
+<p><strong>Máte to pod kontrolou:</strong></p>
+<ul>
+<li>Souhlas můžete kdykoli změnit nebo odvolat v <strong>Nastavení → Možnosti
+  soukromí</strong>. Odvolání se nedotýká zákonnosti toho, co bylo učiněno v
+  době platnosti souhlasu, a vaše odvolání se předává společnosti Google.</li>
+<li>Uplatní se navíc i reklamní ovládací prvky samotného zařízení (resetování
+  nebo omezení reklamního identifikátoru).</li>
+<li>Zakoupení <strong>Odstranit reklamy</strong> zastaví reklamní požadavky
+  úplně — reklamní SDK už žádné požadavky neposílá a shromažďování ze strany
+  Google prostřednictvím této aplikace tím končí.</li>
+</ul>
+<p>Když tuto aplikaci používáte, <strong>poskytovatel reklamy může shromažďovat
+informace o vaší aktivitě v čase a napříč různými aplikacemi a službami.</strong>
+My to sami neděláme a nedostáváme z toho nic kromě souhrnných výnosů.</p>
+
+<h3>Prodáváme nebo sdílíme vaše údaje?</h3>
+<p>Řečeno jako fakt, ne jako právní závěr: nedostáváme o vás žádné osobní údaje,
+takže nemáme co prodávat. Reklama se vyžaduje nepersonalizovaná. Poskytovatel
+reklamy dostává údaje o zařízení, vaši IP adresu a reklamní identifikátor
+<strong>přímo z vašeho zařízení</strong>, na základě souhlasu popsaného výše. My
+dostáváme jen souhrnné výnosy. <strong>Nedostáváme peníze výměnou za předání
+informací o vás — dostáváme příjmy z reklamy.</strong></p>
+
+<h3>Do Not Track</h3>
+<p>Aplikace není webový prohlížeč a nedostává žádný prohlížečový signál „Do Not
+Track“, takže na žádný takový signál nemá jak reagovat. Nesledujeme vás napříč
+jinými aplikacemi ani weby. Ovládací prvky, které tu skutečně fungují, jsou ty
+uvedené výše: výzva k souhlasu, Nastavení → Možnosti soukromí, reklamní nastavení
+vašeho zařízení a Odstranit reklamy.</p>
+
+<h2>Nákupy</h2>
+<p>Jednorázový nákup Odstranit reklamy zpracovává celý App Store společnosti
+Apple nebo Google Play, které jsou prodejcem (merchant of record). Vaše jméno,
+platební ani fakturační údaje nikdy nevidíme. Z obchodu dostáváme jen potvrzení,
+že nákup existuje, a právě to aplikaci umožňuje skrýt banner a obnovit váš nákup
+na vašich dalších zařízeních.</p>
+
+<h2>Oznámení a widget</h2>
+<p>Volitelné denní připomenutí UV plánuje lokálně ve vašem zařízení operační
+systém. Žádná data oznámení vaše zařízení neopouštějí a nemáme žádnou možnost
+posílat vám push zprávy. Widget na domovské obrazovce se vykresluje z předpovědi,
+kterou už máte uloženou v zařízení.</p>
+
+<h2>Jak dlouho se co uchovává a jak se to ničí</h2>
+<ul>
+<li><strong>My neuchováváme nic.</strong> Na naší straně není žádný server, žádná
+  databáze ani žádný log, takže nemáme co uchovávat, a naše zpracování končí, když
+  aplikaci zavřete.</li>
+<li><strong>Ve vašem zařízení:</strong> vaše nastavení zůstává, dokud ho
+  nezměníte; uložená předpověď se přepíše při každé aktualizaci aplikace. Obojí
+  se zničí, spolu se vším ostatním, co aplikace ukládá, když <strong>aplikaci
+  smažete</strong> — což je mechanismus výmazu pro všechna data držená aplikací a
+  je zcela ve vašich rukou.</li>
+<li><strong>Třetí strany</strong> uchovávají to, co uchovávají podle svých
+  vlastních zásad, odkazovaných v tabulce výše.</li>
+</ul>
+
+<h2>Předávání údajů do zahraničí</h2>
+<p>Tohle je samostatné prohlášení, a to záměrně: používání této aplikace
+<strong>nutně znamená odesílání údajů mimo vaši zemi</strong>.</p>
+<p>My jsme v Austrálii. Příjemci a cíle jsou:</p>
+<ul>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> — <strong>Spojené
+  království</strong>. Jeho zveřejněné zásady ochrany osobních údajů uvádějí, že
+  informace, které shromažďuje, mohou být dále předány do <strong>Spojených
+  států, Ruska, Japonska, Číny a Indie</strong>. Opíráme se o nezbytnost předání
+  pro službu, kterou požadujete, a o zaokrouhlení souřadnic na ~1,1 km jako
+  minimalizační opatření. Zoomash nezveřejňuje žádnou smlouvu o zpracování údajů
+  ani žádné standardní smluvní doložky; říkáme to raději, než abychom naznačovali
+  záruku, kterou nemáme.</li>
+<li><strong>Apple</strong> a <strong>Google</strong> (vyhledání názvu místa,
+  reklama a účtování) — <strong>Spojené státy</strong> a další země, kde působí.
+  Obě společnosti zveřejňují záruky pro předávání ve svých vlastních zásadách,
+  odkazovaných výše; u reklamy se navíc opíráme o váš souhlas.</li>
+</ul>
+<p>Pokud byste chtěli kopii záruk uplatněných u kteréhokoli z těchto předání nebo
+o nich více podrobností, napište nám a poskytneme, co máme.</p>
+
+<h2>Bezpečnost</h2>
+<p>Naše bezpečnostní opatření jsou skromná, protože skromná je i naše
+exponovanost, a raději je popíšeme, než abychom naznačovali víc. Každý požadavek,
+který aplikace odešle, jde přes HTTPS. Neprovozujeme žádný server a nedržíme
+žádné osobní údaje, takže na naší straně není žádné úložiště uživatelských dat,
+do kterého by se dalo proniknout. Nejsou tu žádné účty a žádná hesla. Data ve
+vašem zařízení chrání ochrany operačního systému vašeho zařízení.</p>
+
+<h2>Automatizované rozhodování</h2>
+<p>Neprobíhá žádné automatizované rozhodování s právními účinky nebo s obdobně
+významnými účinky pro vás a žádné profilování. Aplikace z předpovězeného čísla
+spočítá UV pásmo a pokud máte nastavený typ pleti, toto pásmo posune — to je
+aritmetika zobrazená na displeji, ne rozhodnutí o vás.</p>
+
+<h2>Vaše práva</h2>
+<p>Podle toho, kde žijete, máte některá nebo všechna z následujících práv k
+osobním údajům o vás:</p>
+<ul>
+<li><strong>Přístup</strong> — dozvědět se, zda se osobní údaje o vás
+  zpracovávají, a získat kopii.</li>
+<li><strong>Oprava</strong> — nechat opravit nesprávné údaje.</li>
+<li><strong>Výmaz</strong> — nechat údaje smazat.</li>
+<li><strong>Omezení</strong> — nechat zpracování pozastavit.</li>
+<li><strong>Námitka</strong> — vznést proti zpracování námitku.</li>
+<li><strong>Přenositelnost</strong> — obdržet údaje v přenositelné podobě.</li>
+<li><strong>Odvolání souhlasu</strong> — kdykoli, aniž by to mělo vliv na to, co
+  bylo zákonné před odvoláním.</li>
+<li><strong>Stížnost</strong> — stěžovat si nám a úřadu pro ochranu osobních
+  údajů. Viz níže.</li>
+</ul>
+<p>Tam, kde se uplatní LGPD, to výslovně zahrnuje práva podle čl. 18: potvrzení
+zpracování; přístup; opravu; anonymizaci, blokování nebo výmaz nepotřebných či
+nadměrných údajů nebo údajů zpracovaných protiprávně; přenositelnost; výmaz
+údajů zpracovaných na základě souhlasu; <strong>informaci o veřejných a
+soukromých subjektech, s nimiž jsme vaše údaje sdíleli</strong> — což je tabulka
+výše; informaci o možnosti souhlas odepřít a o důsledcích odepření; a odvolání
+souhlasu.</p>
+
+<h3>Co pro vás skutečně můžeme udělat — a co ne</h3>
+<p>Tohle je ta upřímná část. Protože na naší straně nejsou žádné účty ani žádné
+záznamy, <strong>nemůžeme vás identifikovat</strong> a nemáme nic, co bychom vám
+dali, opravili nebo vymazali. Nesmíme od vás shromažďovat další informace jen
+proto, abychom se vás pokusili najít v datech, která nemáme. U většiny žádostí je
+tedy to nejužitečnější, co můžeme udělat, odkázat vás na stranu, která něco
+skutečně drží:</p>
+<ul>
+<li><strong>Google</strong> (reklama a vyhledání názvu místa na Androidu) —
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>,
+  a nastavení soukromí vašeho účtu Google.</li>
+<li><strong>Apple</strong> (vyhledání názvu místa na iOS a nákupy v App Store) —
+  <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>,
+  a <a href="https://privacy.apple.com">privacy.apple.com</a>.</li>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> —
+  <a href="https://www.weatherapi.com/privacy.aspx">weatherapi.com/privacy.aspx</a>.
+  Jeho zásady neuvádějí žádný kontakt pro ochranu údajů; pokud se k nim
+  nedovoláte, dejte nám vědět a zkusíme to za vás.</li>
+</ul>
+<p>U všeho, co je ve vašem vlastním zařízení — nastavení, uložená předpověď,
+připomenutí, widget — máte přímou kontrolu: změňte to v aplikaci, nebo aplikaci
+smažte, a tím to zničíte. Prostředkem přístupu je samotná aplikace.</p>
+<p>Žádné osobní údaje nezpřístupňujeme žádné propojené organizaci, protože žádnou
+nemáme: Ostapenko Studio nemá mateřskou ani dceřinou společnost ani přidružený
+subjekt.</p>
+
+<h3>Jak podat žádost nebo stížnost</h3>
+<p>Napište na <a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a>
+nebo na poštovní adresu uvedenou výše. Sdělte nám, co byste chtěli a jak vám
+odpovědět. Přijetí potvrdíme do 7 dnů a odpovíme do 30 dnů — nebo vám sdělíme,
+proč potřebujeme déle a o kolik. Není to zpoplatněno.</p>
+<p>Pokud s naší odpovědí nebudete spokojeni, můžete to eskalovat:</p>
+<ul>
+<li><strong>Austrálie</strong> — Office of the Australian Information
+  Commissioner,
+  <a href="https://www.oaic.gov.au/privacy/privacy-complaints">oaic.gov.au/privacy/privacy-complaints</a>.</li>
+<li><strong>EU/EHP</strong> — váš místní dozorový úřad; seznam je na
+  <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
+<li><strong>Spojené království</strong> — Information Commissioner’s Office,
+  <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>.</li>
+<li><strong>Jinde</strong> — váš národní nebo státní úřad pro ochranu osobních
+  údajů. Pokud nám řeknete, kde jste, nasměrujeme vás.</li>
+</ul>
+
+<h2>Děti a mladí lidé</h2>
+<p>UV Index je aplikace pro <strong>širokou veřejnost</strong>. Není určena
+dětem, není navržena tak, aby oslovovala děti, a vědomě neshromažďujeme osobní
+údaje od dítěte. Naše stanovisko k minimálnímu věku je, že aplikace je určena
+lidem od <strong>13 let</strong>, a v jurisdikcích, které stanoví vyšší hranici
+pro souhlas — včetně Brazílie, která vedle dětí zahrnuje i dospívající, a Indie —
+by ten, kdo je pod touto hranicí, měl aplikaci používat jen se zapojením rodiče
+nebo opatrovníka.</p>
+<p>Protože aplikaci používají mladí lidé na slunci, držíme se tohoto bez ohledu
+na to, kdo ji používá:</p>
+<ul>
+<li>Reklama je <strong>nepersonalizovaná</strong> a neprobíhá <strong>žádné
+  profilování</strong>.</li>
+<li>Poloha se používá <strong>pouze</strong> k tomu, aby vznikla hodnota UV a
+  název místa. <strong>Nikdy</strong> se nepoužívá k cílení reklamy a nikdy ji
+  neuchováváme.</li>
+<li>Nic v aplikaci není navrženo tak, aby vás u ní drželo — nejsou tu žádné
+  série, žádné pobídky a žádná oznámení pro udržení pozornosti.</li>
+</ul>
+<p>Aplikace <strong>nemá věkovou bránu</strong>. Pokud jste rodič nebo opatrovník
+a domníváte se, že dítě poskytlo prostřednictvím aplikace osobní údaje, ozvěte se
+nám a pomůžeme — i když, jak je uvedeno výše, nemáme co mazat a smazání aplikace
+odstraní vše, co uložila.</p>
+
+<h2>Kde jste</h2>
+<p>Celé tyto zásady platí pro každého. Tyto poznámky doplňují, co vyžadují
+konkrétní zákony.</p>
+
+<h3>Austrálie</h3>
+<p>Jsme australská osobní společnost. Podle našeho výkladu jsme <strong>small
+business operator</strong> podle s 6D zákona <em>Privacy Act 1988</em> (Cth), a
+tedy nejsme APP entity — ta výjimka má ale své vlastní výjimky a neopíráme se o
+ni jako o důvod říci vám méně. <strong>Tyto zásady poskytujeme dobrovolně na
+úrovni, kterou vyžadují Australian Privacy Principles</strong>, včetně
+prohlášení o zahraničním zpřístupnění výše, přístupu a opravy a postupu při
+stížnosti. Kde říkáme „dodržujeme“, čtěte to jako závazek, který jsme se
+rozhodli přijmout.</p>
+
+<h3>Evropská unie a EHP</h3>
+<p>Tam, kde se uplatní GDPR, jsme správcem, právní základy jsou ty z tabulky výše
+a vaše práva jsou ta z čl. 15–22 uvedená výše, včetně práva podat stížnost u
+dozorového úřadu v zemi, kde žijete, kde pracujete nebo kde se podle vás problém
+stal.</p>
+
+<h3>Spojené království</h3>
+<p>Tam, kde se uplatní UK GDPR, platí vše z poznámky k EU, dozorovým úřadem je
+<strong>Information Commissioner’s Office</strong> a navíc máte právo
+<strong>stěžovat si nejprve nám</strong> — postup je uveden výše v části „Jak
+podat žádost nebo stížnost“ — před stížností u ICO nebo místo ní.</p>
+
+<h3>Spojené státy</h3>
+<p>Informace vyžadované CalOPPA jsou v tomto dokumentu: kategorie informací a
+kategorie třetích stran jsou v tabulce výše; prohlášení o shromažďování napříč
+aplikacemi, prohlášení Do Not Track a prohlášení o prodeji/sdílení jsou v části
+„Reklama“; postup změn je v části „Změny těchto zásad“; a datum účinnosti je
+nahoře.</p>
+<p><strong>Nahlížení do vašich údajů a jejich změna.</strong> Nedržíme o vás
+žádné osobně identifikovatelné informace, takže není co nahlížet ani měnit. Vaše
+nastavení a uložená data žijí jen ve vašem zařízení a odstraní se, když aplikaci
+smažete.</p>
+<p><strong>Práva na soukromí podle práva jednotlivých států.</strong> Naše
+stanovisko je, že nejsme covered business ani controller podle žádného
+amerického státního zákona o soukromí — raději vám ale dáme mechanismus, než
+abychom se přeli o prahové hodnoty. Přesná geolokace se podle několika státních
+zákonů považuje za <strong>citlivý údaj</strong>. V této aplikaci se poloha
+používá jen k získání předpovědi UV a názvu místa; před odesláním se zhrubne na
+zhruba 1,1 km; neprodává se, nepoužívá se k cílené reklamě, nepoužívá se k
+profilování a my ji neuchováváme. Pokud žijete v americkém státě se zákonem o
+soukromí a chcete uplatnit právo, které z něj plyne, napište na
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a> a
+vyřídíme to stejně jako kteroukoli jinou žádost.</p>
+
+<h3>Kanada včetně Quebeku</h3>
+<p>Osoba odpovědná za náš soulad je uvedena v části „Kdo jsme“, s poštovní
+adresou a telefonním číslem. Typ osobních údajů, které držíme, je
+<strong>žádný</strong>; obecný popis jejich použití je, že souřadnice procházejí
+z vašeho zařízení ke stranám uvedeným v tabulce pro tam uvedené účely; a žádné
+osobní údaje nezpřístupňujeme propojeným organizacím, protože žádné nemáme.
+Prostředkem k získání přístupu k informacím drženým o vás je napsat na výše
+uvedenou adresu — a upřímnou odpovědí bude, že nedržíme nic.</p>
+<p><strong>Quebec.</strong> Tato aplikace používá technologii, která zahrnuje
+funkci umožňující vás <strong>lokalizovat</strong>. Tato funkce je ve výchozím
+stavu deaktivovaná: aktivuje se jen tehdy, když udělíte oprávnění k poloze ve
+výzvě k oprávněním samotného zařízení, a deaktivujete ji odebráním tohoto
+oprávnění v nastavení zařízení — v tu chvíli aplikace přestane o vaši polohu
+žádat. Osobní údaje zpracovávané prostřednictvím této aplikace mohou být
+<strong>sděleny mimo Quebec</strong>, příjemcům a do zemí uvedených v části
+„Předávání údajů do zahraničí“.</p>
+
+<h3>Brazílie</h3>
+<p><strong>Doba zpracování.</strong> Naše zpracování trvá jen po dobu, kdy je
+požadavek na cestě — poté si neuchováváme nic. Data v zařízení trvají, dokud je
+nezměníte nebo aplikaci nesmažete. Uchovávání třetími stranami se řídí jejich
+zásadami, odkazovanými výše.</p>
+<p><strong>Kdo odpovídá za kterou část.</strong> Ostapenko Studio odpovídá za
+aplikaci a za rozhodnutí odeslat každý z těchto požadavků. <strong>Zoomash
+Ltd</strong> odpovídá za vyhledání předpovědi. <strong>Google</strong> odpovídá
+za reklamu a za vyhledání názvu místa na Androidu. <strong>Apple</strong>
+odpovídá za vyhledání názvu místa na iOS. <strong>Apple a Google</strong>
+odpovídají každý za účtování ve svém vlastním obchodě.</p>
+<p>Práva podle čl. 18 jsou v úplnosti uvedena v části „Vaše práva“. Mezinárodní
+povaha předávání je vyložena samostatně v části „Předávání údajů do zahraničí“,
+jak tomu má být.</p>
+
+<h3>Japonsko</h3>
+<p>Název a adresa podniku, který nakládá s osobními údaji, jsou v části „Kdo
+jsme“. Účel použití je: <strong>získat předpověď UV pro vaši polohu a zobrazit
+vám ji</strong>. Nedržíme žádné uchovávané osobní údaje. Postup pro podání
+žádosti o osobní údaje je v části „Jak podat žádost nebo stížnost“. Poskytnutí
+souřadnic třetí straně v cizí zemi — Zoomash Ltd ve Spojeném království a Apple
+nebo Google pro vyhledání názvu místa — je popsáno v části „Předávání údajů do
+zahraničí“ spolu s dotčenými zeměmi; ochranná opatření, která tito příjemci
+přijímají, jsou ta uvedená v jejich vlastních zveřejněných zásadách ochrany
+osobních údajů, odkazovaných v tabulce.</p>
+
+
+<h3>Všude jinde</h3>
+<p>Tento seznam není vyčerpávající a ani to není jeho záměr. Pokud jste někde,
+kdo výše uveden není, můžete přesto mít práva podle svého místního práva na
+ochranu údajů. Ozvěte se nám a pomůžeme vám je uplatnit — což, když nic nedržíme,
+obvykle znamená nasměrovat vás na správnou stranu a na správný úřad, a děláme to
+rádi.</p>
+
+<h2>Třetí strany, které dostávají údaje prostřednictvím této aplikace</h2>
+<p>Jedinými třetími stranami, které dostávají údaje prostřednictvím této
+aplikace, jsou ty uvedené v tabulce výše: <strong>Zoomash Ltd</strong>
+(WeatherAPI.com), <strong>Google</strong> a <strong>Apple</strong>. Každá z nich
+je povinna poskytovat těmto údajům stejnou nebo rovnocennou ochranu, jaká je
+uvedena v těchto zásadách, a každá zveřejňuje své vlastní zásady ochrany osobních
+údajů popisující, jak s nimi nakládá. Žádná z nich nesmí použít údaje získané
+prostřednictvím této aplikace k jinému účelu než k tomu uvedenému v tabulce. V
+aplikaci nejsou žádné analytické SDK, žádné hlášení pádů, žádné atribuční SDK ani
+žádný jiný kód třetích stran, který by vaše údaje dostával.</p>
+
+<h2>Změny těchto zásad</h2>
+<p>Pokud se tyto zásady změní, aktualizovaná verze se zveřejní na této adrese —
+stejným způsobem, jakým byla zveřejněna tato verze — s novým datem účinnosti a
+krátkou poznámkou o tom, co se změnilo. Podstatné změny budou uvedeny i v
+poznámkách k vydání aplikace.</p>
+<p>Pokud by změna podstatně snížila ochranu, kterou vám tyto zásady dávají, nebo
+by údaje používala způsobem, který tyto zásady nyní neumožňují, <strong>požádáme
+nejprve o váš souhlas</strong>, místo abychom změnu provedli potichu. Pokud
+aplikaci používáte i po změně, která vaši ochranu nesnižuje, platí aktualizované
+zásady.</p>
+
+<h2>Jazyky</h2>
+<p>Tento anglický text je kanonickou verzí těchto zásad. Překlady se poskytují
+pro pohodlí. Pokud se překlad od tohoto anglického textu liší, rozhoduje anglický
+text, v rozsahu, v jakém to místní právo umožňuje. Pokud najdete mezi verzemi
+rozpor, dejte nám vědět a opravíme to.</p>
+<p>Dostupné verze: <a href="../privacy.html">English</a> (kanonická) ·
+Čeština (tato stránka).</p>
+
+<h2>Kontakt</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adatvédelmi tájékoztató — UV Index</title>
+<style>
+  body {
+    background: #F7F5F0;
+    color: #2B2A26;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: 0.4rem; }
+  .meta { color: #726E66; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #B23A6B; }
+  .scroll { overflow-x: auto; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.88rem; }
+  th, td { border-bottom: 1px solid #DFDACF; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; color: #4A473F; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .draft { background: #FFE9A8; padding: 0 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Adatvédelmi tájékoztató</h1>
+<p class="meta">UV Index, az Ostapenko Studiótól · Hatályos 2026. augusztus 26. · Utolsó frissítés: 2026. augusztus 26.</p>
+
+<h2>A rövid változat</h2>
+<p>Az UV Index az aktuális és az előre jelzett UV-indexet mutatja arra a helyre,
+ahol éppen tartózkodik. Úgy készült, hogy a lehető legkevesebb adatot gyűjtse.</p>
+<ul>
+<li>Nincsenek fiókok, nincs regisztráció, nincs analitika, nincs
+  összeomlásjelentés, és nem üzemeltetünk szervert. <strong>Egyáltalán nincs
+  személyes adatunk Önről.</strong></li>
+<li>Három dolog hagyja el a készüléket, és egyik sem jut el hozzánk: a
+  <strong>hozzávetőleges koordináták</strong> az időjárás-szolgáltatóhoz kerülnek
+  az előrejelzésért, és a telefon operációs rendszeréhez, hogy településnév
+  legyen belőlük; az ingyenes változatban pedig <strong>eszköz- és
+  hirdetési adatok</strong> kerülnek a Google-höz egy bannerhirdetés
+  megjelenítéséhez.</li>
+<li>A koordinátákat szándékosan <strong>két tizedesjegyre kerekítjük (mintegy
+  1,1 km)</strong>, mielőtt bárhová elküldenénk. Az UV több tíz kilométeres
+  léptékben változik, így a többletpontosság semmit nem ér, és nem is küldjük
+  el.</li>
+<li>A hirdetéseket <strong>nem személyre szabottan</strong> kérjük le. Azokban a
+  régiókban, ahol hozzájárulás szükséges, csak akkor futnak, ha az alkalmazáson
+  belüli kérdésre igent mond, és ezt bármikor meggondolhatja a
+  <strong>Beállítások → Adatvédelmi beállítások</strong> pontban. A
+  <strong>Reklámok eltávolítása</strong> megvásárlása teljesen leállítja a
+  hirdetéskéréseket.</li>
+<li>A beállítások, a gyorsítótárazott előrejelzés, az emlékeztető és a
+  kezdőképernyős widget a készüléken marad. Az alkalmazás törlésével ezek is
+  törlődnek.</li>
+</ul>
+<p>Az oldal további része mindezt részletesen kifejti: ki mit kap, milyen
+jogalapon, mely országokba kerül, és milyen jogai vannak.</p>
+
+<h2>Kik vagyunk</h2>
+<p><strong>Ostapenko Studio</strong>, az <strong>I Ostapenko &amp;
+Y Ostapenko</strong> Ausztráliában bejegyzett személyegyesítő társaság
+kereskedelmi neve, <strong>ABN 18 901 484 459</strong>. Mi vagyunk az alább leírt
+személyes adatok adatkezelője — vagyis mi döntjük el, miért gyűjtik őket és hová
+kerülnek — annak ellenére, hogy egyik sem jut el hozzánk.</p>
+<p>E-mail (adatvédelmi kérdésekben is):
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>A személyes adatokat <strong>Ausztráliában</strong> kezeljük. Nem neveztünk ki
+adatvédelmi tisztviselőt (Data Protection Officer): kétfős társaság vagyunk, nem
+vagyunk közhatalmi szerv, és a fő tevékenységünk nem jár személyek nagymértékű
+megfigyelésével, sem különleges kategóriájú adatok nagymértékű kezelésével.</p>
+
+<h2>Mi hagyja el a készüléket, és miért</h2>
+<p>Ez a táblázat a teljes kép. Ami nem szerepel benne, az nem történik meg.</p>
+
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Mi</th><th>Miért</th><th>Jogalap</th><th>Ki kapja meg</th><th>Hová kerül</th><th>Meddig</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>Hozzávetőleges koordináták, 2 tizedesjegyre kerekítve (~1,1 km)</td>
+  <td>Az adott terület UV-előrejelzésének lekéréséhez</td>
+  <td>A kért szolgáltatás teljesítése</td>
+  <td><a href="https://www.weatherapi.com/">WeatherAPI.com</a>, üzemeltetője a Zoomash Ltd</td>
+  <td>Egyesült Királyság; a Zoomash saját tájékoztatója közli, hogy az adatok továbbadhatók az Egyesült Államokba, Oroszországba, Japánba, Kínába és Indiába</td>
+  <td>Mi semmit nem őrzünk meg. A Zoomash mindössze annyit közöl, hogy az adatokat „shall not be kept for longer than is necessary” (a szükségesnél hosszabb ideig nem tárolják)</td>
+</tr>
+<tr>
+  <td>Hozzávetőleges koordináták</td>
+  <td>Hogy a koordinátákból a képernyőn megjelenő település- vagy városrésznév legyen</td>
+  <td>A kért szolgáltatás teljesítése</td>
+  <td>A készülék operációsrendszer-gyártója — <a href="https://www.apple.com/legal/privacy/">Apple</a> iOS-en, <a href="https://policies.google.com/privacy">Google</a> Androidon</td>
+  <td>Egyesült Államok és más országok, ahol az Apple és a Google működik</td>
+  <td>Mi semmit nem őrzünk meg. Lásd az Apple és a Google tájékoztatóját</td>
+</tr>
+<tr>
+  <td>Eszközadatok, IP-cím, hirdetésazonosító</td>
+  <td>Az ingyenes változat bannerhirdetésének megjelenítéséhez és méréséhez</td>
+  <td><strong>Hozzájárulás</strong>, az alkalmazáson belüli Google-kérdésen keresztül megadva, ahol az megjelenik</td>
+  <td><a href="https://policies.google.com/privacy">Google AdMob</a></td>
+  <td>Egyesült Államok és más országok, ahol a Google működik</td>
+  <td>Mi semmit nem őrzünk meg. Lásd a Google tájékoztatóját</td>
+</tr>
+<tr>
+  <td>A „Reklámok eltávolítása” vásárlás</td>
+  <td>A fizetés beszedéséhez és a vásárlás visszaállításához a többi készüléken</td>
+  <td>Az adásvételi szerződés teljesítése</td>
+  <td>Apple (App Store) vagy Google (Google Play) mint eladó (merchant of record)</td>
+  <td>Egyesült Államok és más országok, ahol az Apple és a Google működik</td>
+  <td>Az Apple vagy a Google határozza meg. A nevet, a fizetési és a számlázási adatokat soha nem látjuk</td>
+</tr>
+<tr>
+  <td>Beállítások, gyorsítótárazott előrejelzés, napi emlékeztető, kezdőképernyős widget, időzóna</td>
+  <td>Hogy az alkalmazás azonnal nyíljon és offline is működjön</td>
+  <td>Nem továbbítjuk — nincs adattovábbítás</td>
+  <td><strong>Senki. Ez soha nem hagyja el a készüléket.</strong></td>
+  <td>Csak a készülék</td>
+  <td>Amíg meg nem változtatja, vagy nem törli az alkalmazást. A gyorsítótárazott előrejelzést minden frissítés felülírja</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>A CalOPPA fogalmai szerint a fenti kategóriák az alkalmazáson keresztül
+gyűjtött, személyazonosításra alkalmas információk kategóriái, a harmadik felek
+kategóriái pedig, akikkel megoszthatók: egy <strong>időjárásiadat-szolgáltató</strong>,
+egy <strong>hirdetésszolgáltató</strong>, <strong>operációsrendszer- és
+platformszolgáltatók</strong>, valamint <strong>fizetési szolgáltatók</strong>.</p>
+
+<h3>A helymeghatározás, egyszerűen</h3>
+<p>Az alkalmazás a <strong>hozzávetőleges (durva)</strong> pozíciót kéri az
+operációs rendszertől — pontos helymeghatározást soha nem kér. Mielőtt a
+koordináták bárhová elmennének, két tizedesjegyre kerekítjük őket, ez nagyjából
+1,1 km. Ez a kerekítés szándékos adattakarékosság: egy UV-előrejelzés rácsa
+sokkal durvább egy kilométernél, így a többletjegyek elárulnák egy harmadik
+félnek a tartózkodási helyet, anélkül hogy az alkalmazásnak bármi szükségeset
+elmondanának.</p>
+<p>A helymeghatározás <strong>ki van kapcsolva, amíg be nem kapcsolja.</strong>
+Az alkalmazás nem tudja kiolvasni a pozíciót, amíg az operációs rendszer
+kérdésénél nem ad helyhozzáférési engedélyt, és ezt az engedélyt bármikor
+visszavonhatja a készülék beállításaiban. A tartózkodási hely megadását jogszabály
+nem írja elő, és mi sem követeljük meg — ha azonban elutasítja, az alkalmazás nem
+tudja megmutatni az adott hely UV-indexét.</p>
+<p>Az alkalmazás nem követi a mozgást, nem fut a háttérben, és semmiféle előzményt
+nem épít arról, hol járt a felhasználó.</p>
+
+<h3>Helyesbítés a településnévvel kapcsolatban</h3>
+<p>E tájékoztató egy korábbi változata azt írta, hogy a település- vagy
+városrésznév feloldása „a készüléken” történik. Ez tévedés volt, és javítottuk.
+Az alkalmazás azt kéri az operációs rendszertől, hogy a koordinátákból helynevet
+csináljon, és iOS-en és Androidon egyaránt hálózaton keresztül teljesül ez a
+lekérdezés: <strong>a koordináták az Apple-höz vagy a Google-höz kerülnek</strong>,
+és onnan érkezik vissza a helynév. Inkább kimondjuk ezt nyíltan, mint hogy
+megnyugtató mondat maradjon a helyén, amelyet a kód nem támaszt alá.</p>
+
+<h3>Amit soha nem kapunk meg</h3>
+<p><strong>Mi</strong> — az Ostapenko Studio — soha nem kapjuk meg, nem tároljuk
+és nem naplózzuk a tartózkodási helyet, az eszközazonosítókat és az IP-címet. Ez
+rólunk szóló állítás, nem a táblázatban megnevezett harmadik felekről, akik
+pontosan azt kapják meg, amit a táblázat ír, közvetlenül a készülékről.</p>
+
+<h2>A hirdetés és a mögötte álló hozzájárulás</h2>
+<p>Az ingyenes változat egyetlen bannerhirdetést mutat, amelyet a Google AdMob
+szolgál ki. A hirdetéseket <strong>nem személyre szabottan</strong> kérjük le:
+nem kérünk érdeklődési kör vagy profil alapján hirdetést, és nem használjuk a
+tartózkodási helyet hirdetéscélzásra.</p>
+<p>Már egy nem személyre szabott hirdetés kiszolgálása is azt jelenti, hogy a
+Google hirdetési SDK-ja információt tárol vagy olvas a készüléken, és
+eszközadatokat, IP-címet és hirdetésazonosítót kap. Mivel ez a készüléken tárolt
+információ tárolásával és elérésével jár, a jogalap a
+<strong>hozzájárulás</strong> — nem a „jogos érdek”, és nem az a tény, hogy a
+hirdetések nem személyre szabottak. Ezt a hozzájárulást az alkalmazáson belüli
+<strong>Google User Messaging Platform</strong> kérdésén keresztül szerezzük be,
+amely az EGT, az Egyesült Királyság és Svájc felhasználóinak jelenik meg.</p>
+<p>A Google azt is közli, hogy hirdetési célból megbecsülheti az általános
+tartózkodási helyet az IP-cím alapján. Ez a becslés a Google-é, elkülönül a fent
+leírt koordinátáktól, és attól függetlenül történik, hogy megadta-e az
+alkalmazásnak a helyhozzáférési engedélyt.</p>
+<p><strong>Ez a felhasználó kezében van:</strong></p>
+<ul>
+<li>A hozzájárulás bármikor megváltoztatható vagy visszavonható a
+  <strong>Beállítások → Adatvédelmi beállítások</strong> pontban. A visszavonás
+  nem érinti annak jogszerűségét, ami a hozzájárulás fennállása alatt történt, és
+  a visszavonást továbbítjuk a Google-nek.</li>
+<li>Emellett a készülék saját hirdetési beállításai (a hirdetésazonosító
+  visszaállítása vagy korlátozása) is érvényesülnek.</li>
+<li>A <strong>Reklámok eltávolítása</strong> megvásárlása teljesen leállítja a
+  hirdetéskéréseket — a hirdetési SDK több kérést nem küld, és ezzel megszűnik a
+  Google ezen alkalmazáson keresztüli adatgyűjtése is.</li>
+</ul>
+<p>Az alkalmazás használatakor <strong>a hirdetésszolgáltató információt
+gyűjthet a felhasználói tevékenységről az idő múlásával és különböző
+alkalmazásokon és szolgáltatásokon át.</strong> Mi ezt magunk nem tesszük, és
+ebből semmit nem kapunk, csak összesített bevételt.</p>
+
+<h3>Eladjuk vagy megosztjuk az adatokat?</h3>
+<p>Tényként kimondva, nem jogi következtetésként: nem kapunk semmilyen személyes
+adatot, tehát nincs mit eladnunk. A hirdetéseket nem személyre szabottan kérjük
+le. A hirdetésszolgáltató eszközadatokat, IP-címet és hirdetésazonosítót
+<strong>közvetlenül a készülékről</strong> kap meg, a fent leírt hozzájárulás
+alapján. Mi csak összesített bevételt kapunk. <strong>Nem kapunk pénzt azért,
+hogy információt adnánk ki a felhasználóról — hirdetési bevételt
+kapunk.</strong></p>
+
+<h3>Do Not Track</h3>
+<p>Az alkalmazás nem webböngésző, és nem kap „Do Not Track” böngészőjelzést,
+tehát nincs is ilyen jelzés, amelyre válaszolhatna. Nem követjük a felhasználót
+más alkalmazásokon vagy webhelyeken át. Itt a fent felsorolt vezérlők működnek
+ténylegesen: a hozzájárulási kérdés, a Beállítások → Adatvédelmi beállítások, a
+készülék hirdetési beállításai és a Reklámok eltávolítása.</p>
+
+<h2>Vásárlások</h2>
+<p>Az egyszeri Reklámok eltávolítása vásárlást teljes egészében az Apple App
+Store-ja vagy a Google Play bonyolítja, ők az eladó (merchant of record). A
+nevet, a fizetési és a számlázási adatokat soha nem látjuk. Az áruháztól csak egy
+visszaigazolást kapunk arról, hogy a vásárlás létezik, és ez teszi lehetővé, hogy
+az alkalmazás elrejtse a bannert, és visszaállítsa a vásárlást a többi
+készüléken.</p>
+
+<h2>Értesítések és a widget</h2>
+<p>A választható napi UV-emlékeztetőt az operációs rendszer ütemezi helyben, a
+készüléken. Értesítési adat nem hagyja el a készüléket, és semmilyen módon nem
+tudunk push-üzenetet küldeni. A kezdőképernyős widget a készüléken már
+gyorsítótárazott előrejelzésből rajzolódik.</p>
+
+<h2>Meddig őrzünk meg bármit, és hogyan semmisül meg</h2>
+<ul>
+<li><strong>Mi semmit nem őrzünk meg.</strong> Nálunk nincs szerver, nincs
+  adatbázis és nincs naplófájl, tehát nincs mit megőriznünk, és a mi
+  adatkezelésünk az alkalmazás bezárásakor véget ér.</li>
+<li><strong>A készüléken:</strong> a beállítások megmaradnak, amíg meg nem
+  változtatja őket; a gyorsítótárazott előrejelzést az alkalmazás minden
+  frissítéskor felülírja. Mindkettő megsemmisül, minden mással együtt, amit az
+  alkalmazás tárol, amikor <strong>törli az alkalmazást</strong> — ez a törlési
+  mechanizmus az alkalmazás összes tárolt adatára, és teljes egészében a
+  felhasználó kezében van.</li>
+<li><strong>A harmadik felek</strong> annyit őriznek meg, amennyit saját
+  tájékoztatójuk szerint megőriznek; ezekre a fenti táblázat hivatkozik.</li>
+</ul>
+
+<h2>Adatok külföldre küldése</h2>
+<p>Ez külön állítás, és ez szándékos: az alkalmazás használata
+<strong>szükségszerűen azzal jár, hogy adatok hagyják el az országot</strong>.</p>
+<p>Mi Ausztráliában vagyunk. A címzettek és a célországok:</p>
+<ul>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> — <strong>Egyesült
+  Királyság</strong>. Közzétett adatvédelmi tájékoztatója közli, hogy az általa
+  gyűjtött információ továbbadható az <strong>Egyesült Államokba,
+  Oroszországba, Japánba, Kínába és Indiába</strong>. A továbbításnak a kért
+  szolgáltatáshoz szükséges voltára támaszkodunk, valamint a koordináták
+  ~1,1 km-re kerekítésére mint adattakarékossági intézkedésre. A Zoomash nem tesz
+  közzé adatfeldolgozási szerződést és általános szerződési feltételeket
+  (standard contractual clauses); ezt inkább kimondjuk, mint hogy olyan
+  garanciára utaljunk, amellyel nem rendelkezünk.</li>
+<li><strong>Apple</strong> és <strong>Google</strong> (helynév-lekérdezés,
+  hirdetés és számlázás) — <strong>Egyesült Államok</strong> és a többi ország,
+  ahol működnek. Mindkettő közzéteszi az adattovábbítási garanciákat a saját,
+  fent hivatkozott adatvédelmi tájékoztatójában; a hirdetés esetében ezen felül a
+  hozzájárulásra támaszkodunk.</li>
+</ul>
+<p>Ha e továbbítások bármelyikéhez alkalmazott garanciákról másolatot vagy
+bővebb tájékoztatást szeretne, írjon nekünk, és megadjuk, ami nálunk van.</p>
+
+<h2>Biztonság</h2>
+<p>A biztonsági intézkedéseink szerények, mert a kitettségünk is szerény, és
+inkább leírjuk őket, mint hogy többet sejtessünk. Az alkalmazás minden kérése
+HTTPS-en megy. Nem üzemeltetünk szervert és nem tárolunk személyes adatot, tehát
+nálunk nincs olyan felhasználóiadat-készlet, amelyet fel lehetne törni. Nincsenek
+fiókok és nincsenek jelszavak. A készüléken lévő adatokat a készülék saját
+operációs rendszerének védelmei óvják.</p>
+
+<h2>Automatizált döntések</h2>
+<p>Nincs joghatással vagy hasonlóan jelentős hatással járó automatizált
+döntéshozatal, és nincs profilalkotás. Az alkalmazás egy előre jelzett számból
+UV-sávot számol, és ha a felhasználó bőrtípust állított be, eltolja ezt a sávot —
+ez a képernyőn megmutatott számtan, nem a felhasználóról hozott döntés.</p>
+
+<h2>Az Ön jogai</h2>
+<p>A lakóhelytől függően az alábbi jogok közül néhány vagy mindegyik megilleti a
+személyes adataival kapcsolatban:</p>
+<ul>
+<li><strong>Hozzáférés</strong> — megtudni, hogy kezelnek-e Önről személyes
+  adatot, és másolatot kapni róla.</li>
+<li><strong>Helyesbítés</strong> — a pontatlan adat kijavíttatása.</li>
+<li><strong>Törlés</strong> — az adat töröltetése.</li>
+<li><strong>Korlátozás</strong> — az adatkezelés felfüggesztetése.</li>
+<li><strong>Tiltakozás</strong> — tiltakozás az adatkezelés ellen.</li>
+<li><strong>Adathordozhatóság</strong> — az adat hordozható formában való
+  megkapása.</li>
+<li><strong>A hozzájárulás visszavonása</strong> — bármikor, anélkül hogy ez
+  érintené, ami a visszavonás előtt jogszerű volt.</li>
+<li><strong>Panasz</strong> — panaszt tenni nálunk és egy adatvédelmi hatóságnál.
+  Lásd alább.</li>
+</ul>
+<p>Ahol az LGPD alkalmazandó, ez kifejezetten magában foglalja a 18. cikk szerinti
+jogokat: az adatkezelés megerősítése; hozzáférés; helyesbítés; a szükségtelen,
+túlzott vagy jogellenesen kezelt adatok anonimizálása, zárolása vagy törlése;
+hordozhatóság; a hozzájárulás alapján kezelt adatok törlése;
+<strong>tájékoztatás azokról a köz- és magánszervezetekről, amelyekkel az
+adatokat megosztottuk</strong> — ez a fenti táblázat; tájékoztatás a hozzájárulás
+megtagadásának lehetőségéről és a megtagadás következményeiről; valamint a
+hozzájárulás visszavonása.</p>
+
+<h3>Mit tudunk ténylegesen tenni — és mit nem</h3>
+<p>Ez az őszinte rész. Mivel nálunk nincsenek fiókok és nincsenek nyilvántartások,
+<strong>nem tudjuk azonosítani a felhasználót</strong>, és nincs semmink, amit
+átadhatnánk, kijavíthatnánk vagy törölhetnénk. Nem gyűjthetünk további adatot
+pusztán azért, hogy megpróbáljuk megtalálni valakit olyan adatok között, amelyek
+nincsenek nálunk. A legtöbb kérésnél tehát az a leghasznosabb, amit tehetünk, ha
+elirányítjuk ahhoz a félhez, akinél tényleg van valami:</p>
+<ul>
+<li><strong>Google</strong> (hirdetés és helynév-lekérdezés Androidon) —
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>,
+  valamint a Google-fiók adatvédelmi vezérlői.</li>
+<li><strong>Apple</strong> (helynév-lekérdezés iOS-en és App Store-vásárlások) —
+  <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>,
+  valamint a <a href="https://privacy.apple.com">privacy.apple.com</a>.</li>
+<li><strong>Zoomash Ltd (WeatherAPI.com)</strong> —
+  <a href="https://www.weatherapi.com/privacy.aspx">weatherapi.com/privacy.aspx</a>.
+  A tájékoztatójuk nem nevez meg adatvédelmi kapcsolattartót; ha nem sikerül
+  elérni őket, szóljon nekünk, és megpróbáljuk a felhasználó nevében.</li>
+</ul>
+<p>Mindarra, ami a saját készüléken van — beállítások, gyorsítótárazott
+előrejelzés, emlékeztetők, widget — közvetlen befolyása van: módosítsa az
+alkalmazásban, vagy törölje az alkalmazást, és ezzel megsemmisíti. A hozzáférés
+eszköze maga az alkalmazás.</p>
+<p>Semmilyen személyes adatot nem teszünk hozzáférhetővé kapcsolt szervezet
+számára, mert nincs ilyenünk: az Ostapenko Studiónak nincs anyavállalata,
+leányvállalata vagy kapcsolt vállalkozása.</p>
+
+<h3>Hogyan lehet kérelmet vagy panaszt benyújtani</h3>
+<p>Írjon a <a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a>
+címre vagy a fenti postai címre. Írja meg, mit szeretne, és hogyan válaszoljunk.
+A beérkezést 7 napon belül visszaigazoljuk, és 30 napon belül válaszolunk — vagy
+megírjuk, miért kell több idő, és mennyi. Ez díjmentes.</p>
+<p>Ha a válaszunk nem kielégítő, tovább lehet lépni:</p>
+<ul>
+<li><strong>Ausztrália</strong> — az Office of the Australian Information
+  Commissioner,
+  <a href="https://www.oaic.gov.au/privacy/privacy-complaints">oaic.gov.au/privacy/privacy-complaints</a>.</li>
+<li><strong>EU/EGT</strong> — a helyi felügyeleti hatóság; a lista itt található:
+  <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
+<li><strong>Egyesült Királyság</strong> — az Information Commissioner’s Office,
+  <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>.</li>
+<li><strong>Máshol</strong> — a nemzeti vagy tagállami adatvédelmi hatóság. Ha
+  megírja, hol tartózkodik, elirányítjuk hozzá.</li>
+</ul>
+
+<h2>Gyermekek és fiatalok</h2>
+<p>Az UV Index <strong>általános közönségnek</strong> szóló alkalmazás. Nem
+gyermekeknek szól, nem úgy tervezték, hogy gyermekeket vonzzon, és tudatosan nem
+gyűjtünk személyes adatot gyermektől. A minimális életkorra vonatkozó
+álláspontunk az, hogy az alkalmazás <strong>13 éves kortól</strong> szól, és
+azokban a joghatóságokban, amelyek magasabb korhatárt szabnak a hozzájáruláshoz —
+köztük Brazíliában, amely a gyermekek mellett a serdülőkre is kiterjed, és
+Indiában — az e korhatár alattiak csak szülő vagy gondviselő bevonásával
+használják az alkalmazást.</p>
+<p>Mivel az alkalmazást fiatalok használják a napon, ehhez tartjuk magunkat
+függetlenül attól, ki használja:</p>
+<ul>
+<li>A hirdetések <strong>nem személyre szabottak</strong>, és
+  <strong>nincs profilalkotás</strong>.</li>
+<li>A tartózkodási helyet <strong>kizárólag</strong> az UV-érték és a helynév
+  előállításához használjuk. <strong>Soha</strong> nem használjuk
+  hirdetéscélzásra, és soha nem őrizzük meg.</li>
+<li>Az alkalmazásban semmi nincs, amit arra terveztek volna, hogy bent tartsa a
+  felhasználót — nincsenek sorozatok, nincsenek noszogatások és nincsenek
+  aktivitásra ösztönző értesítések.</li>
+</ul>
+<p>Az alkalmazásban <strong>nincs életkor-ellenőrzés</strong>. Ha valaki szülő
+vagy gondviselő, és úgy véli, hogy egy gyermek az alkalmazáson keresztül
+személyes adatot adott meg, keressen meg minket, és segítünk — bár, ahogy fent
+írtuk, nincs mit törölnünk, és az alkalmazás törlése mindent eltávolít, amit az
+tárolt.</p>
+
+<h2>Hol tartózkodik</h2>
+<p>Ez a tájékoztató a maga egészében mindenkire vonatkozik. Ezek a megjegyzések
+azt teszik hozzá, amit egyes törvények megkövetelnek.</p>
+
+<h3>Ausztrália</h3>
+<p>Ausztrál személyegyesítő társaság vagyunk. Olvasatunk szerint <strong>small
+business operator</strong> vagyunk a <em>Privacy Act 1988</em> (Cth) s 6D szakasza
+alapján, és így nem vagyunk APP entity — ennek a kivételnek azonban megvannak a
+maga kivételei, és nem hivatkozunk rá azért, hogy kevesebbet mondjunk. <strong>Ezt
+a tájékoztatót önkéntesen adjuk azon a szinten, amelyet az Australian Privacy
+Principles megkövetel</strong>, beleértve a fenti, külföldre továbbításról szóló
+nyilatkozatot, a hozzáférést és a helyesbítést, valamint a panaszeljárást. Ahol
+azt írjuk, hogy „megfelelünk”, azt olyan kötelezettségvállalásként kell olvasni,
+amelyet mi választottunk.</p>
+
+<h3>Európai Unió és EGT</h3>
+<p>Ahol a GDPR alkalmazandó, mi vagyunk az adatkezelő, a jogalapok a fenti
+táblázatban szereplők, és a jogok a fent felsorolt 15–22. cikk szerintiek,
+beleértve azt a jogot, hogy panasszal lehet élni a lakóhely, a munkahely vagy a
+feltételezett jogsértés helye szerinti ország felügyeleti hatóságánál.</p>
+
+<h3>Egyesült Királyság</h3>
+<p>Ahol a UK GDPR alkalmazandó, minden érvényes az EU-s megjegyzésből, a
+felügyeleti hatóság az <strong>Information Commissioner’s Office</strong>, és
+ezen felül fennáll az a jog, hogy <strong>először nálunk lehessen panaszt
+tenni</strong> — az eljárás fent, a „Hogyan lehet kérelmet vagy panaszt
+benyújtani” részben szerepel — az ICO-hoz fordulás előtt vagy helyett.</p>
+
+<h3>Egyesült Államok</h3>
+<p>A CalOPPA szerinti közlések ebben a dokumentumban szerepelnek: az információk
+kategóriái és a harmadik felek kategóriái a fenti táblázatban; az alkalmazások
+közötti gyűjtésről szóló nyilatkozat, a Do Not Track nyilatkozat és az
+eladásról/megosztásról szóló nyilatkozat a „Hirdetés” részben; a módosítási
+eljárás a „Változások e tájékoztatóban” részben; a hatálybalépés dátuma pedig
+legfelül.</p>
+<p><strong>Az adatok megtekintése és módosítása.</strong> Nem tárolunk
+személyazonosításra alkalmas információt, tehát nincs mit megtekinteni vagy
+módosítani. A beállítások és a gyorsítótárazott adatok csak a készüléken élnek,
+és az alkalmazás törlésekor eltűnnek.</p>
+<p><strong>Tagállami adatvédelmi jogok.</strong> Álláspontunk szerint egyetlen
+USA-tagállami adatvédelmi törvény szerint sem vagyunk covered business vagy
+controller — de inkább megadjuk a mechanizmust, mint hogy küszöbértékekről
+vitatkozzunk. A pontos helymeghatározás több tagállami törvény szerint
+<strong>különleges adatnak</strong> minősül. Ebben az alkalmazásban a
+helymeghatározást csak az UV-előrejelzés és a helynév lekéréséhez használjuk;
+küldés előtt nagyjából 1,1 km-re durvítjuk; nem adjuk el, nem használjuk célzott
+hirdetéshez, nem használjuk profilalkotáshoz, és nem őrizzük meg. Ha valaki
+adatvédelmi törvénnyel rendelkező USA-tagállamban él, és az abból eredő jogot
+kíván gyakorolni, írjon a
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a> címre, és
+ugyanúgy kezeljük, mint bármely más kérelmet.</p>
+
+<h3>Kanada, Quebeckel együtt</h3>
+<p>A megfelelésért felelős személyt a „Kik vagyunk” rész nevezi meg, postai
+címmel és telefonszámmal. A tárolt személyes adatok típusa: <strong>semmi</strong>;
+felhasználásuk általános leírása az, hogy a koordináták a készüléken keresztül
+jutnak el a táblázatban szereplő felekhez az ott megjelölt célokra; és nem
+teszünk hozzáférhetővé személyes adatot kapcsolt szervezeteknek, mert nincs
+ilyenünk. Az adatokhoz való hozzáférés eszköze a fenti címre írt levél — és az
+őszinte válasz az lesz, hogy nincs nálunk semmi.</p>
+<p><strong>Quebec.</strong> Ez az alkalmazás olyan technológiát használ, amely
+tartalmaz egy, a <strong>helymeghatározást</strong> lehetővé tevő funkciót. Ez a
+funkció alapértelmezés szerint ki van kapcsolva: csak akkor aktiválódik, ha a
+készülék saját engedélykérésénél helyhozzáférési engedélyt ad, és úgy
+kapcsolható ki, hogy ezt az engedélyt a készülék beállításaiban visszavonja —
+ekkortól az alkalmazás nem kéri le a pozíciót. Az ezen alkalmazáson keresztül
+kezelt személyes adatok <strong>Quebecen kívülre továbbíthatók</strong>, az
+„Adatok külföldre küldése” részben megnevezett címzetteknek és országokba.</p>
+
+<h3>Brazília</h3>
+<p><strong>Az adatkezelés időtartama.</strong> A mi adatkezelésünk csak addig
+tart, amíg egy kérés úton van — utána semmit nem őrzünk meg. A készüléken lévő
+adatok addig maradnak, amíg meg nem változtatja őket, vagy nem törli az
+alkalmazást. A harmadik felek megőrzésére a saját tájékoztatóik vonatkoznak, a
+fenti hivatkozásokkal.</p>
+<p><strong>Ki miért felel.</strong> Az Ostapenko Studio felel az alkalmazásért és
+azért a döntésért, hogy ezeket a kéréseket elküldje. A <strong>Zoomash Ltd</strong>
+felel az előrejelzés lekérdezéséért. A <strong>Google</strong> felel a
+hirdetésért és a helynév-lekérdezésért Androidon. Az <strong>Apple</strong> felel
+a helynév-lekérdezésért iOS-en. Az <strong>Apple és a Google</strong> egyaránt
+felel a számlázásért a saját áruházában.</p>
+<p>A 18. cikk szerinti jogok teljes felsorolása „Az Ön jogai” részben található.
+A továbbítások nemzetközi jellegét külön, az „Adatok külföldre küldése” rész
+fejti ki, ahogy kell.</p>
+
+<h3>Japán</h3>
+<p>A személyes adatokat kezelő vállalkozás neve és címe a „Kik vagyunk” részben
+van. A felhasználás célja: <strong>UV-előrejelzés lekérése a tartózkodási helyre
+és megjelenítése</strong>. Nem tárolunk megőrzött személyes adatot. A személyes
+adatokkal kapcsolatos kérelem benyújtásának módja a „Hogyan lehet kérelmet vagy
+panaszt benyújtani” részben szerepel. A koordináták külföldi harmadik félnek való
+átadását — a Zoomash Ltd az Egyesült Királyságban, valamint az Apple vagy a
+Google a helynév-lekérdezéshez — az „Adatok külföldre küldése” rész írja le, az
+érintett országokkal együtt; az e címzettek által alkalmazott védelmi
+intézkedések azok, amelyeket a saját, a táblázatban hivatkozott közzétett
+adatvédelmi tájékoztatóik tartalmaznak.</p>
+
+
+<h3>Mindenhol máshol</h3>
+<p>Ez a felsorolás nem kimerítő, és nem is akar az lenni. Ha valaki olyan helyen
+van, amelyet fent nem neveztünk meg, akkor is lehetnek jogai a helyi adatvédelmi
+jog szerint. Keressen meg minket, és segítünk gyakorolni őket — ami, mivel
+semmink sincs, rendszerint annyit jelent, hogy elirányítjuk a megfelelő félhez és
+a megfelelő hatósághoz, és ezt szívesen tesszük.</p>
+
+<h2>Harmadik felek, akik adatot kapnak ezen az alkalmazáson keresztül</h2>
+<p>Az egyetlen harmadik felek, akik ezen az alkalmazáson keresztül adatot kapnak,
+a fenti táblázatban megnevezettek: <strong>Zoomash Ltd</strong>
+(WeatherAPI.com), <strong>Google</strong> és <strong>Apple</strong>. Mindegyikük
+köteles ugyanolyan vagy azzal egyenértékű védelmet biztosítani ezeknek az
+adatoknak, mint amit ez a tájékoztató kimond, és mindegyikük közzéteszi a saját
+adatvédelmi tájékoztatóját arról, hogyan kezeli őket. Egyikük sem használhatja az
+ezen az alkalmazáson keresztül kapott adatokat a táblázatban megjelölttől eltérő
+célra. Az alkalmazásban nincs analitikai SDK, nincs összeomlásjelentés, nincs
+attribúciós SDK, és nincs semmilyen más harmadik féltől származó kód, amely
+adatot kapna.</p>
+
+<h2>Változások e tájékoztatóban</h2>
+<p>Ha ez a tájékoztató változik, a frissített változat ezen a címen jelenik meg —
+ugyanúgy, ahogy ez a változat is megjelent —, új hatálybalépési dátummal és rövid
+megjegyzéssel arról, mi változott. A lényeges változásokat az alkalmazás
+kiadási jegyzetei is rögzítik.</p>
+<p>Ha egy változás lényegesen csökkentené azt a védelmet, amelyet ez a
+tájékoztató nyújt, vagy olyan módon használna fel adatot, amelyet ez a
+tájékoztató jelenleg nem enged meg, <strong>előbb megkérdezzük a
+beleegyezését</strong>, ahelyett hogy csendben végrehajtanánk a változtatást. Ha
+a védelmet nem csökkentő változás után továbbra is használja az alkalmazást, a
+frissített tájékoztató alkalmazandó.</p>
+
+<h2>Nyelvek</h2>
+<p>Ez az angol szöveg e tájékoztató kanonikus változata. A fordításokat a
+kényelem kedvéért adjuk közre. Ahol egy fordítás eltér ettől az angol szövegtől,
+az angol szöveg az irányadó, amennyiben a helyi jog ezt megengedi. Ha eltérést
+talál a változatok között, kérjük, jelezze, és kijavítjuk.</p>
+<p>Elérhető változatok: <a href="../privacy.html">English</a> (kanonikus) ·
+Magyar (ez az oldal).</p>
+
+<h2>Kapcsolat</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+
+</body>
+</html>
