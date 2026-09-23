@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frost Alert | Ostapenko Studio</title>
-  <meta name="description" content="One calm notification the evening before frost. Set your place once and Frost Alert keeps watch through the season — no accounts, no tracking, no subscriptions.">
+  <title>Frost Tonight | Ostapenko Studio</title>
+  <meta name="description" content="One calm notification the evening before frost. Set your place once and Frost Tonight keeps watch through the season — no accounts, no tracking, no subscriptions.">
   <link rel="canonical" href="https://ostapenko.studio/frost-alert/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ostapenko.studio/frost-alert/">
-  <meta property="og:title" content="Frost Alert">
+  <meta property="og:title" content="Frost Tonight">
   <meta property="og:description" content="One calm notification the evening before frost.">
   <meta property="og:image" content="https://ostapenko.studio/frostalert-icon.png">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
-  <meta property="og:image:alt" content="Frost Alert app icon">
+  <meta property="og:image:alt" content="Frost Tonight app icon">
   <meta property="og:site_name" content="Ostapenko Studio">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -71,6 +71,16 @@
       color: var(--accent);
       font-weight: 500;
     }
+    .store-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    /* The official badge artwork carries its own padding; the negative
+       margin trims it so the badge aligns optically with the text column. */
+    .store-links img { display: block; height: 52px; width: auto; margin-left: -8px; }
+    .store-links .status { margin-top: 0; }
     section { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
     section h2 {
       font-size: 0.8125rem;
@@ -140,11 +150,14 @@
     <p class="back"><a href="/">← Ostapenko Studio</a></p>
 
     <header class="hero">
-      <img src="/frostalert-icon-216.png" alt="Frost Alert app icon" width="72" height="72">
+      <img src="/frostalert-icon-216.png" alt="Frost Tonight app icon" width="72" height="72">
       <div>
-        <h1>Frost Alert</h1>
+        <h1>Frost Tonight</h1>
         <p class="tagline">One calm notification the evening before frost.</p>
-        <span class="status">Coming soon to Google&nbsp;Play and the App&nbsp;Store</span>
+        <div class="store-links">
+          <a href="https://play.google.com/store/apps/details?id=studio.ostapenko.frostalert"><img src="/badges/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
+          <a href="https://apps.apple.com/app/frost-tonight-frost-alerts/id6809295705"><img class="appstore" src="/badges/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
+        </div>
       </div>
     </header>
 
@@ -152,7 +165,7 @@
       <h2>The app</h2>
       <div class="shots" tabindex="0" role="group" aria-label="App screenshots">
         <figure>
-          <img src="shots/tonight.png" alt="Frost Alert showing a frost warning for tonight with the overnight temperature curve" width="560" height="1216" loading="lazy">
+          <img src="shots/tonight.png" alt="Frost Tonight showing a frost warning for tonight with the overnight temperature curve" width="560" height="1216" loading="lazy">
           <figcaption>Frost tonight — the low, the hour, and what to do.</figcaption>
         </figure>
         <figure>
@@ -183,7 +196,7 @@
 
     <section>
       <h2>Built for Australia</h2>
-      <p>Frost country here runs from the Southern Tablelands to the Mallee. Frost Alert speaks Australian: minus signs are rare, "cover the tomatoes" is not, and the season it watches is May to September.</p>
+      <p>Frost country here runs from the Southern Tablelands to the Mallee. Frost Tonight speaks Australian: minus signs are rare, "cover the tomatoes" is not, and the season it watches is May to September.</p>
     </section>
 
     <section>
