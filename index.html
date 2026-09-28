@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ostapenko Studio</title>
-  <meta name="description" content="Ostapenko Studio — an independent Australian app studio. Small, calm apps that do one thing well.">
+  <meta name="description" content="Ostapenko Studio — a small independent studio in Australia. Calm, useful apps and web tools for everyday life, for the classroom and the kitchen table.">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,12 +45,12 @@
       margin-top: 0.75rem;
       max-width: 32rem;
     }
-    .apps {
+    .web {
       margin-top: 5rem;
       border-top: 1px solid var(--line);
       padding-top: 2.5rem;
     }
-    .apps h2, .contact h2 {
+    .apps h2, .web h2, .contact h2 {
       font-size: 0.8125rem;
       font-weight: 600;
       letter-spacing: 0.14em;
@@ -84,7 +84,7 @@
       font-size: 0.8125rem;
     }
     .app-legal a { color: var(--muted); }
-    .contact {
+    .apps, .contact {
       margin-top: 4rem;
       border-top: 1px solid var(--line);
       padding-top: 2.5rem;
@@ -103,14 +103,26 @@
       gap: 0.5rem 1.5rem;
       justify-content: space-between;
     }
-    footer nav { display: flex; gap: 1.5rem; }
+    footer nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
     footer a { color: var(--muted); }
   </style>
 </head>
 <body>
   <main>
     <h1>Ostapenko Studio</h1>
-    <p class="tagline">An independent app studio in Australia. We make small, calm apps that do one thing well — and then get out of your way.</p>
+    <p class="tagline">A small independent studio in Australia. We make calm, useful apps and web tools for everyday life — for teachers, parents, gardeners, dog walkers, and anyone who just needs one question answered. Each one does one thing well, works in your language, and then gets out of your way.</p>
+
+    <section class="web">
+      <h2>On the web</h2>
+      <div class="app">
+        <img src="/printjoey-icon.svg" alt="Print Joey icon" width="72" height="72">
+        <div>
+          <h3><a href="https://printjoey.com/">Print Joey</a></h3>
+          <p>Printable worksheets, learning sheets, party games and crafts for teachers, tutors and parents — made in under a minute, ready to print.</p>
+          <span class="status"><a href="https://printjoey.com/">Start free at printjoey.com</a> · English, Français, Español, Português</span>
+        </div>
+      </div>
+    </section>
 
     <section class="apps">
       <h2>Apps</h2>
@@ -178,6 +190,7 @@
     <footer>
       <span>© 2026 Ostapenko Studio · a trading name of I&nbsp;Ostapenko &amp; Y&nbsp;Ostapenko · ABN&nbsp;18&nbsp;901&nbsp;484&nbsp;459</span>
       <nav>
+        <a href="https://printjoey.com/">Print Joey</a>
         <a href="/uv-index/">UV Index</a>
         <a href="/pawwalk/">PawWalk</a>
         <a href="/dryingday/">Drying Day</a>
