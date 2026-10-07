@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Drying Day, by Ostapenko Studio · Effective 2 August 2026 · Updated 29 September 2026</p>
+<p class="meta">Drying Day, by Ostapenko Studio · Effective 2 August 2026 · Updated 7 October 2026</p>
 <p class="meta">This English text is the canonical version. Translations are provided for convenience; where a translation differs, this version applies to the extent local law allows.</p>
 
 <p>Drying Day is a simple app: it reads the weather forecast and tells you
@@ -111,7 +111,10 @@ drying conditions for your area. WeatherAPI.com's handling of requests is
 described in its own
 <a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. The
 town or suburb name shown in the app is resolved on your device by the
-operating system's own geocoder. We never receive, store, or log your
+operating system's own geocoder. If location is off or unavailable, the app
+asks WeatherAPI.com for the forecast for your approximate area, which it
+works out from your network's IP address (sent with every request anyway);
+the area name shown then comes from WeatherAPI.com. We never receive, store, or log your
 location, and the app does not track your movements or run location checks
 in the background.</p>
 <p>The app asks only for <em>approximate</em> location and requests the lowest
@@ -163,7 +166,7 @@ information.</p>
 <h2>What is processed, why, and for how long</h2>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Who receives it</th><th>Retention</th></tr>
-<tr><td>Approximate location (coordinates)</td><td>Fetching the weather forecast for your area — the app cannot judge the drying weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
+<tr><td>Approximate location (coordinates; or your network's IP address when location is off or unavailable)</td><td>Fetching the weather forecast for your area — the app cannot judge the drying weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
 <tr><td>Device information for advertising (IP address, device identifiers, invalid-traffic signals, ad interactions, and diagnostic data such as crashes and app performance — none of it used to personalise ads or to profile you)</td><td>Serving the single banner ad in the free version, in limited-ads mode, and Google's measurement and fraud prevention for that ad</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
 <tr><td>Settings and the latest forecast</td><td>Opening instantly on your last verdict</td><td>Nobody — stays on your device</td><td>Until you delete the app</td></tr>
 <tr><td>Scheduled laundry alerts</td><td>Reminding you about good drying days and approaching rain, if you turn alerts on</td><td>Nobody — scheduled by your device's operating system</td><td>Until they fire, you turn alerts off, or you delete the app</td></tr>
