@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privaatheidsbeleid</h1>
-<p class="meta">Mow Day, deur Ostapenko Studio · Van krag vanaf 8 September 2026</p>
+<p class="meta">Mow Day, deur Ostapenko Studio · Van krag vanaf 8 September 2026 · Bygewerk op 8 Oktober 2026</p>
 <p class="meta">Die <a href="../privacy.html">Engelse teks</a> is die kanonieke weergawe. Vertalings word gerieflikheidshalwe verskaf; waar ’n vertaling verskil, geld die Engelse weergawe in die mate wat plaaslike reg dit toelaat.</p>
 
 <p>Mow Day is ’n eenvoudige app: dit lees die weervoorspelling en sê vir u
@@ -110,8 +110,13 @@ doupunt, wind, windvlae, wolkbedekking, reënkans, reënval, sonop en sononder)
 wat gebruik word om die maaitoestande vir u omgewing te bepaal. Hoe WeatherAPI.com versoeke hanteer,
 word in sy eie
 <a href="https://www.weatherapi.com/privacy.aspx">privaatheidsbeleid</a>
-beskryf. Die dorp- of voorstadnaam wat in die app gewys word, word op u
-toestel deur die bedryfstelsel se eie geokodeerder bepaal. Ons ontvang, stoor
+beskryf. Om die dorp- of voorstadnaam te wys, vra die app u foon se
+bedryfstelsel om die koördinate in ’n pleknaam om te skakel; op sowel iOS as
+Android word daardie opsoek oor die netwerk gedoen, sodat die koördinate na
+Apple of na Google gaan, wat dit kragtens hul eie privaatheidsbeleide hanteer.
+As ligging af is of nie beskikbaar is nie, vra die app WeatherAPI.com vir die
+voorspelling vir u benaderde omgewing, wat WeatherAPI.com bepaal uit u netwerk
+se IP-adres (wat in elk geval met elke versoek gestuur word). Ons ontvang, stoor
 of teken u ligging nooit aan nie, en die app volg nie u bewegings nie en doen
 nie liggingkontroles in die agtergrond nie.</p>
 <p>Die app vra slegs om <em>benaderde</em> ligging en versoek die laagste
@@ -156,14 +161,16 @@ faktuurinligting nie.</p>
 <table>
 <tr><th>Data</th><th>Doel</th><th>Wie dit ontvang</th><th>Bewaring</th></tr>
 <tr><td>Benaderde ligging (koördinate)</td><td>Die weervoorspelling vir u omgewing haal — sonder dit kan die app nie die maaiweer beoordeel nie</td><td>WeatherAPI.com (direk vanaf u toestel)</td><td>Nie deur ons gestoor nie. WeatherAPI.com: sien sy privaatheidsbeleid</td></tr>
+<tr><td>Benaderde ligging (koördinate)</td><td>Die koördinate omskakel in die dorp- of voorstadnaam wat in die app gewys word</td><td>Die verskaffer van u toestel se bedryfstelsel — Apple op iOS, Google op Android (direk vanaf u toestel)</td><td>Nie deur ons gestoor nie. Apple en Google: sien hul privaatheidsbeleide</td></tr>
 <tr><td>Toestelinligting vir advertensies (IP-adres, toestel-identifiseerders, seine van ongeldige verkeer, advertensie-interaksies en diagnostiese data soos omvalle en app-werkverrigting — niks daarvan word gebruik om advertensies persoonlik aan te pas of om 'n profiel van jou op te bou nie)</td><td>Lewering van die enkele banieradvertensie in die gratis weergawe, in «beperkte advertensies»-modus, en Google se meting en bedrogvoorkoming vir daardie advertensie</td><td>Google AdMob</td><td>Nie deur ons gehou nie. Google: sien sy privaatheidsbeleid</td></tr>
 <tr><td>Instellings en die jongste voorspelling</td><td>Dadelik oopmaak op u laaste skatting</td><td>Niemand — bly op u toestel</td><td>Totdat u die app uitvee</td></tr>
 <tr><td>Geskeduleerde maaikennisgewings</td><td>U die aand voor ’n goeie maaidag herinner, en wanneer die tydvenster oopgaan, as u kennisgewings aanskakel</td><td>Niemand — deur u toestel se bedryfstelsel geskeduleer</td><td>Totdat hulle afgaan, u kennisgewings afskakel, of u die app uitvee</td></tr>
 <tr><td>Aankoopstatus van „Verwyder advertensies“</td><td>Advertensies versteek ná aankoop</td><td>Apple / Google verwerk die aankoop; die app stoor slegs ’n ja/nee-vlag</td><td>Totdat u die app uitvee; die winkel hou sy eie rekord</td></tr>
 </table>
 <p>WeatherAPI.com word vanuit die Verenigde Koninkryk bedryf; Google se
-advertensiedienste verwerk data in die Verenigde State en ander lande waar
-Google werksaam is. Albei ontvang data direk vanaf u toestel, nie van ons
+advertensiedienste, en Apple en Google se pleknaamopsoek, verwerk data in die
+Verenigde State en ander lande waar daardie maatskappye werksaam is. Almal
+ontvang data direk vanaf u toestel, nie van ons
 nie, en elkeen hanteer dit kragtens sy eie privaatheidsbeleid wat hierbo
 geskakel is. Omdat ons niks hou nie, maak ons geen verdere oordrag van ons
 eie nie.</p>
@@ -212,29 +219,41 @@ dae te reageer. As u nie tevrede is nie, kan u ’n klag by die Data Protection
 Board of India indien.</p>
 <p><strong>Japan en Suid-Korea.</strong> Die tabel hierbo lys die items wat
 hanteer word, hul doel, die ontvangers en die bewaartydperk. Ons stel geen
-oorsese verwerker van ons eie aan nie; WeatherAPI.com en Google ontvang data
-direk vanaf u toestel, buite u land, kragtens hul eie beleide.</p>
+oorsese verwerker van ons eie aan nie; WeatherAPI.com, Google en, vir die
+pleknaam, Apple ontvang data direk vanaf u toestel, buite u land, kragtens hul eie beleide.</p>
 <p>Vir gebruikers in Suid-Korea is die besonderhede van data wat oorsee
 gestuur word: <strong>items</strong> — benaderde liggingkoördinate (na
-WeatherAPI.com), en IP-adres, toestel- en advertensie-identifiseerders en
+WeatherAPI.com, en vir die pleknaam na Apple op iOS of Google op Android), en
+IP-adres, toestel- en advertensie-identifiseerders en
 advertensie-interaksies (na Google); <strong>wanneer en hoe</strong> — op die
 oomblik wanneer u die app oopmaak of dit verfris, oor ’n geënkripteerde
 HTTPS-verbinding; <strong>ontvangers</strong> — WeatherAPI.com (Verenigde
-Koninkryk, sien weatherapi.com) en Google LLC (Verenigde State, sien
-policies.google.com); <strong>doel en bewaring</strong> — die haal van u
-voorspelling, en die lewering en meting van die banieradvertensie, elkeen
+Koninkryk, sien weatherapi.com), Google LLC (Verenigde State, sien
+policies.google.com) en Apple Inc. (Verenigde State, sien apple.com/privacy); <strong>doel en bewaring</strong> — die haal van u
+voorspelling, die benoeming van u dorp, en die lewering en meting van die banieradvertensie, elkeen
 bewaar kragtens die ontvanger se eie beleid; <strong>u reg om te
 weier</strong> — u kan die liggingtoestemming enige tyd in u
-toestelinstellings weier of terugtrek (die app kan dan nie maai-advies gee
-nie), en u kan advertensies heeltemal verwyder deur „Verwyder advertensies“
+toestelinstellings weier of terugtrek (die app bepaal dan die voorspelling by benadering
+vanuit u netwerkverbinding), en u kan advertensies heeltemal verwyder deur „Verwyder advertensies“
 te koop.</p>
 <p><strong>China (vasteland).</strong> U koördinate word deur u toestel direk
 na WeatherAPI.com gestuur, ’n diens buite die Chinese vasteland, uitsluitlik
-om die voorspelling te haal; deur die liggingtoestemming te verleen, stem u
+om die voorspelling te haal, en na u foon se bedryfstelselverskaffer (Apple of
+Google) om die pleknaam op te soek; deur die liggingtoestemming te verleen, stem u
 daartoe in. Ons hou geen persoonlike inligting van enige gebruiker nie. Vrae
 oor persoonlike inligting kan aan die adres hieronder gestuur word.</p>
 <p><strong>Rusland.</strong> Ons stoor geen persoonlike data van enige
 gebruiker nie, in Rusland of elders; die app bedryf geen bedieners nie.</p>
+
+<h2>’n Regstelling oor die dorpnaam</h2>
+<p>’n Vroeëre weergawe van hierdie beleid het gesê die dorp- of voorstadnaam
+word „op u toestel“ bepaal. Dit was verkeerd, en ons het dit reggestel. Die
+app vra die bedryfstelsel om koördinate in ’n pleknaam om te skakel, en op
+sowel iOS as Android word daardie opsoek oor die netwerk gedoen: u koördinate
+word na Apple of na Google gestuur en ’n pleknaam kom terug. Dieselfde
+weergawe het gesê die app kan nie sonder die liggingtoestemming maai-advies
+gee nie; dit kan wel, vanuit u benaderde omgewing. Ons sê dit eerder reguit as
+om ’n gerusstellende sin te laat staan wat die kode nie ondersteun nie.</p>
 
 <h2>Veranderinge</h2>
 <p>Die datum boaan hierdie bladsy is die ingangsdatum daarvan. As hierdie

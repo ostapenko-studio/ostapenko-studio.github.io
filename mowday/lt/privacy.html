@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privatumo politika</h1>
-<p class="meta">Mow Day, Ostapenko Studio · Galioja nuo 2026 m. rugsėjo 8 d.</p>
+<p class="meta">Mow Day, Ostapenko Studio · Galioja nuo 2026 m. rugsėjo 8 d. · Atnaujinta 2026 m. spalio 8 d.</p>
 <p class="meta">Kanoninė (pagrindinė) versija yra <a href="../privacy.html">tekstas anglų kalba</a>. Vertimai pateikiami patogumui; jei vertimas skiriasi, taikoma anglų kalbos versija tiek, kiek leidžia vietos teisė.</p>
 
 <p>Mow Day yra paprasta programėlė: ji perskaito orų prognozę ir pasako,
@@ -108,8 +108,13 @@ gauti prognozę (temperatūrą, drėgnį, rasos tašką, vėją, gūsius, debesu
 kritulių tikimybę, kritulių kiekį, saulėtekį ir saulėlydį), pagal kurią
 nustatomos vejos pjovimo sąlygos tavo apylinkėse. Kaip WeatherAPI.com tvarko užklausas, aprašyta jos pačios
 <a href="https://www.weatherapi.com/privacy.aspx">privatumo politikoje</a>.
-Programėlėje rodomas miesto ar rajono pavadinimas nustatomas tavo įrenginyje
-operacinės sistemos geokoderiu. Mes niekada negauname, nesaugome ir
+Kad parodytų miesto ar rajono pavadinimą, programėlė paprašo tavo telefono
+operacinės sistemos paversti koordinates vietovės pavadinimu; ir iOS, ir
+Android sistemose ši paieška atliekama per tinklą, todėl koordinatės patenka Apple
+arba Google, kurios jas tvarko pagal savo privatumo politikas. Jei vietos
+nustatymas išjungtas ar nepasiekiamas, programėlė paprašo WeatherAPI.com
+prognozės tavo apytikslei vietovei, kurią paslauga nustato iš tavo tinklo IP
+adreso (jis ir taip siunčiamas su kiekviena užklausa). Mes niekada negauname, nesaugome ir
 neregistruojame tavo vietos, o programėlė neseka tavo judėjimo ir netikrina
 vietos fone.</p>
 <p>Programėlė prašo tik <em>apytikslės</em> vietos ir prašo žemiausio
@@ -153,14 +158,16 @@ atsiskaitymo informacijos.</p>
 <table>
 <tr><th>Duomenys</th><th>Tikslas</th><th>Kas gauna</th><th>Saugojimas</th></tr>
 <tr><td>Apytikslė vieta (koordinatės)</td><td>Orų prognozės gavimas tavo apylinkėms — be jos programėlė negali įvertinti vejos pjovimo orų</td><td>WeatherAPI.com (tiesiai iš tavo įrenginio)</td><td>Mes nesaugome. WeatherAPI.com: žr. jos privatumo politiką</td></tr>
+<tr><td>Apytikslė vieta (koordinatės)</td><td>Koordinačių pavertimas programėlėje rodomu miesto ar rajono pavadinimu</td><td>Tavo įrenginio operacinės sistemos tiekėjas — Apple iOS įrenginiuose, Google Android įrenginiuose (tiesiai iš tavo įrenginio)</td><td>Mes nesaugome. Apple ir Google: žr. jų privatumo politikas</td></tr>
 <tr><td>Įrenginio informacija reklamai (IP adresas, įrenginio identifikatoriai, netinkamo srauto signalai, sąveika su reklama ir diagnostikos duomenys, pavyzdžiui, strigtys ir programėlės našumas — nieko iš to nenaudojame reklamoms personalizuoti ar jūsų profiliui sudaryti)</td><td>Vienintelės nemokamos versijos reklamjuostės pateikimas režimu „ribotos reklamos“, taip pat „Google“ atliekamas šios reklamos matavimas ir sukčiavimo prevencija</td><td>Google AdMob</td><td>Mes nelaikome. Google: žr. jos privatumo politiką</td></tr>
 <tr><td>Nustatymai ir naujausia prognozė</td><td>Atsidarymas iš karto su paskutiniu vertinimu</td><td>Niekas — lieka tavo įrenginyje</td><td>Kol ištrinsi programėlę</td></tr>
 <tr><td>Suplanuoti vejos pjovimo pranešimai</td><td>Priminimas geros vejos pjovimo dienos išvakarėse ir atsivėrus laiko langui, jei esi įjungęs pranešimus</td><td>Niekas — suplanuoja tavo įrenginio operacinė sistema</td><td>Kol jie suveiks, kol išjungsi pranešimus arba ištrinsi programėlę</td></tr>
 <tr><td>Reklamos pašalinimo pirkinio būsena</td><td>Reklamos slėpimas po pirkinio</td><td>Apple / Google apdoroja pirkinį; programėlė saugo tik taip/ne žymą</td><td>Kol ištrinsi programėlę; parduotuvė turi savo įrašą</td></tr>
 </table>
 <p>WeatherAPI.com veikia iš Jungtinės Karalystės; Google reklamos paslaugos
-tvarko duomenis Jungtinėse Amerikos Valstijose ir kitose šalyse, kuriose
-Google veikia. Abi gauna duomenis tiesiai iš tavo įrenginio, o ne iš mūsų, ir
+bei Apple ir Google vietovių pavadinimų paieška tvarko duomenis
+Jungtinėse Amerikos Valstijose ir kitose šalyse, kuriose šios bendrovės
+veikia. Visos jos gauna duomenis tiesiai iš tavo įrenginio, o ne iš mūsų, ir
 kiekviena juos tvarko pagal savo privatumo politiką, nurodytą aukščiau.
 Kadangi mes nieko nelaikome, patys jokio tolesnio duomenų perdavimo
 neatliekame.</p>
@@ -210,28 +217,43 @@ tavęs netenkina, gali pateikti skundą Indijos duomenų apsaugos tarybai (Data
 Protection Board of India).</p>
 <p><strong>Japonija ir Pietų Korėja.</strong> Lentelėje aukščiau išvardyti
 tvarkomi duomenys, jų tikslas, gavėjai ir saugojimo laikotarpis. Savo
-užsienio duomenų tvarkytojo neskiriame; WeatherAPI.com ir Google gauna
-duomenis tiesiai iš tavo įrenginio, už tavo šalies ribų, pagal savo
+užsienio duomenų tvarkytojo neskiriame; WeatherAPI.com, Google ir, dėl
+vietovės pavadinimo, Apple gauna duomenis tiesiai iš tavo įrenginio, už tavo šalies ribų, pagal savo
 politikas.</p>
 <p>Pietų Korėjos naudotojams į užsienį siunčiamų duomenų detalės yra tokios:
-<strong>duomenys</strong> — apytikslės vietos koordinatės (į WeatherAPI.com)
-ir IP adresas, įrenginio bei reklamos identifikatoriai ir sąveika su reklama
+<strong>duomenys</strong> — apytikslės vietos koordinatės (į WeatherAPI.com,
+o dėl vietovės pavadinimo — į Apple iOS įrenginiuose arba Google Android įrenginiuose) ir IP
+adresas, įrenginio bei reklamos identifikatoriai ir sąveika su reklama
 (į Google); <strong>kada ir kaip</strong> — tuo metu, kai atidarai programėlę
 arba ji atnaujina duomenis, šifruotu HTTPS ryšiu; <strong>gavėjai</strong> —
-WeatherAPI.com (Jungtinė Karalystė, žr. weatherapi.com) ir Google LLC
-(Jungtinės Amerikos Valstijos, žr. policies.google.com); <strong>tikslas ir
-saugojimas</strong> — tavo prognozės gavimas ir reklamjuostės rodymas bei
+WeatherAPI.com (Jungtinė Karalystė, žr. weatherapi.com), Google LLC
+(Jungtinės Amerikos Valstijos, žr. policies.google.com) ir Apple Inc.
+(Jungtinės Amerikos Valstijos, žr. apple.com/privacy); <strong>tikslas ir
+saugojimas</strong> — tavo prognozės gavimas, tavo miesto pavadinimo
+nustatymas ir reklamjuostės rodymas bei
 matavimas, kiekvienas saugomas pagal paties gavėjo politiką; <strong>tavo
 teisė atsisakyti</strong> — bet kada įrenginio nustatymuose gali neduoti arba
-atšaukti leidimą naudoti vietą (tada programėlė negali patarti dėl vejos pjovimo)
+atšaukti leidimą naudoti vietą (tada programėlė prognozę apytiksliai nustato pagal tavo tinklo ryšį)
 ir gali visiškai pašalinti reklamą įsigijęs reklamos pašalinimą.</p>
 <p><strong>Kinija (žemyninė dalis).</strong> Tavo koordinates tavo įrenginys
 siunčia tiesiai į WeatherAPI.com — paslaugą už žemyninės Kinijos ribų —
-vien tam, kad gautų prognozę; leidimo naudoti vietą suteikimas ir yra tavo
+vien tam, kad gautų prognozę, ir tavo telefono operacinės sistemos tiekėjui
+(Apple arba Google), kad surastų vietovės pavadinimą; leidimo naudoti vietą suteikimas ir yra tavo
 sutikimas su tuo. Mes nelaikome jokio naudotojo asmeninės informacijos.
 Klausimus dėl asmeninės informacijos galima siųsti toliau nurodytu adresu.</p>
 <p><strong>Rusija.</strong> Nesaugome jokio naudotojo asmens duomenų nei
 Rusijoje, nei kitur; programėlė neturi serverių.</p>
+
+<h2>Patikslinimas dėl miesto pavadinimo</h2>
+<p>Ankstesnėje šios politikos versijoje buvo rašoma, kad miesto ar rajono
+pavadinimas nustatomas „tavo įrenginyje“. Tai buvo netiesa, ir mes tai
+ištaisėme. Programėlė paprašo operacinės sistemos paversti koordinates
+vietovės pavadinimu, o ir iOS, ir Android sistemose ši paieška atliekama per tinklą:
+tavo koordinatės siunčiamos Apple arba Google, ir grąžinamas vietovės
+pavadinimas. Toje pačioje versijoje buvo rašoma, kad be leidimo naudoti vietą
+programėlė negali patarti dėl vejos pjovimo; gali — pagal tavo apytikslę
+vietovę. Verčiau pasakome tai tiesiai, nei paliekame raminantį sakinį, kurio
+kodas nepatvirtina.</p>
 
 <h2>Pakeitimai</h2>
 <p>Data šio puslapio viršuje yra jo įsigaliojimo data. Jei ši politika keisis,

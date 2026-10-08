@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politique de confidentialité</h1>
-<p class="meta">Mow Day, par Ostapenko Studio · En vigueur le 8 septembre 2026</p>
+<p class="meta">Mow Day, par Ostapenko Studio · En vigueur le 8 septembre 2026 · Mise à jour le 8 octobre 2026</p>
 <p class="meta">Le texte anglais (<a href="../privacy.html">version canonique</a>) fait foi. Les traductions sont fournies à titre de commodité; en cas de divergence, la version anglaise s’applique dans la mesure permise par le droit local.</p>
 
 <p>Mow Day est une application simple&nbsp;: elle lit les prévisions météo
@@ -112,8 +112,15 @@ soleil) utilisées pour déterminer les conditions de tonte dans votre
 secteur. Le traitement des requêtes par WeatherAPI.com
 est décrit dans sa propre
 <a href="https://www.weatherapi.com/privacy.aspx">politique de confidentialité</a>.
-Le nom de la ville ou du quartier affiché dans l’application est déterminé
-sur votre appareil par le géocodeur du système d’exploitation. Nous ne
+Pour afficher le nom de la ville ou du quartier, l’application demande au
+système d’exploitation de votre téléphone de convertir les coordonnées en nom
+de lieu; sous iOS comme sous Android, cette recherche passe par le réseau,
+de sorte que les coordonnées sont transmises à Apple ou à Google, qui les
+traitent selon leurs propres politiques de confidentialité. Si la position est
+désactivée ou indisponible, l’application demande à WeatherAPI.com les
+prévisions pour votre secteur approximatif, que WeatherAPI.com détermine à
+partir de l’adresse IP de votre réseau (transmise de toute façon avec chaque
+requête). Nous ne
 recevons, ne stockons et ne consignons jamais votre position, et
 l’application ne suit pas vos déplacements et n’effectue aucune vérification
 de position en arrière-plan.</p>
@@ -163,14 +170,16 @@ données de paiement ni vos renseignements de facturation.</p>
 <table>
 <tr><th>Données</th><th>Finalité</th><th>Destinataire</th><th>Conservation</th></tr>
 <tr><td>Position approximative (coordonnées)</td><td>Obtenir les prévisions météo pour votre secteur — sans elles, l’application ne peut pas juger les conditions de tonte</td><td>WeatherAPI.com (directement depuis votre appareil)</td><td>Non conservée par nous. WeatherAPI.com&nbsp;: voir sa politique de confidentialité</td></tr>
+<tr><td>Position approximative (coordonnées)</td><td>Convertir les coordonnées en nom de la ville ou du quartier affiché dans l’application</td><td>L’éditeur du système d’exploitation de votre appareil — Apple sous iOS, Google sous Android (directement depuis votre appareil)</td><td>Non conservée par nous. Apple et Google&nbsp;: voir leurs politiques de confidentialité</td></tr>
 <tr><td>Informations sur l'appareil pour la publicité (adresse IP, identifiants d'appareil, signaux de trafic non valide, interactions avec l'annonce et données de diagnostic, comme les plantages et les performances de l'application — rien de tout cela n'est utilisé pour personnaliser les annonces ni pour établir un profil vous concernant)</td><td>Diffusion de l'unique bannière de la version gratuite, en mode « annonces limitées », ainsi que la mesure et la prévention de la fraude par Google pour cette annonce</td><td>Google AdMob</td><td>Non détenus par nous. Google&nbsp;: voir sa politique de confidentialité</td></tr>
 <tr><td>Réglages et dernières prévisions</td><td>Ouvrir instantanément sur votre dernier verdict</td><td>Personne — restent sur votre appareil</td><td>Jusqu’à la suppression de l’application</td></tr>
 <tr><td>Alertes de tonte programmées</td><td>Vous rappeler la veille au soir d’une bonne journée de tonte, et quand le créneau s’ouvre, si vous activez les alertes</td><td>Personne — programmées par le système d’exploitation de votre appareil</td><td>Jusqu’à leur déclenchement, jusqu’à la désactivation des alertes ou jusqu’à la suppression de l’application</td></tr>
 <tr><td>Statut d’achat de Supprimer les publicités</td><td>Masquer les publicités après l’achat</td><td>Apple / Google traitent l’achat; l’application ne stocke qu’un indicateur oui/non</td><td>Jusqu’à la suppression de l’application; la boutique conserve son propre registre</td></tr>
 </table>
 <p>WeatherAPI.com est exploité depuis le Royaume-Uni; les services
-publicitaires de Google traitent les données aux États-Unis et dans d’autres
-pays où Google est présent. Tous deux reçoivent les données directement de
+publicitaires de Google, ainsi que la recherche de nom de lieu d’Apple et de
+Google, traitent les données aux États-Unis et dans d’autres pays où ces
+entreprises sont présentes. Tous reçoivent les données directement de
 votre appareil, et non de nous, et chacun les traite selon sa propre
 politique de confidentialité, liée ci-dessus. Comme nous ne détenons rien,
 nous n’effectuons aucun transfert ultérieur de notre part.</p>
@@ -235,28 +244,32 @@ auprès du Data Protection Board of India.</p>
 <p><strong>Japon et Corée du Sud.</strong> Le tableau ci-dessus énumère les
 éléments traités, leur finalité, les destinataires et la durée de
 conservation. Nous ne désignons aucun sous-traitant à l’étranger pour notre
-propre compte; WeatherAPI.com et Google reçoivent les données directement
-de votre appareil, à l’extérieur de votre pays, selon leurs propres
+propre compte; WeatherAPI.com, Google et, pour le nom
+de lieu, Apple reçoivent les données directement de votre appareil, à l’extérieur de votre pays, selon leurs propres
 politiques.</p>
 <p>Pour les utilisateurs de la Corée du Sud, le détail des données envoyées à
 l’étranger est le suivant: <strong>éléments</strong> — coordonnées de
-position approximative (vers WeatherAPI.com), et adresse IP, identifiants
+position approximative (vers WeatherAPI.com, et vers Apple sous iOS ou
+Google sous Android pour le nom de lieu), et adresse IP, identifiants
 d’appareil et identifiants publicitaires ainsi qu’interactions avec les
 publicités (vers Google); <strong>moment et modalités</strong> — au moment où
 vous ouvrez l’application ou lorsqu’elle s’actualise, au moyen d’une
 connexion HTTPS chiffrée; <strong>destinataires</strong> — WeatherAPI.com
-(Royaume-Uni, voir weatherapi.com) et Google LLC (États-Unis, voir
-policies.google.com); <strong>finalité et durée de conservation</strong> —
-obtenir vos prévisions, et diffuser et mesurer la bannière publicitaire,
+(Royaume-Uni, voir weatherapi.com), Google LLC (États-Unis, voir
+policies.google.com) et Apple Inc. (États-Unis, voir apple.com/privacy); <strong>finalité et durée de conservation</strong> —
+obtenir vos prévisions, nommer votre ville, et diffuser et mesurer la bannière publicitaire,
 chacune étant conservée selon la politique propre du destinataire;
 <strong>votre droit de refus</strong> — vous pouvez refuser ou retirer
 l’autorisation de position en tout temps dans les réglages de votre appareil
-(l’application ne peut alors plus donner de conseils pour la tonte), et vous
+(l’application situe alors les prévisions de façon approximative à partir de
+votre connexion réseau), et vous
 pouvez éliminer entièrement la publicité en achetant Supprimer les
 publicités.</p>
 <p><strong>Chine (continentale).</strong> Vos coordonnées sont envoyées par
 votre appareil directement à WeatherAPI.com, un service situé hors de Chine
-continentale, dans le seul but d’obtenir les prévisions; en accordant
+continentale, dans le seul but d’obtenir les prévisions, ainsi qu’à l’éditeur du
+système d’exploitation de votre téléphone (Apple ou Google) pour rechercher le
+nom de lieu; en accordant
 l’autorisation de position, vous consentez à cet envoi. Nous ne détenons
 aucun renseignement personnel d’aucun utilisateur. Les questions relatives
 aux renseignements personnels peuvent être envoyées à l’adresse
@@ -264,6 +277,18 @@ ci-dessous.</p>
 <p><strong>Russie.</strong> Nous ne stockons aucune donnée personnelle
 d’aucun utilisateur, en Russie ou ailleurs; l’application n’exploite aucun
 serveur.</p>
+
+<h2>Une correction concernant le nom de la ville</h2>
+<p>Une version antérieure de cette politique indiquait que le nom de la ville
+ou du quartier était déterminé «&nbsp;sur votre appareil&nbsp;». C’était inexact, et
+nous l’avons corrigé. L’application demande au système d’exploitation de
+convertir des coordonnées en nom de lieu, et sous iOS comme sous Android cette
+recherche passe par le réseau: vos coordonnées sont envoyées à Apple ou à
+Google, et un nom de lieu est renvoyé. La même version indiquait que
+l’application ne pouvait pas donner de conseils pour la tonte sans
+l’autorisation de position; elle le peut, à partir de votre secteur
+approximatif. Nous préférons le dire clairement plutôt que de laisser en place
+une phrase rassurante que le code ne confirme pas.</p>
 
 <h2>Modifications</h2>
 <p>La date figurant en haut de cette page est sa date d’entrée en vigueur.

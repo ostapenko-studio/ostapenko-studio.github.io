@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacybeleid</h1>
-<p class="meta">Mow Day, door Ostapenko Studio · Van kracht op 8 september 2026</p>
+<p class="meta">Mow Day, door Ostapenko Studio · Van kracht op 8 september 2026 · Bijgewerkt op 8 oktober 2026</p>
 <p class="meta">De <a href="../privacy.html">Engelse tekst</a> is de leidende versie. Vertalingen zijn er voor het gemak; waar een vertaling afwijkt, geldt de Engelse versie voor zover het plaatselijke recht dat toestaat.</p>
 
 <p>Mow Day is een eenvoudige app: hij leest de weersverwachting en vertelt
@@ -110,9 +110,15 @@ luchtvochtigheid, dauwpunt, wind, windstoten, bewolking, neerslagkans,
 neerslag, zonsopkomst en zonsondergang) op te halen waarmee de
 maaiweersomstandigheden voor jouw omgeving worden bepaald. Hoe WeatherAPI.com
 verzoeken verwerkt, staat in zijn eigen
-<a href="https://www.weatherapi.com/privacy.aspx">privacybeleid</a>. De
-plaats- of wijknaam die in de app wordt getoond, wordt op je toestel bepaald
-door de geocoder van het besturingssysteem. Wij ontvangen, bewaren of loggen
+<a href="https://www.weatherapi.com/privacy.aspx">privacybeleid</a>. Om
+de plaats- of wijknaam te tonen, vraagt de app het besturingssysteem van je
+telefoon om de coördinaten om te zetten in een plaatsnaam; zowel op iOS als op
+Android wordt die opzoeking via het netwerk afgehandeld, dus gaan de
+coördinaten naar Apple of naar Google, die ermee omgaan onder hun eigen
+privacybeleid. Staat locatie uit of is die niet beschikbaar, dan vraagt de app
+WeatherAPI.com om de verwachting voor je globale omgeving, die WeatherAPI.com
+afleidt uit het IP-adres van je netwerk (dat sowieso met elk verzoek wordt
+meegestuurd). Wij ontvangen, bewaren of loggen
 je locatie nooit, en de app volgt je verplaatsingen niet en voert geen
 locatiecontroles op de achtergrond uit.</p>
 <p>De app vraagt alleen om je <em>globale</em> locatie en vraagt de laagste
@@ -158,15 +164,17 @@ betaalgegevens of factuurgegevens.</p>
 <table>
 <tr><th>Gegevens</th><th>Doel</th><th>Wie ze ontvangt</th><th>Bewaartermijn</th></tr>
 <tr><td>Globale locatie (coördinaten)</td><td>De weersverwachting voor jouw omgeving ophalen — zonder kan de app de maaiweersomstandigheden niet beoordelen</td><td>WeatherAPI.com (rechtstreeks vanaf je toestel)</td><td>Niet door ons bewaard. WeatherAPI.com: zie zijn privacybeleid</td></tr>
+<tr><td>Globale locatie (coördinaten)</td><td>De coördinaten omzetten in de plaats- of wijknaam die in de app wordt getoond</td><td>De leverancier van het besturingssysteem van je toestel — Apple op iOS, Google op Android (rechtstreeks vanaf je toestel)</td><td>Niet door ons bewaard. Apple en Google: zie hun privacybeleid</td></tr>
 <tr><td>Apparaatinformatie voor advertenties (IP-adres, apparaat-identificaties, signalen van ongeldig verkeer, advertentie-interacties en diagnostische gegevens zoals crashes en app-prestaties — niets daarvan wordt gebruikt om advertenties te personaliseren of een profiel van jou op te bouwen)</td><td>Leveren van de enige banner in de gratis versie, in de modus 'beperkte advertenties', en de meting en fraudepreventie door Google voor die advertentie</td><td>Google AdMob</td><td>Niet door ons bewaard. Google: zie zijn privacybeleid</td></tr>
 <tr><td>Instellingen en de laatste verwachting</td><td>Meteen openen op je laatste advies</td><td>Niemand — blijft op je toestel</td><td>Tot je de app verwijdert</td></tr>
 <tr><td>Ingeplande maaimeldingen</td><td>Je de avond voor een goede maaidag herinneren, en wanneer de periode begint, als je meldingen aanzet</td><td>Niemand — ingepland door het besturingssysteem van je toestel</td><td>Tot ze afgaan, je meldingen uitzet of je de app verwijdert</td></tr>
 <tr><td>Aankoopstatus van „Advertenties verwijderen”</td><td>Advertenties verbergen na aankoop</td><td>Apple / Google verwerken de aankoop; de app bewaart alleen een ja/nee-vlag</td><td>Tot je de app verwijdert; de store houdt zijn eigen administratie bij</td></tr>
 </table>
 <p>WeatherAPI.com wordt vanuit het Verenigd Koninkrijk geëxploiteerd; de
-advertentiediensten van Google verwerken gegevens in de Verenigde Staten en
-in andere landen waar Google actief is. Beide ontvangen de gegevens
-rechtstreeks van je toestel, niet van ons, en beide gaan ermee om onder hun
+advertentiediensten van Google en de plaatsnaamopzoeking van Apple en Google
+verwerken gegevens in de Verenigde Staten en in andere landen waar die
+bedrijven actief zijn. Zij ontvangen de gegevens allemaal
+rechtstreeks van je toestel, niet van ons, en elk gaat ermee om onder hun
 eigen privacybeleid, waarnaar hierboven wordt verwezen. Omdat wij niets
 bewaren, is er van onze kant geen doorgifte.</p>
 <p>We verkopen geen persoonsgegevens en gebruiken geen analytics,
@@ -216,30 +224,46 @@ niet tevreden, dan kun je een klacht indienen bij het Data Protection Board
 of India.</p>
 <p><strong>Japan en Zuid-Korea.</strong> De tabel hierboven noemt de verwerkte
 gegevens, hun doel, de ontvangers en de bewaartermijn. We schakelen zelf geen
-buitenlandse verwerker in; WeatherAPI.com en Google ontvangen gegevens
-rechtstreeks van je toestel, buiten jouw land, onder hun eigen beleid.</p>
+buitenlandse verwerker in; WeatherAPI.com, Google en, voor de
+plaatsnaam, Apple ontvangen gegevens rechtstreeks van je toestel, buiten jouw land, onder hun eigen beleid.</p>
 <p>Voor gebruikers in Zuid-Korea zijn dit de gegevens over de doorgifte naar
 het buitenland: <strong>gegevens</strong> — globale locatiecoördinaten (naar
-WeatherAPI.com) en IP-adres, toestel- en advertentie-identificatoren en
+WeatherAPI.com, en voor de plaatsnaam naar Apple op iOS of Google op Android)
+en IP-adres, toestel- en advertentie-identificatoren en
 interacties met advertenties (naar Google); <strong>wanneer en hoe</strong> —
 op het moment dat je de app opent of hij de gegevens ververst, over een
 versleutelde HTTPS-verbinding; <strong>ontvangers</strong> — WeatherAPI.com
-(Verenigd Koninkrijk, zie weatherapi.com) en Google LLC (Verenigde Staten,
-zie policies.google.com); <strong>doel en bewaartermijn</strong> — het
-ophalen van jouw verwachting en het tonen en meten van de
+(Verenigd Koninkrijk, zie weatherapi.com), Google LLC (Verenigde Staten,
+zie policies.google.com) en Apple Inc. (Verenigde Staten, zie
+apple.com/privacy); <strong>doel en bewaartermijn</strong> — het
+ophalen van jouw verwachting, het benoemen van je woonplaats en het tonen en meten van de
 banneradvertentie, elk bewaard onder het eigen beleid van de ontvanger;
 <strong>je recht om te weigeren</strong> — je kunt de locatietoestemming op
 elk moment weigeren of intrekken in de instellingen van je toestel (de app
-kan dan geen maaiadvies geven), en je kunt advertenties volledig verwijderen
+bepaalt de verwachting dan bij benadering aan de hand van je
+netwerkverbinding), en je kunt advertenties volledig verwijderen
 door „Advertenties verwijderen” te kopen.</p>
 <p><strong>China (vasteland).</strong> Je coördinaten worden door je toestel
 rechtstreeks naar WeatherAPI.com gestuurd, een dienst buiten het Chinese
-vasteland, uitsluitend om de verwachting op te halen; door de
+vasteland, uitsluitend om de verwachting op te halen, en naar de leverancier van het
+besturingssysteem van je telefoon (Apple of Google) om de plaatsnaam op te
+zoeken; door de
 locatietoestemming te geven, stem je daarmee in. We bewaren van geen enkele
 gebruiker persoonsgegevens. Vragen over persoonsgegevens kun je naar het
 adres hieronder sturen.</p>
 <p><strong>Rusland.</strong> We bewaren van geen enkele gebruiker
 persoonsgegevens, in Rusland of elders; de app draait geen servers.</p>
+
+<h2>Een correctie over de plaatsnaam</h2>
+<p>Een eerdere versie van dit beleid zei dat de plaats- of wijknaam „op je
+toestel” werd bepaald. Dat klopte niet, en we hebben het gecorrigeerd. De app
+vraagt het besturingssysteem om coördinaten om te zetten in een plaatsnaam, en
+zowel op iOS als op Android wordt die opzoeking via het netwerk afgehandeld:
+je coördinaten worden naar Apple of naar Google gestuurd en er komt een
+plaatsnaam terug. Dezelfde versie zei dat de app zonder locatietoestemming
+geen maaiadvies kon geven; dat kan wel, op basis van je globale omgeving. We
+zeggen dat liever ronduit dan een geruststellende zin te laten staan die de
+code niet waarmaakt.</p>
 
 <h2>Wijzigingen</h2>
 <p>De datum bovenaan deze pagina is de ingangsdatum. Als dit beleid verandert,

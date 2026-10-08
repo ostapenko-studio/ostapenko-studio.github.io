@@ -92,7 +92,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Mow Day, von Ostapenko Studio · Gültig ab 8. September 2026</p>
+<p class="meta">Mow Day, von Ostapenko Studio · Gültig ab 8. September 2026 · Aktualisiert am 8. Oktober 2026</p>
 <p class="meta">Die <a href="../privacy.html">englische Fassung</a> ist die maßgebliche Version. Übersetzungen dienen nur der Orientierung; weicht eine Übersetzung ab, gilt die englische Fassung, soweit das örtliche Recht dies zulässt.</p>
 
 <p>Mow Day ist eine einfache App: Sie liest die Wettervorhersage und sagt
@@ -110,9 +110,15 @@ Wetterdatendienst, gesendet — ausschließlich zu dem Zweck, die Vorhersage
 Regenwahrscheinlichkeit, Niederschlagsmenge, Sonnenauf- und -untergang)
 abzurufen, aus der die Mähbedingungen für Ihre Gegend ermittelt werden. Wie WeatherAPI.com Anfragen verarbeitet,
 beschreibt dessen eigene
-<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>. Der
-in der App angezeigte Orts- oder Stadtteilname wird auf Ihrem Gerät vom
-Geocoder des Betriebssystems ermittelt. Wir erhalten, speichern oder
+<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>. Um
+den Orts- oder Stadtteilnamen anzuzeigen, bittet die App das Betriebssystem
+Ihres Telefons, die Koordinaten in einen Ortsnamen zu übersetzen; sowohl unter
+iOS als auch unter Android wird diese Abfrage über das Netz beantwortet, die
+Koordinaten gehen also an Apple oder an Google, die sie nach ihren eigenen
+Datenschutzerklärungen behandeln. Ist der Standort ausgeschaltet oder nicht
+verfügbar, ruft die App bei WeatherAPI.com die Vorhersage für Ihre ungefähre
+Gegend ab, die WeatherAPI.com aus der IP-Adresse Ihres Netzes ermittelt (die
+ohnehin mit jeder Anfrage gesendet wird). Wir erhalten, speichern oder
 protokollieren Ihren Standort nie, und die App verfolgt weder Ihre
 Bewegungen noch führt sie Standortabfragen im Hintergrund durch.</p>
 <p>Die App fragt ausschließlich den <em>ungefähren</em> Standort ab und
@@ -159,14 +165,16 @@ Zahlungsdaten oder Ihre Rechnungsinformationen.</p>
 <table>
 <tr><th>Daten</th><th>Zweck</th><th>Wer sie erhält</th><th>Speicherdauer</th></tr>
 <tr><td>Ungefährer Standort (Koordinaten)</td><td>Abruf der Wettervorhersage für Ihre Gegend — ohne ihn kann die App das Mähwetter nicht einschätzen</td><td>WeatherAPI.com (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. WeatherAPI.com: siehe dessen Datenschutzerklärung</td></tr>
+<tr><td>Ungefährer Standort (Koordinaten)</td><td>Übersetzen der Koordinaten in den in der App angezeigten Orts- oder Stadtteilnamen</td><td>Der Betriebssystemanbieter Ihres Geräts — Apple unter iOS, Google unter Android (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. Apple und Google: siehe deren Datenschutzerklärungen</td></tr>
 <tr><td>Geräteinformationen für Werbung (IP-Adresse, Gerätekennungen, Signale zu ungültigem Traffic, Interaktionen mit Anzeigen und Diagnosedaten wie Abstürze und App-Leistung — nichts davon wird zur Personalisierung von Anzeigen oder zur Profilbildung über Sie genutzt)</td><td>Ausliefern der einzelnen Banneranzeige in der kostenlosen Version im Modus „eingeschränkte Anzeigen“ sowie Googles Messung und Betrugsprävention für diese Anzeige</td><td>Google AdMob</td><td>Von uns nicht gehalten. Google: siehe dessen Datenschutzerklärung</td></tr>
 <tr><td>Einstellungen und die letzte Vorhersage</td><td>Sofortiges Öffnen mit Ihrer letzten Einschätzung</td><td>Niemand — bleibt auf Ihrem Gerät</td><td>Bis Sie die App löschen</td></tr>
 <tr><td>Geplante Mähhinweise</td><td>Erinnerung am Abend vor einem guten Mähtag, und wenn sich das Zeitfenster öffnet, wenn Sie die Hinweise einschalten</td><td>Niemand — vom Betriebssystem Ihres Geräts geplant</td><td>Bis sie ausgelöst werden, Sie die Hinweise ausschalten oder die App löschen</td></tr>
 <tr><td>Kaufstatus von „Werbung entfernen“</td><td>Ausblenden der Werbung nach dem Kauf</td><td>Apple / Google wickeln den Kauf ab; die App speichert nur ein Ja/Nein-Kennzeichen</td><td>Bis Sie die App löschen; der Store führt seine eigene Aufzeichnung</td></tr>
 </table>
 <p>WeatherAPI.com wird aus dem Vereinigten Königreich betrieben; Googles
-Werbedienste verarbeiten Daten in den Vereinigten Staaten und in anderen
-Ländern, in denen Google tätig ist. Beide erhalten die Daten direkt von Ihrem
+Werbedienste sowie die Ortsnamensabfrage von Apple und Google verarbeiten
+Daten in den Vereinigten Staaten und in anderen Ländern, in denen diese
+Unternehmen tätig sind. Sie alle erhalten die Daten direkt von Ihrem
 Gerät, nicht von uns, und behandeln sie jeweils nach ihrer eigenen, oben
 verlinkten Datenschutzerklärung. Da wir nichts halten, findet durch uns keine
 Weiterübermittlung statt.</p>
@@ -219,33 +227,49 @@ Namen von Ostapenko Studio, und wir bemühen uns um eine Antwort innerhalb von
 of India beschweren.</p>
 <p><strong>Japan und Südkorea.</strong> Die obige Tabelle nennt die
 verarbeiteten Daten, ihren Zweck, die Empfänger und die Speicherdauer. Wir
-beauftragen keinen eigenen Auftragsverarbeiter im Ausland; WeatherAPI.com
-und Google erhalten Daten direkt von Ihrem Gerät, außerhalb Ihres Landes,
+beauftragen keinen eigenen Auftragsverarbeiter im Ausland; WeatherAPI.com,
+Google und, für den Ortsnamen, Apple erhalten Daten direkt von Ihrem Gerät, außerhalb Ihres Landes,
 unter ihren eigenen Richtlinien.</p>
 <p>Für Nutzer in Südkorea gelten für die ins Ausland übermittelten Daten
 folgende Angaben: <strong>Daten</strong> — ungefähre Standortkoordinaten (an
-WeatherAPI.com) sowie IP-Adresse, Geräte- und Werbekennungen und Interaktionen
+WeatherAPI.com sowie für den Ortsnamen an Apple unter iOS oder an Google unter
+Android) sowie IP-Adresse, Geräte- und Werbekennungen und Interaktionen
 mit Anzeigen (an Google); <strong>Zeitpunkt und Art der Übermittlung</strong>
 — in dem Moment, in dem Sie die App öffnen oder sie die Daten aktualisiert,
 über eine verschlüsselte HTTPS-Verbindung; <strong>Empfänger</strong> —
-WeatherAPI.com (Vereinigtes Königreich, siehe weatherapi.com) und Google LLC
-(Vereinigte Staaten, siehe policies.google.com); <strong>Zweck und
-Speicherdauer</strong> — Abruf Ihrer Vorhersage sowie Ausliefern und Messen
+WeatherAPI.com (Vereinigtes Königreich, siehe weatherapi.com), Google LLC
+(Vereinigte Staaten, siehe policies.google.com) und Apple Inc. (Vereinigte
+Staaten, siehe apple.com/privacy); <strong>Zweck und
+Speicherdauer</strong> — Abruf Ihrer Vorhersage, Benennung Ihres Ortes sowie Ausliefern und Messen
 der Banneranzeige, jeweils gespeichert nach der Richtlinie des jeweiligen
 Empfängers; <strong>Ihr Recht, die Übermittlung abzulehnen</strong> — Sie
 können die Standortberechtigung jederzeit in den Geräteeinstellungen
-verweigern oder widerrufen (die App kann dann keine Mähempfehlung geben),
+verweigern oder widerrufen (die App ermittelt die Vorhersage dann
+ungefähr anhand Ihrer Netzverbindung),
 und Sie können die Werbung mit dem Kauf von „Werbung entfernen“ vollständig
 entfernen.</p>
 <p><strong>China (Festland).</strong> Ihre Koordinaten werden von Ihrem Gerät
 direkt an WeatherAPI.com gesendet, einen Dienst außerhalb des chinesischen
-Festlands, ausschließlich zum Abruf der Vorhersage; mit der Erteilung der
+Festlands, ausschließlich zum Abruf der Vorhersage, sowie an den Anbieter des
+Betriebssystems Ihres Telefons (Apple oder Google), um den Ortsnamen
+abzufragen; mit der Erteilung der
 Standortberechtigung stimmen Sie dem zu. Wir halten keine personenbezogenen
 Daten irgendeines Nutzers. Fragen zu personenbezogenen Daten können an die
 unten stehende Adresse gerichtet werden.</p>
 <p><strong>Russland.</strong> Wir speichern keine personenbezogenen Daten
 irgendeines Nutzers, weder in Russland noch anderswo; die App betreibt keine
 Server.</p>
+
+<h2>Eine Richtigstellung zum Ortsnamen</h2>
+<p>Eine frühere Fassung dieser Erklärung sagte, der Orts- oder Stadtteilname
+werde „auf Ihrem Gerät“ ermittelt. Das war falsch, und wir haben es korrigiert.
+Die App bittet das Betriebssystem, Koordinaten in einen Ortsnamen zu übersetzen,
+und sowohl unter iOS als auch unter Android wird diese Abfrage über das Netz
+beantwortet: Ihre Koordinaten werden an Apple oder an Google gesendet, und ein
+Ortsname kommt zurück. Dieselbe Fassung sagte, die App könne ohne die
+Standortberechtigung keine Mähempfehlung geben; sie kann es, anhand Ihrer
+ungefähren Gegend. Wir sagen das lieber deutlich, als einen beruhigenden Satz
+stehen zu lassen, den der Code nicht deckt.</p>
 
 <h2>Änderungen</h2>
 <p>Das Datum oben auf dieser Seite ist ihr Gültigkeitsdatum. Ändert sich diese

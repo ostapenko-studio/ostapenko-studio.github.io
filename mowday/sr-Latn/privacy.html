@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politika privatnosti</h1>
-<p class="meta">Mow Day, Ostapenko Studio · Stupa na snagu 8. septembra 2026.</p>
+<p class="meta">Mow Day, Ostapenko Studio · Stupa na snagu 8. septembra 2026. · Ažurirano 8. oktobra 2026.</p>
 <p class="meta">Merodavna verzija je <a href="../privacy.html">izvorni engleski tekst</a>. Prevodi su dati radi lakšeg razumevanja; ako se prevod razlikuje, primenjuje se engleska verzija u meri u kojoj to dozvoljava lokalno pravo.</p>
 
 <p>Mow Day je jednostavna aplikacija: čita vremensku prognozu i govori vam
@@ -111,8 +111,13 @@ padavina, izlazak i zalazak sunca) koja se koristi za procenu uslova za
 košenje travnjaka na vašem području. Način na koji WeatherAPI.com
 obrađuje zahteve opisan je u njegovoj sopstvenoj
 <a href="https://www.weatherapi.com/privacy.aspx">politici privatnosti</a>.
-Naziv grada ili naselja prikazan u aplikaciji određuje se na vašem uređaju
-pomoću geokodera operativnog sistema. Mi nikada ne primamo, ne čuvamo niti
+Da bi prikazala naziv grada ili naselja, aplikacija traži od operativnog
+sistema telefona da koordinate pretvori u naziv mesta; i na iOS-u i na
+Android-u to traženje se obavlja preko mreže, pa koordinate odlaze kompaniji
+Apple ili Google, koje ih obrađuju prema sopstvenim politikama privatnosti.
+Ako je lokacija isključena ili nedostupna, aplikacija od WeatherAPI.com traži
+prognozu za vaše približno područje, koje servis određuje na osnovu IP adrese
+vaše mreže (ona se ionako šalje uz svaki zahtev). Mi nikada ne primamo, ne čuvamo niti
 beležimo vašu lokaciju, a aplikacija ne prati vaše kretanje i ne proverava
 lokaciju u pozadini.</p>
 <p>Aplikacija traži samo <em>približnu</em> lokaciju i zahteva najnižu
@@ -156,14 +161,16 @@ podatke za naplatu.</p>
 <table>
 <tr><th>Podaci</th><th>Svrha</th><th>Ko ih prima</th><th>Čuvanje</th></tr>
 <tr><td>Približna lokacija (koordinate)</td><td>Preuzimanje vremenske prognoze za vaše područje — bez nje aplikacija ne može da proceni uslove za košenje</td><td>WeatherAPI.com (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. WeatherAPI.com: videti njegovu politiku privatnosti</td></tr>
+<tr><td>Približna lokacija (koordinate)</td><td>Pretvaranje koordinata u naziv grada ili naselja prikazan u aplikaciji</td><td>Dobavljač operativnog sistema vašeg uređaja — Apple na iOS-u, Google na Android-u (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. Apple i Google: videti njihove politike privatnosti</td></tr>
 <tr><td>Informacije o uređaju za oglašavanje (IP adresa, identifikatori uređaja, signali nevažećeg saobraćaja, interakcije sa oglasom i dijagnostički podaci, kao što su padovi i performanse aplikacije — ništa od toga se ne koristi za personalizaciju oglasa niti za pravljenje vašeg profila)</td><td>Isporuka jedinog baner oglasa u besplatnoj verziji u režimu „ograničeni oglasi“, kao i Google-ovo merenje i sprečavanje prevara za taj oglas</td><td>Google AdMob</td><td>Mi ih ne čuvamo. Google: videti njegovu politiku privatnosti</td></tr>
 <tr><td>Podešavanja i najnovija prognoza</td><td>Trenutno otvaranje na vašoj poslednjoj proceni</td><td>Niko — ostaju na vašem uređaju</td><td>Dok ne obrišete aplikaciju</td></tr>
 <tr><td>Zakazana obaveštenja za košenje</td><td>Podsetnik uveče uoči dobrog dana za košenje i kada se otvori prilika za košenje, ako uključite obaveštenja</td><td>Niko — zakazuje ih operativni sistem vašeg uređaja</td><td>Dok se ne oglase, dok ne isključite obaveštenja ili dok ne obrišete aplikaciju</td></tr>
 <tr><td>Status kupovine opcije Ukloni oglase</td><td>Sakrivanje oglasa nakon kupovine</td><td>Apple / Google obrađuju kupovinu; aplikacija čuva samo oznaku da/ne</td><td>Dok ne obrišete aplikaciju; prodavnica vodi sopstvenu evidenciju</td></tr>
 </table>
 <p>WeatherAPI.com se vodi iz Ujedinjenog Kraljevstva, dok Google-ove usluge
-oglašavanja obrađuju podatke u Sjedinjenim Američkim Državama i u drugim
-zemljama u kojima Google posluje. Oboje primaju podatke direktno sa vašeg
+oglašavanja i Apple-ovo i Google-ovo traženje naziva mesta obrađuju podatke
+u Sjedinjenim Američkim Državama i u drugim zemljama u kojima te kompanije
+posluju. Svi oni primaju podatke direktno sa vašeg
 uređaja, a ne od nas, i svaki ih obrađuje prema sopstvenoj politici
 privatnosti, povezanoj iznad. Pošto ništa ne čuvamo, mi sami ne vršimo
 nikakav dalji prenos.</p>
@@ -216,29 +223,43 @@ pritužbu Odboru za zaštitu podataka Indije (Data Protection Board of
 India).</p>
 <p><strong>Japan i Južna Koreja.</strong> Tabela iznad navodi stavke koje se
 obrađuju, njihovu svrhu, primaoce i period čuvanja. Ne imenujemo sopstvenog
-inostranog obrađivača; WeatherAPI.com i Google primaju podatke direktno sa
+inostranog obrađivača; WeatherAPI.com, Google i, za naziv mesta, Apple primaju podatke direktno sa
 vašeg uređaja, izvan vaše zemlje, prema sopstvenim politikama.</p>
 <p>Za korisnike u Južnoj Koreji podaci koji se šalju u inostranstvo su sledeći:
-<strong>stavke</strong> — približne koordinate lokacije (za WeatherAPI.com),
-kao i IP adresa, identifikatori uređaja i oglašivački identifikatori i
+<strong>stavke</strong> — približne koordinate lokacije (za WeatherAPI.com,
+kao i za Apple na iOS-u ili Google na Android-u radi naziva mesta), kao i
+IP adresa, identifikatori uređaja i oglašivački identifikatori i
 interakcije sa oglasima (za Google); <strong>vreme i način</strong> — u
 trenutku kada otvorite aplikaciju ili kada ona osveži podatke, preko šifrovane
 HTTPS veze; <strong>primaoci</strong> — WeatherAPI.com (Ujedinjeno Kraljevstvo,
-videti weatherapi.com) i Google LLC (Sjedinjene Američke Države, videti
-policies.google.com); <strong>svrha i period čuvanja</strong> — preuzimanje vaše
-prognoze i isporuka i merenje baner-oglasa, pri čemu svaki primalac podatke
+videti weatherapi.com), Google LLC (Sjedinjene Američke Države, videti
+policies.google.com) i Apple Inc. (Sjedinjene Američke Države, videti
+apple.com/privacy); <strong>svrha i period čuvanja</strong> — preuzimanje vaše
+prognoze, određivanje naziva vašeg mesta i isporuka i merenje baner-oglasa, pri čemu svaki primalac podatke
 čuva prema sopstvenoj politici; <strong>vaše pravo da odbijete</strong> —
 dozvolu za lokaciju možete u svakom trenutku da odbijete ili opozovete u
-podešavanjima uređaja (aplikacija tada ne može da daje savete za košenje), a
+podešavanjima uređaja (aplikacija tada prognozu smešta približno prema
+vašoj mrežnoj vezi), a
 oglašavanje možete u potpunosti da uklonite kupovinom opcije Ukloni
 oglase.</p>
 <p><strong>Kina (kontinentalna).</strong> Vaše koordinate vaš uređaj šalje
 direktno na WeatherAPI.com, servis izvan kontinentalne Kine, isključivo radi
-preuzimanja prognoze; davanjem dozvole za lokaciju vi na to pristajete. Ne
+preuzimanja prognoze, kao i dobavljaču operativnog sistema vašeg telefona
+(Apple ili Google) radi traženja naziva mesta; davanjem dozvole za lokaciju vi na to pristajete. Ne
 čuvamo podatke o ličnosti nijednog korisnika. Pitanja u vezi sa podacima o
 ličnosti možete da uputite na adresu navedenu u nastavku.</p>
 <p><strong>Rusija.</strong> Ne čuvamo podatke o ličnosti nijednog korisnika, ni
 u Rusiji ni drugde; aplikacija ne koristi nikakve servere.</p>
+
+<h2>Ispravka u vezi sa nazivom mesta</h2>
+<p>Ranija verzija ove politike navodila je da se naziv grada ili naselja
+određuje „na vašem uređaju“. To nije bilo tačno i ispravili smo to.
+Aplikacija traži od operativnog sistema da koordinate pretvori u naziv
+mesta, a i na iOS-u i na Android-u to traženje se obavlja preko mreže: vaše
+koordinate se šalju kompaniji Apple ili Google i vraća se naziv mesta. Ista
+verzija je navodila da aplikacija bez dozvole za lokaciju ne može da daje
+savete za košenje; može, na osnovu vašeg približnog područja. Radije ćemo to
+reći otvoreno nego ostaviti umirujuću rečenicu koju kod ne potvrđuje.</p>
 
 <h2>Izmene</h2>
 <p>Datum na vrhu ove stranice jeste datum njenog stupanja na snagu. Ako se ova

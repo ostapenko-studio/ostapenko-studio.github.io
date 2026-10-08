@@ -92,7 +92,7 @@
 <body>
 
 <h1>Integritetspolicy</h1>
-<p class="meta">Mow Day, av Ostapenko Studio · Gäller från 8 september 2026</p>
+<p class="meta">Mow Day, av Ostapenko Studio · Gäller från 8 september 2026 · Uppdaterad 8 oktober 2026</p>
 <p class="meta">Den engelska texten är den gällande versionen. Översättningar tillhandahålls för din bekvämlighet; om en översättning avviker gäller <a href="../privacy.html">den engelska versionen</a> i den utsträckning lokal lag tillåter.</p>
 
 <p>Mow Day är en enkel app: den läser väderprognosen och talar om när det
@@ -110,9 +110,14 @@ vind, byvindar, molnighet, risk för regn, nederbördsmängd, soluppgång och
 solnedgång) som används för att räkna ut klippförhållandena i ditt område.
 Hur WeatherAPI.com hanterar förfrågningar
 beskrivs i dess egen
-<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>. Namnet
-på orten eller stadsdelen som visas i appen tas fram på din enhet av
-operativsystemets egen geokodare. Vi tar aldrig emot, lagrar eller loggar din
+<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>. För
+att visa ortens eller stadsdelens namn ber appen telefonens operativsystem att
+göra koordinaterna till ett ortnamn; på både iOS och Android besvaras den
+uppslagningen över nätet, så koordinaterna går till Apple eller till Google,
+som hanterar dem enligt sina egna integritetspolicyer. Om platstjänster är
+avstängda eller inte tillgängliga ber appen WeatherAPI.com om prognosen för
+ditt ungefärliga område, som tjänsten räknar ut från ditt nätverks IP-adress
+(som ändå skickas med varje förfrågan). Vi tar aldrig emot, lagrar eller loggar din
 plats, och appen spårar inte dina rörelser och gör inga platskontroller i
 bakgrunden.</p>
 <p>Appen ber bara om <em>ungefärlig</em> plats och begär den lägsta
@@ -155,14 +160,15 @@ faktureringsinformation.</p>
 <table>
 <tr><th>Data</th><th>Syfte</th><th>Vem tar emot dem</th><th>Lagringstid</th></tr>
 <tr><td>Ungefärlig plats (koordinater)</td><td>Hämta väderprognosen för ditt område — appen kan inte bedöma klippvädret utan den</td><td>WeatherAPI.com (direkt från din enhet)</td><td>Lagras inte av oss. WeatherAPI.com: se dess integritetspolicy</td></tr>
+<tr><td>Ungefärlig plats (koordinater)</td><td>Göra koordinaterna till det ort- eller stadsdelsnamn som visas i appen</td><td>Leverantören av din enhets operativsystem — Apple på iOS, Google på Android (direkt från din enhet)</td><td>Lagras inte av oss. Apple och Google: se deras integritetspolicyer</td></tr>
 <tr><td>Enhetsinformation för annonsering (IP-adress, enhets-ID:n, signaler om ogiltig trafik, annonsinteraktioner och diagnostikdata som krascher och appens prestanda — inget av detta används för att personalisera annonser eller bygga en profil av dig)</td><td>Leverans av den enda bannerannonsen i gratisversionen, i läget ”begränsade annonser”, samt Googles mätning och förebyggande av bedrägerier för den annonsen</td><td>Google AdMob</td><td>Sparas inte av oss. Google: se dess integritetspolicy</td></tr>
 <tr><td>Inställningar och den senaste prognosen</td><td>Öppna direkt på din senaste bedömning</td><td>Ingen — stannar på din enhet</td><td>Tills du raderar appen</td></tr>
 <tr><td>Schemalagda klippningsnotiser</td><td>Påminna dig kvällen före en bra klippdag, och när tidsfönstret öppnas, om du slår på notiser</td><td>Ingen — schemaläggs av din enhets operativsystem</td><td>Tills de utlöses, du stänger av notiser eller raderar appen</td></tr>
 <tr><td>Köpstatus för Ta bort annonser</td><td>Dölja annonser efter köp</td><td>Apple/Google hanterar köpet; appen lagrar bara en ja/nej-flagga</td><td>Tills du raderar appen; butiken behåller sin egen post</td></tr>
 </table>
-<p>WeatherAPI.com drivs från Storbritannien; Googles annonstjänster behandlar
-data i USA och i andra länder där Google är verksamt. Båda tar emot data
-direkt från din enhet, inte från oss, och var och en hanterar dem enligt sin
+<p>WeatherAPI.com drivs från Storbritannien; Googles annonstjänster, och Apples
+och Googles ortnamnsuppslagning, behandlar data i USA och i andra länder där
+dessa företag är verksamma. Alla tar emot data direkt från din enhet, inte från oss, och var och en hanterar dem enligt sin
 egen integritetspolicy, länkad ovan. Eftersom vi inte lagrar något gör vi
 ingen vidareöverföring av eget slag.</p>
 <p>Vi säljer inte personuppgifter, och vi använder inte analys,
@@ -210,28 +216,41 @@ dagar. Om du inte är nöjd kan du klaga hos Data Protection Board of
 India.</p>
 <p><strong>Japan och Sydkorea.</strong> Tabellen ovan anger vilka uppgifter
 som hanteras, deras syfte, mottagarna och lagringstiden. Vi anlitar inget
-eget utländskt personuppgiftsbiträde; WeatherAPI.com och Google tar emot data
-direkt från din enhet, utanför ditt land, enligt sina egna policyer.</p>
+eget utländskt personuppgiftsbiträde; WeatherAPI.com, Google och, för ortnamnet,
+Apple tar emot data direkt från din enhet, utanför ditt land, enligt sina egna policyer.</p>
 <p>För användare i Sydkorea är uppgifterna om det som skickas utomlands
 dessa: <strong>uppgifter</strong> — ungefärliga platskoordinater (till
-WeatherAPI.com) samt IP-adress, enhets- och annonsidentifierare och
+WeatherAPI.com, och till Apple på iOS eller Google på Android för ortnamnet)
+samt IP-adress, enhets- och annonsidentifierare och
 annonsinteraktioner (till Google); <strong>när och hur</strong> — i det
 ögonblick du öppnar appen eller den uppdaterar, över en krypterad
 HTTPS-anslutning; <strong>mottagare</strong> — WeatherAPI.com
-(Storbritannien, se weatherapi.com) och Google LLC (USA, se
-policies.google.com); <strong>syfte och lagringstid</strong> — att hämta din
-prognos samt att leverera och mäta annonsbannern, var och en lagrad enligt
+(Storbritannien, se weatherapi.com), Google LLC (USA, se
+policies.google.com) och Apple Inc. (USA, se apple.com/privacy);
+<strong>syfte och lagringstid</strong> — att hämta din prognos, att ta fram
+namnet på din ort samt att leverera och mäta annonsbannern, var och en lagrad enligt
 mottagarens egen policy; <strong>din rätt att vägra</strong> — du kan när som
 helst neka eller återkalla platsbehörigheten i din enhets inställningar
-(appen kan då inte ge några klippråd), och du kan ta bort annonseringen helt
+(appen placerar då prognosen ungefärligt utifrån din nätverksanslutning), och du kan ta bort annonseringen helt
 genom att köpa Ta bort annonser.</p>
 <p><strong>Kina (fastlandet).</strong> Dina koordinater skickas av din enhet
 direkt till WeatherAPI.com, en tjänst utanför Kinas fastland, enbart för att
-hämta prognosen; genom att ge platsbehörigheten samtycker du till det. Vi
+hämta prognosen, och till telefonens operativsystemleverantör (Apple eller
+Google) för att slå upp ortnamnet; genom att ge platsbehörigheten samtycker du till det. Vi
 lagrar inga personuppgifter om någon användare. Frågor om personuppgifter kan
 skickas till adressen nedan.</p>
 <p><strong>Ryssland.</strong> Vi lagrar inga personuppgifter om någon
 användare, i Ryssland eller någon annanstans; appen driver inga servrar.</p>
+
+<h2>En rättelse om ortnamnet</h2>
+<p>En tidigare version av den här policyn sa att ort- eller stadsdelsnamnet togs
+fram ”på din enhet”. Det var fel, och vi har rättat det. Appen ber
+operativsystemet att göra koordinater till ett ortnamn, och på både iOS och
+Android besvaras den uppslagningen över nätet: dina koordinater skickas till
+Apple eller till Google och ett ortnamn kommer tillbaka. Samma version sa att
+appen inte kunde ge klippråd utan platsbehörigheten; det kan den, utifrån ditt
+ungefärliga område. Vi säger hellre det rakt ut än låter en lugnande mening stå
+kvar som koden inte stödjer.</p>
 
 <h2>Ändringar</h2>
 <p>Datumet högst upp på denna sida är dess ikraftträdandedatum. Om denna

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Informativa sulla privacy</h1>
-<p class="meta">Mow Day, di Ostapenko Studio · In vigore dall'8 settembre 2026</p>
+<p class="meta">Mow Day, di Ostapenko Studio · In vigore dall'8 settembre 2026 · Aggiornata l'8 ottobre 2026</p>
 <p class="meta">Il <a href="../privacy.html">testo inglese</a> è la versione canonica. Le traduzioni sono fornite per comodità; in caso di discrepanza prevale la versione inglese, nella misura consentita dalla legge locale.</p>
 
 <p>Mow Day è un’app semplice: legge le previsioni meteo e ti dice quando c’è
@@ -110,9 +110,15 @@ punto di rugiada, vento, raffiche, nuvolosità, probabilità di pioggia,
 quantità di pioggia, alba e tramonto) usate per valutare le condizioni di
 taglio dell’erba nella tua zona. Il trattamento delle
 richieste da parte di WeatherAPI.com è descritto nella sua
-<a href="https://www.weatherapi.com/privacy.aspx">informativa sulla privacy</a>. Il nome
-della città o del quartiere mostrato nell’app viene determinato sul tuo
-dispositivo dal geocodificatore del sistema operativo stesso. Non riceviamo,
+<a href="https://www.weatherapi.com/privacy.aspx">informativa sulla privacy</a>. Per
+mostrare il nome della città o del quartiere, l’app chiede al sistema operativo
+del tuo telefono di convertire le coordinate in un nome di luogo; sia su iOS
+sia su Android questa ricerca avviene tramite la rete, quindi le coordinate
+vengono inviate ad Apple o a Google, che le trattano secondo le proprie
+informative sulla privacy. Se la localizzazione è disattivata o non
+disponibile, l’app chiede a WeatherAPI.com le previsioni per la tua zona
+approssimativa, che il servizio ricava dall’indirizzo IP della tua rete
+(inviato comunque con ogni richiesta). Non riceviamo,
 conserviamo né registriamo mai la tua posizione, e l’app non traccia i tuoi
 spostamenti né controlla la posizione in background.</p>
 <p>L’app chiede soltanto la posizione <em>approssimativa</em> e richiede la
@@ -158,14 +164,15 @@ dati di pagamento né le tue informazioni di fatturazione.</p>
 <table>
 <tr><th>Dati</th><th>Finalità</th><th>Chi li riceve</th><th>Conservazione</th></tr>
 <tr><td>Posizione approssimativa (coordinate)</td><td>Ottenere le previsioni meteo per la tua zona — senza di esse l’app non può valutare il tempo per il taglio dell’erba</td><td>WeatherAPI.com (direttamente dal tuo dispositivo)</td><td>Non conservata da noi. WeatherAPI.com: vedi la sua informativa sulla privacy</td></tr>
+<tr><td>Posizione approssimativa (coordinate)</td><td>Convertire le coordinate nel nome della città o del quartiere mostrato nell’app</td><td>Il fornitore del sistema operativo del tuo dispositivo — Apple su iOS, Google su Android (direttamente dal tuo dispositivo)</td><td>Non conservata da noi. Apple e Google: vedi le loro informative sulla privacy</td></tr>
 <tr><td>Informazioni sul dispositivo per la pubblicità (indirizzo IP, identificatori del dispositivo, segnali di traffico non valido, interazioni con l'annuncio e dati diagnostici come arresti anomali e prestazioni dell'app — nulla di ciò viene usato per personalizzare gli annunci o per costruire un tuo profilo)</td><td>Erogare l'unico banner della versione gratuita, in modalità «annunci limitati», nonché la misurazione e la prevenzione delle frodi da parte di Google per tale annuncio</td><td>Google AdMob</td><td>Non conservate da noi. Google: vedi le sue norme sulla privacy</td></tr>
 <tr><td>Impostazioni e ultime previsioni</td><td>Aprirsi all’istante sul tuo ultimo verdetto</td><td>Nessuno — restano sul tuo dispositivo</td><td>Finché non elimini l’app</td></tr>
 <tr><td>Avvisi per il taglio dell’erba programmati</td><td>Ricordarti la sera prima di una buona giornata per tagliare l’erba, e quando si apre la finestra temporale, se attivi gli avvisi</td><td>Nessuno — programmati dal sistema operativo del tuo dispositivo</td><td>Finché non vengono mostrati, non disattivi gli avvisi o non elimini l’app</td></tr>
 <tr><td>Stato dell’acquisto di Rimuovi la pubblicità</td><td>Nascondere gli annunci dopo l’acquisto</td><td>Apple / Google elaborano l’acquisto; l’app conserva solo un indicatore sì/no</td><td>Finché non elimini l’app; lo store conserva il proprio registro</td></tr>
 </table>
-<p>WeatherAPI.com è gestita dal Regno Unito; i servizi pubblicitari di Google
-trattano i dati negli Stati Uniti e in altri paesi in cui Google opera.
-Entrambi ricevono i dati direttamente dal tuo dispositivo, non da noi, e
+<p>WeatherAPI.com è gestita dal Regno Unito; i servizi pubblicitari di Google,
+e la ricerca del nome del luogo di Apple e di Google, trattano i dati negli
+Stati Uniti e in altri paesi in cui operano queste società. Tutti ricevono i dati direttamente dal tuo dispositivo, non da noi, e
 ciascuno li tratta secondo la propria informativa sulla privacy, collegata
 sopra. Poiché non conserviamo nulla, non effettuiamo alcun trasferimento
 ulteriore per conto nostro.</p>
@@ -217,31 +224,44 @@ al Data Protection Board of India.</p>
 <p><strong>Giappone e Corea del Sud.</strong> La tabella sopra elenca gli
 elementi trattati, la loro finalità, i destinatari e il periodo di
 conservazione. Non nominiamo alcun responsabile del trattamento all’estero per
-conto nostro; WeatherAPI.com e Google ricevono i dati direttamente dal tuo
+conto nostro; WeatherAPI.com, Google e, per il nome del luogo, Apple ricevono i dati direttamente dal tuo
 dispositivo, al di fuori del tuo paese, secondo le loro politiche.</p>
 <p>Per gli utenti della Corea del Sud, i dettagli dei dati inviati all’estero
 sono i seguenti: <strong>elementi</strong> — coordinate di posizione
-approssimativa (a WeatherAPI.com) e indirizzo IP, identificatori del
+approssimativa (a WeatherAPI.com, e ad Apple su iOS o a Google su Android per
+il nome del luogo) e indirizzo IP, identificatori del
 dispositivo e pubblicitari e interazioni con gli annunci (a Google);
 <strong>quando e come</strong> — nel momento in cui apri l’app o essa si
 aggiorna, tramite una connessione HTTPS cifrata;
 <strong>destinatari</strong> — WeatherAPI.com (Regno Unito, vedi
-weatherapi.com) e Google LLC (Stati Uniti, vedi policies.google.com);
-<strong>finalità e conservazione</strong> — ottenere le tue previsioni e
-servire e misurare il banner pubblicitario, conservati ciascuno secondo le
+weatherapi.com), Google LLC (Stati Uniti, vedi policies.google.com) e
+Apple Inc. (Stati Uniti, vedi apple.com/privacy);
+<strong>finalità e conservazione</strong> — ottenere le tue previsioni, mostrare il nome della tua città e servire e misurare il banner pubblicitario, conservati ciascuno secondo le
 politiche del destinatario; <strong>il tuo diritto di rifiutare</strong> —
 puoi rifiutare o revocare il permesso di localizzazione in qualsiasi momento
-nelle impostazioni del tuo dispositivo (l’app non potrà allora dare consigli
-sul taglio dell’erba) e puoi eliminare del tutto la pubblicità acquistando Rimuovi la
+nelle impostazioni del tuo dispositivo (l’app colloca allora le previsioni in modo approssimativo in base alla
+tua connessione di rete) e puoi eliminare del tutto la pubblicità acquistando Rimuovi la
 pubblicità.</p>
 <p><strong>Cina (continentale).</strong> Le tue coordinate vengono inviate dal
 tuo dispositivo direttamente a WeatherAPI.com, un servizio al di fuori della
-Cina continentale, al solo scopo di ottenere le previsioni; concedendo il
-permesso di localizzazione acconsenti a questo invio. Non conserviamo
+Cina continentale, al solo scopo di ottenere le previsioni, e al fornitore del
+sistema operativo del tuo telefono (Apple o Google) per cercare il nome del
+luogo; concedendo il permesso di localizzazione acconsenti a questi invii. Non conserviamo
 informazioni personali di alcun utente. Le domande sulle informazioni
 personali possono essere inviate all’indirizzo qui sotto.</p>
 <p><strong>Russia.</strong> Non conserviamo dati personali di alcun utente, in
 Russia o altrove; l’app non gestisce server.</p>
+
+<h2>Una correzione sul nome della città</h2>
+<p>Una versione precedente di questa informativa diceva che il nome della città
+o del quartiere veniva determinato «sul tuo dispositivo». Era sbagliato, e lo
+abbiamo corretto. L’app chiede al sistema operativo di convertire le coordinate
+in un nome di luogo, e sia su iOS sia su Android questa ricerca avviene tramite
+la rete: le tue coordinate vengono inviate ad Apple o a Google e torna indietro
+un nome di luogo. La stessa versione diceva che l’app non poteva dare consigli
+sul taglio dell’erba senza il permesso di localizzazione; può farlo, a partire
+dalla tua zona approssimativa. Preferiamo dirlo chiaramente piuttosto che
+lasciare in piedi una frase rassicurante che il codice non sostiene.</p>
 
 <h2>Modifiche</h2>
 <p>La data in cima a questa pagina è la sua data di entrata in vigore. Se

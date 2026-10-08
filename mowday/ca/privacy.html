@@ -92,7 +92,7 @@
 <body>
 
 <h1>Política de privadesa</h1>
-<p class="meta">Mow Day, d’Ostapenko Studio · En vigor des del 8 de setembre de 2026</p>
+<p class="meta">Mow Day, d’Ostapenko Studio · En vigor des del 8 de setembre de 2026 · Actualitzada el 8 d’octubre de 2026</p>
 <p class="meta">El <a href="../privacy.html">text en anglès</a> és la versió canònica. Les traduccions es faciliten per comoditat; si una traducció difereix, s’aplica la versió anglesa en la mesura que ho permeti la llei local.</p>
 
 <p>Mow Day és una app senzilla: llegeix la previsió del temps i et diu
@@ -110,8 +110,14 @@ probabilitat de pluja, precipitació, sortida i posta de sol) que es fa servir
 per calcular les condicions per segar de la teva zona. El tractament de les peticions per part de WeatherAPI.com es
 descriu a la seva pròpia
 <a href="https://www.weatherapi.com/privacy.aspx">política de privadesa</a>.
-El nom del municipi o barri que es mostra a l’app es resol al teu dispositiu
-amb el geocodificador del mateix sistema operatiu. Mai no rebem, emmagatzemem
+Per mostrar el nom del municipi o barri, l’app demana al sistema operatiu del
+teu telèfon que converteixi les coordenades en un nom de lloc; tant a iOS com a
+Android aquesta consulta es fa per la xarxa, de manera que les coordenades
+s’envien a Apple o a Google, que les tracten segons les seves pròpies
+polítiques de privadesa. Si la ubicació està desactivada o no està
+disponible, l’app demana a WeatherAPI.com la previsió de la teva zona
+aproximada, que aquest servei determina a partir de l’adreça IP de la teva
+xarxa (que s’envia igualment amb cada petició). Mai no rebem, emmagatzemem
 ni registrem la teva ubicació, i l’app no fa seguiment dels teus moviments ni
 consulta la ubicació en segon pla.</p>
 <p>L’app només demana la ubicació <em>aproximada</em> i sol·licita la precisió
@@ -157,14 +163,16 @@ ni la teva informació de facturació.</p>
 <table>
 <tr><th>Dades</th><th>Finalitat</th><th>Qui les rep</th><th>Conservació</th></tr>
 <tr><td>Ubicació aproximada (coordenades)</td><td>Obtenir la previsió del temps per a la teva zona — sense això l’app no pot valorar el temps per segar</td><td>WeatherAPI.com (directament des del teu dispositiu)</td><td>No les emmagatzemem nosaltres. WeatherAPI.com: vegeu la seva política de privadesa</td></tr>
+<tr><td>Ubicació aproximada (coordenades)</td><td>Convertir les coordenades en el nom del municipi o barri que es mostra a l’app</td><td>El proveïdor del sistema operatiu del teu dispositiu — Apple a iOS, Google a Android (directament des del teu dispositiu)</td><td>No les emmagatzemem nosaltres. Apple i Google: vegeu les seves polítiques de privadesa</td></tr>
 <tr><td>Informació del dispositiu per a publicitat (adreça IP, identificadors del dispositiu, senyals de trànsit no vàlid, interaccions amb l'anunci i dades de diagnòstic com ara bloquejos i rendiment de l'aplicació — res d'això no s'utilitza per personalitzar anuncis ni per elaborar un perfil teu)</td><td>Publicar l'únic bàner de la versió gratuïta, en mode «anuncis limitats», i la mesura i la prevenció del frau de Google per a aquest anunci</td><td>Google AdMob</td><td>No les conservem nosaltres. Google: vegeu la seva política de privadesa</td></tr>
 <tr><td>Configuració i la darrera previsió</td><td>Obrir a l’instant amb el teu darrer veredicte</td><td>Ningú — es queden al teu dispositiu</td><td>Fins que suprimeixis l’app</td></tr>
 <tr><td>Avisos de sega programats</td><td>Recordar-te la vespra d’un bon dia per segar, i quan s’obre la finestra, si actives els avisos</td><td>Ningú — els programa el sistema operatiu del teu dispositiu</td><td>Fins que salten, desactives els avisos o suprimeixes l’app</td></tr>
 <tr><td>Estat de compra d’Elimina els anuncis</td><td>Amagar els anuncis després de la compra</td><td>Apple / Google processen la compra; l’app només desa un indicador sí/no</td><td>Fins que suprimeixis l’app; la botiga conserva el seu propi registre</td></tr>
 </table>
 <p>WeatherAPI.com s’opera des del Regne Unit; els serveis de publicitat de
-Google tracten les dades als Estats Units i a altres països on Google opera.
-Tots dos reben les dades directament del teu dispositiu, no de nosaltres, i
+Google, i la consulta del nom del lloc d’Apple i de Google, tracten les dades
+als Estats Units i a altres països on operen aquestes empreses. Tots ells
+reben les dades directament del teu dispositiu, no de nosaltres, i
 cadascun les tracta segons la seva pròpia política de privadesa, enllaçada més
 amunt. Com que no conservem res, no fem cap transferència posterior pròpia.</p>
 <p>No venem informació personal, i no fem servir analítica, informes d’errors
@@ -214,30 +222,44 @@ una queixa al Data Protection Board of India.</p>
 <p><strong>Japó i Corea del Sud.</strong> La taula de dalt enumera els
 elements tractats, la seva finalitat, els destinataris i el període de
 conservació. No designem cap encarregat del tractament a l’estranger per
-compte nostre; WeatherAPI.com i Google reben les dades directament del teu
+compte nostre; WeatherAPI.com, Google i, per al nom del lloc, Apple reben les dades directament del teu
 dispositiu, fora del teu país, segons les seves pròpies polítiques.</p>
 <p>Per als usuaris de Corea del Sud, els detalls de les dades que s’envien a
 l’estranger són: <strong>elements</strong> — coordenades d’ubicació
-aproximada (a WeatherAPI.com), i adreça IP, identificadors del dispositiu i
+aproximada (a WeatherAPI.com, i a Apple a iOS o a Google a Android per al nom
+del lloc), i adreça IP, identificadors del dispositiu i
 de publicitat i interaccions amb els anuncis (a Google);
 <strong>quan i com</strong> — en el moment en què obres l’app o aquesta
 s’actualitza, mitjançant una connexió HTTPS xifrada;
 <strong>destinataris</strong> — WeatherAPI.com (Regne Unit, vegeu
-weatherapi.com) i Google LLC (Estats Units, vegeu policies.google.com);
-<strong>finalitat i conservació</strong> — obtenir la teva previsió, i servir
+weatherapi.com), Google LLC (Estats Units, vegeu policies.google.com) i
+Apple Inc. (Estats Units, vegeu apple.com/privacy);
+<strong>finalitat i conservació</strong> — obtenir la teva previsió, mostrar el nom del teu municipi, i servir
 i mesurar el bàner publicitari, conservades cadascuna segons la política del
 destinatari; <strong>el teu dret a negar-t’hi</strong> — pots denegar o
 retirar el permís d’ubicació en qualsevol moment des de la configuració del
-dispositiu (aleshores l’app no pot donar consells de sega), i pots treure
+dispositiu (aleshores l’app situa la previsió de manera aproximada a partir de la
+teva connexió de xarxa), i pots treure
 la publicitat del tot comprant Elimina els anuncis.</p>
 <p><strong>Xina (continental).</strong> Les teves coordenades les envia el teu
 dispositiu directament a WeatherAPI.com, un servei situat fora de la Xina
-continental, únicament per obtenir la previsió; concedir el permís d’ubicació
-és la manera com hi dones el teu acord. No conservem cap informació personal
+continental, únicament per obtenir la previsió, i al proveïdor del sistema
+operatiu del teu telèfon (Apple o Google) per consultar el nom del lloc;
+concedir el permís d’ubicació és la manera com hi dones el teu acord. No conservem cap informació personal
 de cap usuari. Les preguntes sobre informació personal es poden enviar a
 l’adreça de sota.</p>
 <p><strong>Rússia.</strong> No emmagatzemem cap dada personal de cap usuari,
 ni a Rússia ni enlloc; l’app no opera cap servidor.</p>
+
+<h2>Una correcció sobre el nom del municipi</h2>
+<p>Una versió anterior d’aquesta política deia que el nom del municipi o barri
+es resolia «al teu dispositiu». Era fals, i ho hem corregit. L’app demana al
+sistema operatiu que converteixi les coordenades en un nom de lloc, i tant a
+iOS com a Android aquesta consulta es fa per la xarxa: les teves coordenades
+s’envien a Apple o a Google i en torna un nom de lloc. La mateixa versió deia
+que l’app no podia donar consells de sega sense el permís d’ubicació; sí que
+pot, a partir de la teva zona aproximada. Preferim dir-ho clarament abans que
+deixar dreta una frase tranquil·litzadora que el codi no sosté.</p>
 
 <h2>Canvis</h2>
 <p>La data que hi ha a la part superior d’aquesta pàgina és la seva data
