@@ -92,7 +92,7 @@
 <body>
 
 <h1>Chính sách quyền riêng tư</h1>
-<p class="meta">Drying Day, của Ostapenko Studio · Có hiệu lực từ 2 tháng 8 năm 2026 · Cập nhật 7 tháng 10 năm 2026</p>
+<p class="meta">Drying Day, của Ostapenko Studio · Có hiệu lực từ 2 tháng 8 năm 2026 · Cập nhật 8 tháng 10 năm 2026</p>
 <p class="meta">Bản <a href="../privacy.html">tiếng Anh</a> là bản chính thức. Các bản dịch được cung cấp để thuận tiện; nếu bản dịch có khác biệt, bản tiếng Anh được áp dụng trong phạm vi luật địa phương cho phép.</p>
 
 <p>Drying Day là một ứng dụng đơn giản: nó đọc dự báo thời tiết và cho bạn
@@ -109,8 +109,10 @@ thời tiết, với mục đích duy nhất là lấy dự báo (nhiệt độ,
 khả năng mưa, giờ mặt trời mọc và lặn) dùng để tính điều kiện phơi đồ trong
 khu vực của bạn. Cách WeatherAPI.com xử lý yêu cầu được mô tả trong
 <a href="https://www.weatherapi.com/privacy.aspx">chính sách quyền riêng tư</a>
-của họ. Tên thị trấn hoặc khu vực hiển thị trong ứng dụng được xác định trên
-thiết bị của bạn bởi bộ giải mã địa lý của hệ điều hành. Nếu vị trí bị tắt hoặc không khả dụng, ứng dụng sẽ yêu cầu WeatherAPI.com cung cấp dự báo cho khu vực gần đúng của bạn, được họ xác định từ địa chỉ IP của mạng bạn (vốn dĩ vẫn được gửi kèm mọi yêu cầu); khi đó tên khu vực hiển thị sẽ do WeatherAPI.com cung cấp. Chúng tôi không bao
+của họ. Để hiển thị tên thị trấn hoặc khu vực, ứng dụng nhờ hệ điều hành của
+điện thoại chuyển tọa độ thành tên địa danh; trên cả iOS và Android, việc tra
+cứu này được thực hiện qua mạng, nên tọa độ được gửi đến Apple hoặc Google, và
+họ xử lý theo chính sách quyền riêng tư riêng của mình. Nếu vị trí bị tắt hoặc không khả dụng, ứng dụng sẽ yêu cầu WeatherAPI.com cung cấp dự báo cho khu vực gần đúng của bạn, được họ xác định từ địa chỉ IP của mạng bạn (vốn dĩ vẫn được gửi kèm mọi yêu cầu); khi đó tên khu vực hiển thị sẽ do WeatherAPI.com cung cấp. Chúng tôi không bao
 giờ nhận, lưu trữ hay ghi lại vị trí của bạn, và ứng dụng không theo dõi việc
 di chuyển của bạn cũng không kiểm tra vị trí ở chế độ nền.</p>
 <p>Ứng dụng chỉ xin vị trí <em>gần đúng</em> và yêu cầu độ chính xác thấp nhất
@@ -152,14 +154,15 @@ hay thông tin hóa đơn của bạn.</p>
 <table>
 <tr><th>Dữ liệu</th><th>Mục đích</th><th>Bên nhận</th><th>Thời gian lưu giữ</th></tr>
 <tr><td>Vị trí gần đúng (tọa độ; hoặc địa chỉ IP của mạng bạn khi vị trí bị tắt hoặc không khả dụng)</td><td>Lấy dự báo thời tiết cho khu vực của bạn — không có nó, ứng dụng không thể đánh giá điều kiện phơi đồ</td><td>WeatherAPI.com (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. WeatherAPI.com: xem chính sách quyền riêng tư của họ</td></tr>
+<tr><td>Vị trí gần đúng (tọa độ)</td><td>Chuyển tọa độ thành tên thị trấn hoặc khu vực hiển thị trong ứng dụng</td><td>Nhà cung cấp hệ điều hành của thiết bị — Apple trên iOS, Google trên Android (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. Apple và Google: xem chính sách quyền riêng tư của họ</td></tr>
 <tr><td>Thông tin thiết bị cho quảng cáo (địa chỉ IP, giá trị nhận dạng thiết bị, tín hiệu lưu lượng không hợp lệ, tương tác với quảng cáo và dữ liệu chẩn đoán như sự cố và hiệu suất ứng dụng — không có thứ nào được dùng để cá nhân hóa quảng cáo hoặc lập hồ sơ về bạn)</td><td>Phân phối quảng cáo biểu ngữ duy nhất trong phiên bản miễn phí, ở chế độ «quảng cáo giới hạn», cùng hoạt động đo lường và phòng chống gian lận của Google cho quảng cáo đó</td><td>Google AdMob</td><td>Chúng tôi không giữ. Google: xem chính sách quyền riêng tư của Google</td></tr>
 <tr><td>Cài đặt và dự báo gần nhất</td><td>Mở ngay với nhận định gần nhất của bạn</td><td>Không ai — ở lại trên thiết bị của bạn</td><td>Cho đến khi bạn xóa ứng dụng</td></tr>
 <tr><td>Thông báo phơi đồ đã đặt lịch</td><td>Nhắc bạn về những ngày phơi đẹp và cơn mưa đang tới, nếu bạn bật thông báo</td><td>Không ai — do hệ điều hành trên thiết bị của bạn đặt lịch</td><td>Cho đến khi chúng hiện lên, bạn tắt thông báo, hoặc bạn xóa ứng dụng</td></tr>
 <tr><td>Trạng thái mua Gỡ quảng cáo</td><td>Ẩn quảng cáo sau khi mua</td><td>Apple / Google xử lý giao dịch; ứng dụng chỉ lưu một cờ có/không</td><td>Cho đến khi bạn xóa ứng dụng; cửa hàng giữ hồ sơ riêng</td></tr>
 </table>
 <p>WeatherAPI.com được vận hành từ Vương quốc Anh; các dịch vụ quảng cáo của
-Google xử lý dữ liệu tại Hoa Kỳ và các quốc gia khác nơi Google hoạt động. Cả
-hai đều nhận dữ liệu trực tiếp từ thiết bị của bạn, không phải từ chúng tôi,
+Google, cùng việc tra cứu tên địa danh của Apple và Google, xử lý dữ liệu tại
+Hoa Kỳ và các quốc gia khác nơi các công ty đó hoạt động. Tất cả đều nhận dữ liệu trực tiếp từ thiết bị của bạn, không phải từ chúng tôi,
 và mỗi bên xử lý dữ liệu theo chính sách quyền riêng tư riêng đã liên kết ở
 trên. Vì chúng tôi không giữ gì cả, chúng tôi không có việc chuyển giao tiếp
 theo nào của riêng mình.</p>
@@ -216,28 +219,42 @@ trong vòng 30 ngày. Nếu bạn không hài lòng, bạn có thể khiếu n�
 Protection Board of India.</p>
 <p><strong>Nhật Bản và Hàn Quốc.</strong> Bảng trên liệt kê các mục được xử lý,
 mục đích, bên nhận và thời gian lưu giữ. Chúng tôi không chỉ định bên xử lý ở
-nước ngoài nào của riêng mình; WeatherAPI.com và Google nhận dữ liệu trực tiếp
+nước ngoài nào của riêng mình; WeatherAPI.com, Google và, đối với tên địa danh, Apple nhận dữ liệu trực tiếp
 từ thiết bị của bạn, ngoài quốc gia của bạn, theo chính sách riêng của họ.</p>
 <p>Đối với người dùng tại Hàn Quốc, chi tiết dữ liệu được gửi ra nước ngoài
-là: <strong>các mục</strong> — tọa độ vị trí gần đúng (đến WeatherAPI.com), và
+là: <strong>các mục</strong> — tọa độ vị trí gần đúng (đến WeatherAPI.com, và đến Apple trên iOS hoặc
+Google trên Android để lấy tên địa danh), và
 địa chỉ IP, mã định danh thiết bị và quảng cáo cùng tương tác với quảng cáo
 (đến Google); <strong>khi nào và bằng cách nào</strong> — vào lúc bạn mở ứng
 dụng hoặc ứng dụng làm mới, qua kết nối HTTPS được mã hóa;
-<strong>bên nhận</strong> — WeatherAPI.com (Vương quốc Anh, xem weatherapi.com)
-và Google LLC (Hoa Kỳ, xem policies.google.com); <strong>mục đích và thời gian
-lưu giữ</strong> — lấy dự báo cho bạn, và phân phối cùng đo lường banner quảng
+<strong>bên nhận</strong> — WeatherAPI.com (Vương quốc Anh, xem weatherapi.com),
+Google LLC (Hoa Kỳ, xem policies.google.com) và Apple Inc. (Hoa Kỳ, xem
+apple.com/privacy); <strong>mục đích và thời gian
+lưu giữ</strong> — lấy dự báo cho bạn, xác định tên thị trấn của bạn, và phân phối cùng đo lường banner quảng
 cáo, mỗi bên lưu giữ theo chính sách riêng; <strong>quyền từ chối của
 bạn</strong> — bạn có thể từ chối hoặc rút lại quyền truy cập vị trí bất cứ
-lúc nào trong cài đặt thiết bị (khi đó ứng dụng không thể đưa ra lời khuyên
-phơi đồ), và bạn có thể loại bỏ hoàn toàn quảng cáo bằng cách mua Gỡ quảng
+lúc nào trong cài đặt thiết bị (khi đó ứng dụng xác định vị trí dự báo một cách
+gần đúng từ kết nối mạng của bạn), và bạn có thể loại bỏ hoàn toàn quảng cáo bằng cách mua Gỡ quảng
 cáo.</p>
 <p><strong>Trung Quốc (đại lục).</strong> Tọa độ của bạn được thiết bị gửi
-thẳng đến WeatherAPI.com, một dịch vụ ở ngoài Trung Quốc đại lục, chỉ để lấy
-dự báo; việc bạn cấp quyền vị trí chính là cách bạn đồng ý với điều đó. Chúng
+thẳng đến WeatherAPI.com, một dịch vụ ở ngoài Trung Quốc đại lục, để lấy
+dự báo, và đến nhà cung cấp hệ điều hành của điện thoại (Apple hoặc Google) để
+tra cứu tên địa danh; việc bạn cấp quyền vị trí chính là cách bạn đồng ý với điều đó. Chúng
 tôi không giữ thông tin cá nhân của bất kỳ người dùng nào. Câu hỏi về thông
 tin cá nhân có thể gửi đến địa chỉ bên dưới.</p>
 <p><strong>Nga.</strong> Chúng tôi không lưu trữ dữ liệu cá nhân của bất kỳ
 người dùng nào, ở Nga hay nơi khác; ứng dụng không vận hành máy chủ.</p>
+
+<h2>Đính chính về tên thị trấn</h2>
+<p>Một phiên bản trước của chính sách này nói rằng tên thị trấn hoặc khu vực
+được xác định "trên thiết bị của bạn". Điều đó không đúng, và chúng tôi đã sửa
+lại. Ứng dụng nhờ hệ điều hành chuyển tọa độ thành tên địa danh, và trên cả iOS
+và Android việc tra cứu này được thực hiện qua mạng: tọa độ của bạn được gửi
+đến Apple hoặc Google và một tên địa danh được trả về. Cũng phiên bản đó nói
+rằng ứng dụng không thể đưa ra lời khuyên phơi đồ nếu không có quyền truy cập
+vị trí; thực ra ứng dụng vẫn làm được, dựa trên khu vực gần đúng của bạn. Chúng
+tôi thà nói thẳng còn hơn để lại một câu nghe yên tâm mà mã nguồn không chứng
+minh được.</p>
 
 <h2>Thay đổi</h2>
 <p>Ngày ở đầu trang này là ngày có hiệu lực. Nếu chính sách này thay đổi,

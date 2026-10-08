@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privatlivspolitik</h1>
-<p class="meta">PawWalk, af Ostapenko Studio · Gældende fra 1. august 2026 · Opdateret 11. september 2026</p>
+<p class="meta">PawWalk, af Ostapenko Studio · Gældende fra 1. august 2026 · Opdateret 8. oktober 2026</p>
 <p class="meta">Den engelske tekst er den gældende version. Oversættelser stilles til rådighed for nemheds skyld; hvor en oversættelse afviger, gælder den engelske version i det omfang, lokal lovgivning tillader det.</p>
 
 <p>PawWalk er en enkel app: den anslår, hvor varm jorden er, hvor du er, så
@@ -109,8 +109,11 @@ vejrdatatjeneste, alene med det formål at hente de vejrdata
 (lufttemperatur, skydække, vind), der bruges til at anslå jordtemperaturer i
 dit område. WeatherAPI.com's håndtering af forespørgsler er beskrevet i
 deres egen <a href="https://www.weatherapi.com/privacy.aspx">privatlivspolitik</a>.
-Navnet på byen eller bydelen, som vises i appen, slås op på din enhed af
-operativsystemets egen geokoder. Vi modtager, gemmer eller logger aldrig din
+For at vise navnet på byen eller bydelen beder appen din telefons
+operativsystem om at omsætte koordinaterne til et stednavn; på både iOS og
+Android foregår dette opslag over netværket, så koordinaterne sendes til Apple
+eller Google, som behandler dem efter deres egne privatlivspolitikker. Vi
+modtager, gemmer eller logger aldrig din
 placering, og appen sporer ikke dine bevægelser eller dine gåture og kører
 ikke i baggrunden.</p>
 
@@ -134,6 +137,7 @@ faktureringsoplysninger.</p>
 <table>
 <tr><th>Data</th><th>Formål</th><th>Hvem modtager dem</th><th>Opbevaring</th></tr>
 <tr><td>Omtrentlig placering (koordinater)</td><td>Hente vejrudsigten for dit område — appen kan ikke anslå jorden uden den</td><td>WeatherAPI.com (direkte fra din enhed)</td><td>Gemmes ikke af os. WeatherAPI.com: se deres privatlivspolitik</td></tr>
+<tr><td>Omtrentlig placering (koordinater)</td><td>Omsætte koordinaterne til navnet på byen eller bydelen, som vises i appen</td><td>Leverandøren af din enheds operativsystem — Apple på iOS, Google på Android (direkte fra din enhed)</td><td>Gemmes ikke af os. Apple og Google: se deres privatlivspolitikker</td></tr>
 <tr><td>Enhedsoplysninger til annoncering (IP-adresse, enheds-id'er, signaler om ugyldig trafik, annonceinteraktioner og diagnostiske data såsom nedbrud og appens ydeevne — intet af det bruges til at personalisere annoncer eller til at profilere dig)</td><td>Levering af den enkelte bannerannonce i gratisversionen i tilstanden »begrænsede annoncer« samt Googles måling og forebyggelse af svindel for denne annonce</td><td>Google AdMob</td><td>Opbevares ikke af os. Google: se deres privatlivspolitik</td></tr>
 <tr><td>Indstillinger og den seneste vejrudsigt</td><td>Åbne med det samme på din seneste vurdering</td><td>Ingen — bliver på din enhed</td><td>Indtil du sletter appen</td></tr>
 <tr><td>Købsstatus for Fjern reklamer</td><td>Skjule reklamer efter køb</td><td>Apple/Google behandler købet; appen gemmer kun et ja/nej-flag</td><td>Indtil du sletter appen; butikken beholder sin egen registrering</td></tr>
@@ -175,10 +179,19 @@ nedenfor. Klager kan indgives til ANPD.</p>
 kan du kontakte vores klageansvarlige på adressen nedenfor.</p>
 <p><strong>Japan og Sydkorea.</strong> Tabellen ovenfor viser de oplysninger,
 der behandles, deres formål, modtagerne og opbevaringsperioden. Vi udpeger
-ingen egen udenlandsk databehandler; WeatherAPI.com og Google modtager data
-direkte fra din enhed under deres egne politikker.</p>
+ingen egen udenlandsk databehandler; WeatherAPI.com, Google og, for stednavnet,
+Apple modtager data direkte fra din enhed under deres egne politikker.</p>
 <p><strong>Rusland.</strong> Vi opbevarer ingen personoplysninger om nogen
 bruger, i Rusland eller andre steder; appen driver ingen servere.</p>
+
+<h2>En rettelse om bynavnet</h2>
+<p>En tidligere version af denne politik sagde, at navnet på byen eller
+bydelen blev slået op »på din enhed«. Det var forkert, og vi har rettet det.
+Appen beder operativsystemet om at omsætte koordinater til et stednavn, og på
+både iOS og Android foregår dette opslag over netværket: dine koordinater
+sendes til Apple eller Google, og et stednavn kommer tilbage. Vi siger det
+hellere ligeud end at lade en beroligende sætning stå, som koden ikke
+understøtter.</p>
 
 <h2>Ændringer</h2>
 <p>Hvis denne politik ændres, offentliggøres den opdaterede version på denne

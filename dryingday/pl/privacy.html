@@ -92,7 +92,7 @@
 <body>
 
 <h1>Polityka prywatności</h1>
-<p class="meta">Drying Day, Ostapenko Studio · Obowiązuje od 2 sierpnia 2026 · Zaktualizowano 7 października 2026</p>
+<p class="meta">Drying Day, Ostapenko Studio · Obowiązuje od 2 sierpnia 2026 · Zaktualizowano 8 października 2026</p>
 <p class="meta">Wersją wiążącą jest <a href="../privacy.html">tekst angielski</a>. Tłumaczenia udostępniamy dla wygody; w razie rozbieżności obowiązuje wersja angielska w zakresie dozwolonym przez prawo lokalne.</p>
 
 <p>Drying Day to prosta aplikacja: czyta prognozę pogody i podpowiada, czy
@@ -109,9 +109,12 @@ pogodowych, wyłącznie w celu pobrania prognozy (temperatura, wilgotność,
 wiatr, zachmurzenie, szansa opadów, wschód i zachód słońca) używanej do
 oceny warunków suszenia w Twojej okolicy. Sposób, w jaki WeatherAPI.com
 obsługuje zapytania, opisuje jego własna
-<a href="https://www.weatherapi.com/privacy.aspx">polityka prywatności</a>. Nazwa
-miejscowości lub dzielnicy wyświetlana w aplikacji jest ustalana na Twoim
-urządzeniu przez geokoder systemu operacyjnego. Jeśli lokalizacja jest wyłączona lub niedostępna, aplikacja prosi WeatherAPI.com o prognozę dla Twojej przybliżonej okolicy, którą WeatherAPI.com ustala na podstawie adresu IP Twojej sieci (i tak wysyłanego z każdym zapytaniem); wyświetlana wówczas nazwa okolicy pochodzi od WeatherAPI.com. Nigdy nie otrzymujemy, nie
+<a href="https://www.weatherapi.com/privacy.aspx">polityka prywatności</a>. Aby
+wyświetlić nazwę miejscowości lub dzielnicy, aplikacja prosi system
+operacyjny telefonu o zamianę współrzędnych na nazwę miejsca; zarówno na iOS,
+jak i na Androidzie to wyszukiwanie odbywa się przez sieć, więc współrzędne
+trafiają do Apple albo do Google, które przetwarzają je na podstawie własnych
+polityk prywatności. Jeśli lokalizacja jest wyłączona lub niedostępna, aplikacja prosi WeatherAPI.com o prognozę dla Twojej przybliżonej okolicy, którą WeatherAPI.com ustala na podstawie adresu IP Twojej sieci (i tak wysyłanego z każdym zapytaniem); wyświetlana wówczas nazwa okolicy pochodzi od WeatherAPI.com. Nigdy nie otrzymujemy, nie
 przechowujemy ani nie rejestrujemy Twojej lokalizacji, a aplikacja nie
 śledzi Twoich przemieszczeń i nie sprawdza lokalizacji w tle.</p>
 <p>Aplikacja prosi wyłącznie o <em>przybliżoną</em> lokalizację i żąda
@@ -157,14 +160,16 @@ danych płatniczych ani danych rozliczeniowych.</p>
 <table>
 <tr><th>Dane</th><th>Cel</th><th>Kto je otrzymuje</th><th>Okres przechowywania</th></tr>
 <tr><td>Przybliżona lokalizacja (współrzędne; lub adres IP Twojej sieci, gdy lokalizacja jest wyłączona lub niedostępna)</td><td>Pobranie prognozy pogody dla Twojej okolicy — bez niej aplikacja nie może ocenić pogody na suszenie</td><td>WeatherAPI.com (bezpośrednio z Twojego urządzenia)</td><td>Nieprzechowywane przez nas. WeatherAPI.com: zob. jego politykę prywatności</td></tr>
+<tr><td>Przybliżona lokalizacja (współrzędne)</td><td>Zamiana współrzędnych na nazwę miejscowości lub dzielnicy wyświetlaną w aplikacji</td><td>Dostawca systemu operacyjnego Twojego urządzenia — Apple na iOS, Google na Androidzie (bezpośrednio z Twojego urządzenia)</td><td>Nieprzechowywane przez nas. Apple i Google: zob. ich polityki prywatności</td></tr>
 <tr><td>Informacje o urządzeniu na potrzeby reklam (adres IP, identyfikatory urządzenia, sygnały nieprawidłowego ruchu, interakcje z reklamą oraz dane diagnostyczne, takie jak awarie i wydajność aplikacji — nic z tego nie służy personalizacji reklam ani tworzeniu Twojego profilu)</td><td>Wyświetlanie jedynej reklamy banerowej w wersji darmowej w trybie „reklamy ograniczone” oraz prowadzone przez Google pomiary i zapobieganie oszustwom w odniesieniu do tej reklamy</td><td>Google AdMob</td><td>Nieprzechowywane przez nas. Google: zob. jego politykę prywatności</td></tr>
 <tr><td>Ustawienia i ostatnia prognoza</td><td>Natychmiastowe otwarcie na ostatnim werdykcie</td><td>Nikt — pozostają na Twoim urządzeniu</td><td>Do usunięcia aplikacji</td></tr>
 <tr><td>Zaplanowane powiadomienia o praniu</td><td>Przypominanie o dobrych dniach na pranie i zbliżającym się deszczu, jeśli włączysz powiadomienia</td><td>Nikt — planuje je system operacyjny Twojego urządzenia</td><td>Do ich wyświetlenia, wyłączenia powiadomień lub usunięcia aplikacji</td></tr>
 <tr><td>Status zakupu „Usuń reklamy”</td><td>Ukrycie reklam po zakupie</td><td>Apple / Google obsługują zakup; aplikacja przechowuje tylko znacznik tak/nie</td><td>Do usunięcia aplikacji; sklep prowadzi własny rejestr</td></tr>
 </table>
 <p>WeatherAPI.com jest prowadzony z Wielkiej Brytanii; usługi reklamowe Google
-przetwarzają dane w Stanach Zjednoczonych i w innych krajach, w których Google
-działa. Oba podmioty otrzymują dane bezpośrednio z Twojego urządzenia, a nie
+oraz wyszukiwanie nazwy miejsca przez Apple i Google przetwarzają dane
+w Stanach Zjednoczonych i w innych krajach, w których te firmy działają.
+Wszystkie te podmioty otrzymują dane bezpośrednio z Twojego urządzenia, a nie
 od nas, i każdy z nich przetwarza je na podstawie własnej polityki
 prywatności, do której odsyłamy powyżej. Ponieważ niczego nie przechowujemy,
 sami nie dokonujemy żadnego dalszego przekazania danych.</p>
@@ -227,32 +232,47 @@ odpowiadać w ciągu 30 dni. Jeśli odpowiedź Cię nie zadowoli, możesz złoż
 skargę do Data Protection Board of India.</p>
 <p><strong>Japonia i Korea Południowa.</strong> Powyższa tabela wymienia
 przetwarzane dane, ich cel, odbiorców i okres przechowywania. Nie wyznaczamy
-żadnego własnego zagranicznego podmiotu przetwarzającego; WeatherAPI.com i
-Google otrzymują dane bezpośrednio z Twojego urządzenia, poza Twoim krajem,
+żadnego własnego zagranicznego podmiotu przetwarzającego; WeatherAPI.com,
+Google oraz, w zakresie nazwy miejsca, Apple otrzymują dane bezpośrednio z Twojego urządzenia, poza Twoim krajem,
 na podstawie własnych polityk.</p>
 <p>W przypadku użytkowników w Korei Południowej szczegóły danych przesyłanych
 za granicę są następujące: <strong>zakres danych</strong> — współrzędne
-przybliżonej lokalizacji (do WeatherAPI.com) oraz adres IP, identyfikatory
+przybliżonej lokalizacji (do WeatherAPI.com oraz do Apple na iOS lub Google
+na Androidzie w celu ustalenia nazwy miejsca) oraz adres IP, identyfikatory
 urządzenia i identyfikatory reklamowe i interakcje z reklamami (do Google);
 <strong>termin i sposób</strong> — w chwili otwarcia aplikacji lub odświeżenia
 danych, szyfrowanym połączeniem HTTPS; <strong>odbiorcy</strong> —
-WeatherAPI.com (Wielka Brytania, zob. weatherapi.com) i Google LLC (Stany
-Zjednoczone, zob. policies.google.com); <strong>cel i okres
-przechowywania</strong> — pobranie Twojej prognozy oraz wyświetlenie
+WeatherAPI.com (Wielka Brytania, zob. weatherapi.com), Google LLC (Stany
+Zjednoczone, zob. policies.google.com) i Apple Inc. (Stany Zjednoczone, zob.
+apple.com/privacy); <strong>cel i okres
+przechowywania</strong> — pobranie Twojej prognozy, ustalenie nazwy Twojej miejscowości oraz wyświetlenie
 i zmierzenie banera reklamowego, przy czym każdy odbiorca przechowuje dane na
 podstawie własnej polityki; <strong>prawo do odmowy</strong> — w każdej chwili
 możesz odmówić uprawnienia do lokalizacji lub je cofnąć w ustawieniach
-urządzenia (aplikacja nie będzie wtedy mogła doradzać w sprawie prania),
+urządzenia (aplikacja ustali wtedy prognozę w przybliżeniu na podstawie połączenia
+sieciowego),
 a reklamy możesz usunąć całkowicie, kupując „Usuń reklamy”.</p>
 <p><strong>Chiny (kontynentalne).</strong> Twoje współrzędne są wysyłane przez
 Twoje urządzenie bezpośrednio do WeatherAPI.com, serwisu spoza Chin
-kontynentalnych, wyłącznie w celu pobrania prognozy; udzielenie uprawnienia
+kontynentalnych, wyłącznie w celu pobrania prognozy, a także do dostawcy systemu operacyjnego
+Twojego telefonu (Apple lub Google) w celu ustalenia nazwy miejsca; udzielenie uprawnienia
 do lokalizacji jest sposobem, w jaki wyrażasz na to zgodę. Nie przechowujemy
 danych osobowych żadnego użytkownika. Pytania dotyczące danych osobowych
 można kierować na adres podany poniżej.</p>
 <p><strong>Rosja.</strong> Nie przechowujemy danych osobowych żadnego
 użytkownika, ani w Rosji, ani gdziekolwiek indziej; aplikacja nie korzysta
 z żadnych serwerów.</p>
+
+<h2>Sprostowanie dotyczące nazwy miejscowości</h2>
+<p>Wcześniejsza wersja tej polityki mówiła, że nazwa miejscowości lub
+dzielnicy jest ustalana „na Twoim urządzeniu”. To było nieprawdą i zostało
+poprawione. Aplikacja prosi system operacyjny o zamianę współrzędnych na nazwę
+miejsca, a zarówno na iOS, jak i na Androidzie to wyszukiwanie odbywa się
+przez sieć: Twoje współrzędne są wysyłane do Apple albo do Google i wraca nazwa
+miejsca. Ta sama wersja mówiła, że bez uprawnienia do lokalizacji aplikacja
+nie może doradzać w sprawie prania; może — na podstawie Twojej przybliżonej
+okolicy. Wolimy powiedzieć to wprost, niż zostawić uspokajające zdanie, którego
+kod nie potwierdza.</p>
 
 <h2>Zmiany</h2>
 <p>Data u góry tej strony jest datą jej obowiązywania. Jeśli niniejsza

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Tietosuojakäytäntö</h1>
-<p class="meta">PawWalk, Ostapenko Studio · Voimassa 1. elokuuta 2026 alkaen · Päivitetty 11. syyskuuta 2026</p>
+<p class="meta">PawWalk, Ostapenko Studio · Voimassa 1. elokuuta 2026 alkaen · Päivitetty 8. lokakuuta 2026</p>
 <p class="meta">Englanninkielinen teksti on virallinen versio. Käännökset tarjotaan käytön helpottamiseksi; jos käännös poikkeaa siitä, englanninkielinen versio pätee paikallisen lain sallimissa rajoissa.</p>
 
 <p>PawWalk on yksinkertainen sovellus: se arvioi, kuinka kuuma maa on siellä,
@@ -109,8 +109,11 @@ tarkoituksena hakea säätiedot (ilman lämpötila, pilvisyys, tuuli), joiden
 perusteella alueesi maanpinnan lämpötilat arvioidaan. WeatherAPI.comin tapa
 käsitellä pyyntöjä on kuvattu sen omassa
 <a href="https://www.weatherapi.com/privacy.aspx">tietosuojakäytännössä</a>.
-Sovelluksessa näkyvä paikkakunnan tai kaupunginosan nimi selvitetään
-laitteellasi käyttöjärjestelmän omalla geokoodauksella. Me emme koskaan
+Näyttääkseen paikkakunnan tai kaupunginosan nimen sovellus pyytää puhelimesi
+käyttöjärjestelmää tekemään koordinaateista paikannimen; sekä iOSissa että
+Androidissa tuo haku hoidetaan verkon yli, joten koordinaatit menevät
+Applelle tai Googlelle, jotka käsittelevät niitä omien
+tietosuojakäytäntöjensä mukaisesti. Me emme koskaan
 vastaanota, tallenna tai kirjaa sijaintiasi, eikä sovellus seuraa
 liikkeitäsi tai lenkkejäsi tai toimi taustalla.</p>
 
@@ -136,6 +139,7 @@ laskutustietojasi.</p>
 <table>
 <tr><th>Tiedot</th><th>Tarkoitus</th><th>Vastaanottaja</th><th>Säilytys</th></tr>
 <tr><td>Likimääräinen sijainti (koordinaatit)</td><td>Alueesi sääennusteen hakeminen — sovellus ei voi arvioida maata ilman sitä</td><td>WeatherAPI.com (suoraan laitteeltasi)</td><td>Me emme tallenna. WeatherAPI.com: ks. sen tietosuojakäytäntö</td></tr>
+<tr><td>Likimääräinen sijainti (koordinaatit)</td><td>Koordinaattien muuttaminen sovelluksessa näkyväksi paikkakunnan tai kaupunginosan nimeksi</td><td>Laitteesi käyttöjärjestelmän toimittaja — Apple iOSissa, Google Androidissa (suoraan laitteeltasi)</td><td>Me emme tallenna. Apple ja Google: ks. niiden tietosuojakäytännöt</td></tr>
 <tr><td>Laitetiedot mainontaa varten (IP-osoite, laitetunnisteet, virheellisen liikenteen signaalit, mainosvuorovaikutukset sekä diagnostiikkatiedot, kuten kaatumiset ja sovelluksen suorituskyky — mitään näistä ei käytetä mainosten personointiin eikä profiilin luomiseen sinusta)</td><td>Ilmaisversion yhden bannerimainoksen näyttäminen ”rajoitetut mainokset” -tilassa sekä Googlen suorittama kyseisen mainoksen mittaus ja petosten torjunta</td><td>Google AdMob</td><td>Me emme säilytä. Google: ks. sen tietosuojakäytäntö</td></tr>
 <tr><td>Asetukset ja viimeisin ennuste</td><td>Avautuminen heti viimeisimpään arvioon</td><td>Ei kukaan — pysyy laitteellasi</td><td>Kunnes poistat sovelluksen</td></tr>
 <tr><td>Poista mainokset -ostoksen tila</td><td>Mainosten piilottaminen oston jälkeen</td><td>Apple/Google käsittelee oston; sovellus tallentaa vain kyllä/ei-merkinnän</td><td>Kunnes poistat sovelluksen; kauppa säilyttää oman kirjauksensa</td></tr>
@@ -179,10 +183,18 @@ osoitteessa.</p>
 <p><strong>Japani ja Etelä-Korea.</strong> Yllä oleva taulukko luettelee
 käsiteltävät tiedot, niiden tarkoituksen, vastaanottajat ja
 säilytysajan. Emme nimeä omaa ulkomaista henkilötietojen käsittelijää;
-WeatherAPI.com ja Google vastaanottavat tiedot suoraan laitteeltasi omien
-käytäntöjensä mukaisesti.</p>
+WeatherAPI.com, Google ja paikannimen osalta Apple vastaanottavat tiedot
+suoraan laitteeltasi omien käytäntöjensä mukaisesti.</p>
 <p><strong>Venäjä.</strong> Emme tallenna kenenkään käyttäjän henkilötietoja,
 Venäjällä tai muualla; sovelluksella ei ole palvelimia.</p>
+
+<h2>Oikaisu paikkakunnan nimestä</h2>
+<p>Tämän käytännön aiempi versio sanoi, että paikkakunnan tai kaupunginosan nimi
+selvitetään ”laitteellasi”. Se oli väärin, ja olemme korjanneet sen. Sovellus
+pyytää käyttöjärjestelmää tekemään koordinaateista paikannimen, ja sekä iOSissa
+että Androidissa tuo haku hoidetaan verkon yli: koordinaattisi lähetetään
+Applelle tai Googlelle, ja takaisin tulee paikannimi. Sanomme sen mieluummin
+suoraan kuin jätämme paikalleen rauhoittavan lauseen, jota koodi ei tue.</p>
 
 <h2>Muutokset</h2>
 <p>Jos tämä käytäntö muuttuu, päivitetty versio julkaistaan tässä

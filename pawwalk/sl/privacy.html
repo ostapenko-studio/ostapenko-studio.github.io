@@ -92,7 +92,7 @@
 <body>
 
 <h1>Pravilnik o zasebnosti</h1>
-<p class="meta">PawWalk, Ostapenko Studio · Velja od 1. avgusta 2026 · Posodobljeno 11. septembra 2026</p>
+<p class="meta">PawWalk, Ostapenko Studio · Velja od 1. avgusta 2026 · Posodobljeno 8. oktobra 2026</p>
 <p class="meta">Merodajna različica je izvirno angleško besedilo. Prevodi so na voljo zaradi lažjega razumevanja; kjer se prevod razlikuje, velja angleška različica, kolikor to dopušča lokalno pravo.</p>
 
 <p>PawWalk je preprosta aplikacija: oceni, kako vroča so tla tam, kjer ste, da
@@ -109,8 +109,10 @@ podatkov, izključno za pridobitev vremenskih podatkov (temperatura zraka,
 oblačnost, veter), ki se uporabljajo za oceno temperature tal na vašem območju.
 Kako WeatherAPI.com obravnava zahteve, je opisano v njegovem lastnem
 <a href="https://www.weatherapi.com/privacy.aspx">pravilniku o zasebnosti</a>.
-Ime kraja ali naselja, prikazano v aplikaciji, se določi na vaši napravi z
-geokodirnikom operacijskega sistema. Vaše lokacije nikoli ne prejmemo, ne
+Da bi prikazala ime kraja ali naselja, aplikacija prosi operacijski sistem
+telefona, naj koordinate pretvori v ime kraja; tako v iOS kot v Androidu se to
+iskanje opravi prek omrežja, zato koordinate prejme Apple ali Google, ki jih
+obravnavata po svojih lastnih pravilnikih o zasebnosti. Vaše lokacije nikoli ne prejmemo, ne
 shranjujemo in ne beležimo, aplikacija pa ne sledi vašemu gibanju ali vašim
 sprehodom in ne deluje v ozadju.</p>
 
@@ -135,6 +137,7 @@ vidimo.</p>
 <table>
 <tr><th>Podatki</th><th>Namen</th><th>Kdo jih prejme</th><th>Hramba</th></tr>
 <tr><td>Približna lokacija (koordinate)</td><td>Pridobitev vremenske napovedi za vaše območje — brez nje aplikacija ne more oceniti tal</td><td>WeatherAPI.com (neposredno z vaše naprave)</td><td>Mi jih ne shranjujemo. WeatherAPI.com: glejte njegov pravilnik o zasebnosti</td></tr>
+<tr><td>Približna lokacija (koordinate)</td><td>Pretvorba koordinat v ime kraja ali naselja, prikazano v aplikaciji</td><td>Ponudnik operacijskega sistema vaše naprave — Apple v iOS, Google v Androidu (neposredno z vaše naprave)</td><td>Mi jih ne shranjujemo. Apple in Google: glejte njune pravilnike o zasebnosti</td></tr>
 <tr><td>Informacije o napravi za oglaševanje (naslov IP, identifikatorji naprave, signali neveljavnega prometa, interakcije z oglasom ter diagnostični podatki, kot so zrušitve in delovanje aplikacije — nič od tega se ne uporablja za prilagajanje oglasov ali oblikovanje vašega profila)</td><td>Prikazovanje ene pasice v brezplačni različici v načinu »omejeni oglasi« ter Googlovo merjenje in preprečevanje prevar za ta oglas</td><td>Google AdMob</td><td>Mi jih ne hranimo. Google: glejte njegov pravilnik o zasebnosti</td></tr>
 <tr><td>Nastavitve in zadnja napoved</td><td>Takojšnje odpiranje na vaši zadnji oceni</td><td>Nihče — ostanejo na vaši napravi</td><td>Dokler aplikacije ne izbrišete</td></tr>
 <tr><td>Stanje nakupa možnosti Odstrani oglase</td><td>Skrivanje oglasov po nakupu</td><td>Apple / Google obdelata nakup; aplikacija shrani samo oznako da/ne</td><td>Dokler aplikacije ne izbrišete; trgovina vodi lastno evidenco</td></tr>
@@ -178,10 +181,18 @@ leta 2023 (Digital Personal Data Protection Act 2023) se lahko obrnete na
 našega uradnika za pritožbe na spodnjem naslovu.</p>
 <p><strong>Japonska in Južna Koreja.</strong> Zgornja tabela navaja obdelovane
 postavke, njihov namen, prejemnike in obdobje hrambe. Ne imenujemo lastnega
-tujega obdelovalca; WeatherAPI.com in Google prejemata podatke neposredno z
+tujega obdelovalca; WeatherAPI.com, Google in za ime kraja Apple prejemajo podatke neposredno z
 vaše naprave po svojih lastnih pravilnikih.</p>
 <p><strong>Rusija.</strong> Ne hranimo osebnih podatkov nobenega uporabnika, ne
 v Rusiji ne drugje; aplikacija ne uporablja nobenih strežnikov.</p>
+
+<h2>Popravek glede imena kraja</h2>
+<p>Prejšnja različica tega pravilnika je navajala, da se ime kraja ali
+naselja določi „na vaši napravi“. To ni bilo res in smo popravili. Aplikacija
+prosi operacijski sistem, naj koordinate pretvori v ime kraja, in tako v iOS
+kot v Androidu se to iskanje opravi prek omrežja: vaše koordinate se pošljejo
+Applu ali Googlu, nazaj pa pride ime kraja. Raje to povemo naravnost, kot da bi
+pustili pomirjujoč stavek, ki ga koda ne podpira.</p>
 
 <h2>Spremembe</h2>
 <p>Če se ta pravilnik spremeni, bo posodobljena različica objavljena na tem

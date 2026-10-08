@@ -92,7 +92,7 @@
 <body>
 
 <h1>Política de Privacidade</h1>
-<p class="meta">Drying Day, por Ostapenko Studio · Em vigor desde 2 de agosto de 2026 · Atualizada a 7 de outubro de 2026</p>
+<p class="meta">Drying Day, por Ostapenko Studio · Em vigor desde 2 de agosto de 2026 · Atualizada a 8 de outubro de 2026</p>
 <p class="meta">O texto em inglês (<a href="../privacy.html">../privacy.html</a>) é a versão canónica. As traduções são disponibilizadas por conveniência; em caso de divergência, prevalece a versão em inglês, na medida em que a lei local o permita.</p>
 
 <p>O Drying Day é uma app simples: lê a previsão meteorológica e diz-lhe se é
@@ -108,9 +108,12 @@ dados meteorológicos, com a única finalidade de obter a previsão (temperatura
 humidade, vento, nebulosidade, probabilidade de chuva, nascer e pôr do sol)
 usada para determinar as condições de secagem na sua zona. O tratamento dos
 pedidos pelo WeatherAPI.com está descrito na sua própria
-<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>. O nome da
-localidade ou do bairro apresentado na app é determinado no seu dispositivo
-pelo geocodificador do próprio sistema operativo. Se a localização estiver desativada ou indisponível, a app pede ao WeatherAPI.com a previsão para a sua zona aproximada, que o WeatherAPI.com determina a partir do endereço IP da sua rede (enviado de qualquer forma em todos os pedidos); o nome da zona apresentado vem, nesse caso, do WeatherAPI.com. Nunca recebemos, guardamos
+<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>. Para
+apresentar o nome da localidade ou do bairro, a app pede ao sistema operativo
+do seu telemóvel que converta as coordenadas num nome de lugar; tanto no iOS
+como no Android essa consulta é feita através da rede, pelo que as coordenadas
+são enviadas para a Apple ou para a Google, que as tratam ao abrigo das suas
+próprias políticas de privacidade. Se a localização estiver desativada ou indisponível, a app pede ao WeatherAPI.com a previsão para a sua zona aproximada, que o WeatherAPI.com determina a partir do endereço IP da sua rede (enviado de qualquer forma em todos os pedidos); o nome da zona apresentado vem, nesse caso, do WeatherAPI.com. Nunca recebemos, guardamos
 ou registamos a sua localização, e a app não segue as suas deslocações nem faz
 verificações de localização em segundo plano.</p>
 <p>A app pede apenas a localização <em>aproximada</em> e solicita a menor
@@ -154,14 +157,16 @@ pagamento nem as suas informações de faturação.</p>
 <table>
 <tr><th>Dados</th><th>Finalidade</th><th>Quem os recebe</th><th>Conservação</th></tr>
 <tr><td>Localização aproximada (coordenadas; ou o endereço IP da sua rede quando a localização está desativada ou indisponível)</td><td>Obter a previsão meteorológica para a sua zona — sem ela a app não consegue avaliar o tempo de secagem</td><td>WeatherAPI.com (diretamente do seu dispositivo)</td><td>Não guardada por nós. WeatherAPI.com: consulte a respetiva política de privacidade</td></tr>
+<tr><td>Localização aproximada (coordenadas)</td><td>Converter as coordenadas no nome da localidade ou do bairro apresentado na app</td><td>O fornecedor do sistema operativo do seu dispositivo — Apple no iOS, Google no Android (diretamente do seu dispositivo)</td><td>Não guardada por nós. Apple e Google: consulte as respetivas políticas de privacidade</td></tr>
 <tr><td>Informações do dispositivo para publicidade (endereço IP, identificadores do dispositivo, sinais de tráfego inválido, interações com o anúncio e dados de diagnóstico, como falhas e desempenho da aplicação — nada disso é utilizado para personalizar anúncios nem para criar um perfil seu)</td><td>Difundir o único banner da versão gratuita, no modo «anúncios limitados», e a medição e prevenção de fraude da Google para esse anúncio</td><td>Google AdMob</td><td>Não conservadas por nós. Google: consulte a respetiva política de privacidade</td></tr>
 <tr><td>Definições e a previsão mais recente</td><td>Abrir de imediato com o seu último veredicto</td><td>Ninguém — ficam no seu dispositivo</td><td>Até eliminar a app</td></tr>
 <tr><td>Alertas de roupa agendados</td><td>Lembrá-lo dos bons dias para estender e da chuva que se aproxima, se ativar os alertas</td><td>Ninguém — agendados pelo sistema operativo do seu dispositivo</td><td>Até dispararem, até desativar os alertas ou até eliminar a app</td></tr>
 <tr><td>Estado da compra de Remover anúncios</td><td>Ocultar os anúncios após a compra</td><td>A Apple / a Google processam a compra; a app guarda apenas um indicador sim/não</td><td>Até eliminar a app; a loja mantém o seu próprio registo</td></tr>
 </table>
 <p>O WeatherAPI.com é operado a partir do Reino Unido; os serviços de
-publicidade da Google tratam dados nos Estados Unidos e noutros países onde a
-Google opera. Ambos recebem os dados diretamente do seu dispositivo, e não de
+publicidade da Google, e a consulta do nome do lugar da Apple e da Google,
+tratam dados nos Estados Unidos e noutros países onde essas empresas operam.
+Todos eles recebem os dados diretamente do seu dispositivo, e não de
 nós, e cada um os trata ao abrigo da sua própria política de privacidade,
 indicada acima. Como não conservamos nada, não fazemos qualquer transferência
 ulterior por nossa conta.</p>
@@ -223,30 +228,45 @@ ao Data Protection Board of India.</p>
 <p><strong>Japão e Coreia do Sul.</strong> A tabela acima enumera os elementos
 tratados, a sua finalidade, os destinatários e o período de conservação. Não
 nomeamos nenhum subcontratante no estrangeiro por nossa conta; o
-WeatherAPI.com e a Google recebem os dados diretamente do seu dispositivo,
+WeatherAPI.com, a Google e, para o nome do lugar, a Apple recebem os dados diretamente do seu dispositivo,
 fora do seu país, ao abrigo das suas próprias políticas.</p>
 <p>Para os utilizadores na Coreia do Sul, os detalhes dos dados enviados para o
 estrangeiro são: <strong>elementos</strong> — coordenadas de localização
-aproximada (para o WeatherAPI.com) e endereço IP, identificadores do
+aproximada (para o WeatherAPI.com, e para a Apple no iOS ou a Google no Android para o
+nome do lugar) e endereço IP, identificadores do
 dispositivo e de publicidade e interações com anúncios (para a Google);
 <strong>quando e como</strong> — no momento em que abre a app ou esta se
 atualiza, através de uma ligação HTTPS encriptada; <strong>quem os
-recebe</strong> — WeatherAPI.com (Reino Unido, ver weatherapi.com) e Google LLC
-(Estados Unidos, ver policies.google.com); <strong>finalidade e
-conservação</strong> — obter a sua previsão e servir e medir o banner
+recebe</strong> — WeatherAPI.com (Reino Unido, ver weatherapi.com), Google LLC
+(Estados Unidos, ver policies.google.com) e Apple Inc. (Estados Unidos, ver
+apple.com/privacy); <strong>finalidade e
+conservação</strong> — obter a sua previsão, apresentar o nome da sua localidade e servir e medir o banner
 publicitário, sendo cada um conservado ao abrigo da política do próprio
 destinatário; <strong>o seu direito de recusa</strong> — pode recusar ou
 retirar a autorização de localização a qualquer momento nas definições do
-dispositivo (a app deixa então de conseguir dar conselhos para a roupa) e pode
+dispositivo (a app situa então a previsão de forma aproximada a partir da sua ligação
+de rede) e pode
 eliminar por completo a publicidade comprando Remover anúncios.</p>
 <p><strong>China (continental).</strong> As suas coordenadas são enviadas pelo
 seu dispositivo diretamente ao WeatherAPI.com, um serviço fora da China
-continental, apenas para obter a previsão; conceder a autorização de
-localização é a forma de dar o seu acordo a isso. Não conservamos informações
+continental, apenas para obter a previsão, e ao fornecedor do sistema
+operativo do seu telemóvel (Apple ou Google) para consultar o nome do lugar;
+conceder a autorização de localização é a forma de dar o seu acordo a isso. Não conservamos informações
 pessoais de nenhum utilizador. As questões sobre informações pessoais podem
 ser enviadas para o endereço abaixo.</p>
 <p><strong>Rússia.</strong> Não guardamos dados pessoais de nenhum utilizador,
 na Rússia ou em qualquer outro lugar; a app não opera servidores.</p>
+
+<h2>Uma correção sobre o nome da localidade</h2>
+<p>Uma versão anterior desta política dizia que o nome da localidade ou do
+bairro era determinado «no seu dispositivo». Estava errado, e corrigimo-lo. A
+app pede ao sistema operativo que converta as coordenadas num nome de lugar, e
+tanto no iOS como no Android essa consulta é feita através da rede: as suas
+coordenadas são enviadas para a Apple ou para a Google e é devolvido um nome de
+lugar. A mesma versão dizia que a app não conseguia dar conselhos para a roupa
+sem a autorização de localização; consegue, a partir da sua zona aproximada.
+Preferimos dizê-lo com clareza a deixar de pé uma frase tranquilizadora que o
+código não sustenta.</p>
 
 <h2>Alterações</h2>
 <p>A data no topo desta página é a sua data de entrada em vigor. Se esta

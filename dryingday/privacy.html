@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Drying Day, by Ostapenko Studio · Effective 2 August 2026 · Updated 7 October 2026</p>
+<p class="meta">Drying Day, by Ostapenko Studio · Effective 2 August 2026 · Updated 8 October 2026</p>
 <p class="meta">This English text is the canonical version. Translations are provided for convenience; where a translation differs, this version applies to the extent local law allows.</p>
 
 <p>Drying Day is a simple app: it reads the weather forecast and tells you
@@ -109,9 +109,11 @@ service, for the sole purpose of fetching the forecast (temperature,
 humidity, wind, cloud, rain chance, sunrise and sunset) used to work out the
 drying conditions for your area. WeatherAPI.com's handling of requests is
 described in its own
-<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. The
-town or suburb name shown in the app is resolved on your device by the
-operating system's own geocoder. If location is off or unavailable, the app
+<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. To
+show the town or suburb name, the app asks your phone's operating system to
+turn the coordinates into a place name; on both iOS and Android that lookup
+is served over the network, so the coordinates go to Apple or to Google,
+which handle them under their own privacy policies. If location is off or unavailable, the app
 asks WeatherAPI.com for the forecast for your approximate area, which it
 works out from your network's IP address (sent with every request anyway);
 the area name shown then comes from WeatherAPI.com. We never receive, store, or log your
@@ -167,14 +169,16 @@ information.</p>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Who receives it</th><th>Retention</th></tr>
 <tr><td>Approximate location (coordinates; or your network's IP address when location is off or unavailable)</td><td>Fetching the weather forecast for your area — the app cannot judge the drying weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
+<tr><td>Approximate location (coordinates)</td><td>Turning coordinates into the town or suburb name shown in the app</td><td>Your device's operating system vendor — Apple on iOS, Google on Android (directly from your device)</td><td>Not stored by us. Apple and Google: see their privacy policies</td></tr>
 <tr><td>Device information for advertising (IP address, device identifiers, invalid-traffic signals, ad interactions, and diagnostic data such as crashes and app performance — none of it used to personalise ads or to profile you)</td><td>Serving the single banner ad in the free version, in limited-ads mode, and Google's measurement and fraud prevention for that ad</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
 <tr><td>Settings and the latest forecast</td><td>Opening instantly on your last verdict</td><td>Nobody — stays on your device</td><td>Until you delete the app</td></tr>
 <tr><td>Scheduled laundry alerts</td><td>Reminding you about good drying days and approaching rain, if you turn alerts on</td><td>Nobody — scheduled by your device's operating system</td><td>Until they fire, you turn alerts off, or you delete the app</td></tr>
 <tr><td>Purchase status of Remove Ads</td><td>Hiding ads after purchase</td><td>Apple / Google process the purchase; the app stores only a yes/no flag</td><td>Until you delete the app; the store keeps its own record</td></tr>
 </table>
 <p>WeatherAPI.com is operated from the United Kingdom; Google's advertising
-services process data in the United States and other countries where Google
-operates. Both receive data directly from your device, not from us, and each
+services, and Apple's and Google's place-name lookup, process data in the
+United States and other countries where those companies operate. All of
+them receive data directly from your device, not from us, and each
 handles it under its own privacy policy, linked above. Because we hold
 nothing, we make no onward transfer of our own.</p>
 <p>We do not sell personal information, and we do not use analytics, crash
@@ -231,27 +235,42 @@ below, who will answer on behalf of Ostapenko Studio; we aim to respond within
 Board of India.</p>
 <p><strong>Japan and South Korea.</strong> The table above lists the items
 handled, their purpose, the recipients and the retention period. We appoint no
-overseas processor of our own; WeatherAPI.com and Google receive data directly
-from your device, outside your country, under their own policies.</p>
+overseas processor of our own; WeatherAPI.com, Google and, for the place
+name, Apple receive data directly from your device, outside your country,
+under their own policies.</p>
 <p>For users in South Korea, the details of data sent overseas are:
-<strong>items</strong> — approximate location coordinates (to WeatherAPI.com),
-and IP address, device and advertising identifiers and ad interactions (to
+<strong>items</strong> — approximate location coordinates (to WeatherAPI.com,
+and to Apple on iOS or Google on Android for the place name), and IP address, device and advertising identifiers and ad interactions (to
 Google); <strong>when and how</strong> — at the moment you open the app or it
 refreshes, over an encrypted HTTPS connection; <strong>recipients</strong> —
-WeatherAPI.com (United Kingdom, see weatherapi.com) and Google LLC (United
-States, see policies.google.com); <strong>purpose and retention</strong> —
-fetching your forecast, and serving and measuring the banner ad, each retained
+WeatherAPI.com (United Kingdom, see weatherapi.com), Google LLC (United
+States, see policies.google.com) and Apple Inc. (United States, see
+apple.com/privacy); <strong>purpose and retention</strong> — fetching your
+forecast, naming your town, and serving and measuring the banner ad, each retained
 under the recipient's own policy; <strong>your right to refuse</strong> — you
 may decline or withdraw the location permission at any time in your device
-settings (the app then cannot give laundry advice), and you may remove
+settings (the app then places the forecast approximately from your network
+connection), and you may remove
 advertising entirely by purchasing Remove Ads.</p>
 <p><strong>China (mainland).</strong> Your coordinates are sent by your device
 directly to WeatherAPI.com, a service outside mainland China, solely to fetch
-the forecast; granting the location permission is how you agree to that. We
+the forecast, and to your phone's operating system vendor (Apple or Google)
+to look up the place name; granting the location permission is how you agree
+to that. We
 hold no personal information of any user. Questions about personal
 information may be sent to the address below.</p>
 <p><strong>Russia.</strong> We store no personal data of any user, in Russia
 or elsewhere; the app runs no servers.</p>
+
+<h2>A correction about the town name</h2>
+<p>An earlier version of this policy said the town or suburb name was resolved
+"on your device". That was wrong, and we have fixed it. The app asks the
+operating system to turn coordinates into a place name, and on both iOS and
+Android that lookup is served over the network: your coordinates are sent to
+Apple or to Google and a place name comes back. The same version said the app
+could not give laundry advice without the location permission; it can, from
+your approximate area. We would rather say so plainly than leave a reassuring
+sentence standing that the code does not support.</p>
 
 <h2>Changes</h2>
 <p>The date at the top of this page is its effective date. If this policy

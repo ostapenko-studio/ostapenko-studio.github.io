@@ -92,7 +92,7 @@
 <body>
 
 <h1>Adatvédelmi tájékoztató</h1>
-<p class="meta">Drying Day, az Ostapenko Studio alkalmazása · Hatályos: 2026. augusztus 2. · Frissítve: 2026. október 7.</p>
+<p class="meta">Drying Day, az Ostapenko Studio alkalmazása · Hatályos: 2026. augusztus 2. · Frissítve: 2026. október 8.</p>
 <p class="meta">Az <a href="../privacy.html">angol nyelvű szöveg</a> a hiteles változat. A fordítások kényelmi célt szolgálnak; eltérés esetén a helyi jog által megengedett mértékben az angol változat az irányadó.</p>
 
 <p>A Drying Day egyszerű alkalmazás: elolvassa az időjárás-előrejelzést, és
@@ -110,8 +110,11 @@ környékének szárítási körülményeihez használt előrejelzést (hőmérs
 páratartalom, szél, felhőzet, csapadékvalószínűség, napkelte és napnyugta).
 Azt, hogy a WeatherAPI.com hogyan kezeli a kéréseket, a saját
 <a href="https://www.weatherapi.com/privacy.aspx">adatvédelmi tájékoztatója</a>
-írja le. Az alkalmazásban megjelenő város- vagy városrésznév a készülékén,
-az operációs rendszer saját geokódolójával kerül feloldásra.
+írja le. A város- vagy városrésznév megjelenítéséhez az alkalmazás arra kéri
+a telefon operációs rendszerét, hogy a koordinátákat helynévvé alakítsa; ezt a
+lekérdezést iOS-en és Androidon egyaránt hálózaton keresztül szolgálják ki,
+így a koordináták az Apple-hez vagy a Google-hoz kerülnek, amelyek a saját
+adatvédelmi tájékoztatójuk szerint kezelik azokat.
 Ha a helymeghatározás ki van kapcsolva vagy nem érhető el, az alkalmazás a WeatherAPI.com-tól kéri le az Ön hozzávetőleges környékére vonatkozó előrejelzést, amelyet a WeatherAPI.com az Ön hálózatának IP-címe alapján állapít meg (ez egyébként is minden kéréssel együtt elküldésre kerül); az ilyenkor megjelenített környéknév a WeatherAPI.com-tól származik. Soha nem kapjuk
 meg, nem tároljuk és nem naplózzuk a helyzetét, és az alkalmazás nem követi
 a mozgását, és nem futtat helymeghatározást a háttérben.</p>
@@ -158,14 +161,16 @@ adatait vagy számlázási adatait.</p>
 <table>
 <tr><th>Adat</th><th>Cél</th><th>Ki kapja meg</th><th>Megőrzés</th></tr>
 <tr><td>Hozzávetőleges helyzet (koordináták; vagy az Ön hálózatának IP-címe, ha a helymeghatározás ki van kapcsolva vagy nem érhető el)</td><td>Az Ön környékére vonatkozó időjárás-előrejelzés lekérése — enélkül az alkalmazás nem tudja megítélni a szárítási időt</td><td>WeatherAPI.com (közvetlenül a készülékéről)</td><td>Mi nem tároljuk. WeatherAPI.com: lásd a saját adatvédelmi tájékoztatóját</td></tr>
+<tr><td>Hozzávetőleges helyzet (koordináták)</td><td>A koordináták átalakítása az alkalmazásban megjelenő város- vagy városrésznévvé</td><td>A készülék operációsrendszer-gyártója — iOS-en az Apple, Androidon a Google (közvetlenül a készülékéről)</td><td>Mi nem tároljuk. Apple és Google: lásd a saját adatvédelmi tájékoztatójukat</td></tr>
 <tr><td>Eszközinformációk hirdetéshez (IP-cím, eszközazonosítók, érvénytelen forgalom jelzései, hirdetési interakciók, valamint diagnosztikai adatok, például összeomlások és az alkalmazás teljesítménye — ezek egyikét sem használjuk hirdetések személyre szabására vagy az Önről készített profilhoz)</td><td>Az ingyenes verzió egyetlen bannerhirdetésének megjelenítése „korlátozott hirdetések” módban, valamint a Google által az adott hirdetéshez végzett mérés és csalásmegelőzés</td><td>Google AdMob</td><td>Mi nem őrizzük meg. Google: lásd a saját adatvédelmi irányelveit</td></tr>
 <tr><td>Beállítások és a legutóbbi előrejelzés</td><td>Azonnali megnyitás a legutóbbi értékeléssel</td><td>Senki — a készülékén marad</td><td>Az alkalmazás törléséig</td></tr>
 <tr><td>Ütemezett teregetési jelzések</td><td>Emlékeztetés a jó szárító napokra és a közeledő esőre, ha bekapcsolja a jelzéseket</td><td>Senki — a készüléke operációs rendszere ütemezi</td><td>Amíg meg nem szólalnak, ki nem kapcsolja a jelzéseket, vagy nem törli az alkalmazást</td></tr>
 <tr><td>A Hirdetések eltávolítása vásárlási állapota</td><td>A hirdetések elrejtése vásárlás után</td><td>A vásárlást az Apple / a Google dolgozza fel; az alkalmazás csak egy igen/nem jelzőt tárol</td><td>Az alkalmazás törléséig; az áruház saját nyilvántartást vezet</td></tr>
 </table>
 <p>A WeatherAPI.com működtetése az Egyesült Királyságból történik; a Google
-hirdetési szolgáltatásai az Egyesült Államokban és más olyan országokban
-kezelik az adatokat, ahol a Google működik. Mindkettő közvetlenül az Ön
+hirdetési szolgáltatásai, valamint az Apple és a Google helynév-lekérdezése az
+Egyesült Államokban és más olyan országokban kezelik az adatokat, ahol ezek a
+vállalatok működnek. Mindegyikük közvetlenül az Ön
 készülékétől kapja az adatokat, nem tőlünk, és mindegyik a saját, fent
 hivatkozott adatvédelmi szabályzata szerint kezeli azokat. Mivel mi semmit
 nem tárolunk, magunk semmilyen további továbbítást nem végzünk.</p>
@@ -230,32 +235,48 @@ elérhetőségre lehet küldeni, ahol az Ostapenko Studio nevében válaszolnak;
 a Data Protection Board of Indiához.</p>
 <p><strong>Japán és Dél-Korea.</strong> A fenti táblázat felsorolja a kezelt
 adatokat, azok célját, a címzetteket és a megőrzési időt. Saját külföldi
-adatfeldolgozót nem bízunk meg; a WeatherAPI.com és a Google közvetlenül
-az Ön készülékéről kapja az adatokat, az Ön országán kívül, a saját
+adatfeldolgozót nem bízunk meg; a WeatherAPI.com, a Google és a helynév
+tekintetében az Apple közvetlenül az Ön készülékéről kapja az adatokat, az Ön országán kívül, a saját
 szabályzataik szerint.</p>
 <p>A dél-koreai felhasználók számára a külföldre továbbított adatok részletei
 a következők: <strong>adatkör</strong> — a hozzávetőleges helyzet koordinátái
-(a WeatherAPI.com részére), valamint IP-cím, készülék- és hirdetési
+(a WeatherAPI.com részére, valamint a helynévhez iOS-en az Apple, Androidon
+a Google részére), továbbá IP-cím, készülék- és hirdetési
 azonosítók és hirdetési interakciók (a Google részére); <strong>időpont és
 mód</strong> — abban a pillanatban, amikor megnyitja az alkalmazást, vagy az
 frissül, titkosított HTTPS-kapcsolaton keresztül; <strong>címzettek</strong> —
-WeatherAPI.com (Egyesült Királyság, lásd weatherapi.com) és Google LLC
-(Egyesült Államok, lásd policies.google.com); <strong>cél és megőrzési
-idő</strong> — az előrejelzés lekérése, valamint a reklámcsík kiszolgálása és
-mérése, mindkettő a címzett saját szabályzata szerinti megőrzéssel;
+WeatherAPI.com (Egyesült Királyság, lásd weatherapi.com), Google LLC
+(Egyesült Államok, lásd policies.google.com) és Apple Inc. (Egyesült Államok,
+lásd apple.com/privacy); <strong>cél és megőrzési
+idő</strong> — az előrejelzés lekérése, a település nevének megállapítása,
+valamint a reklámcsík kiszolgálása és mérése, mindegyik a címzett saját szabályzata szerinti megőrzéssel;
 <strong>a megtagadáshoz való joga</strong> — a helymeghatározási engedélyt
 bármikor megtagadhatja vagy visszavonhatja a készülék beállításaiban (ekkor az
-alkalmazás nem tud teregetési tanácsot adni), a hirdetéseket pedig
+alkalmazás a hálózati kapcsolat alapján, hozzávetőlegesen helyezi el az
+előrejelzést), a hirdetéseket pedig
 a Hirdetések eltávolítása megvásárlásával teljesen megszüntetheti.</p>
 <p><strong>Kína (szárazföld).</strong> A koordinátáit a készüléke
 közvetlenül a WeatherAPI.com részére küldi, amely a szárazföldi Kínán
-kívüli szolgáltatás, kizárólag az előrejelzés lekérése céljából; a
+kívüli szolgáltatás, kizárólag az előrejelzés lekérése céljából, valamint a telefon
+operációsrendszer-gyártójának (az Apple-nek vagy a Google-nak) a helynév
+megkereséséhez; a
 helymeghatározási engedély megadásával járul hozzá ehhez. Egyetlen
 felhasználó személyes adatát sem tároljuk. A személyes adatokkal
 kapcsolatos kérdéseket az alábbi címre küldheti.</p>
 <p><strong>Oroszország.</strong> Egyetlen felhasználó személyes adatait sem
 tároljuk, sem Oroszországban, sem máshol; az alkalmazás nem üzemeltet
 szervereket.</p>
+
+<h2>Helyesbítés a település nevével kapcsolatban</h2>
+<p>A jelen tájékoztató egy korábbi változata azt állította, hogy a város- vagy
+városrésznév feloldása „a készülékén” történik. Ez téves volt, és kijavítottuk.
+Az alkalmazás arra kéri az operációs rendszert, hogy a koordinátákat helynévvé
+alakítsa, és ezt a lekérdezést iOS-en és Androidon egyaránt hálózaton keresztül
+szolgálják ki: a koordinátái az Apple-hez vagy a Google-hoz kerülnek, és egy
+helynév érkezik vissza. Ugyanez a változat azt állította, hogy az alkalmazás
+helymeghatározási engedély nélkül nem tud teregetési tanácsot adni; tud, az Ön
+hozzávetőleges környéke alapján. Inkább kimondjuk ezt egyenesen, mint hogy
+állva hagyjunk egy megnyugtató mondatot, amelyet a kód nem támaszt alá.</p>
 
 <h2>Változások</h2>
 <p>Az oldal tetején szereplő dátum a hatálybalépés dátuma. Ha ez

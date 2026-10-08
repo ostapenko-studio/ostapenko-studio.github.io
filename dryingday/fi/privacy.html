@@ -92,7 +92,7 @@
 <body>
 
 <h1>Tietosuojakäytäntö</h1>
-<p class="meta">Drying Day, Ostapenko Studio · Voimassa 2. elokuuta 2026 alkaen · Päivitetty 7. lokakuuta 2026</p>
+<p class="meta">Drying Day, Ostapenko Studio · Voimassa 2. elokuuta 2026 alkaen · Päivitetty 8. lokakuuta 2026</p>
 <p class="meta">Englanninkielinen teksti on virallinen versio. Käännökset tarjotaan käytön helpottamiseksi; jos käännös poikkeaa siitä, <a href="../privacy.html">englanninkielinen versio</a> pätee paikallisen lain sallimissa rajoissa.</p>
 
 <p>Drying Day on yksinkertainen sovellus: se lukee sääennusteen ja kertoo,
@@ -110,8 +110,11 @@ sateen todennäköisyys sekä auringonnousu ja -lasku), jonka perusteella
 alueesi kuivumisolosuhteet päätellään. WeatherAPI.comin tapa käsitellä
 pyyntöjä on kuvattu sen omassa
 <a href="https://www.weatherapi.com/privacy.aspx">tietosuojakäytännössä</a>.
-Sovelluksessa näkyvä paikkakunnan tai kaupunginosan nimi selvitetään
-laitteellasi käyttöjärjestelmän omalla geokoodauksella.
+Näyttääkseen paikkakunnan tai kaupunginosan nimen sovellus pyytää puhelimesi
+käyttöjärjestelmää tekemään koordinaateista paikannimen; sekä iOSissa että
+Androidissa tuo haku hoidetaan verkon yli, joten koordinaatit menevät
+Applelle tai Googlelle, jotka käsittelevät niitä omien
+tietosuojakäytäntöjensä mukaisesti.
 Jos sijainti on pois päältä tai ei käytettävissä, sovellus pyytää WeatherAPI.comilta sääennusteen likimääräiselle alueellesi, jonka WeatherAPI.com päättelee verkkosi IP-osoitteesta (joka lähetetään joka tapauksessa jokaisen pyynnön mukana); tällöin näkyvä alueen nimi tulee WeatherAPI.comilta. Me emme koskaan
 vastaanota, tallenna tai kirjaa sijaintiasi, eikä sovellus seuraa
 liikkeitäsi tai tee sijaintitarkistuksia taustalla.</p>
@@ -156,15 +159,17 @@ laskutustietojasi.</p>
 <table>
 <tr><th>Tiedot</th><th>Tarkoitus</th><th>Vastaanottaja</th><th>Säilytys</th></tr>
 <tr><td>Likimääräinen sijainti (koordinaatit; tai verkkosi IP-osoite, kun sijainti on pois päältä tai ei käytettävissä)</td><td>Alueesi sääennusteen hakeminen — sovellus ei voi arvioida kuivumissäätä ilman sitä</td><td>WeatherAPI.com (suoraan laitteeltasi)</td><td>Me emme tallenna. WeatherAPI.com: ks. sen tietosuojakäytäntö</td></tr>
+<tr><td>Likimääräinen sijainti (koordinaatit)</td><td>Koordinaattien muuttaminen sovelluksessa näkyväksi paikkakunnan tai kaupunginosan nimeksi</td><td>Laitteesi käyttöjärjestelmän toimittaja — Apple iOSissa, Google Androidissa (suoraan laitteeltasi)</td><td>Me emme tallenna. Apple ja Google: ks. niiden tietosuojakäytännöt</td></tr>
 <tr><td>Laitetiedot mainontaa varten (IP-osoite, laitetunnisteet, virheellisen liikenteen signaalit, mainosvuorovaikutukset sekä diagnostiikkatiedot, kuten kaatumiset ja sovelluksen suorituskyky — mitään näistä ei käytetä mainosten personointiin eikä profiilin luomiseen sinusta)</td><td>Ilmaisversion yhden bannerimainoksen näyttäminen ”rajoitetut mainokset” -tilassa sekä Googlen suorittama kyseisen mainoksen mittaus ja petosten torjunta</td><td>Google AdMob</td><td>Me emme säilytä. Google: ks. sen tietosuojakäytäntö</td></tr>
 <tr><td>Asetukset ja viimeisin ennuste</td><td>Avautuminen heti viimeisimpään arvioon</td><td>Ei kukaan — pysyy laitteellasi</td><td>Kunnes poistat sovelluksen</td></tr>
 <tr><td>Ajastetut pyykki-ilmoitukset</td><td>Muistuttaminen hyvistä kuivatuspäivistä ja lähestyvästä sateesta, jos otat ilmoitukset käyttöön</td><td>Ei kukaan — ajastaa laitteesi käyttöjärjestelmä</td><td>Kunnes ne laukeavat, otat ilmoitukset pois päältä tai poistat sovelluksen</td></tr>
 <tr><td>Poista mainokset -ostoksen tila</td><td>Mainosten piilottaminen oston jälkeen</td><td>Apple/Google käsittelee oston; sovellus tallentaa vain kyllä/ei-merkinnän</td><td>Kunnes poistat sovelluksen; kauppa säilyttää oman kirjauksensa</td></tr>
 </table>
 <p>WeatherAPI.comia operoidaan Yhdistyneestä kuningaskunnasta; Googlen
-mainospalvelut käsittelevät tietoja Yhdysvalloissa ja muissa maissa, joissa
-Google toimii. Molemmat saavat tiedot suoraan laitteeltasi, eivät meiltä, ja
-kumpikin käsittelee niitä oman, edellä linkitetyn tietosuojakäytäntönsä
+mainospalvelut sekä Applen ja Googlen paikannimihaku käsittelevät tietoja
+Yhdysvalloissa ja muissa maissa, joissa nämä yhtiöt toimivat. Ne kaikki saavat
+tiedot suoraan laitteeltasi, eivät meiltä, ja
+kukin käsittelee niitä oman, edellä linkitetyn tietosuojakäytäntönsä
 mukaisesti. Koska meillä ei ole hallussamme mitään, me emme siirrä tietoja
 eteenpäin.</p>
 <p>Emme myy henkilötietoja, emmekä käytä analytiikkaa, kaatumisraportointia
@@ -224,31 +229,44 @@ pyrimme vastaamaan 30 päivän kuluessa. Jos et ole tyytyväinen, voit tehdä
 valituksen Data Protection Board of Indialle.</p>
 <p><strong>Japani ja Etelä-Korea.</strong> Yllä oleva taulukko luettelee
 käsiteltävät tiedot, niiden tarkoituksen, vastaanottajat ja säilytysajan.
-Emme nimeä omaa ulkomaista henkilötietojen käsittelijää; WeatherAPI.com ja
-Google vastaanottavat tiedot suoraan laitteeltasi, oman maasi ulkopuolella,
+Emme nimeä omaa ulkomaista henkilötietojen käsittelijää; WeatherAPI.com,
+Google ja paikannimen osalta Apple vastaanottavat tiedot suoraan laitteeltasi, oman maasi ulkopuolella,
 omien käytäntöjensä mukaisesti.</p>
 <p>Etelä-Koreassa oleville käyttäjille ulkomaille lähetettävien tietojen
 tiedot ovat seuraavat: <strong>tiedot</strong> — likimääräiset
-sijaintikoordinaatit (WeatherAPI.comiin) sekä IP-osoite, laite- ja
+sijaintikoordinaatit (WeatherAPI.comiin sekä paikannimeä varten Applelle
+iOSissa tai Googlelle Androidissa) sekä IP-osoite, laite- ja
 mainostunnisteet ja mainosten käyttö (Googlelle); <strong>ajankohta ja
 tapa</strong> — sillä hetkellä, kun avaat sovelluksen tai se päivittää
 tiedot, salatun HTTPS-yhteyden yli; <strong>vastaanottajat</strong> —
-WeatherAPI.com (Yhdistynyt kuningaskunta, ks. weatherapi.com) ja Google LLC
-(Yhdysvallat, ks. policies.google.com); <strong>tarkoitus ja
-säilytysaika</strong> — ennusteesi hakeminen sekä mainosbannerin
-toimittaminen ja mittaaminen, kumpikin säilytettynä vastaanottajan oman
+WeatherAPI.com (Yhdistynyt kuningaskunta, ks. weatherapi.com), Google LLC
+(Yhdysvallat, ks. policies.google.com) ja Apple Inc. (Yhdysvallat, ks.
+apple.com/privacy); <strong>tarkoitus ja
+säilytysaika</strong> — ennusteesi hakeminen, paikkakuntasi nimeäminen sekä mainosbannerin
+toimittaminen ja mittaaminen, kukin säilytettynä vastaanottajan oman
 käytännön mukaisesti; <strong>oikeutesi kieltäytyä</strong> — voit evätä
 sijaintiluvan tai peruuttaa sen milloin tahansa laitteesi asetuksista (silloin
-sovellus ei voi antaa pyykinkuivausneuvoja), ja voit poistaa mainonnan
+sovellus sijoittaa ennusteen likimääräisesti verkkoyhteytesi perusteella), ja voit poistaa mainonnan
 kokonaan ostamalla Poista mainokset -ostoksen.</p>
 <p><strong>Manner-Kiina.</strong> Laitteesi lähettää koordinaattisi suoraan
 WeatherAPI.comiin, joka on Manner-Kiinan ulkopuolella oleva palvelu, ainoana
-tarkoituksena hakea sääennuste; sijaintiluvan myöntäminen on tapa, jolla
+tarkoituksena hakea sääennuste, sekä puhelimesi käyttöjärjestelmän
+toimittajalle (Applelle tai Googlelle) paikannimen hakemiseksi; sijaintiluvan myöntäminen on tapa, jolla
 hyväksyt tämän. Meillä ei ole hallussamme kenenkään käyttäjän
 henkilötietoja. Henkilötietoja koskevat kysymykset voi lähettää alla olevaan
 osoitteeseen.</p>
 <p><strong>Venäjä.</strong> Emme tallenna kenenkään käyttäjän
 henkilötietoja, Venäjällä tai muualla; sovelluksella ei ole palvelimia.</p>
+
+<h2>Oikaisu paikkakunnan nimestä</h2>
+<p>Tämän käytännön aiempi versio sanoi, että paikkakunnan tai kaupunginosan nimi
+selvitetään ”laitteellasi”. Se oli väärin, ja olemme korjanneet sen. Sovellus
+pyytää käyttöjärjestelmää tekemään koordinaateista paikannimen, ja sekä iOSissa
+että Androidissa tuo haku hoidetaan verkon yli: koordinaattisi lähetetään
+Applelle tai Googlelle, ja takaisin tulee paikannimi. Sama versio sanoi, ettei
+sovellus voi antaa pyykinkuivausneuvoja ilman sijaintilupaa; se voi,
+likimääräisen alueesi perusteella. Sanomme sen mieluummin suoraan kuin jätämme
+paikalleen rauhoittavan lauseen, jota koodi ei tue.</p>
 
 <h2>Muutokset</h2>
 <p>Tämän sivun yläreunassa oleva päivämäärä on sen voimaantulopäivä. Jos tämä

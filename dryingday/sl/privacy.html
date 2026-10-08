@@ -92,7 +92,7 @@
 <body>
 
 <h1>Pravilnik o zasebnosti</h1>
-<p class="meta">Drying Day, Ostapenko Studio · Velja od 2. avgusta 2026 · Posodobljeno 7. oktobra 2026</p>
+<p class="meta">Drying Day, Ostapenko Studio · Velja od 2. avgusta 2026 · Posodobljeno 8. oktobra 2026</p>
 <p class="meta">Merodajna različica je <a href="../privacy.html">izvirno angleško besedilo</a>. Prevodi so na voljo zaradi lažjega razumevanja; kjer se prevod razlikuje, velja angleška različica, kolikor to dopušča lokalno pravo.</p>
 
 <p>Drying Day je preprosta aplikacija: prebere vremensko napoved in vam pove,
@@ -110,8 +110,10 @@ oblačnost, verjetnost padavin, sončni vzhod in zahod), ki se uporablja za
 oceno razmer za sušenje na vašem območju. Kako WeatherAPI.com obravnava
 zahteve, je opisano v njegovem lastnem
 <a href="https://www.weatherapi.com/privacy.aspx">pravilniku o zasebnosti</a>.
-Ime kraja ali naselja, prikazano v aplikaciji, se določi na vaši napravi z
-geokodirnikom operacijskega sistema. Če je lokacija izklopljena ali ni na voljo, aplikacija od WeatherAPI.com zahteva napoved za vaše približno območje, ki ga WeatherAPI.com določi na podlagi naslova IP vašega omrežja (ta se tako ali tako pošlje z vsako zahtevo); prikazano ime območja tedaj prihaja od WeatherAPI.com. Vaše lokacije nikoli ne prejmemo, ne
+Da bi prikazala ime kraja ali naselja, aplikacija prosi operacijski sistem
+telefona, naj koordinate pretvori v ime kraja; tako v iOS kot v Androidu se to
+iskanje opravi prek omrežja, zato koordinate prejme Apple ali Google, ki jih
+obravnavata po svojih lastnih pravilnikih o zasebnosti. Če je lokacija izklopljena ali ni na voljo, aplikacija od WeatherAPI.com zahteva napoved za vaše približno območje, ki ga WeatherAPI.com določi na podlagi naslova IP vašega omrežja (ta se tako ali tako pošlje z vsako zahtevo); prikazano ime območja tedaj prihaja od WeatherAPI.com. Vaše lokacije nikoli ne prejmemo, ne
 shranjujemo in ne beležimo, aplikacija pa ne sledi vašemu gibanju in ne
 preverja lokacije v ozadju.</p>
 <p>Aplikacija zahteva samo <em>približno</em> lokacijo in najnižjo natančnost,
@@ -154,14 +156,16 @@ vidimo.</p>
 <table>
 <tr><th>Podatki</th><th>Namen</th><th>Kdo jih prejme</th><th>Hramba</th></tr>
 <tr><td>Približna lokacija (koordinate; ali naslov IP vašega omrežja, ko je lokacija izklopljena ali ni na voljo)</td><td>Pridobitev vremenske napovedi za vaše območje — brez nje aplikacija ne more oceniti vremena za sušenje</td><td>WeatherAPI.com (neposredno z vaše naprave)</td><td>Mi jih ne shranjujemo. WeatherAPI.com: glejte njegov pravilnik o zasebnosti</td></tr>
+<tr><td>Približna lokacija (koordinate)</td><td>Pretvorba koordinat v ime kraja ali naselja, prikazano v aplikaciji</td><td>Ponudnik operacijskega sistema vaše naprave — Apple v iOS, Google v Androidu (neposredno z vaše naprave)</td><td>Mi jih ne shranjujemo. Apple in Google: glejte njune pravilnike o zasebnosti</td></tr>
 <tr><td>Informacije o napravi za oglaševanje (naslov IP, identifikatorji naprave, signali neveljavnega prometa, interakcije z oglasom ter diagnostični podatki, kot so zrušitve in delovanje aplikacije — nič od tega se ne uporablja za prilagajanje oglasov ali oblikovanje vašega profila)</td><td>Prikazovanje ene pasice v brezplačni različici v načinu »omejeni oglasi« ter Googlovo merjenje in preprečevanje prevar za ta oglas</td><td>Google AdMob</td><td>Mi jih ne hranimo. Google: glejte njegov pravilnik o zasebnosti</td></tr>
 <tr><td>Nastavitve in zadnja napoved</td><td>Takojšnje odpiranje na vaši zadnji oceni</td><td>Nihče — ostanejo na vaši napravi</td><td>Dokler aplikacije ne izbrišete</td></tr>
 <tr><td>Načrtovana opozorila za perilo</td><td>Opominjanje na dobre dneve za sušenje in na bližajoči se dež, če opozorila vklopite</td><td>Nihče — načrtuje jih operacijski sistem vaše naprave</td><td>Dokler se ne sprožijo, dokler opozoril ne izklopite ali dokler aplikacije ne izbrišete</td></tr>
 <tr><td>Stanje nakupa možnosti Odstrani oglase</td><td>Skrivanje oglasov po nakupu</td><td>Apple / Google obdelata nakup; aplikacija shrani samo oznako da/ne</td><td>Dokler aplikacije ne izbrišete; trgovina vodi lastno evidenco</td></tr>
 </table>
 <p>WeatherAPI.com se upravlja iz Združenega kraljestva, Googlove oglaševalske
-storitve pa obdelujejo podatke v Združenih državah Amerike in v drugih
-državah, kjer Google posluje. Oba prejemata podatke neposredno z vaše naprave,
+storitve ter iskanje imena kraja pri Applu in Googlu pa obdelujejo podatke
+v Združenih državah Amerike in v drugih državah, kjer ta podjetja poslujejo.
+Vsi prejemajo podatke neposredno z vaše naprave,
 ne od nas, in vsak jih obravnava po svojem pravilniku o zasebnosti, povezanem
 zgoraj. Ker ničesar ne hranimo, sami ne izvajamo nobenega nadaljnjega
 prenosa.</p>
@@ -223,29 +227,42 @@ zadovoljni, se lahko pritožite pri Odboru za varstvo podatkov Indije (Data
 Protection Board of India).</p>
 <p><strong>Japonska in Južna Koreja.</strong> Zgornja tabela navaja obdelovane
 postavke, njihov namen, prejemnike in obdobje hrambe. Ne imenujemo lastnega
-tujega obdelovalca; WeatherAPI.com in Google prejemata podatke neposredno z
+tujega obdelovalca; WeatherAPI.com, Google in za ime kraja Apple prejemajo podatke neposredno z
 vaše naprave, zunaj vaše države, po svojih lastnih pravilnikih.</p>
 <p>Za uporabnike v Južni Koreji so podatki, ki se pošiljajo v tujino,
 naslednji: <strong>postavke</strong> — približne koordinate lokacije (za
-WeatherAPI.com) ter naslov IP, identifikatorji naprave in oglaševalski
+WeatherAPI.com ter za Apple v iOS ali Google v Androidu zaradi imena kraja)
+ter naslov IP, identifikatorji naprave in oglaševalski
 identifikatorji ter interakcije z oglasi (za Google); <strong>čas in
 način</strong> — v trenutku, ko odprete aplikacijo ali ko ta osveži podatke,
 prek šifrirane povezave HTTPS; <strong>prejemniki</strong> — WeatherAPI.com
-(Združeno kraljestvo, glejte weatherapi.com) in Google LLC (Združene države
-Amerike, glejte policies.google.com); <strong>namen in hramba</strong> —
-pridobitev vaše napovedi ter prikazovanje in merjenje pasičnega oglasa, pri
+(Združeno kraljestvo, glejte weatherapi.com), Google LLC (Združene države
+Amerike, glejte policies.google.com) in Apple Inc. (Združene države Amerike,
+glejte apple.com/privacy); <strong>namen in hramba</strong> —
+pridobitev vaše napovedi, določitev imena vašega kraja ter prikazovanje in merjenje pasičnega oglasa, pri
 čemer vsak prejemnik podatke hrani po svojem pravilniku; <strong>vaša pravica
 do zavrnitve</strong> — dovoljenje za lokacijo lahko kadar koli zavrnete ali
-prekličete v nastavitvah naprave (aplikacija tedaj ne more dajati nasvetov za
-perilo), oglaševanje pa lahko v celoti odstranite z nakupom možnosti Odstrani
+prekličete v nastavitvah naprave (aplikacija tedaj napoved umesti približno glede na
+vašo omrežno povezavo), oglaševanje pa lahko v celoti odstranite z nakupom možnosti Odstrani
 oglase.</p>
 <p><strong>Kitajska (celina).</strong> Vaše koordinate vaša naprava pošlje
 neposredno storitvi WeatherAPI.com, ki je zunaj celinske Kitajske, izključno
-za pridobitev napovedi; s tem, ko dovolite dostop do lokacije, s tem
+za pridobitev napovedi, ter ponudniku operacijskega sistema vašega telefona
+(Apple ali Google) za iskanje imena kraja; s tem, ko dovolite dostop do lokacije, s tem
 soglašate. Osebnih podatkov nobenega uporabnika ne hranimo. Vprašanja o
 osebnih podatkih lahko pošljete na spodnji naslov.</p>
 <p><strong>Rusija.</strong> Ne hranimo osebnih podatkov nobenega uporabnika, ne
 v Rusiji ne drugje; aplikacija ne uporablja nobenih strežnikov.</p>
+
+<h2>Popravek glede imena kraja</h2>
+<p>Prejšnja različica tega pravilnika je navajala, da se ime kraja ali
+naselja določi „na vaši napravi“. To ni bilo res in smo popravili. Aplikacija
+prosi operacijski sistem, naj koordinate pretvori v ime kraja, in tako v iOS
+kot v Androidu se to iskanje opravi prek omrežja: vaše koordinate se pošljejo
+Applu ali Googlu, nazaj pa pride ime kraja. Ista različica je navajala, da
+aplikacija brez dovoljenja za lokacijo ne more dajati nasvetov za perilo; lahko
+jih, na podlagi vašega približnega območja. Raje to povemo naravnost, kot da bi
+pustili pomirjujoč stavek, ki ga koda ne podpira.</p>
 
 <h2>Spremembe</h2>
 <p>Datum na vrhu te strani je datum njene veljavnosti. Če se ta pravilnik

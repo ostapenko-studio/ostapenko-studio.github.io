@@ -92,7 +92,7 @@
 <body>
 
 <h1>Personvernerklæring</h1>
-<p class="meta">Drying Day, av Ostapenko Studio · Gjelder fra 2. august 2026 · Oppdatert 7. oktober 2026</p>
+<p class="meta">Drying Day, av Ostapenko Studio · Gjelder fra 2. august 2026 · Oppdatert 8. oktober 2026</p>
 <p class="meta">Den engelske teksten er den gjeldende versjonen (<a href="../privacy.html">canonical English</a>). Oversettelser tilbys for enkelhets skyld; der en oversettelse avviker, gjelder den engelske versjonen så langt lokal lov tillater.</p>
 
 <p>Drying Day er en enkel app: den leser værvarselet og forteller deg om det
@@ -110,8 +110,11 @@ luftfuktighet, vind, skydekke, sannsynlighet for nedbør, soloppgang og
 solnedgang) som brukes til å finne ut hvordan tørkeforholdene er i området
 ditt. Hvordan WeatherAPI.com håndterer forespørsler er beskrevet i deres
 egen <a href="https://www.weatherapi.com/privacy.aspx">personvernerklæring</a>.
-Navnet på stedet eller bydelen som vises i appen, slås opp på enheten din av
-operativsystemets egen geokoder. Hvis posisjon er slått av eller utilgjengelig, ber appen WeatherAPI.com om værvarselet for ditt omtrentlige område, som WeatherAPI.com finner ut fra IP-adressen til nettverket ditt (som uansett sendes med hver forespørsel); navnet på området som vises, kommer da fra WeatherAPI.com. Vi mottar, lagrer eller logger aldri
+For å vise navnet på stedet eller bydelen ber appen operativsystemet på
+telefonen din om å gjøre koordinatene om til et stedsnavn; på både iOS og
+Android skjer dette oppslaget over nettverket, så koordinatene sendes til
+Apple eller Google, som behandler dem etter sine egne personvernerklæringer.
+Hvis posisjon er slått av eller utilgjengelig, ber appen WeatherAPI.com om værvarselet for ditt omtrentlige område, som WeatherAPI.com finner ut fra IP-adressen til nettverket ditt (som uansett sendes med hver forespørsel); navnet på området som vises, kommer da fra WeatherAPI.com. Vi mottar, lagrer eller logger aldri
 posisjonen din, og appen sporer ikke bevegelsene dine og gjør ikke
 posisjonssjekker i bakgrunnen.</p>
 <p>Appen ber bare om <em>omtrentlig</em> posisjon og ber om den laveste
@@ -153,13 +156,15 @@ eller faktureringsinformasjonen din.</p>
 <table>
 <tr><th>Data</th><th>Formål</th><th>Hvem mottar dem</th><th>Lagringstid</th></tr>
 <tr><td>Omtrentlig posisjon (koordinater; eller IP-adressen til nettverket ditt når posisjon er slått av eller utilgjengelig)</td><td>Hente værvarselet for området ditt — appen kan ikke vurdere tørkeværet uten det</td><td>WeatherAPI.com (direkte fra enheten din)</td><td>Lagres ikke av oss. WeatherAPI.com: se deres personvernerklæring</td></tr>
+<tr><td>Omtrentlig posisjon (koordinater)</td><td>Gjøre koordinatene om til navnet på stedet eller bydelen som vises i appen</td><td>Leverandøren av operativsystemet på enheten din — Apple på iOS, Google på Android (direkte fra enheten din)</td><td>Lagres ikke av oss. Apple og Google: se deres personvernerklæringer</td></tr>
 <tr><td>Enhetsinformasjon for annonsering (IP-adresse, enhets-ID-er, signaler om ugyldig trafikk, annonseinteraksjoner og diagnostikkdata som krasj og appytelse — ingenting av dette brukes til å personalisere annonser eller bygge en profil av deg)</td><td>Levering av den ene bannerannonsen i gratisversjonen, i modusen «begrensede annonser», og Googles måling og svindelforebygging for denne annonsen</td><td>Google AdMob</td><td>Oppbevares ikke av oss. Google: se deres personvernerklæring</td></tr>
 <tr><td>Innstillinger og det nyeste værvarselet</td><td>Åpne umiddelbart på din siste vurdering</td><td>Ingen — blir på enheten din</td><td>Til du sletter appen</td></tr>
 <tr><td>Planlagte tørkevarsler</td><td>Minne deg på gode tørkedager og regn som nærmer seg, hvis du slår på varsler</td><td>Ingen — planlegges av operativsystemet på enheten din</td><td>Til de utløses, du slår av varsler, eller du sletter appen</td></tr>
 <tr><td>Kjøpsstatus for Fjern annonser</td><td>Skjule annonser etter kjøp</td><td>Apple/Google behandler kjøpet; appen lagrer bare et ja/nei-flagg</td><td>Til du sletter appen; butikken beholder sin egen oppføring</td></tr>
 </table>
 <p>WeatherAPI.com drives fra Storbritannia; Googles annonsetjenester
-behandler data i USA og i andre land der Google har virksomhet. Begge mottar
+og Apples og Googles stedsnavnoppslag behandler data i USA og i andre land der
+disse selskapene har virksomhet. Alle mottar
 data direkte fra enheten din, ikke fra oss, og hver av dem behandler dem
 etter sin egen personvernerklæring, som det er lenket til ovenfor. Siden vi
 ikke oppbevarer noe, foretar vi ingen videreoverføring av eget slag.</p>
@@ -216,29 +221,43 @@ svarer på vegne av Ostapenko Studio; vi tar sikte på å svare innen 30 dager.
 Er du ikke fornøyd, kan du klage til Data Protection Board of India.</p>
 <p><strong>Japan og Sør-Korea.</strong> Tabellen ovenfor viser hvilke
 opplysninger som behandles, formålet, mottakerne og lagringstiden. Vi
-utpeker ingen egen utenlandsk databehandler; WeatherAPI.com og Google mottar
+utpeker ingen egen utenlandsk databehandler; WeatherAPI.com, Google og, for
+stedsnavnet, Apple mottar
 data direkte fra enheten din, utenfor landet ditt, under sine egne
 retningslinjer.</p>
 <p>For brukere i Sør-Korea er opplysningene om det som sendes til utlandet,
 disse: <strong>opplysninger</strong> — omtrentlige posisjonskoordinater (til
-WeatherAPI.com) samt IP-adresse, enhets- og annonseidentifikatorer og
+WeatherAPI.com og, for stedsnavnet, til Apple på iOS eller Google på Android)
+samt IP-adresse, enhets- og annonseidentifikatorer og
 annonseinteraksjoner (til Google); <strong>tidspunkt og måte</strong> — i det
 øyeblikket du åpner appen, eller den oppdaterer seg, over en kryptert
 HTTPS-forbindelse; <strong>mottakere</strong> — WeatherAPI.com
-(Storbritannia, se weatherapi.com) og Google LLC (USA, se
-policies.google.com); <strong>formål og lagringstid</strong> — å hente
-værvarselet ditt og å levere og måle annonsebanneret, hver av dem oppbevart
+(Storbritannia, se weatherapi.com), Google LLC (USA, se
+policies.google.com) og Apple Inc. (USA, se apple.com/privacy); <strong>formål og lagringstid</strong> — å hente
+værvarselet ditt, å navngi stedet ditt og å levere og måle annonsebanneret, hver av dem oppbevart
 etter mottakerens egne retningslinjer; <strong>din rett til å nekte</strong>
 — du kan når som helst avslå eller trekke tilbake posisjonstillatelsen i
-innstillingene på enheten din (appen kan da ikke gi råd om klesvasken), og du
+innstillingene på enheten din (appen plasserer da værvarselet omtrentlig ut fra
+nettverkstilkoblingen din), og du
 kan fjerne annonseringen helt ved å kjøpe Fjern annonser.</p>
 <p><strong>Kina (fastlandet).</strong> Koordinatene dine sendes av enheten din
 direkte til WeatherAPI.com, en tjeneste utenfor Kinas fastland, utelukkende
-for å hente værvarselet; ved å gi posisjonstillatelsen samtykker du til
+for å hente værvarselet, og til leverandøren av operativsystemet på
+telefonen din (Apple eller Google) for å slå opp stedsnavnet; ved å gi posisjonstillatelsen samtykker du til
 dette. Vi oppbevarer ingen personopplysninger om noen bruker. Spørsmål om
 personopplysninger kan sendes til adressen nedenfor.</p>
 <p><strong>Russland.</strong> Vi lagrer ingen personopplysninger om noen
 bruker, i Russland eller andre steder; appen driver ingen servere.</p>
+
+<h2>En rettelse om stedsnavnet</h2>
+<p>En tidligere versjon av denne erklæringen sa at navnet på stedet eller
+bydelen ble slått opp «på enheten din». Det var feil, og vi har rettet det.
+Appen ber operativsystemet om å gjøre koordinater om til et stedsnavn, og på
+både iOS og Android skjer dette oppslaget over nettverket: koordinatene dine
+sendes til Apple eller Google, og et stedsnavn kommer tilbake. Den samme
+versjonen sa at appen ikke kunne gi råd om klesvasken uten posisjonstillatelsen;
+det kan den, ut fra det omtrentlige området ditt. Vi sier det heller rett ut
+enn å la en beroligende setning stå som koden ikke dekker.</p>
 
 <h2>Endringer</h2>
 <p>Datoen øverst på denne siden er ikrafttredelsesdatoen. Hvis denne

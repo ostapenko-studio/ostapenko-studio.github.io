@@ -92,7 +92,7 @@
 <body>
 
 <h1>Kebijakan Privasi</h1>
-<p class="meta">Drying Day, oleh Ostapenko Studio · Berlaku sejak 2 Agustus 2026 · Diperbarui 7 Oktober 2026</p>
+<p class="meta">Drying Day, oleh Ostapenko Studio · Berlaku sejak 2 Agustus 2026 · Diperbarui 8 Oktober 2026</p>
 <p class="meta"><a href="../privacy.html">Teks berbahasa Inggris</a> adalah versi kanonis. Terjemahan disediakan untuk kemudahan; jika ada perbedaan, versi bahasa Inggris yang berlaku sejauh diizinkan oleh hukum setempat.</p>
 
 <p>Drying Day adalah aplikasi sederhana: ia membaca prakiraan cuaca dan
@@ -111,8 +111,11 @@ tutupan awan, potensi hujan, matahari terbit dan terbenam) yang digunakan
 untuk memperkirakan kondisi menjemur di area Anda. Cara WeatherAPI.com
 menangani permintaan dijelaskan dalam
 <a href="https://www.weatherapi.com/privacy.aspx">kebijakan privasinya</a>
-sendiri. Nama kota atau kelurahan yang ditampilkan di aplikasi ditentukan di
-perangkat Anda oleh geocoder milik sistem operasi. Jika lokasi dinonaktifkan atau tidak tersedia, aplikasi meminta prakiraan untuk area perkiraan Anda kepada WeatherAPI.com, yang menentukannya dari alamat IP jaringan Anda (yang memang terkirim bersama setiap permintaan); nama area yang ditampilkan kemudian berasal dari WeatherAPI.com. Kami tidak pernah
+sendiri. Untuk menampilkan nama kota atau kelurahan, aplikasi meminta sistem
+operasi ponsel Anda mengubah koordinat menjadi nama tempat; di iOS maupun
+Android, pencarian itu dilayani melalui jaringan, sehingga koordinat dikirim
+ke Apple atau Google, yang menanganinya berdasarkan kebijakan privasi mereka
+sendiri. Jika lokasi dinonaktifkan atau tidak tersedia, aplikasi meminta prakiraan untuk area perkiraan Anda kepada WeatherAPI.com, yang menentukannya dari alamat IP jaringan Anda (yang memang terkirim bersama setiap permintaan); nama area yang ditampilkan kemudian berasal dari WeatherAPI.com. Kami tidak pernah
 menerima, menyimpan, atau mencatat lokasi Anda, dan aplikasi tidak melacak
 pergerakan Anda maupun memeriksa lokasi di latar belakang.</p>
 <p>Aplikasi hanya meminta lokasi <em>perkiraan</em> dan meminta akurasi
@@ -155,14 +158,16 @@ detail pembayaran, atau informasi penagihan Anda.</p>
 <table>
 <tr><th>Data</th><th>Tujuan</th><th>Siapa yang menerimanya</th><th>Penyimpanan</th></tr>
 <tr><td>Lokasi perkiraan (koordinat; atau alamat IP jaringan Anda saat lokasi dinonaktifkan atau tidak tersedia)</td><td>Mengambil prakiraan cuaca untuk area Anda — tanpa ini aplikasi tidak dapat menilai cuaca menjemur</td><td>WeatherAPI.com (langsung dari perangkat Anda)</td><td>Tidak disimpan oleh kami. WeatherAPI.com: lihat kebijakan privasinya</td></tr>
+<tr><td>Lokasi perkiraan (koordinat)</td><td>Mengubah koordinat menjadi nama kota atau kelurahan yang ditampilkan di aplikasi</td><td>Vendor sistem operasi perangkat Anda — Apple di iOS, Google di Android (langsung dari perangkat Anda)</td><td>Tidak disimpan oleh kami. Apple dan Google: lihat kebijakan privasi masing-masing</td></tr>
 <tr><td>Informasi perangkat untuk iklan (alamat IP, pengidentifikasi perangkat, sinyal lalu lintas tidak valid, interaksi iklan, serta data diagnostik seperti kerusakan dan kinerja aplikasi — tidak ada yang digunakan untuk mempersonalisasi iklan atau menyusun profil tentang Anda)</td><td>Menayangkan satu-satunya iklan banner di versi gratis, dalam mode «iklan terbatas», serta pengukuran dan pencegahan penipuan oleh Google untuk iklan tersebut</td><td>Google AdMob</td><td>Tidak disimpan oleh kami. Google: lihat kebijakan privasinya</td></tr>
 <tr><td>Pengaturan dan prakiraan terbaru</td><td>Membuka seketika dengan penilaian terakhir Anda</td><td>Tidak seorang pun — tetap di perangkat Anda</td><td>Sampai Anda menghapus aplikasi</td></tr>
 <tr><td>Peringatan jemuran yang dijadwalkan</td><td>Mengingatkan Anda tentang hari jemur yang bagus dan hujan yang mendekat, jika Anda mengaktifkan peringatan</td><td>Tidak seorang pun — dijadwalkan oleh sistem operasi perangkat Anda</td><td>Sampai peringatan muncul, Anda menonaktifkan peringatan, atau Anda menghapus aplikasi</td></tr>
 <tr><td>Status pembelian Hapus Iklan</td><td>Menyembunyikan iklan setelah pembelian</td><td>Apple / Google memproses pembelian; aplikasi hanya menyimpan penanda ya/tidak</td><td>Sampai Anda menghapus aplikasi; toko menyimpan catatannya sendiri</td></tr>
 </table>
-<p>WeatherAPI.com dioperasikan dari Inggris Raya; layanan periklanan Google
-memproses data di Amerika Serikat dan negara lain tempat Google beroperasi.
-Keduanya menerima data langsung dari perangkat Anda, bukan dari kami, dan
+<p>WeatherAPI.com dioperasikan dari Inggris Raya; layanan periklanan Google,
+serta pencarian nama tempat oleh Apple dan Google, memproses data di Amerika
+Serikat dan negara lain tempat perusahaan-perusahaan tersebut beroperasi.
+Semuanya menerima data langsung dari perangkat Anda, bukan dari kami, dan
 masing-masing menanganinya berdasarkan kebijakan privasinya sendiri yang
 ditautkan di atas. Karena kami tidak menyimpan apa pun, kami tidak melakukan
 transfer lanjutan apa pun.</p>
@@ -222,29 +227,42 @@ menanggapi dalam 30 hari. Jika Anda tidak puas, Anda dapat mengajukan
 pengaduan ke Data Protection Board of India.</p>
 <p><strong>Jepang dan Korea Selatan.</strong> Tabel di atas mencantumkan item
 yang ditangani, tujuannya, penerimanya, dan jangka waktu penyimpanannya. Kami
-tidak menunjuk pemroses luar negeri milik kami sendiri; WeatherAPI.com dan
-Google menerima data langsung dari perangkat Anda, di luar negara Anda,
+tidak menunjuk pemroses luar negeri milik kami sendiri; WeatherAPI.com, Google,
+dan, untuk nama tempat, Apple menerima data langsung dari perangkat Anda, di luar negara Anda,
 berdasarkan kebijakan mereka sendiri.</p>
 <p>Bagi pengguna di Korea Selatan, rincian data yang dikirim ke luar negeri
 adalah: <strong>item</strong> — koordinat lokasi perkiraan (ke
-WeatherAPI.com), serta alamat IP, pengenal perangkat dan pengenal iklan, dan
+WeatherAPI.com, dan ke Apple di iOS atau Google di Android untuk nama tempat), serta alamat IP, pengenal perangkat dan pengenal iklan, dan
 interaksi iklan (ke Google); <strong>kapan dan bagaimana</strong> — pada saat
 Anda membuka aplikasi atau aplikasi menyegarkan data, melalui koneksi HTTPS
 terenkripsi; <strong>penerima</strong> — WeatherAPI.com (Inggris Raya, lihat
-weatherapi.com) dan Google LLC (Amerika Serikat, lihat policies.google.com);
-<strong>tujuan dan penyimpanan</strong> — mengambil prakiraan Anda serta
+weatherapi.com), Google LLC (Amerika Serikat, lihat policies.google.com), dan
+Apple Inc. (Amerika Serikat, lihat apple.com/privacy);
+<strong>tujuan dan penyimpanan</strong> — mengambil prakiraan Anda, menampilkan nama kota Anda, serta
 menyajikan dan mengukur iklan banner, masing-masing disimpan berdasarkan
 kebijakan penerimanya sendiri; <strong>hak Anda untuk menolak</strong> — Anda
 dapat menolak atau menarik izin lokasi kapan saja di pengaturan perangkat
-(setelah itu aplikasi tidak dapat memberi saran menjemur), dan Anda dapat
+(setelah itu aplikasi menentukan lokasi prakiraan secara perkiraan dari koneksi jaringan Anda), dan Anda dapat
 menghilangkan iklan sepenuhnya dengan membeli Hapus Iklan.</p>
 <p><strong>Tiongkok (daratan).</strong> Koordinat Anda dikirim oleh perangkat
 Anda langsung ke WeatherAPI.com, sebuah layanan di luar Tiongkok daratan,
-semata-mata untuk mengambil prakiraan; memberikan izin lokasi adalah cara
+untuk mengambil prakiraan, dan ke vendor sistem operasi ponsel Anda (Apple atau
+Google) untuk mencari nama tempat; memberikan izin lokasi adalah cara
 Anda menyetujui hal tersebut. Kami tidak menyimpan data pribadi pengguna mana
 pun. Pertanyaan tentang data pribadi dapat dikirim ke alamat di bawah ini.</p>
 <p><strong>Rusia.</strong> Kami tidak menyimpan data pribadi pengguna mana pun,
 di Rusia maupun di tempat lain; aplikasi tidak menjalankan server.</p>
+
+<h2>Koreksi tentang nama kota</h2>
+<p>Versi sebelumnya dari kebijakan ini menyatakan bahwa nama kota atau kelurahan
+ditentukan "di perangkat Anda". Itu keliru, dan sudah kami perbaiki. Aplikasi
+meminta sistem operasi mengubah koordinat menjadi nama tempat, dan di iOS
+maupun Android pencarian itu dilayani melalui jaringan: koordinat Anda dikirim
+ke Apple atau Google dan sebuah nama tempat dikembalikan. Versi yang sama
+menyatakan bahwa aplikasi tidak dapat memberi saran menjemur tanpa izin
+lokasi; sebenarnya bisa, berdasarkan area perkiraan Anda. Kami lebih memilih
+mengatakannya terus terang daripada membiarkan kalimat yang menenangkan tetap
+ada padahal tidak didukung oleh kodenya.</p>
 
 <h2>Perubahan</h2>
 <p>Tanggal di bagian atas halaman ini adalah tanggal berlakunya. Jika

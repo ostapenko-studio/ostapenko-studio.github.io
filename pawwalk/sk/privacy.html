@@ -92,7 +92,7 @@
 <body>
 
 <h1>Zásady ochrany súkromia</h1>
-<p class="meta">PawWalk, Ostapenko Studio · Účinné od 1. augusta 2026 · Aktualizované 11. septembra 2026</p>
+<p class="meta">PawWalk, Ostapenko Studio · Účinné od 1. augusta 2026 · Aktualizované 8. októbra 2026</p>
 <p class="meta">Záväzné je anglické znenie. Preklady poskytujeme pre uľahčenie; ak sa preklad líši, platí anglické znenie v rozsahu, ktorý pripúšťa miestne právo.</p>
 
 <p>PawWalk je jednoduchá aplikácia: odhaduje, aká horúca je zem tam, kde ste,
@@ -109,8 +109,11 @@ meteorologických údajov, výhradne na účel získania údajov o počasí (tep
 vzduchu, oblačnosť, vietor), z ktorých sa odhaduje teplota povrchu vo vašej
 oblasti. Ako WeatherAPI.com narába s požiadavkami, opisujú jeho vlastné
 <a href="https://www.weatherapi.com/privacy.aspx">zásady ochrany súkromia</a>.
-Názov obce alebo štvrte zobrazený v aplikácii určuje na vašom zariadení
-geokodér operačného systému. Vašu polohu nikdy neprijímame, neukladáme ani
+Aby aplikácia zobrazila názov obce alebo štvrte, požiada operačný systém
+telefónu o prevod súradníc na názov miesta; v systémoch iOS aj Android sa toto
+vyhľadanie vykonáva cez sieť, takže súradnice idú spoločnosti Apple alebo
+Google, ktoré s nimi narábajú podľa svojich vlastných zásad ochrany súkromia.
+Vašu polohu nikdy neprijímame, neukladáme ani
 nezaznamenávame a aplikácia nesleduje vaše pohyby ani prechádzky a nebeží na
 pozadí.</p>
 
@@ -136,6 +139,7 @@ nevidíme.</p>
 <table>
 <tr><th>Údaje</th><th>Účel</th><th>Kto ich prijíma</th><th>Doba uchovávania</th></tr>
 <tr><td>Približná poloha (súradnice)</td><td>Získanie predpovede počasia pre vašu oblasť — bez nej aplikácia nemôže zem odhadnúť</td><td>WeatherAPI.com (priamo z vášho zariadenia)</td><td>My neukladáme. WeatherAPI.com: pozri jeho zásady ochrany súkromia</td></tr>
+<tr><td>Približná poloha (súradnice)</td><td>Prevod súradníc na názov obce alebo štvrte zobrazený v aplikácii</td><td>Dodávateľ operačného systému vášho zariadenia — Apple v iOS, Google v Androide (priamo z vášho zariadenia)</td><td>My neukladáme. Apple a Google: pozri ich zásady ochrany súkromia</td></tr>
 <tr><td>Informácie o zariadení pre reklamu (IP adresa, identifikátory zariadenia, signály neplatnej návštevnosti, interakcie s reklamou a diagnostické údaje, ako sú pády a výkon aplikácie — nič z toho sa nepoužíva na personalizáciu reklám ani na tvorbu vášho profilu)</td><td>Doručovanie jedinej bannerovej reklamy v bezplatnej verzii v režime „obmedzené reklamy“, ako aj meranie a prevencia podvodov zo strany Google pre túto reklamu</td><td>Google AdMob</td><td>My neuchovávame. Google: pozri jeho zásady ochrany súkromia</td></tr>
 <tr><td>Nastavenia a najnovšia predpoveď</td><td>Okamžité otvorenie na vašom poslednom verdikte</td><td>Nikto — zostávajú vo vašom zariadení</td><td>Kým aplikáciu neodstránite</td></tr>
 <tr><td>Stav nákupu Odstrániť reklamy</td><td>Skrytie reklám po nákupe</td><td>Nákup spracúva Apple / Google; aplikácia ukladá iba príznak áno/nie</td><td>Kým aplikáciu neodstránite; obchod vedie vlastný záznam</td></tr>
@@ -177,10 +181,18 @@ Sťažnosti možno podať na ANPD.</p>
 adrese.</p>
 <p><strong>Japonsko a Južná Kórea.</strong> Vyššie uvedená tabuľka uvádza
 spracúvané položky, ich účel, príjemcov a dobu uchovávania. Nemenujeme
-žiadneho vlastného zahraničného sprostredkovateľa; WeatherAPI.com a Google
-prijímajú údaje priamo z vášho zariadenia podľa svojich vlastných zásad.</p>
+žiadneho vlastného zahraničného sprostredkovateľa; WeatherAPI.com, Google
+a v prípade názvu miesta Apple prijímajú údaje priamo z vášho zariadenia podľa svojich vlastných zásad.</p>
 <p><strong>Rusko.</strong> Neukladáme osobné údaje žiadneho používateľa,
 v Rusku ani inde; aplikácia neprevádzkuje žiadne servery.</p>
+
+<h2>Oprava týkajúca sa názvu obce</h2>
+<p>Skoršia verzia týchto zásad uvádzala, že názov obce alebo štvrte sa určuje
+„na vašom zariadení“. To nebola pravda a opravili sme to. Aplikácia žiada
+operačný systém o prevod súradníc na názov miesta a v systémoch iOS aj Android
+sa toto vyhľadanie vykonáva cez sieť: vaše súradnice sa odošlú spoločnosti
+Apple alebo Google a späť príde názov miesta. Radšej to povieme na rovinu, než
+by sme nechali stáť upokojujúcu vetu, ktorú kód nepodporuje.</p>
 
 <h2>Zmeny</h2>
 <p>Ak sa tieto zásady zmenia, aktualizované znenie bude zverejnené na tejto

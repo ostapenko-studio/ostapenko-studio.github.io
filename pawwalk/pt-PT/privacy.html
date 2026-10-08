@@ -92,7 +92,7 @@
 <body>
 
 <h1>Política de Privacidade</h1>
-<p class="meta">PawWalk, por Ostapenko Studio · Em vigor desde 1 de agosto de 2026 · Atualizada a 11 de setembro de 2026</p>
+<p class="meta">PawWalk, por Ostapenko Studio · Em vigor desde 1 de agosto de 2026 · Atualizada a 8 de outubro de 2026</p>
 <p class="meta">O texto em inglês é a versão canónica. As traduções são disponibilizadas por conveniência; em caso de divergência, prevalece a versão em inglês, na medida em que a lei local o permita.</p>
 
 <p>O PawWalk é uma app simples: estima o calor do chão no sítio onde está,
@@ -108,9 +108,12 @@ dados meteorológicos, com a única finalidade de obter os dados meteorológicos
 (temperatura do ar, nebulosidade, vento) usados para estimar a temperatura das
 superfícies na sua zona. O tratamento dos pedidos pelo WeatherAPI.com está
 descrito na sua própria
-<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>. O nome da
-localidade ou do bairro apresentado na app é determinado no seu dispositivo
-pelo geocodificador do próprio sistema operativo. Nunca recebemos, guardamos
+<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>. Para
+apresentar o nome da localidade ou do bairro, a app pede ao sistema operativo
+do seu telemóvel que converta as coordenadas num nome de lugar; tanto no iOS
+como no Android essa consulta é feita através da rede, pelo que as coordenadas
+são enviadas para a Apple ou para a Google, que as tratam ao abrigo das suas
+próprias políticas de privacidade. Nunca recebemos, guardamos
 ou registamos a sua localização, e a app não segue as suas deslocações nem os
 seus passeios, nem funciona em segundo plano.</p>
 
@@ -135,6 +138,7 @@ pagamento nem as suas informações de faturação.</p>
 <table>
 <tr><th>Dados</th><th>Finalidade</th><th>Quem os recebe</th><th>Conservação</th></tr>
 <tr><td>Localização aproximada (coordenadas)</td><td>Obter a previsão meteorológica para a sua zona — sem ela a app não consegue estimar o chão</td><td>WeatherAPI.com (diretamente do seu dispositivo)</td><td>Não guardada por nós. WeatherAPI.com: consulte a respetiva política de privacidade</td></tr>
+<tr><td>Localização aproximada (coordenadas)</td><td>Converter as coordenadas no nome da localidade ou do bairro apresentado na app</td><td>O fornecedor do sistema operativo do seu dispositivo — Apple no iOS, Google no Android (diretamente do seu dispositivo)</td><td>Não guardada por nós. Apple e Google: consulte as respetivas políticas de privacidade</td></tr>
 <tr><td>Informações do dispositivo para publicidade (endereço IP, identificadores do dispositivo, sinais de tráfego inválido, interações com o anúncio e dados de diagnóstico, como falhas e desempenho da aplicação — nada disso é utilizado para personalizar anúncios nem para criar um perfil seu)</td><td>Difundir o único banner da versão gratuita, no modo «anúncios limitados», e a medição e prevenção de fraude da Google para esse anúncio</td><td>Google AdMob</td><td>Não conservadas por nós. Google: consulte a respetiva política de privacidade</td></tr>
 <tr><td>Definições e a previsão mais recente</td><td>Abrir de imediato com o seu último veredicto</td><td>Ninguém — ficam no seu dispositivo</td><td>Até eliminar a app</td></tr>
 <tr><td>Estado da compra de Remover anúncios</td><td>Ocultar os anúncios após a compra</td><td>A Apple / a Google processam a compra; a app guarda apenas um indicador sim/não</td><td>Até eliminar a app; a loja mantém o seu próprio registo</td></tr>
@@ -177,10 +181,20 @@ no endereço abaixo.</p>
 <p><strong>Japão e Coreia do Sul.</strong> A tabela acima enumera os elementos
 tratados, a sua finalidade, os destinatários e o período de conservação. Não
 nomeamos nenhum subcontratante no estrangeiro por nossa conta; o
-WeatherAPI.com e a Google recebem os dados diretamente do seu dispositivo, ao
+WeatherAPI.com, a Google e, para o nome do lugar, a Apple recebem os dados
+diretamente do seu dispositivo, ao
 abrigo das suas próprias políticas.</p>
 <p><strong>Rússia.</strong> Não guardamos dados pessoais de nenhum utilizador,
 na Rússia ou em qualquer outro lugar; a app não opera servidores.</p>
+
+<h2>Uma correção sobre o nome da localidade</h2>
+<p>Uma versão anterior desta política dizia que o nome da localidade ou do
+bairro era determinado «no seu dispositivo». Estava errado, e corrigimo-lo. A
+app pede ao sistema operativo que converta as coordenadas num nome de lugar, e
+tanto no iOS como no Android essa consulta é feita através da rede: as suas
+coordenadas são enviadas para a Apple ou para a Google e é devolvido um nome de
+lugar. Preferimos dizê-lo com clareza a deixar de pé uma frase tranquilizadora
+que o código não sustenta.</p>
 
 <h2>Alterações</h2>
 <p>Se esta política mudar, a versão atualizada será publicada neste endereço com

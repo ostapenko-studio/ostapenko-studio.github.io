@@ -92,7 +92,7 @@
 <body>
 
 <h1>Integritetspolicy</h1>
-<p class="meta">PawWalk, av Ostapenko Studio · Gäller från 1 augusti 2026 · Uppdaterad 11 september 2026</p>
+<p class="meta">PawWalk, av Ostapenko Studio · Gäller från 1 augusti 2026 · Uppdaterad 8 oktober 2026</p>
 <p class="meta">Den engelska texten är den gällande versionen. Översättningar tillhandahålls för din bekvämlighet; om en översättning avviker gäller den engelska versionen i den utsträckning lokal lag tillåter.</p>
 
 <p>PawWalk är en enkel app: den uppskattar hur varm marken är där du befinner
@@ -108,9 +108,11 @@ koordinater skickas direkt från din enhet till
 väderdatatjänst, enbart i syfte att hämta de väderdata (lufttemperatur,
 molnighet, vind) som används för att uppskatta marktemperaturer i ditt
 område. Hur WeatherAPI.com hanterar förfrågningar beskrivs i dess egen
-<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>. Namnet
-på orten eller stadsdelen som visas i appen tas fram på din enhet av
-operativsystemets egen geokodare. Vi tar aldrig emot, lagrar eller loggar din
+<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>. För
+att visa ortens eller stadsdelens namn ber appen telefonens operativsystem att
+göra koordinaterna till ett ortnamn; på både iOS och Android besvaras den
+uppslagningen över nätet, så koordinaterna går till Apple eller till Google,
+som hanterar dem enligt sina egna integritetspolicyer. Vi tar aldrig emot, lagrar eller loggar din
 plats, och appen spårar inte dina rörelser eller dina promenader och arbetar
 inte i bakgrunden.</p>
 
@@ -134,6 +136,7 @@ faktureringsinformation.</p>
 <table>
 <tr><th>Data</th><th>Syfte</th><th>Vem tar emot dem</th><th>Lagringstid</th></tr>
 <tr><td>Ungefärlig plats (koordinater)</td><td>Hämta väderprognosen för ditt område — appen kan inte uppskatta marken utan den</td><td>WeatherAPI.com (direkt från din enhet)</td><td>Lagras inte av oss. WeatherAPI.com: se dess integritetspolicy</td></tr>
+<tr><td>Ungefärlig plats (koordinater)</td><td>Göra koordinaterna till det ort- eller stadsdelsnamn som visas i appen</td><td>Leverantören av din enhets operativsystem — Apple på iOS, Google på Android (direkt från din enhet)</td><td>Lagras inte av oss. Apple och Google: se deras integritetspolicyer</td></tr>
 <tr><td>Enhetsinformation för annonsering (IP-adress, enhets-ID:n, signaler om ogiltig trafik, annonsinteraktioner och diagnostikdata som krascher och appens prestanda — inget av detta används för att personalisera annonser eller bygga en profil av dig)</td><td>Leverans av den enda bannerannonsen i gratisversionen, i läget ”begränsade annonser”, samt Googles mätning och förebyggande av bedrägerier för den annonsen</td><td>Google AdMob</td><td>Sparas inte av oss. Google: se dess integritetspolicy</td></tr>
 <tr><td>Inställningar och den senaste prognosen</td><td>Öppna direkt på din senaste bedömning</td><td>Ingen — stannar på din enhet</td><td>Tills du raderar appen</td></tr>
 <tr><td>Köpstatus för Ta bort annonser</td><td>Dölja annonser efter köp</td><td>Apple/Google hanterar köpet; appen lagrar bara en ja/nej-flagga</td><td>Tills du raderar appen; butiken behåller sin egen post</td></tr>
@@ -173,10 +176,18 @@ nedan. Klagomål kan lämnas till ANPD.</p>
 kan du kontakta vår klagomålsansvarige på adressen nedan.</p>
 <p><strong>Japan och Sydkorea.</strong> Tabellen ovan anger vilka uppgifter
 som hanteras, deras syfte, mottagarna och lagringstiden. Vi anlitar ingen
-egen utländsk personuppgiftsbiträde; WeatherAPI.com och Google tar emot data
-direkt från din enhet enligt sina egna policyer.</p>
+egen utländsk personuppgiftsbiträde; WeatherAPI.com, Google och, för ortnamnet,
+Apple tar emot data direkt från din enhet enligt sina egna policyer.</p>
 <p><strong>Ryssland.</strong> Vi lagrar inga personuppgifter om någon
 användare, i Ryssland eller någon annanstans; appen driver inga servrar.</p>
+
+<h2>En rättelse om ortnamnet</h2>
+<p>En tidigare version av den här policyn sa att ort- eller stadsdelsnamnet togs
+fram ”på din enhet”. Det var fel, och vi har rättat det. Appen ber
+operativsystemet att göra koordinater till ett ortnamn, och på både iOS och
+Android besvaras den uppslagningen över nätet: dina koordinater skickas till
+Apple eller till Google och ett ortnamn kommer tillbaka. Vi säger hellre det
+rakt ut än låter en lugnande mening stå kvar som koden inte stödjer.</p>
 
 <h2>Ändringar</h2>
 <p>Om denna policy ändras publiceras den uppdaterade versionen på denna

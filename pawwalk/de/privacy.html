@@ -92,7 +92,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">PawWalk, von Ostapenko Studio · Gültig ab 1. August 2026 · Aktualisiert am 11. September 2026</p>
+<p class="meta">PawWalk, von Ostapenko Studio · Gültig ab 1. August 2026 · Aktualisiert am 8. Oktober 2026</p>
 <p class="meta">Die <a href="../privacy.html">englische Fassung</a> ist die maßgebliche Version. Übersetzungen dienen nur der Orientierung; weicht eine Übersetzung ab, gilt die englische Fassung, soweit das örtliche Recht dies zulässt.</p>
 
 <p>PawWalk ist eine einfache App: Sie schätzt, wie heiß der Boden dort ist, wo
@@ -110,9 +110,12 @@ Wetterdatendienst, gesendet — ausschließlich zu dem Zweck, die Wetterdaten
 (Lufttemperatur, Bewölkung, Wind) abzurufen, aus denen die
 Oberflächentemperaturen für Ihre Gegend geschätzt werden. Wie WeatherAPI.com
 Anfragen verarbeitet, beschreibt dessen eigene
-<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>. Der
-in der App angezeigte Orts- oder Stadtteilname wird auf Ihrem Gerät vom
-Geocoder des Betriebssystems ermittelt. Wir erhalten, speichern oder
+<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>. Um
+den Orts- oder Stadtteilnamen anzuzeigen, bittet die App das Betriebssystem
+Ihres Telefons, die Koordinaten in einen Ortsnamen zu übersetzen; sowohl unter
+iOS als auch unter Android wird diese Abfrage über das Netz beantwortet, die
+Koordinaten gehen also an Apple oder an Google, die sie nach ihren eigenen
+Datenschutzerklärungen behandeln. Wir erhalten, speichern oder
 protokollieren Ihren Standort nie, und die App verfolgt weder Ihre
 Bewegungen noch Ihre Spaziergänge und arbeitet nicht im Hintergrund.</p>
 
@@ -137,6 +140,7 @@ Zahlungsdaten oder Ihre Rechnungsinformationen.</p>
 <table>
 <tr><th>Daten</th><th>Zweck</th><th>Wer sie erhält</th><th>Speicherdauer</th></tr>
 <tr><td>Ungefährer Standort (Koordinaten)</td><td>Abruf der Wettervorhersage für Ihre Gegend — ohne ihn kann die App den Boden nicht einschätzen</td><td>WeatherAPI.com (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. WeatherAPI.com: siehe dessen Datenschutzerklärung</td></tr>
+<tr><td>Ungefährer Standort (Koordinaten)</td><td>Übersetzen der Koordinaten in den in der App angezeigten Orts- oder Stadtteilnamen</td><td>Der Betriebssystemanbieter Ihres Geräts — Apple unter iOS, Google unter Android (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. Apple und Google: siehe deren Datenschutzerklärungen</td></tr>
 <tr><td>Geräteinformationen für Werbung (IP-Adresse, Gerätekennungen, Signale zu ungültigem Traffic, Interaktionen mit Anzeigen und Diagnosedaten wie Abstürze und App-Leistung — nichts davon wird zur Personalisierung von Anzeigen oder zur Profilbildung über Sie genutzt)</td><td>Ausliefern der einzelnen Banneranzeige in der kostenlosen Version im Modus „eingeschränkte Anzeigen“ sowie Googles Messung und Betrugsprävention für diese Anzeige</td><td>Google AdMob</td><td>Von uns nicht gehalten. Google: siehe dessen Datenschutzerklärung</td></tr>
 <tr><td>Einstellungen und die letzte Vorhersage</td><td>Sofortiges Öffnen mit Ihrer letzten Einschätzung</td><td>Niemand — bleibt auf Ihrem Gerät</td><td>Bis Sie die App löschen</td></tr>
 <tr><td>Kaufstatus von „Werbung entfernen“</td><td>Ausblenden der Werbung nach dem Kauf</td><td>Apple / Google wickeln den Kauf ab; die App speichert nur ein Ja/Nein-Kennzeichen</td><td>Bis Sie die App löschen; der Store führt seine eigene Aufzeichnung</td></tr>
@@ -178,12 +182,21 @@ können Sie unseren Beschwerdebeauftragten (grievance officer) unter der unten
 stehenden Adresse erreichen.</p>
 <p><strong>Japan und Südkorea.</strong> Die obige Tabelle nennt die
 verarbeiteten Daten, ihren Zweck, die Empfänger und die Speicherdauer. Wir
-beauftragen keinen eigenen Auftragsverarbeiter im Ausland; WeatherAPI.com
-und Google erhalten Daten direkt von Ihrem Gerät unter ihren eigenen
-Richtlinien.</p>
+beauftragen keinen eigenen Auftragsverarbeiter im Ausland; WeatherAPI.com,
+Google und, für den Ortsnamen, Apple erhalten Daten direkt von Ihrem Gerät
+unter ihren eigenen Richtlinien.</p>
 <p><strong>Russland.</strong> Wir speichern keine personenbezogenen Daten
 irgendeines Nutzers, weder in Russland noch anderswo; die App betreibt keine
 Server.</p>
+
+<h2>Eine Richtigstellung zum Ortsnamen</h2>
+<p>Eine frühere Fassung dieser Erklärung sagte, der Orts- oder Stadtteilname
+werde „auf Ihrem Gerät“ ermittelt. Das war falsch, und wir haben es korrigiert.
+Die App bittet das Betriebssystem, Koordinaten in einen Ortsnamen zu übersetzen,
+und sowohl unter iOS als auch unter Android wird diese Abfrage über das Netz
+beantwortet: Ihre Koordinaten werden an Apple oder an Google gesendet, und ein
+Ortsname kommt zurück. Wir sagen das lieber deutlich, als einen beruhigenden
+Satz stehen zu lassen, den der Code nicht deckt.</p>
 
 <h2>Änderungen</h2>
 <p>Ändert sich diese Erklärung, wird die aktualisierte Fassung unter dieser

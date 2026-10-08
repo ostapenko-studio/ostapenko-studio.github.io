@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politique de confidentialité</h1>
-<p class="meta">PawWalk, par Ostapenko Studio · En vigueur le 1<sup>er</sup> août 2026 · Mise à jour le 11 septembre 2026</p>
+<p class="meta">PawWalk, par Ostapenko Studio · En vigueur le 1<sup>er</sup> août 2026 · Mise à jour le 8 octobre 2026</p>
 <p class="meta">Le texte anglais fait foi. Les traductions sont fournies à titre de commodité; en cas de divergence, la version anglaise s’applique dans la mesure permise par le droit local.</p>
 
 <p>PawWalk est une application simple&nbsp;: elle estime la chaleur du sol là où
@@ -111,8 +111,11 @@ données météo (température de l’air, couverture nuageuse, vent) utilisées
 pour estimer la température des surfaces dans votre secteur. Le traitement
 des requêtes par WeatherAPI.com est décrit dans sa propre
 <a href="https://www.weatherapi.com/privacy.aspx">politique de confidentialité</a>.
-Le nom de la ville ou du quartier affiché dans l’application est déterminé
-sur votre appareil par le géocodeur du système d’exploitation. Nous ne
+Pour afficher le nom de la ville ou du quartier, l’application demande au
+système d’exploitation de votre téléphone de convertir les coordonnées en nom
+de lieu; sous iOS comme sous Android, cette recherche passe par le réseau,
+de sorte que les coordonnées sont transmises à Apple ou à Google, qui les
+traitent selon leurs propres politiques de confidentialité. Nous ne
 recevons, ne stockons et ne consignons jamais votre position, et
 l’application ne suit ni vos déplacements ni vos promenades et ne
 fonctionne pas en arrière-plan.</p>
@@ -139,6 +142,7 @@ données de paiement ni vos renseignements de facturation.</p>
 <table>
 <tr><th>Données</th><th>Finalité</th><th>Destinataire</th><th>Conservation</th></tr>
 <tr><td>Position approximative (coordonnées)</td><td>Obtenir les prévisions météo pour votre secteur — sans elles, l’application ne peut pas estimer le sol</td><td>WeatherAPI.com (directement depuis votre appareil)</td><td>Non conservée par nous. WeatherAPI.com&nbsp;: voir sa politique de confidentialité</td></tr>
+<tr><td>Position approximative (coordonnées)</td><td>Convertir les coordonnées en nom de la ville ou du quartier affiché dans l’application</td><td>L’éditeur du système d’exploitation de votre appareil — Apple sous iOS, Google sous Android (directement depuis votre appareil)</td><td>Non conservée par nous. Apple et Google&nbsp;: voir leurs politiques de confidentialité</td></tr>
 <tr><td>Informations sur l'appareil pour la publicité (adresse IP, identifiants d'appareil, signaux de trafic non valide, interactions avec l'annonce et données de diagnostic, comme les plantages et les performances de l'application — rien de tout cela n'est utilisé pour personnaliser les annonces ni pour établir un profil vous concernant)</td><td>Diffusion de l'unique bannière de la version gratuite, en mode « annonces limitées », ainsi que la mesure et la prévention de la fraude par Google pour cette annonce</td><td>Google AdMob</td><td>Non détenus par nous. Google&nbsp;: voir sa politique de confidentialité</td></tr>
 <tr><td>Réglages et dernières prévisions</td><td>Ouvrir instantanément sur votre dernier verdict</td><td>Personne — restent sur votre appareil</td><td>Jusqu’à la suppression de l’application</td></tr>
 <tr><td>Statut d’achat de Supprimer les publicités</td><td>Masquer les publicités après l’achat</td><td>Apple / Google traitent l’achat; l’application ne stocke qu’un indicateur oui/non</td><td>Jusqu’à la suppression de l’application; la boutique conserve son propre registre</td></tr>
@@ -185,11 +189,21 @@ l’adresse ci-dessous.</p>
 <p><strong>Japon et Corée du Sud.</strong> Le tableau ci-dessus énumère les
 éléments traités, leur finalité, les destinataires et la durée de
 conservation. Nous ne désignons aucun sous-traitant à l’étranger pour notre
-propre compte; WeatherAPI.com et Google reçoivent les données directement
-de votre appareil, selon leurs propres politiques.</p>
+propre compte; WeatherAPI.com, Google et, pour le nom de lieu, Apple
+reçoivent les données directement de votre appareil, selon leurs propres
+politiques.</p>
 <p><strong>Russie.</strong> Nous ne stockons aucune donnée personnelle
 d’aucun utilisateur, en Russie ou ailleurs; l’application n’exploite aucun
 serveur.</p>
+
+<h2>Une correction concernant le nom de la ville</h2>
+<p>Une version antérieure de cette politique indiquait que le nom de la ville
+ou du quartier était déterminé «&nbsp;sur votre appareil&nbsp;». C’était inexact, et
+nous l’avons corrigé. L’application demande au système d’exploitation de
+convertir des coordonnées en nom de lieu, et sous iOS comme sous Android cette
+recherche passe par le réseau: vos coordonnées sont envoyées à Apple ou à
+Google, et un nom de lieu est renvoyé. Nous préférons le dire clairement plutôt
+que de laisser en place une phrase rassurante que le code ne confirme pas.</p>
 
 <h2>Modifications</h2>
 <p>Si cette politique change, la version mise à jour sera publiée à cette

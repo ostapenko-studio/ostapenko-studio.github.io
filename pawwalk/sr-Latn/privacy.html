@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politika privatnosti</h1>
-<p class="meta">PawWalk, Ostapenko Studio · Stupa na snagu 1. avgusta 2026. · Ažurirano 11. septembra 2026.</p>
+<p class="meta">PawWalk, Ostapenko Studio · Stupa na snagu 1. avgusta 2026. · Ažurirano 8. oktobra 2026.</p>
 <p class="meta">Merodavna verzija je izvorni engleski tekst. Prevodi su dati radi lakšeg razumevanja; ako se prevod razlikuje, primenjuje se engleska verzija u meri u kojoj to dozvoljava lokalno pravo.</p>
 
 <p>PawWalk je jednostavna aplikacija: procenjuje koliko je vruće tlo tamo gde
@@ -109,8 +109,11 @@ podatke, isključivo radi preuzimanja vremenskih podataka (temperatura vazduha,
 oblačnost, vetar) koji se koriste za procenu temperature podloge na vašem
 području. Način na koji WeatherAPI.com obrađuje zahteve opisan je u njegovoj
 sopstvenoj <a href="https://www.weatherapi.com/privacy.aspx">politici
-privatnosti</a>. Naziv grada ili naselja prikazan u aplikaciji određuje se na
-vašem uređaju pomoću geokodera operativnog sistema. Mi nikada ne primamo, ne
+privatnosti</a>. Da bi prikazala naziv grada ili naselja, aplikacija traži od
+operativnog sistema telefona da koordinate pretvori u naziv mesta; i na
+iOS-u i na Android-u to traženje se obavlja preko mreže, pa koordinate odlaze
+kompaniji Apple ili Google, koje ih obrađuju prema sopstvenim politikama
+privatnosti. Mi nikada ne primamo, ne
 čuvamo niti beležimo vašu lokaciju, a aplikacija ne prati vaše kretanje ni
 vaše šetnje i ne radi u pozadini.</p>
 
@@ -135,6 +138,7 @@ podatke za naplatu.</p>
 <table>
 <tr><th>Podaci</th><th>Svrha</th><th>Ko ih prima</th><th>Čuvanje</th></tr>
 <tr><td>Približna lokacija (koordinate)</td><td>Preuzimanje vremenske prognoze za vaše područje — bez nje aplikacija ne može da proceni podlogu</td><td>WeatherAPI.com (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. WeatherAPI.com: videti njegovu politiku privatnosti</td></tr>
+<tr><td>Približna lokacija (koordinate)</td><td>Pretvaranje koordinata u naziv grada ili naselja prikazan u aplikaciji</td><td>Dobavljač operativnog sistema vašeg uređaja — Apple na iOS-u, Google na Android-u (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. Apple i Google: videti njihove politike privatnosti</td></tr>
 <tr><td>Informacije o uređaju za oglašavanje (IP adresa, identifikatori uređaja, signali nevažećeg saobraćaja, interakcije sa oglasom i dijagnostički podaci, kao što su padovi i performanse aplikacije — ništa od toga se ne koristi za personalizaciju oglasa niti za pravljenje vašeg profila)</td><td>Isporuka jedinog baner oglasa u besplatnoj verziji u režimu „ograničeni oglasi“, kao i Google-ovo merenje i sprečavanje prevara za taj oglas</td><td>Google AdMob</td><td>Mi ih ne čuvamo. Google: videti njegovu politiku privatnosti</td></tr>
 <tr><td>Podešavanja i najnovija prognoza</td><td>Trenutno otvaranje na vašoj poslednjoj proceni</td><td>Niko — ostaju na vašem uređaju</td><td>Dok ne obrišete aplikaciju</td></tr>
 <tr><td>Status kupovine opcije Ukloni oglase</td><td>Sakrivanje oglasa nakon kupovine</td><td>Apple / Google obrađuju kupovinu; aplikacija čuva samo oznaku da/ne</td><td>Dok ne obrišete aplikaciju; prodavnica vodi sopstvenu evidenciju</td></tr>
@@ -178,10 +182,20 @@ ličnosti iz 2023. (Digital Personal Data Protection Act 2023) možete da se
 obratite našem službeniku za pritužbe na adresu navedenu u nastavku.</p>
 <p><strong>Japan i Južna Koreja.</strong> Tabela iznad navodi stavke koje se
 obrađuju, njihovu svrhu, primaoce i period čuvanja. Ne imenujemo sopstvenog
-inostranog obrađivača; WeatherAPI.com i Google primaju podatke direktno sa
+inostranog obrađivača; WeatherAPI.com, Google i, za naziv mesta, Apple primaju
+podatke direktno sa
 vašeg uređaja prema sopstvenim politikama.</p>
 <p><strong>Rusija.</strong> Ne čuvamo podatke o ličnosti nijednog korisnika, ni
 u Rusiji ni drugde; aplikacija ne koristi nikakve servere.</p>
+
+<h2>Ispravka u vezi sa nazivom mesta</h2>
+<p>Ranija verzija ove politike navodila je da se naziv grada ili naselja
+određuje „na vašem uređaju“. To nije bilo tačno i ispravili smo to.
+Aplikacija traži od operativnog sistema da koordinate pretvori u naziv
+mesta, a i na iOS-u i na Android-u to traženje se obavlja preko mreže: vaše
+koordinate se šalju kompaniji Apple ili Google i vraća se naziv mesta. Radije
+ćemo to reći otvoreno nego ostaviti umirujuću rečenicu koju kod ne
+potvrđuje.</p>
 
 <h2>Izmene</h2>
 <p>Ako se ova politika promeni, ažurirana verzija biće objavljena na ovoj

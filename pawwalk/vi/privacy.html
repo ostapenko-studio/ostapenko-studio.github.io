@@ -92,7 +92,7 @@
 <body>
 
 <h1>Chính sách quyền riêng tư</h1>
-<p class="meta">PawWalk, của Ostapenko Studio · Có hiệu lực từ 1 tháng 8 năm 2026 · Cập nhật 11 tháng 9 năm 2026</p>
+<p class="meta">PawWalk, của Ostapenko Studio · Có hiệu lực từ 1 tháng 8 năm 2026 · Cập nhật 8 tháng 10 năm 2026</p>
 <p class="meta">Bản tiếng Anh là bản chính thức. Các bản dịch được cung cấp để thuận tiện; nếu bản dịch có khác biệt, bản tiếng Anh được áp dụng trong phạm vi luật địa phương cho phép.</p>
 
 <p>PawWalk là một ứng dụng đơn giản: nó ước tính mặt đường nơi bạn đứng nóng
@@ -109,8 +109,10 @@ thời tiết, với mục đích duy nhất là lấy dữ liệu thời tiết
 mây, gió) dùng để ước tính nhiệt độ bề mặt trong khu vực của bạn. Cách
 WeatherAPI.com xử lý yêu cầu được mô tả trong
 <a href="https://www.weatherapi.com/privacy.aspx">chính sách quyền riêng tư</a>
-của họ. Tên thị trấn hoặc khu vực hiển thị trong ứng dụng được xác định trên
-thiết bị của bạn bởi bộ giải mã địa lý của hệ điều hành. Chúng tôi không bao
+của họ. Để hiển thị tên thị trấn hoặc khu vực, ứng dụng nhờ hệ điều hành của
+điện thoại chuyển tọa độ thành tên địa danh; trên cả iOS và Android, việc tra
+cứu này được thực hiện qua mạng, nên tọa độ được gửi đến Apple hoặc Google, và
+họ xử lý theo chính sách quyền riêng tư riêng của mình. Chúng tôi không bao
 giờ nhận, lưu trữ hay ghi lại vị trí của bạn, và ứng dụng không theo dõi việc
 di chuyển, các chuyến đi dạo của bạn, cũng không chạy nền.</p>
 
@@ -135,6 +137,7 @@ hay thông tin hóa đơn của bạn.</p>
 <table>
 <tr><th>Dữ liệu</th><th>Mục đích</th><th>Bên nhận</th><th>Thời gian lưu giữ</th></tr>
 <tr><td>Vị trí gần đúng (tọa độ)</td><td>Lấy dự báo thời tiết cho khu vực của bạn — không có nó, ứng dụng không thể ước tính mặt đường</td><td>WeatherAPI.com (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. WeatherAPI.com: xem chính sách quyền riêng tư của họ</td></tr>
+<tr><td>Vị trí gần đúng (tọa độ)</td><td>Chuyển tọa độ thành tên thị trấn hoặc khu vực hiển thị trong ứng dụng</td><td>Nhà cung cấp hệ điều hành của thiết bị — Apple trên iOS, Google trên Android (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. Apple và Google: xem chính sách quyền riêng tư của họ</td></tr>
 <tr><td>Thông tin thiết bị cho quảng cáo (địa chỉ IP, giá trị nhận dạng thiết bị, tín hiệu lưu lượng không hợp lệ, tương tác với quảng cáo và dữ liệu chẩn đoán như sự cố và hiệu suất ứng dụng — không có thứ nào được dùng để cá nhân hóa quảng cáo hoặc lập hồ sơ về bạn)</td><td>Phân phối quảng cáo biểu ngữ duy nhất trong phiên bản miễn phí, ở chế độ «quảng cáo giới hạn», cùng hoạt động đo lường và phòng chống gian lận của Google cho quảng cáo đó</td><td>Google AdMob</td><td>Chúng tôi không giữ. Google: xem chính sách quyền riêng tư của Google</td></tr>
 <tr><td>Cài đặt và dự báo gần nhất</td><td>Mở ngay với nhận định gần nhất của bạn</td><td>Không ai — ở lại trên thiết bị của bạn</td><td>Cho đến khi bạn xóa ứng dụng</td></tr>
 <tr><td>Trạng thái mua Gỡ quảng cáo</td><td>Ẩn quảng cáo sau khi mua</td><td>Apple / Google xử lý giao dịch; ứng dụng chỉ lưu một cờ có/không</td><td>Cho đến khi bạn xóa ứng dụng; cửa hàng giữ hồ sơ riêng</td></tr>
@@ -176,10 +179,19 @@ có thể liên hệ nhân viên giải quyết khiếu nại của chúng tôi 
 dưới.</p>
 <p><strong>Nhật Bản và Hàn Quốc.</strong> Bảng trên liệt kê các mục được xử lý,
 mục đích, bên nhận và thời gian lưu giữ. Chúng tôi không chỉ định bên xử lý ở
-nước ngoài nào của riêng mình; WeatherAPI.com và Google nhận dữ liệu trực tiếp
+nước ngoài nào của riêng mình; WeatherAPI.com, Google và, đối với tên địa danh, Apple
+nhận dữ liệu trực tiếp
 từ thiết bị của bạn theo chính sách riêng của họ.</p>
 <p><strong>Nga.</strong> Chúng tôi không lưu trữ dữ liệu cá nhân của bất kỳ
 người dùng nào, ở Nga hay nơi khác; ứng dụng không vận hành máy chủ.</p>
+
+<h2>Đính chính về tên thị trấn</h2>
+<p>Một phiên bản trước của chính sách này nói rằng tên thị trấn hoặc khu vực
+được xác định "trên thiết bị của bạn". Điều đó không đúng, và chúng tôi đã sửa
+lại. Ứng dụng nhờ hệ điều hành chuyển tọa độ thành tên địa danh, và trên cả iOS
+và Android việc tra cứu này được thực hiện qua mạng: tọa độ của bạn được gửi
+đến Apple hoặc Google và một tên địa danh được trả về. Chúng tôi thà nói thẳng
+còn hơn để lại một câu nghe yên tâm mà mã nguồn không chứng minh được.</p>
 
 <h2>Thay đổi</h2>
 <p>Nếu chính sách này thay đổi, phiên bản cập nhật sẽ được đăng tại địa chỉ

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Personvernerklæring</h1>
-<p class="meta">PawWalk, av Ostapenko Studio · Gjelder fra 1. august 2026 · Oppdatert 11. september 2026</p>
+<p class="meta">PawWalk, av Ostapenko Studio · Gjelder fra 1. august 2026 · Oppdatert 8. oktober 2026</p>
 <p class="meta">Den engelske teksten er den gjeldende versjonen. Oversettelser tilbys for enkelhets skyld; der en oversettelse avviker, gjelder den engelske versjonen så langt lokal lov tillater.</p>
 
 <p>PawWalk er en enkel app: den anslår hvor varm bakken er der du er, slik at
@@ -109,8 +109,10 @@ værdatatjeneste, utelukkende for å hente værdataene (lufttemperatur,
 skydekke, vind) som brukes til å anslå bakketemperaturer i området ditt.
 Hvordan WeatherAPI.com håndterer forespørsler er beskrevet i deres egen
 <a href="https://www.weatherapi.com/privacy.aspx">personvernerklæring</a>.
-Navnet på stedet eller bydelen som vises i appen, slås opp på enheten din
-av operativsystemets egen geokoder. Vi mottar, lagrer eller logger aldri
+For å vise navnet på stedet eller bydelen ber appen operativsystemet på
+telefonen din om å gjøre koordinatene om til et stedsnavn; på både iOS og
+Android skjer dette oppslaget over nettverket, så koordinatene sendes til
+Apple eller Google, som behandler dem etter sine egne personvernerklæringer. Vi mottar, lagrer eller logger aldri
 posisjonen din, og appen sporer ikke bevegelsene dine eller turene dine og
 kjører ikke i bakgrunnen.</p>
 
@@ -134,6 +136,7 @@ eller faktureringsinformasjonen din.</p>
 <table>
 <tr><th>Data</th><th>Formål</th><th>Hvem mottar dem</th><th>Lagringstid</th></tr>
 <tr><td>Omtrentlig posisjon (koordinater)</td><td>Hente værvarselet for området ditt — appen kan ikke anslå bakken uten det</td><td>WeatherAPI.com (direkte fra enheten din)</td><td>Lagres ikke av oss. WeatherAPI.com: se deres personvernerklæring</td></tr>
+<tr><td>Omtrentlig posisjon (koordinater)</td><td>Gjøre koordinatene om til navnet på stedet eller bydelen som vises i appen</td><td>Leverandøren av operativsystemet på enheten din — Apple på iOS, Google på Android (direkte fra enheten din)</td><td>Lagres ikke av oss. Apple og Google: se deres personvernerklæringer</td></tr>
 <tr><td>Enhetsinformasjon for annonsering (IP-adresse, enhets-ID-er, signaler om ugyldig trafikk, annonseinteraksjoner og diagnostikkdata som krasj og appytelse — ingenting av dette brukes til å personalisere annonser eller bygge en profil av deg)</td><td>Levering av den ene bannerannonsen i gratisversjonen, i modusen «begrensede annonser», og Googles måling og svindelforebygging for denne annonsen</td><td>Google AdMob</td><td>Oppbevares ikke av oss. Google: se deres personvernerklæring</td></tr>
 <tr><td>Innstillinger og det nyeste varselet</td><td>Åpne umiddelbart på din siste vurdering</td><td>Ingen — blir på enheten din</td><td>Til du sletter appen</td></tr>
 <tr><td>Kjøpsstatus for Fjern annonser</td><td>Skjule annonser etter kjøp</td><td>Apple/Google behandler kjøpet; appen lagrer bare et ja/nei-flagg</td><td>Til du sletter appen; butikken beholder sin egen oppføring</td></tr>
@@ -174,10 +177,19 @@ Klager kan rettes til ANPD.</p>
 du kontakte vår klageansvarlige på adressen nedenfor.</p>
 <p><strong>Japan og Sør-Korea.</strong> Tabellen ovenfor viser hvilke
 opplysninger som behandles, formålet, mottakerne og lagringstiden. Vi
-utpeker ingen egen utenlandsk databehandler; WeatherAPI.com og Google mottar
+utpeker ingen egen utenlandsk databehandler; WeatherAPI.com, Google og, for
+stedsnavnet, Apple mottar
 data direkte fra enheten din under sine egne retningslinjer.</p>
 <p><strong>Russland.</strong> Vi lagrer ingen personopplysninger om noen
 bruker, i Russland eller andre steder; appen driver ingen servere.</p>
+
+<h2>En rettelse om stedsnavnet</h2>
+<p>En tidligere versjon av denne erklæringen sa at navnet på stedet eller
+bydelen ble slått opp «på enheten din». Det var feil, og vi har rettet det.
+Appen ber operativsystemet om å gjøre koordinater om til et stedsnavn, og på
+både iOS og Android skjer dette oppslaget over nettverket: koordinatene dine
+sendes til Apple eller Google, og et stedsnavn kommer tilbake. Vi sier det
+heller rett ut enn å la en beroligende setning stå som koden ikke dekker.</p>
 
 <h2>Endringer</h2>
 <p>Hvis denne erklæringen endres, publiseres den oppdaterte versjonen på

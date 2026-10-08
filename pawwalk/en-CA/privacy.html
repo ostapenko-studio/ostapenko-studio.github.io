@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">PawWalk, by Ostapenko Studio · Effective 1 August 2026 · Updated 11 September 2026</p>
+<p class="meta">PawWalk, by Ostapenko Studio · Effective 1 August 2026 · Updated 8 October 2026</p>
 <p class="meta">This English text is the canonical version. Translations are provided for convenience; where a translation differs, this version applies to the extent local law allows.</p>
 
 <p>PawWalk is a simple app: it estimates how hot the ground is where you are,
@@ -107,9 +107,11 @@ location. Your coordinates are sent directly from your device to
 service, for the sole purpose of fetching the weather data (air temperature,
 cloud cover, wind) used to estimate surface temperatures for your area.
 WeatherAPI.com's handling of requests is described in its own
-<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. The town or suburb name
-shown in the app is resolved on your device by the operating system's own
-geocoder. We never receive, store, or log your location, and the app does
+<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. To show the town or
+suburb name, the app asks your phone's operating system to turn the
+coordinates into a place name; on both iOS and Android that lookup is served
+over the network, so the coordinates go to Apple or to Google, which handle
+them under their own privacy policies. We never receive, store, or log your location, and the app does
 not track your movements, your walks, or work in the background.</p>
 
 <h2>Data stored on your device</h2>
@@ -145,6 +147,7 @@ information.</p>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Who receives it</th><th>Retention</th></tr>
 <tr><td>Approximate location (coordinates)</td><td>Fetching the weather forecast for your area — the app cannot estimate the ground without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
+<tr><td>Approximate location (coordinates)</td><td>Turning coordinates into the town or suburb name shown in the app</td><td>Your device's operating system vendor — Apple on iOS, Google on Android (directly from your device)</td><td>Not stored by us. Apple and Google: see their privacy policies</td></tr>
 <tr><td>Device information for advertising (IP address, device identifiers, invalid-traffic signals, ad interactions, and diagnostic data such as crashes and app performance — none of it used to personalise ads or to profile you)</td><td>Serving the single banner ad in the free version, in limited-ads mode, and Google's measurement and fraud prevention for that ad</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
 <tr><td>Settings and the latest forecast</td><td>Opening instantly on your last verdict</td><td>Nobody — stays on your device</td><td>Until you delete the app</td></tr>
 <tr><td>Purchase status of Remove Ads</td><td>Hiding ads after purchase</td><td>Apple / Google process the purchase; the app stores only a yes/no flag</td><td>Until you delete the app; the store keeps its own record</td></tr>
@@ -197,10 +200,20 @@ below. Complaints may be made to the ANPD.</p>
 you may contact our grievance officer at the address below.</p>
 <p><strong>Japan and South Korea.</strong> The table above lists the items
 handled, their purpose, the recipients and the retention period. We appoint no
-overseas processor of our own; WeatherAPI.com and Google receive data directly
-from your device under their own policies.</p>
+overseas processor of our own; WeatherAPI.com, Google and, for the place
+name, Apple receive data directly from your device under their own
+policies.</p>
 <p><strong>Russia.</strong> We store no personal data of any user, in Russia
 or elsewhere; the app runs no servers.</p>
+
+<h2>A correction about the town name</h2>
+<p>An earlier version of this policy said the town or suburb name was resolved
+"on your device". That was wrong, and we have fixed it. The app asks the
+operating system to turn coordinates into a place name, and on both iOS and
+Android that lookup is served over the network: your coordinates are sent to
+Apple or to Google and a place name comes back. We would rather say so
+plainly than leave a reassuring sentence standing that the code does not
+support.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the updated version will be posted at this

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Zásady ochrany soukromí</h1>
-<p class="meta">Drying Day, Ostapenko Studio · Účinné od 2. srpna 2026 · Aktualizováno 7. října 2026</p>
+<p class="meta">Drying Day, Ostapenko Studio · Účinné od 2. srpna 2026 · Aktualizováno 8. října 2026</p>
 <p class="meta">Závazné je <a href="../privacy.html">anglické znění</a>. Překlady poskytujeme pro usnadnění; pokud se překlad liší, platí anglické znění v rozsahu, který připouští místní právo.</p>
 
 <p>Drying Day je jednoduchá aplikace: čte předpověď počasí a říká vám, zda
@@ -110,8 +110,10 @@ vlhkost, vítr, oblačnost, pravděpodobnost srážek, východ a západ slunce),
 z níž se odvozují podmínky pro sušení ve vaší oblasti. Jak WeatherAPI.com
 nakládá s požadavky, popisují jeho vlastní
 <a href="https://www.weatherapi.com/privacy.aspx">zásady ochrany soukromí</a>.
-Název obce nebo čtvrti zobrazený v aplikaci určuje na vašem zařízení
-geokodér operačního systému.
+Aby aplikace zobrazila název obce nebo čtvrti, požádá operační systém
+telefonu o převod souřadnic na název místa; v systémech iOS i Android se toto
+vyhledání provádí přes síť, takže souřadnice putují ke společnosti Apple nebo
+Google, které s nimi nakládají podle svých vlastních zásad ochrany soukromí.
 Pokud je poloha vypnutá nebo nedostupná, aplikace požádá WeatherAPI.com o předpověď pro vaši přibližnou oblast, kterou služba určí z IP adresy vaší sítě (ta se s každým požadavkem odesílá tak jako tak); zobrazený název oblasti pak pochází od WeatherAPI.com. Vaši polohu nikdy nepřijímáme, neukládáme ani
 nezaznamenáváme a aplikace nesleduje vaše pohyby ani nezjišťuje polohu na
 pozadí.</p>
@@ -155,14 +157,16 @@ společnosti Apple nebo Google Play. Vaše jméno, platební údaje ani faktura�
 <table>
 <tr><th>Data</th><th>Účel</th><th>Kdo je přijímá</th><th>Doba uchování</th></tr>
 <tr><td>Přibližná poloha (souřadnice; nebo IP adresa vaší sítě, když je poloha vypnutá nebo nedostupná)</td><td>Získání předpovědi počasí pro vaši oblast — bez ní aplikace nemůže posoudit počasí na sušení</td><td>WeatherAPI.com (přímo z vašeho zařízení)</td><td>My neukládáme. WeatherAPI.com: viz jeho zásady ochrany soukromí</td></tr>
+<tr><td>Přibližná poloha (souřadnice)</td><td>Převod souřadnic na název obce nebo čtvrti zobrazený v aplikaci</td><td>Dodavatel operačního systému vašeho zařízení — Apple v iOS, Google v Androidu (přímo z vašeho zařízení)</td><td>My neukládáme. Apple a Google: viz jejich zásady ochrany soukromí</td></tr>
 <tr><td>Informace o zařízení pro reklamu (IP adresa, identifikátory zařízení, signály neplatného provozu, interakce s reklamou a diagnostická data, jako jsou pády a výkon aplikace — nic z toho se nepoužívá k personalizaci reklam ani k vytváření vašeho profilu)</td><td>Doručování jediného bannerového inzerátu v bezplatné verzi v režimu „omezené reklamy“ a dále měření a prevence podvodů ze strany společnosti Google u tohoto inzerátu</td><td>Google AdMob</td><td>My neuchováváme. Google: viz jeho zásady ochrany soukromí</td></tr>
 <tr><td>Nastavení a nejnovější předpověď</td><td>Okamžité otevření na vašem posledním verdiktu</td><td>Nikdo — zůstávají ve vašem zařízení</td><td>Dokud aplikaci neodstraníte</td></tr>
 <tr><td>Naplánovaná upozornění na prádlo</td><td>Připomenutí dobrých dnů na sušení a blížícího se deště, pokud si upozornění zapnete</td><td>Nikdo — plánuje je operační systém vašeho zařízení</td><td>Dokud se nespustí, dokud upozornění nevypnete nebo aplikaci neodstraníte</td></tr>
 <tr><td>Stav nákupu Odstranit reklamy</td><td>Skrytí reklam po nákupu</td><td>Nákup zpracovává Apple / Google; aplikace ukládá jen příznak ano/ne</td><td>Dokud aplikaci neodstraníte; obchod vede vlastní záznam</td></tr>
 </table>
 <p>WeatherAPI.com je provozován ze Spojeného království; reklamní služby
-Google zpracovávají data ve Spojených státech a v dalších zemích, kde Google
-působí. Oba příjemci dostávají data přímo z vašeho zařízení, nikoli od nás,
+Google a vyhledávání názvu místa u společností Apple a Google zpracovávají
+data ve Spojených státech a v dalších zemích, kde tyto společnosti působí.
+Všichni tito příjemci dostávají data přímo z vašeho zařízení, nikoli od nás,
 a každý s nimi nakládá podle svých vlastních zásad ochrany soukromí, na které
 odkazujeme výše. Protože nic neuchováváme, sami žádné další předání
 neprovádíme.</p>
@@ -221,29 +225,42 @@ kontakt, který na ně odpoví jménem Ostapenko Studio; usilujeme o odpověď d
 Board of India.</p>
 <p><strong>Japonsko a Jižní Korea.</strong> Výše uvedená tabulka uvádí
 zpracovávané položky, jejich účel, příjemce a dobu uchování. Nejmenujeme
-žádného vlastního zahraničního zpracovatele; WeatherAPI.com a Google
-přijímají data přímo z vašeho zařízení, mimo vaši zemi, podle svých vlastních
+žádného vlastního zahraničního zpracovatele; WeatherAPI.com, Google
+a v případě názvu místa Apple přijímají data přímo z vašeho zařízení, mimo vaši zemi, podle svých vlastních
 zásad.</p>
 <p>Pro uživatele v Jižní Koreji jsou podrobnosti o datech odesílaných do
 zahraničí tyto: <strong>položky</strong> — souřadnice přibližné polohy (službě
-WeatherAPI.com) a IP adresa, identifikátory zařízení a reklamní identifikátory
+WeatherAPI.com a kvůli názvu místa společnosti Apple v iOS nebo Google
+v Androidu) a IP adresa, identifikátory zařízení a reklamní identifikátory
 a interakce s reklamou (společnosti Google); <strong>kdy a jak</strong> — ve
 chvíli, kdy aplikaci otevřete nebo kdy se obnoví data, šifrovaným spojením
 HTTPS; <strong>příjemci</strong> — WeatherAPI.com (Spojené království, viz
-weatherapi.com) a Google LLC (Spojené státy, viz policies.google.com);
-<strong>účel a doba uchování</strong> — získání vaší předpovědi a zobrazení
+weatherapi.com), Google LLC (Spojené státy, viz policies.google.com)
+a Apple Inc. (Spojené státy, viz apple.com/privacy);
+<strong>účel a doba uchování</strong> — získání vaší předpovědi, určení názvu vaší obce a zobrazení
 a měření reklamního banneru, přičemž každý příjemce data uchovává podle
 vlastních zásad; <strong>vaše právo odmítnout</strong> — oprávnění k poloze
 můžete kdykoli odmítnout nebo odvolat v nastavení zařízení (aplikace pak
-nemůže radit s prádlem) a reklamu můžete zcela odstranit zakoupením Odstranit
+určí předpověď přibližně podle vašeho síťového připojení) a reklamu můžete zcela odstranit zakoupením Odstranit
 reklamy.</p>
 <p><strong>Čína (pevninská).</strong> Vaše souřadnice odesílá vaše zařízení
 přímo službě WeatherAPI.com, která sídlí mimo pevninskou Čínu, výhradně za
-účelem získání předpovědi; udělením oprávnění k poloze s tím vyjadřujete
+účelem získání předpovědi, a dodavateli operačního systému vašeho telefonu
+(Apple nebo Google) kvůli vyhledání názvu místa; udělením oprávnění k poloze s tím vyjadřujete
 souhlas. Neuchováváme osobní údaje žádného uživatele. Dotazy týkající se
 osobních údajů lze zasílat na níže uvedenou adresu.</p>
 <p><strong>Rusko.</strong> Neukládáme osobní údaje žádného uživatele, v Rusku
 ani jinde; aplikace neprovozuje žádné servery.</p>
+
+<h2>Oprava týkající se názvu obce</h2>
+<p>Dřívější verze těchto zásad uváděla, že název obce nebo čtvrti se určuje
+„na vašem zařízení“. To nebyla pravda a opravili jsme to. Aplikace žádá
+operační systém o převod souřadnic na název místa a v systémech iOS i Android
+se toto vyhledání provádí přes síť: vaše souřadnice se odešlou společnosti
+Apple nebo Google a zpět přijde název místa. Tatáž verze uváděla, že bez
+oprávnění k poloze aplikace nemůže radit s prádlem; může, a to podle vaší
+přibližné oblasti. Raději to řekneme na rovinu, než abychom nechali stát
+uklidňující větu, kterou kód nepodporuje.</p>
 
 <h2>Změny</h2>
 <p>Datum v záhlaví této stránky je datem její účinnosti. Pokud se tyto zásady
