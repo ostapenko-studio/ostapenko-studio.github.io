@@ -92,7 +92,7 @@
 <body>
 
 <h1>Personvernerklæring</h1>
-<p class="meta">CarWash Day, av Ostapenko Studio · Gjelder fra 13. september 2026</p>
+<p class="meta">CarWash Day, av Ostapenko Studio · Gjelder fra 9. oktober 2026</p>
 <p class="meta">Den engelske teksten er den gjeldende versjonen (<a href="../privacy.html">canonical English</a>). Oversettelser tilbys for enkelhets skyld; der en oversettelse avviker, gjelder den engelske versjonen så langt lokal lov tillater.</p>
 
 <p>CarWash Day er en enkel app: den leser værvarselet og svarer på to
@@ -107,14 +107,23 @@ til oss.</p>
 Koordinatene dine sendes direkte fra enheten din til
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, en
 værdatatjeneste, utelukkende for å hente værvarselet (temperatur,
-vind, vindkast, skydekke, sannsynlighet for
-nedbør, nedbørsmengde, soloppgang og solnedgang) som brukes til å finne ut
+luftfuktighet, vind, vindkast, skydekke, sannsynlighet for
+nedbør, nedbørsmengde, signaler om snø, sludd og underkjølt regn,
+værforholdene, soloppgang og solnedgang) som brukes til å finne ut
 hvordan vaskeforholdene er i området ditt, og utsiktene for timene etter en
 vask. Hvordan WeatherAPI.com
 håndterer forespørsler er beskrevet i deres
-egen <a href="https://www.weatherapi.com/privacy.aspx">personvernerklæring</a>.
-Navnet på stedet eller bydelen som vises i appen, slås opp på enheten din av
-operativsystemets egen geokoder. Vi mottar, lagrer eller logger aldri
+egen <a href="https://www.weatherapi.com/privacy.aspx">personvernerklæring</a>.</p>
+<p>Hvis du har tillatt posisjon, men enheten din ikke finner posisjonen sin
+(som på et nettbrett uten posisjonsbestemmelse), ber appen i stedet
+WeatherAPI.com om å plassere værvarselet ut fra IP-adressen til
+internettforbindelsen din. Da sendes ingen koordinater; WeatherAPI.com anslår
+et område ut fra adressen forespørselen kommer fra. Hvis du avslår
+posisjonstillatelsen, sender appen ingenting og viser ikke noe værvarsel.</p>
+<p>Navnet på stedet eller bydelen som vises i appen, slås opp via enhetens
+egen geokodingstjeneste — Apples på iOS, Googles på Android — som sender
+koordinatene til den leverandøren for å slå dem opp, under leverandørens egen
+personvernerklæring. Appen sender dem ikke noe annet sted. Vi mottar, lagrer eller logger aldri
 posisjonen din, og appen sporer ikke bevegelsene dine og gjør ikke
 posisjonssjekker i bakgrunnen.</p>
 <p>Appen ber bare om <em>omtrentlig</em> posisjon og ber om den laveste
@@ -157,7 +166,8 @@ eller faktureringsinformasjonen din.</p>
 <h2>Hva som behandles, hvorfor og hvor lenge</h2>
 <table>
 <tr><th>Data</th><th>Formål</th><th>Hvem mottar dem</th><th>Lagringstid</th></tr>
-<tr><td>Omtrentlig posisjon (koordinater)</td><td>Hente værvarselet for området ditt — appen kan ikke vurdere vaskeværet uten det</td><td>WeatherAPI.com (direkte fra enheten din)</td><td>Lagres ikke av oss. WeatherAPI.com: se deres personvernerklæring</td></tr>
+<tr><td>Omtrentlig posisjon (koordinater) — eller, når enheten din ikke finner posisjonen sin, IP-adressen til forbindelsen din</td><td>Hente værvarselet for området ditt — appen kan ikke vurdere vaskeværet uten det</td><td>WeatherAPI.com (direkte fra enheten din)</td><td>Lagres ikke av oss. WeatherAPI.com: se deres personvernerklæring</td></tr>
+<tr><td>Omtrentlig posisjon (koordinater)</td><td>Vise navnet på stedet eller bydelen din</td><td>Enhetens geokodingstjeneste: Apple (iOS) eller Google (Android), direkte fra enheten din</td><td>Lagres ikke av oss. Apple / Google: se deres personvernerklæringer</td></tr>
 <tr><td>Enhetsinformasjon for annonsering (IP-adresse, enhets-ID-er, signaler om ugyldig trafikk, annonseinteraksjoner og diagnostikkdata som krasj og appytelse — ingenting av dette brukes til å personalisere annonser eller bygge en profil av deg)</td><td>Levering av den ene bannerannonsen i gratisversjonen, i modusen «begrensede annonser», og Googles måling og svindelforebygging for denne annonsen</td><td>Google AdMob</td><td>Oppbevares ikke av oss. Google: se deres personvernerklæring</td></tr>
 <tr><td>Innstillinger og det nyeste værvarselet</td><td>Åpne umiddelbart på din siste vurdering</td><td>Ingen — blir på enheten din</td><td>Til du sletter appen</td></tr>
 <tr><td>Planlagte varsler om bilvask</td><td>Minne deg på kvelden før en dag som passer for bilvask, hvis du slår på varsler</td><td>Ingen — planlegges av operativsystemet på enheten din</td><td>Til de utløses, du slår av varsler, eller du sletter appen</td></tr>
@@ -216,8 +226,10 @@ utpeker ingen egen utenlandsk databehandler; WeatherAPI.com og Google mottar
 data direkte fra enheten din, utenfor landet ditt, under sine egne
 retningslinjer.</p>
 <p>For brukere i Sør-Korea er opplysningene om det som sendes til utlandet,
-disse: <strong>opplysninger</strong> — omtrentlige posisjonskoordinater (til
-WeatherAPI.com) samt IP-adresse, enhets- og annonseidentifikatorer og
+disse: <strong>opplysninger</strong> — omtrentlige posisjonskoordinater, eller
+IP-adressen når enheten ikke finner posisjonen sin (til WeatherAPI.com),
+omtrentlige posisjonskoordinater (til enhetens geokodingstjeneste, Apple
+eller Google) samt IP-adresse, enhets- og annonseidentifikatorer og
 annonseinteraksjoner (til Google); <strong>tidspunkt og måte</strong> — i det
 øyeblikket du åpner appen, eller den oppdaterer seg, over en kryptert
 HTTPS-forbindelse; <strong>mottakere</strong> — WeatherAPI.com
@@ -230,7 +242,8 @@ innstillingene på enheten din (appen kan da ikke gi råd om bilvask), og du
 kan fjerne annonseringen helt ved å kjøpe Fjern annonser.</p>
 <p><strong>Kina (fastlandet).</strong> Koordinatene dine sendes av enheten din
 direkte til WeatherAPI.com, en tjeneste utenfor Kinas fastland, utelukkende
-for å hente værvarselet; ved å gi posisjonstillatelsen samtykker du til
+for å hente værvarselet, og til enhetens egen geokodingstjeneste for å
+gi stedet ditt et navn; ved å gi posisjonstillatelsen samtykker du til
 dette. Vi oppbevarer ingen personopplysninger om noen bruker. Spørsmål om
 personopplysninger kan sendes til adressen nedenfor.</p>
 <p><strong>Russland.</strong> Vi lagrer ingen personopplysninger om noen

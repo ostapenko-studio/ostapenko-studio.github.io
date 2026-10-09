@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacybeleid</h1>
-<p class="meta">CarWash Day, door Ostapenko Studio · Van kracht op 13 september 2026</p>
+<p class="meta">CarWash Day, door Ostapenko Studio · Van kracht op 9 oktober 2026</p>
 <p class="meta">De <a href="../privacy.html">Engelse tekst</a> is de leidende versie. Vertalingen zijn er voor het gemak; waar een vertaling afwijkt, geldt de Engelse versie voor zover het plaatselijke recht dat toestaat.</p>
 
 <p>CarWash Day is een eenvoudige app: hij leest de weersverwachting en
@@ -106,14 +106,24 @@ wat je in de app doet, wordt naar ons gestuurd.</p>
 <p>Met jouw toestemming leest de app de globale (grove) locatie van je
 toestel uit. Je coördinaten worden rechtstreeks vanaf je toestel naar
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a> gestuurd, een
-weerdatadienst, uitsluitend om de verwachting (temperatuur, wind, windstoten, bewolking, neerslagkans,
-neerslag, zonsopkomst en zonsondergang) op te halen waarmee de
+weerdatadienst, uitsluitend om de verwachting (temperatuur, luchtvochtigheid, wind, windstoten, bewolking, neerslagkans,
+neerslag, signalen voor sneeuw, natte sneeuw en ijzel, het weertype,
+zonsopkomst en zonsondergang) op te halen waarmee de
 wasomstandigheden voor jouw omgeving worden bepaald, en de vooruitblik op de
 uren na een wasbeurt. Hoe WeatherAPI.com
 verzoeken verwerkt, staat in zijn eigen
-<a href="https://www.weatherapi.com/privacy.aspx">privacybeleid</a>. De
-plaats- of wijknaam die in de app wordt getoond, wordt op je toestel bepaald
-door de geocoder van het besturingssysteem. Wij ontvangen, bewaren of loggen
+<a href="https://www.weatherapi.com/privacy.aspx">privacybeleid</a>.</p>
+<p>Als je locatie hebt toegestaan maar je toestel zijn positie niet kan
+vinden (zoals op een tablet zonder locatiebepaling), vraagt de app
+WeatherAPI.com om de verwachting in plaats daarvan te bepalen aan de hand van
+het IP-adres van je internetverbinding. In dat geval worden geen coördinaten
+verstuurd; WeatherAPI.com schat een gebied in op basis van het adres waar het
+verzoek vandaan komt. Als je de locatietoestemming weigert, verstuurt de app
+niets en toont hij geen verwachting.</p>
+<p>De plaats- of wijknaam die in de app wordt getoond, wordt opgezocht via de
+eigen geocoderingsdienst van je toestel — die van Apple op iOS, die van Google
+op Android — die de coördinaten daarvoor naar die aanbieder stuurt, onder zijn
+eigen privacybeleid. De app stuurt ze nergens anders naartoe. Wij ontvangen, bewaren of loggen
 je locatie nooit, en de app volgt je verplaatsingen niet en voert geen
 locatiecontroles op de achtergrond uit.</p>
 <p>De app vraagt alleen om je <em>globale</em> locatie en vraagt de laagste
@@ -123,7 +133,7 @@ iemand tot op ongeveer 1.850 voet kunnen lokaliseren; CarWash Day vraagt daar
 bewust niet om.</p>
 
 <h2>Gegevens op je toestel</h2>
-<p>Je instellingen (of je thuis wast of bij een wasstraat, of de auto snel
+<p>Je instellingen (of je thuis wast of bij een overdekte wasstraat, of de auto snel
 schoon moet zijn, hoe ver de vooruitblik vooruit moet kijken,
 de meldingsschakelaar en of je „Advertenties verwijderen” hebt gekocht) en de
 laatst opgehaalde verwachting worden alleen lokaal op je toestel bewaard,
@@ -159,7 +169,8 @@ betaalgegevens of factuurgegevens.</p>
 <h2>Wat wordt verwerkt, waarom en hoe lang</h2>
 <table>
 <tr><th>Gegevens</th><th>Doel</th><th>Wie ze ontvangt</th><th>Bewaartermijn</th></tr>
-<tr><td>Globale locatie (coördinaten)</td><td>De weersverwachting voor jouw omgeving ophalen — zonder kan de app het wasweer niet beoordelen</td><td>WeatherAPI.com (rechtstreeks vanaf je toestel)</td><td>Niet door ons bewaard. WeatherAPI.com: zie zijn privacybeleid</td></tr>
+<tr><td>Globale locatie (coördinaten) — of, als je toestel zijn positie niet kan vinden, het IP-adres van je verbinding</td><td>De weersverwachting voor jouw omgeving ophalen — zonder kan de app het wasweer niet beoordelen</td><td>WeatherAPI.com (rechtstreeks vanaf je toestel)</td><td>Niet door ons bewaard. WeatherAPI.com: zie zijn privacybeleid</td></tr>
+<tr><td>Globale locatie (coördinaten)</td><td>De naam van je plaats of wijk tonen</td><td>De geocoderingsdienst van je toestel: Apple (iOS) of Google (Android), rechtstreeks vanaf je toestel</td><td>Niet door ons bewaard. Apple / Google: zie hun privacybeleid</td></tr>
 <tr><td>Apparaatinformatie voor advertenties (IP-adres, apparaat-identificaties, signalen van ongeldig verkeer, advertentie-interacties en diagnostische gegevens zoals crashes en app-prestaties — niets daarvan wordt gebruikt om advertenties te personaliseren of een profiel van jou op te bouwen)</td><td>Leveren van de enige banner in de gratis versie, in de modus 'beperkte advertenties', en de meting en fraudepreventie door Google voor die advertentie</td><td>Google AdMob</td><td>Niet door ons bewaard. Google: zie zijn privacybeleid</td></tr>
 <tr><td>Instellingen en de laatste verwachting</td><td>Meteen openen op je laatste advies</td><td>Niemand — blijft op je toestel</td><td>Tot je de app verwijdert</td></tr>
 <tr><td>Ingeplande wasmeldingen</td><td>Je herinneren de avond voor een dag die geschikt is om te wassen, als je meldingen aanzet</td><td>Niemand — ingepland door het besturingssysteem van je toestel</td><td>Tot ze afgaan, je meldingen uitzet of je de app verwijdert</td></tr>
@@ -222,8 +233,10 @@ gegevens, hun doel, de ontvangers en de bewaartermijn. We schakelen zelf geen
 buitenlandse verwerker in; WeatherAPI.com en Google ontvangen gegevens
 rechtstreeks van je toestel, buiten jouw land, onder hun eigen beleid.</p>
 <p>Voor gebruikers in Zuid-Korea zijn dit de gegevens over de doorgifte naar
-het buitenland: <strong>gegevens</strong> — globale locatiecoördinaten (naar
-WeatherAPI.com) en IP-adres, toestel- en advertentie-identificatoren en
+het buitenland: <strong>gegevens</strong> — globale locatiecoördinaten, of het IP-adres
+als het toestel zijn positie niet kan vinden (naar WeatherAPI.com), globale
+locatiecoördinaten (naar de geocoderingsdienst van het toestel, Apple of
+Google) en IP-adres, toestel- en advertentie-identificatoren en
 interacties met advertenties (naar Google); <strong>wanneer en hoe</strong> —
 op het moment dat je de app opent of hij de gegevens ververst, over een
 versleutelde HTTPS-verbinding; <strong>ontvangers</strong> — WeatherAPI.com
@@ -237,7 +250,8 @@ kan dan geen wasadvies geven), en je kunt advertenties volledig verwijderen
 door „Advertenties verwijderen” te kopen.</p>
 <p><strong>China (vasteland).</strong> Je coördinaten worden door je toestel
 rechtstreeks naar WeatherAPI.com gestuurd, een dienst buiten het Chinese
-vasteland, uitsluitend om de verwachting op te halen; door de
+vasteland, uitsluitend om de verwachting op te halen, en naar de eigen
+geocoderingsdienst van je toestel om je plaats te benoemen; door de
 locatietoestemming te geven, stem je daarmee in. We bewaren van geen enkele
 gebruiker persoonsgegevens. Vragen over persoonsgegevens kun je naar het
 adres hieronder sturen.</p>

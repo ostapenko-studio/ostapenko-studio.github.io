@@ -92,7 +92,7 @@
 <body>
 
 <h1>Zásady ochrany súkromia</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Účinné od 13. septembra 2026</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Účinné od 9. októbra 2026</p>
 <p class="meta">Záväzné je <a href="../privacy.html">anglické znenie</a>. Preklady poskytujeme pre uľahčenie; ak sa preklad líši, platí anglické znenie v rozsahu, ktorý pripúšťa miestne právo.</p>
 
 <p>CarWash Day je jednoduchá aplikácia: číta predpoveď počasia a odpovedá na
@@ -107,13 +107,24 @@ v aplikácii robíte, nám nie je odosielané.</p>
 zariadenia. Vaše súradnice sa odosielajú priamo z vášho zariadenia službe
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, poskytovateľovi
 meteorologických údajov, výhradne na účel získania predpovede (teplota,
-vietor, nárazy vetra, oblačnosť, pravdepodobnosť dažďa,
-množstvo zrážok, východ a západ slnka), z ktorej sa odvodzujú podmienky na
+vlhkosť, vietor, nárazy vetra, oblačnosť, pravdepodobnosť dažďa,
+množstvo zrážok, signály sneženia, dažďa so snehom a mrznúceho dažďa,
+stav počasia, východ a západ slnka), z ktorej sa odvodzujú podmienky na
 umývanie vo vašej oblasti a výhľad na hodiny po umytí. Ako
 WeatherAPI.com narába s požiadavkami, opisujú jeho vlastné
-<a href="https://www.weatherapi.com/privacy.aspx">zásady ochrany súkromia</a>.
-Názov obce alebo štvrte zobrazený v aplikácii určuje na vašom zariadení
-geokodér operačného systému. Vašu polohu nikdy neprijímame, neukladáme ani
+<a href="https://www.weatherapi.com/privacy.aspx">zásady ochrany súkromia</a>.</p>
+<p>Ak ste prístup k polohe povolili, ale vaše zariadenie nedokáže zistiť svoju
+polohu (napríklad tablet bez určenia polohy), aplikácia namiesto toho požiada
+WeatherAPI.com, aby miesto predpovede určila podľa IP adresy vášho
+internetového pripojenia. V takom prípade sa neodosielajú žiadne súradnice;
+WeatherAPI.com odhadne oblasť podľa adresy, z ktorej požiadavka prichádza.
+Ak povolenie na prístup k polohe odmietnete, aplikácia nič neodosiela
+a nezobrazí žiadnu predpoveď.</p>
+<p>Názov obce alebo štvrte zobrazený v aplikácii sa vyhľadáva prostredníctvom
+vlastnej geokódovacej služby vášho zariadenia — v iOS služby Apple, v Androide
+služby Google — ktorá na ich prevod odosiela súradnice tomuto poskytovateľovi,
+a to podľa jeho vlastných zásad ochrany súkromia. Aplikácia ich nikam inam
+neodosiela. Vašu polohu nikdy neprijímame, neukladáme ani
 nezaznamenávame a aplikácia nesleduje vaše pohyby ani nezisťuje polohu na
 pozadí.</p>
 <p>Aplikácia žiada iba o <em>približnú</em> polohu a vyžaduje najnižšiu
@@ -123,7 +134,7 @@ určenie polohy osoby v okruhu asi 1 850 stôp; CarWash Day o ňu zámerne
 nežiada.</p>
 
 <h2>Údaje uložené vo vašom zariadení</h2>
-<p>Vaše nastavenia (či umývate doma alebo v autoumyvárni, či potrebujete mať auto
+<p>Vaše nastavenia (či umývate doma alebo v krytej autoumyvárni, či potrebujete mať auto
 čoskoro čisté, ako ďaleko dopredu sa má výhľad pozerať, prepínač upozornení a informácia,
 či ste si kúpili Odstrániť reklamy) a najnovšia predpoveď sú uložené iba
 lokálne vo vašom zariadení, aby sa aplikácia otvárala okamžite. Odstránením
@@ -157,7 +168,8 @@ nevidíme.</p>
 <h2>Čo sa spracúva, prečo a ako dlho</h2>
 <table>
 <tr><th>Údaje</th><th>Účel</th><th>Kto ich prijíma</th><th>Doba uchovávania</th></tr>
-<tr><td>Približná poloha (súradnice)</td><td>Získanie predpovede počasia pre vašu oblasť — bez nej aplikácia nemôže posúdiť počasie na umývanie</td><td>WeatherAPI.com (priamo z vášho zariadenia)</td><td>My neukladáme. WeatherAPI.com: pozri jeho zásady ochrany súkromia</td></tr>
+<tr><td>Približná poloha (súradnice) — alebo, ak vaše zariadenie nedokáže zistiť svoju polohu, IP adresa vášho pripojenia</td><td>Získanie predpovede počasia pre vašu oblasť — bez nej aplikácia nemôže posúdiť počasie na umývanie</td><td>WeatherAPI.com (priamo z vášho zariadenia)</td><td>My neukladáme. WeatherAPI.com: pozri jeho zásady ochrany súkromia</td></tr>
+<tr><td>Približná poloha (súradnice)</td><td>Zobrazenie názvu vašej obce alebo štvrte</td><td>Geokódovacia služba vášho zariadenia: Apple (iOS) alebo Google (Android), priamo z vášho zariadenia</td><td>My neukladáme. Apple / Google: pozri ich zásady ochrany súkromia</td></tr>
 <tr><td>Informácie o zariadení pre reklamu (IP adresa, identifikátory zariadenia, signály neplatnej návštevnosti, interakcie s reklamou a diagnostické údaje, ako sú pády a výkon aplikácie — nič z toho sa nepoužíva na personalizáciu reklám ani na tvorbu vášho profilu)</td><td>Doručovanie jedinej bannerovej reklamy v bezplatnej verzii v režime „obmedzené reklamy“, ako aj meranie a prevencia podvodov zo strany Google pre túto reklamu</td><td>Google AdMob</td><td>My neuchovávame. Google: pozri jeho zásady ochrany súkromia</td></tr>
 <tr><td>Nastavenia a najnovšia predpoveď</td><td>Okamžité otvorenie na vašom poslednom verdikte</td><td>Nikto — zostávajú vo vašom zariadení</td><td>Kým aplikáciu neodstránite</td></tr>
 <tr><td>Naplánované upozornenia na umývanie</td><td>Pripomenutie večer pred dňom vhodným na umývanie, ak si upozornenia zapnete</td><td>Nikto — plánuje ich operačný systém vášho zariadenia</td><td>Kým sa nespustia, kým upozornenia nevypnete alebo kým aplikáciu neodstránite</td></tr>
@@ -219,7 +231,9 @@ prijímajú údaje priamo z vášho zariadenia, mimo vašej krajiny, podľa svoj
 vlastných zásad.</p>
 <p>Pre používateľov v Južnej Kórei sú podrobnosti o údajoch odosielaných do
 zahraničia tieto: <strong>položky</strong> — súradnice približnej polohy
-(službe WeatherAPI.com) a IP adresa, identifikátory zariadenia a reklamné
+alebo IP adresa, ak zariadenie nedokáže zistiť svoju polohu (službe
+WeatherAPI.com), súradnice približnej polohy (geokódovacej službe zariadenia,
+Apple alebo Google) a IP adresa, identifikátory zariadenia a reklamné
 identifikátory a interakcie s reklamou (spoločnosti Google); <strong>kedy
 a ako</strong> — vo chvíli, keď aplikáciu otvoríte alebo keď sa obnovia údaje,
 šifrovaným spojením HTTPS; <strong>príjemcovia</strong> — WeatherAPI.com
@@ -232,7 +246,8 @@ v nastaveniach zariadenia (aplikácia potom nemôže radiť s umývaním) a rekl
 môžete úplne odstrániť kúpou Odstrániť reklamy.</p>
 <p><strong>Čína (pevninská).</strong> Vaše súradnice odosiela vaše zariadenie
 priamo službe WeatherAPI.com, ktorá sídli mimo pevninskej Číny, výhradne na
-získanie predpovede; udelením povolenia na prístup k polohe s tým
+získanie predpovede, a vlastnej geokódovacej službe vášho zariadenia na
+určenie názvu vašej obce; udelením povolenia na prístup k polohe s tým
 vyjadrujete súhlas. Neuchovávame osobné údaje žiadneho používateľa. Otázky
 týkajúce sa osobných údajov možno posielať na nižšie uvedenú adresu.</p>
 <p><strong>Rusko.</strong> Neukladáme osobné údaje žiadneho používateľa,

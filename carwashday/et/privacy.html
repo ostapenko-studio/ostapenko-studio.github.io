@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privaatsuspoliitika</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Kehtib alates 13. septembrist 2026</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Kehtib alates 9. oktoobrist 2026</p>
 <p class="meta">Kanooniline (ametlik) versioon on <a href="../privacy.html">ingliskeelne tekst</a>. Tõlked on mõeldud mugavuse huvides; kui tõlge erineb, kehtib ingliskeelne versioon kohaliku õiguse lubatud ulatuses.</p>
 
 <p>CarWash Day on lihtne rakendus: see loeb ilmaprognoosi ja vastab kahele auto pesemist puudutavale küsimusele — kas praegu on hea aeg ja kas pesu tasub ära, arvestades ilma pärast seda. See on ehitatud koguma võimalikult vähe
@@ -103,14 +103,22 @@ pole servereid — mitte midagi, mida sa rakenduses teed, ei saadeta meile.</p>
 <p>Sinu loal loeb rakendus sinu seadme ligikaudset (jämedat) asukohta. Sinu
 koordinaadid saadetakse otse sinu seadmest ilmaandmete teenusele
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a> ainsa eesmärgiga
-hankida prognoos (õhutemperatuur, tuul,
-tuulepuhangud, pilvisus, sajuvõimalus, sademete hulk, päikesetõus ja
-päikeseloojang), mille põhjal arvutatakse sinu piirkonna pesutingimused ja pesujärgsete tundide väljavaade.
+hankida prognoos (õhutemperatuur, õhuniiskus,
+tuul, tuulepuhangud, pilvisus, sajuvõimalus, sademete hulk, lume, lörtsi ja
+jäävihma märgid, ilmastikuolud, päikesetõus ja päikeseloojang), mille põhjal arvutatakse sinu piirkonna pesutingimused ja pesujärgsete tundide väljavaade.
 Seda, kuidas WeatherAPI.com päringuid käsitleb, kirjeldab
 tema enda
-<a href="https://www.weatherapi.com/privacy.aspx">privaatsuspoliitika</a>.
-Rakenduses kuvatav linna või linnaosa nimi määratakse sinu seadmes
-operatsioonisüsteemi enda geokodeerija abil. Me ei saa, ei salvesta ega logi
+<a href="https://www.weatherapi.com/privacy.aspx">privaatsuspoliitika</a>.</p>
+<p>Kui oled asukoha lubanud, kuid sinu seade ei leia oma asukohta (näiteks
+tahvelarvutis, millel puudub asukohamäärang), palub rakendus WeatherAPI.com-il
+määrata prognoosi asukoha hoopis sinu internetiühenduse IP-aadressi põhjal.
+Sel juhul koordinaate ei saadeta; WeatherAPI.com hindab piirkonna selle
+aadressi järgi, kust päring tuleb. Kui keeldud asukohaloast, ei saada rakendus
+midagi ega kuva prognoosi.</p>
+<p>Rakenduses kuvatav linna või linnaosa nimi leitakse sinu seadme enda
+geokodeerimisteenuse kaudu — iOS-is Apple’i, Androidis Google’i oma —, mis
+saadab koordinaadid nende tuvastamiseks sellele teenusepakkujale tema enda
+privaatsuspoliitika alusel. Rakendus ei saada neid mujale. Me ei saa, ei salvesta ega logi
 kunagi sinu asukohta ning rakendus ei jälgi sinu liikumist ega kontrolli
 asukohta taustal.</p>
 <p>Rakendus küsib ainult <em>ligikaudset</em> asukohta ja palub
@@ -120,7 +128,7 @@ geograafiline asukoht“ inimese asukoha määramist umbes 1850 jala (ligikaudu
 565 meetri) täpsusega; CarWash Day teadlikult seda ei küsi.</p>
 
 <h2>Sinu seadmesse salvestatud andmed</h2>
-<p>Sinu seaded (kas pesed kodus või autopesulas, kas vajad puhast autot peagi, kui kaugele ette pesujärgne vaade ulatub, teavituste lüliti ja see, kas oled ostnud „Eemalda reklaamid“) ja viimane prognoos
+<p>Sinu seaded (kas pesed kodus või katusealuses autopesulas, kas vajad puhast autot peagi, kui kaugele ette pesujärgne vaade ulatub, teavituste lüliti ja see, kas oled ostnud „Eemalda reklaamid“) ja viimane prognoos
 salvestatakse ainult sinu seadmesse, et rakendus avaneks kohe. Rakenduse
 kustutamine kustutab need andmed.</p>
 
@@ -152,7 +160,8 @@ arveldusteavet.</p>
 <h2>Mida töödeldakse, miks ja kui kaua</h2>
 <table>
 <tr><th>Andmed</th><th>Eesmärk</th><th>Kes saab</th><th>Säilitamine</th></tr>
-<tr><td>Ligikaudne asukoht (koordinaadid)</td><td>Sinu piirkonna ilmaprognoosi hankimine — ilma selleta ei saa rakendus pesuilma hinnata</td><td>WeatherAPI.com (otse sinu seadmest)</td><td>Meie ei salvesta. WeatherAPI.com: vt tema privaatsuspoliitikat</td></tr>
+<tr><td>Ligikaudne asukoht (koordinaadid) — või, kui sinu seade ei leia oma asukohta, sinu ühenduse IP-aadress</td><td>Sinu piirkonna ilmaprognoosi hankimine — ilma selleta ei saa rakendus pesuilma hinnata</td><td>WeatherAPI.com (otse sinu seadmest)</td><td>Meie ei salvesta. WeatherAPI.com: vt tema privaatsuspoliitikat</td></tr>
+<tr><td>Ligikaudne asukoht (koordinaadid)</td><td>Sinu linna või linnaosa nime kuvamine</td><td>Sinu seadme geokodeerimisteenus: Apple (iOS) või Google (Android), otse sinu seadmest</td><td>Meie ei salvesta. Apple / Google: vt nende privaatsuspoliitikat</td></tr>
 <tr><td>Seadme teave reklaami jaoks (IP-aadress, seadmetunnused, kehtetu liikluse signaalid, reklaamiga suhtlemine ning diagnostikaandmed, nagu krahhid ja rakenduse jõudlus — midagi sellest ei kasutata reklaamide isikupärastamiseks ega teie profiili koostamiseks)</td><td>Tasuta versiooni ainsa bännerreklaami edastamine režiimis „piiratud reklaamid“ ning Google'i mõõtmine ja pettuste ennetamine selle reklaami puhul</td><td>Google AdMob</td><td>Meie ei hoia. Google: vt tema privaatsuspoliitikat</td></tr>
 <tr><td>Seaded ja viimane prognoos</td><td>Kohene avanemine viimase hinnanguga</td><td>Mitte keegi — jääb sinu seadmesse</td><td>Kuni kustutad rakenduse</td></tr>
 <tr><td>Planeeritud pesuteavitused</td><td>Meeldetuletus eelmisel õhtul enne pesuks sobivat päeva, kui oled teavitused sisse lülitanud</td><td>Mitte keegi — planeerib sinu seadme operatsioonisüsteem</td><td>Kuni need käivituvad, kuni lülitad teavitused välja või kuni kustutad rakenduse</td></tr>
@@ -213,8 +222,10 @@ käsitletavad andmed, nende eesmärk, saajad ja säilitamisaeg. Me ei määra
 ühtegi enda välismaist volitatud töötlejat; WeatherAPI.com ja Google saavad
 andmed otse sinu seadmest, väljaspool sinu riiki, oma poliitikate alusel.</p>
 <p>Lõuna-Korea kasutajatele on välismaale saadetavate andmete üksikasjad
-järgmised: <strong>andmed</strong> — ligikaudsed asukohakoordinaadid
-(WeatherAPI.com-ile) ning IP-aadress, seadme ja reklaami identifikaatorid ja
+järgmised: <strong>andmed</strong> — ligikaudsed asukohakoordinaadid või
+IP-aadress, kui seade ei leia oma asukohta (WeatherAPI.com-ile), ligikaudsed
+asukohakoordinaadid (seadme geokodeerimisteenusele, Apple’ile või
+Google’ile) ning IP-aadress, seadme ja reklaami identifikaatorid ja
 reklaamiga suhtlemine (Google’ile); <strong>millal ja kuidas</strong> — hetkel,
 mil avad rakenduse või see andmeid värskendab, krüpteeritud HTTPS-ühenduse
 kaudu; <strong>saajad</strong> — WeatherAPI.com (Ühendkuningriik, vt
@@ -227,7 +238,8 @@ pesunõu anda) ja võid reklaami täielikult eemaldada, ostes
 „Eemalda reklaamid“.</p>
 <p><strong>Hiina (mandriosa).</strong> Sinu seade saadab sinu koordinaadid
 otse WeatherAPI.com-ile, mis on väljaspool Mandri-Hiinat asuv teenus, ainult
-prognoosi hankimiseks; asukohaloa andmine ongi see, kuidas sa sellega nõustud.
+prognoosi hankimiseks, ja sinu seadme enda geokodeerimisteenusele sinu linna
+nimetamiseks; asukohaloa andmine ongi see, kuidas sa sellega nõustud.
 Me ei hoia ühegi kasutaja isikuandmeid. Isikuandmeid puudutavad küsimused võib
 saata allpool toodud aadressil.</p>
 <p><strong>Venemaa.</strong> Me ei säilita ühegi kasutaja isikuandmeid, ei

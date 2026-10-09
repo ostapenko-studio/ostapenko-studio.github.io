@@ -92,7 +92,7 @@
 <body>
 
 <h1>Dasar Privasi</h1>
-<p class="meta">CarWash Day, oleh Ostapenko Studio · Berkuat kuasa 13 September 2026</p>
+<p class="meta">CarWash Day, oleh Ostapenko Studio · Berkuat kuasa 9 Oktober 2026</p>
 <p class="meta"><a href="../privacy.html">Teks bahasa Inggeris</a> ialah versi kanonik. Terjemahan disediakan untuk kemudahan; jika terjemahan berbeza, versi bahasa Inggeris terpakai setakat yang dibenarkan oleh undang-undang tempatan.</p>
 
 <p>CarWash Day ialah apl yang ringkas: ia membaca ramalan cuaca dan menjawab
@@ -105,14 +105,25 @@ pelayan — tiada apa yang anda lakukan dalam apl dihantar kepada kami.</p>
 <p>Dengan kebenaran anda, apl membaca lokasi anggaran (kasar) peranti anda.
 Koordinat anda dihantar terus dari peranti anda ke
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, sebuah perkhidmatan
-data cuaca, semata-mata untuk mendapatkan ramalan (suhu, angin, angin
-kencang, litupan awan, kemungkinan hujan, kuantiti hujan, matahari terbit dan
-terbenam) yang digunakan untuk menentukan keadaan membasuh kereta di kawasan
+data cuaca, semata-mata untuk mendapatkan ramalan (suhu, kelembapan, angin, angin
+kencang, litupan awan, kemungkinan hujan, kuantiti hujan, isyarat salji, hujan
+salji dan hujan beku, keadaan cuaca, matahari terbit dan terbenam) yang digunakan untuk menentukan keadaan membasuh kereta di kawasan
 anda, serta tinjauan cuaca bagi jam-jam selepas basuhan. Cara WeatherAPI.com
 mengendalikan permintaan diterangkan dalam
 <a href="https://www.weatherapi.com/privacy.aspx">dasar privasinya</a>
-sendiri. Nama bandar atau kawasan yang dipaparkan dalam apl ditentukan pada
-peranti anda oleh geokod sistem pengendalian sendiri. Kami tidak pernah
+sendiri.</p>
+<p>Jika anda telah membenarkan lokasi tetapi peranti anda tidak dapat mencari
+kedudukannya (seperti pada tablet tanpa isyarat lokasi), apl sebaliknya
+meminta WeatherAPI.com menentukan lokasi ramalan berdasarkan alamat IP
+sambungan internet anda. Dalam keadaan itu tiada koordinat dihantar;
+WeatherAPI.com menganggarkan suatu kawasan daripada alamat asal permintaan.
+Jika anda menolak kebenaran lokasi, apl tidak menghantar apa-apa dan tidak
+memaparkan ramalan.</p>
+<p>Nama bandar atau kawasan yang dipaparkan dalam apl dicari melalui
+perkhidmatan geokod peranti anda sendiri — milik Apple pada iOS, milik Google
+pada Android — yang menghantar koordinat kepada penyedia tersebut untuk
+menterjemahkannya, di bawah dasar privasinya sendiri. Apl tidak
+menghantarnya ke tempat lain. Kami tidak pernah
 menerima, menyimpan, atau merekodkan lokasi anda, dan apl tidak menjejaki
 pergerakan anda atau menyemak lokasi di latar belakang.</p>
 <p>Apl hanya meminta lokasi <em>anggaran</em> dan meminta ketepatan paling
@@ -122,7 +133,7 @@ Di bawah sesetengah undang-undang, seperti undang-undang California,
 kira-kira 1,850 kaki; CarWash Day sengaja tidak memintanya.</p>
 
 <h2>Data yang disimpan pada peranti anda</h2>
-<p>Tetapan anda (sama ada anda membasuh di rumah atau di pusat cuci kereta,
+<p>Tetapan anda (sama ada anda membasuh di rumah atau di pusat cuci kereta berbumbung,
 sama ada anda perlukan kereta bersih segera, sejauh mana ke hadapan tinjauan
 cuaca perlu melihat, suis amaran, dan sama ada anda telah membeli Buang iklan) serta ramalan
 terkini disimpan secara tempatan pada peranti anda sahaja, supaya apl
@@ -156,7 +167,8 @@ atau maklumat pengebilan anda.</p>
 <h2>Apa yang diproses, mengapa, dan untuk berapa lama</h2>
 <table>
 <tr><th>Data</th><th>Tujuan</th><th>Siapa yang menerimanya</th><th>Pengekalan</th></tr>
-<tr><td>Lokasi anggaran (koordinat)</td><td>Mendapatkan ramalan cuaca untuk kawasan anda — apl tidak dapat menilai cuaca membasuh kereta tanpanya</td><td>WeatherAPI.com (terus dari peranti anda)</td><td>Tidak disimpan oleh kami. WeatherAPI.com: lihat dasar privasinya</td></tr>
+<tr><td>Lokasi anggaran (koordinat) — atau, apabila peranti anda tidak dapat mencari kedudukannya, alamat IP sambungan anda</td><td>Mendapatkan ramalan cuaca untuk kawasan anda — apl tidak dapat menilai cuaca membasuh kereta tanpanya</td><td>WeatherAPI.com (terus dari peranti anda)</td><td>Tidak disimpan oleh kami. WeatherAPI.com: lihat dasar privasinya</td></tr>
+<tr><td>Lokasi anggaran (koordinat)</td><td>Memaparkan nama bandar atau kawasan anda</td><td>Perkhidmatan geokod peranti anda: Apple (iOS) atau Google (Android), terus dari peranti anda</td><td>Tidak disimpan oleh kami. Apple / Google: lihat dasar privasi masing-masing</td></tr>
 <tr><td>Maklumat peranti untuk pengiklanan (alamat IP, pengecam peranti, isyarat trafik tidak sah, interaksi iklan, dan data diagnostik seperti ranap dan prestasi aplikasi — tiada satu pun daripadanya digunakan untuk memperibadikan iklan atau membina profil tentang anda)</td><td>Menyampaikan satu-satunya iklan sepanduk dalam versi percuma, dalam mod «iklan terhad», serta pengukuran dan pencegahan penipuan oleh Google bagi iklan tersebut</td><td>Google AdMob</td><td>Tidak dipegang oleh kami. Google: lihat dasar privasinya</td></tr>
 <tr><td>Tetapan dan ramalan terkini</td><td>Membuka serta-merta pada penilaian terakhir anda</td><td>Tiada sesiapa — kekal pada peranti anda</td><td>Sehingga anda memadam apl</td></tr>
 <tr><td>Amaran basuh kereta yang dijadualkan</td><td>Mengingatkan anda pada petang sebelum hari yang sesuai untuk membasuh kereta, jika anda menghidupkan amaran</td><td>Tiada sesiapa — dijadualkan oleh sistem pengendalian peranti anda</td><td>Sehingga amaran berbunyi, anda mematikan amaran, atau anda memadam apl</td></tr>
@@ -219,8 +231,10 @@ melantik pemproses luar negara kami sendiri; WeatherAPI.com dan Google
 menerima data terus dari peranti anda, di luar negara anda, di bawah dasar
 mereka sendiri.</p>
 <p>Bagi pengguna di Korea Selatan, butiran data yang dihantar ke luar negara
-adalah: <strong>item</strong> — koordinat lokasi anggaran (kepada
-WeatherAPI.com), serta alamat IP, pengecam peranti dan pengecam pengiklanan
+adalah: <strong>item</strong> — koordinat lokasi anggaran, atau alamat IP
+apabila peranti tidak dapat mencari kedudukannya (kepada WeatherAPI.com),
+koordinat lokasi anggaran (kepada perkhidmatan geokod peranti, Apple atau
+Google), serta alamat IP, pengecam peranti dan pengecam pengiklanan
 dan interaksi iklan (kepada Google); <strong>bila dan bagaimana</strong> —
 pada saat anda membuka apl atau apl memuat semula, melalui sambungan HTTPS
 yang disulitkan; <strong>penerima</strong> — WeatherAPI.com (United Kingdom,
@@ -234,7 +248,8 @@ nasihat membasuh kereta), dan anda boleh membuang pengiklanan sepenuhnya dengan
 membeli Buang iklan.</p>
 <p><strong>China (tanah besar).</strong> Koordinat anda dihantar oleh peranti
 anda terus kepada WeatherAPI.com, sebuah perkhidmatan di luar tanah besar
-China, semata-mata untuk mendapatkan ramalan; memberikan kebenaran lokasi
+China, semata-mata untuk mendapatkan ramalan, dan kepada perkhidmatan geokod
+peranti anda sendiri untuk menamakan bandar anda; memberikan kebenaran lokasi
 ialah cara anda bersetuju dengannya. Kami tidak memegang data peribadi
 mana-mana pengguna. Soalan tentang data peribadi boleh dihantar ke alamat di
 bawah.</p>

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Chính sách quyền riêng tư</h1>
-<p class="meta">CarWash Day, của Ostapenko Studio · Có hiệu lực từ 13 tháng 9 năm 2026</p>
+<p class="meta">CarWash Day, của Ostapenko Studio · Có hiệu lực từ 9 tháng 10 năm 2026</p>
 <p class="meta">Bản <a href="../privacy.html">tiếng Anh</a> là bản chính thức. Các bản dịch được cung cấp để thuận tiện; nếu bản dịch có khác biệt, bản tiếng Anh được áp dụng trong phạm vi luật địa phương cho phép.</p>
 
 <p>CarWash Day là một ứng dụng đơn giản: nó đọc dự báo thời tiết và trả lời
@@ -106,14 +106,25 @@ máy chủ nào — không điều gì bạn làm trong ứng dụng được g�
 <p>Khi được bạn cho phép, ứng dụng đọc vị trí gần đúng (thô) của thiết bị.
 Tọa độ của bạn được gửi thẳng từ thiết bị đến
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, một dịch vụ dữ liệu
-thời tiết, với mục đích duy nhất là lấy dự báo (nhiệt độ, gió, gió giật,
-mây, khả năng mưa, lượng mưa, giờ mặt trời mọc và lặn) dùng để tính điều kiện
+thời tiết, với mục đích duy nhất là lấy dự báo (nhiệt độ, độ ẩm, gió, gió giật,
+mây, khả năng mưa, lượng mưa, tín hiệu tuyết, mưa tuyết và mưa băng, tình trạng
+thời tiết, giờ mặt trời mọc và lặn) dùng để tính điều kiện
 rửa xe trong khu vực của bạn, và triển vọng thời tiết cho những giờ sau khi
 rửa. Cách WeatherAPI.com xử lý
 yêu cầu được mô tả trong
 <a href="https://www.weatherapi.com/privacy.aspx">chính sách quyền riêng tư</a>
-của họ. Tên thị trấn hoặc khu vực hiển thị trong ứng dụng được xác định trên
-thiết bị của bạn bởi bộ giải mã địa lý của hệ điều hành. Chúng tôi không bao
+của họ.</p>
+<p>Nếu bạn đã cho phép truy cập vị trí nhưng thiết bị không tìm được vị trí của
+mình (như trên máy tính bảng không định vị được), ứng dụng sẽ nhờ WeatherAPI.com
+xác định nơi dự báo dựa trên địa chỉ IP của kết nối internet của bạn. Khi đó
+không có tọa độ nào được gửi đi; WeatherAPI.com ước tính một khu vực từ địa chỉ
+mà yêu cầu được gửi đến. Nếu bạn từ chối quyền vị trí, ứng dụng không gửi gì
+cả và không hiển thị dự báo.</p>
+<p>Tên thị trấn hoặc khu vực hiển thị trong ứng dụng được tra cứu qua dịch vụ
+giải mã địa lý của chính thiết bị — của Apple trên iOS, của Google trên
+Android — dịch vụ này gửi tọa độ đến nhà cung cấp đó để xác định tên, theo
+chính sách quyền riêng tư của chính nhà cung cấp. Ứng dụng không gửi tọa độ đi
+bất kỳ nơi nào khác. Chúng tôi không bao
 giờ nhận, lưu trữ hay ghi lại vị trí của bạn, và ứng dụng không theo dõi việc
 di chuyển của bạn cũng không kiểm tra vị trí ở chế độ nền.</p>
 <p>Ứng dụng chỉ xin vị trí <em>gần đúng</em> và yêu cầu độ chính xác thấp nhất
@@ -122,7 +133,7 @@ luật California, "định vị địa lý chính xác" nghĩa là xác định
 một người trong khoảng 1.850 feet; CarWash Day cố ý không xin mức đó.</p>
 
 <h2>Dữ liệu lưu trên thiết bị của bạn</h2>
-<p>Cài đặt của bạn (bạn rửa xe ở nhà hay ở tiệm rửa xe, bạn có cần xe sạch sớm
+<p>Cài đặt của bạn (bạn rửa xe ở nhà hay ở tiệm có mái che, bạn có cần xe sạch sớm
 hay không, phần theo dõi thời tiết sau khi rửa nhìn xa đến đâu, công tắc thông
 báo, và việc bạn đã mua Gỡ quảng cáo hay chưa) cùng dự báo gần nhất chỉ được
 lưu cục bộ trên thiết bị của bạn, để ứng dụng mở ngay lập tức. Xóa ứng dụng
@@ -155,7 +166,8 @@ hay thông tin hóa đơn của bạn.</p>
 <h2>Dữ liệu nào được xử lý, vì sao, và trong bao lâu</h2>
 <table>
 <tr><th>Dữ liệu</th><th>Mục đích</th><th>Bên nhận</th><th>Thời gian lưu giữ</th></tr>
-<tr><td>Vị trí gần đúng (tọa độ)</td><td>Lấy dự báo thời tiết cho khu vực của bạn — không có nó, ứng dụng không thể đánh giá thời tiết rửa xe</td><td>WeatherAPI.com (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. WeatherAPI.com: xem chính sách quyền riêng tư của họ</td></tr>
+<tr><td>Vị trí gần đúng (tọa độ) — hoặc, khi thiết bị không tìm được vị trí của mình, địa chỉ IP của kết nối của bạn</td><td>Lấy dự báo thời tiết cho khu vực của bạn — không có nó, ứng dụng không thể đánh giá thời tiết rửa xe</td><td>WeatherAPI.com (trực tiếp từ thiết bị của bạn)</td><td>Chúng tôi không lưu. WeatherAPI.com: xem chính sách quyền riêng tư của họ</td></tr>
+<tr><td>Vị trí gần đúng (tọa độ)</td><td>Hiển thị tên thị trấn hoặc khu vực của bạn</td><td>Dịch vụ giải mã địa lý của thiết bị: Apple (iOS) hoặc Google (Android), trực tiếp từ thiết bị của bạn</td><td>Chúng tôi không lưu. Apple / Google: xem chính sách quyền riêng tư của họ</td></tr>
 <tr><td>Thông tin thiết bị cho quảng cáo (địa chỉ IP, giá trị nhận dạng thiết bị, tín hiệu lưu lượng không hợp lệ, tương tác với quảng cáo và dữ liệu chẩn đoán như sự cố và hiệu suất ứng dụng — không có thứ nào được dùng để cá nhân hóa quảng cáo hoặc lập hồ sơ về bạn)</td><td>Phân phối quảng cáo biểu ngữ duy nhất trong phiên bản miễn phí, ở chế độ «quảng cáo giới hạn», cùng hoạt động đo lường và phòng chống gian lận của Google cho quảng cáo đó</td><td>Google AdMob</td><td>Chúng tôi không giữ. Google: xem chính sách quyền riêng tư của Google</td></tr>
 <tr><td>Cài đặt và dự báo gần nhất</td><td>Mở ngay với nhận định gần nhất của bạn</td><td>Không ai — ở lại trên thiết bị của bạn</td><td>Cho đến khi bạn xóa ứng dụng</td></tr>
 <tr><td>Thông báo rửa xe đã đặt lịch</td><td>Nhắc bạn vào buổi tối trước một ngày hợp để rửa xe, nếu bạn bật thông báo</td><td>Không ai — do hệ điều hành trên thiết bị của bạn đặt lịch</td><td>Cho đến khi chúng hiện lên, bạn tắt thông báo, hoặc bạn xóa ứng dụng</td></tr>
@@ -215,7 +227,9 @@ mục đích, bên nhận và thời gian lưu giữ. Chúng tôi không chỉ �
 nước ngoài nào của riêng mình; WeatherAPI.com và Google nhận dữ liệu trực tiếp
 từ thiết bị của bạn, ngoài quốc gia của bạn, theo chính sách riêng của họ.</p>
 <p>Đối với người dùng tại Hàn Quốc, chi tiết dữ liệu được gửi ra nước ngoài
-là: <strong>các mục</strong> — tọa độ vị trí gần đúng (đến WeatherAPI.com), và
+là: <strong>các mục</strong> — tọa độ vị trí gần đúng, hoặc địa chỉ IP khi thiết bị
+không tìm được vị trí của mình (đến WeatherAPI.com), tọa độ vị trí gần đúng (đến
+dịch vụ giải mã địa lý của thiết bị, Apple hoặc Google), và
 địa chỉ IP, mã định danh thiết bị và quảng cáo cùng tương tác với quảng cáo
 (đến Google); <strong>khi nào và bằng cách nào</strong> — vào lúc bạn mở ứng
 dụng hoặc ứng dụng làm mới, qua kết nối HTTPS được mã hóa;
@@ -228,7 +242,8 @@ lúc nào trong cài đặt thiết bị (khi đó ứng dụng không thể đ�
 cáo.</p>
 <p><strong>Trung Quốc (đại lục).</strong> Tọa độ của bạn được thiết bị gửi
 thẳng đến WeatherAPI.com, một dịch vụ ở ngoài Trung Quốc đại lục, chỉ để lấy
-dự báo; việc bạn cấp quyền vị trí chính là cách bạn đồng ý với điều đó. Chúng
+dự báo, và đến dịch vụ giải mã địa lý của chính thiết bị để hiển thị tên thị
+trấn của bạn; việc bạn cấp quyền vị trí chính là cách bạn đồng ý với điều đó. Chúng
 tôi không giữ thông tin cá nhân của bất kỳ người dùng nào. Câu hỏi về thông
 tin cá nhân có thể gửi đến địa chỉ bên dưới.</p>
 <p><strong>Nga.</strong> Chúng tôi không lưu trữ dữ liệu cá nhân của bất kỳ

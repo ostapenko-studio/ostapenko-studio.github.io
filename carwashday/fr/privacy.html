@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politique de confidentialité</h1>
-<p class="meta">CarWash Day, par Ostapenko Studio · En vigueur le 13 septembre 2026</p>
+<p class="meta">CarWash Day, par Ostapenko Studio · En vigueur le 9 octobre 2026</p>
 <p class="meta">Le texte anglais (<a href="../privacy.html">version canonique</a>) fait foi. Les traductions sont fournies pour votre commodité&nbsp;; en cas de divergence, la version anglaise s’applique dans la mesure permise par le droit local.</p>
 
 <p>CarWash Day est une application simple&nbsp;: elle lit les prévisions météo et répond à deux questions sur le lavage de votre voiture — est-ce le bon moment, et est-ce que cela en vaut la peine vu la météo qui suit. Elle a
@@ -105,17 +105,13 @@ rien de ce que vous faites dans l’application ne nous est transmis.</p>
 (grossière) de votre appareil. Vos coordonnées sont envoyées directement de
 votre appareil à <a href="https://www.weatherapi.com/">WeatherAPI.com</a>,
 un service de données météorologiques, dans le seul but de récupérer les
-prévisions (température, vent, rafales,
-nébulosité, risque de pluie, précipitations, lever et coucher du soleil)
+prévisions (température, humidité, vent, rafales, nébulosité, risque de pluie, précipitations, signaux de neige, de grésil et de pluie verglaçante, type de temps, lever et coucher du soleil)
 utilisées pour déterminer les conditions de lavage dans votre secteur, ainsi que ce qui s’annonce pour les heures qui suivent un lavage. Le
 traitement des requêtes par WeatherAPI.com est décrit
 dans sa propre
-<a href="https://www.weatherapi.com/privacy.aspx">politique de confidentialité</a>.
-Le nom de la ville ou du quartier affiché dans l’application est déterminé
-sur votre appareil par le géocodeur du système d’exploitation. Nous ne
-recevons, ne stockons et ne journalisons jamais votre position, et
-l’application ne suit pas vos déplacements et n’effectue aucune vérification
-de position en arrière-plan.</p>
+<a href="https://www.weatherapi.com/privacy.aspx">politique de confidentialité</a>.</p>
+<p>Si vous avez autorisé la position mais que votre appareil ne parvient pas à la déterminer (par exemple sur une tablette sans localisation disponible), l’application demande à WeatherAPI.com de situer les prévisions à partir de l’adresse IP de votre connexion internet. Aucune coordonnée n’est envoyée dans ce cas&nbsp;; WeatherAPI.com estime une zone à partir de l’adresse d’où provient la requête. Si vous refusez l’autorisation de position, l’application n’envoie rien et n’affiche aucune prévision.</p>
+<p>Le nom de la ville ou du quartier affiché dans l’application est obtenu au moyen du service de géocodage de votre appareil — celui d’Apple sur iOS, celui de Google sur Android —, qui envoie les coordonnées à ce fournisseur pour les résoudre, selon sa propre politique de confidentialité. L’application ne les envoie nulle part ailleurs. Nous ne recevons, ne stockons et ne journalisons jamais votre position, et l’application ne suit pas vos déplacements et n’effectue aucune vérification de position en arrière-plan.</p>
 <p>L’application ne demande que la position <em>approximative</em> et
 sollicite la plus faible précision offerte par le système d’exploitation —
 et non une localisation précise. Selon certaines lois, comme celle de la
@@ -124,7 +120,7 @@ personne dans un rayon d’environ 1&nbsp;850&nbsp;pieds&nbsp;; CarWash Day ne l
 délibérément pas.</p>
 
 <h2>Données stockées sur votre appareil</h2>
-<p>Vos réglages (si vous lavez chez vous ou en station de lavage, si vous avez besoin d’une voiture propre rapidement, jusqu’où doit porter le regard sur les heures qui suivent, l’interrupteur d’alertes et le fait d’avoir acheté
+<p>Vos réglages (si vous lavez chez vous ou dans une station de lavage couverte, si vous avez besoin d’une voiture propre rapidement, jusqu’où doit porter le regard sur les heures qui suivent, l’interrupteur d’alertes et le fait d’avoir acheté
 ou non Supprimer les publicités) et les prévisions les plus récentes sont
 stockés uniquement en local sur votre appareil, pour que l’application
 s’ouvre instantanément. Supprimer l’application supprime ces données.</p>
@@ -160,7 +156,8 @@ données de paiement ni vos informations de facturation.</p>
 <h2>Ce qui est traité, pourquoi et pendant combien de temps</h2>
 <table>
 <tr><th>Données</th><th>Finalité</th><th>Destinataire</th><th>Conservation</th></tr>
-<tr><td>Position approximative (coordonnées)</td><td>Récupérer les prévisions météo pour votre secteur — sans elles, l’application ne peut pas juger les conditions de lavage</td><td>WeatherAPI.com (directement depuis votre appareil)</td><td>Non conservée par nous. WeatherAPI.com&nbsp;: voir sa politique de confidentialité</td></tr>
+<tr><td>Position approximative (coordonnées) — ou, lorsque votre appareil ne parvient pas à déterminer sa position, l’adresse IP de votre connexion</td><td>Récupérer les prévisions météo pour votre secteur — sans elles, l’application ne peut pas juger les conditions de lavage</td><td>WeatherAPI.com (directement depuis votre appareil)</td><td>Non conservée par nous. WeatherAPI.com&nbsp;: voir sa politique de confidentialité</td></tr>
+<tr><td>Position approximative (coordonnées)</td><td>Afficher le nom de votre ville ou de votre quartier</td><td>Service de géocodage de votre appareil&nbsp;: Apple (iOS) ou Google (Android), directement depuis votre appareil</td><td>Non conservée par nous. Apple / Google&nbsp;: voir leurs politiques de confidentialité</td></tr>
 <tr><td>Informations sur l'appareil pour la publicité (adresse IP, identifiants d'appareil, signaux de trafic non valide, interactions avec l'annonce et données de diagnostic, comme les plantages et les performances de l'application — rien de tout cela n'est utilisé pour personnaliser les annonces ni pour établir un profil vous concernant)</td><td>Diffusion de l'unique bannière de la version gratuite, en mode « annonces limitées », ainsi que la mesure et la prévention de la fraude par Google pour cette annonce</td><td>Google AdMob</td><td>Non détenues par nous. Google&nbsp;: voir sa politique de confidentialité</td></tr>
 <tr><td>Réglages et dernières prévisions</td><td>Ouvrir instantanément sur votre dernier verdict</td><td>Personne — restent sur votre appareil</td><td>Jusqu’à la suppression de l’application</td></tr>
 <tr><td>Alertes de lavage programmées</td><td>Vous rappeler la veille au soir d’une journée qui se prête au lavage, si vous activez les alertes</td><td>Personne — programmées par le système d’exploitation de votre appareil</td><td>Jusqu’à leur déclenchement, jusqu’à la désactivation des alertes ou jusqu’à la suppression de l’application</td></tr>
@@ -228,8 +225,7 @@ propre compte&nbsp;; WeatherAPI.com et Google reçoivent les données directemen
 de votre appareil, en dehors de votre pays, selon leurs propres
 politiques.</p>
 <p>Pour les utilisateurs de Corée du Sud, le détail des données envoyées à
-l’étranger est le suivant&nbsp;: <strong>éléments</strong> — coordonnées de
-position approximative (vers WeatherAPI.com), et adresse IP, identifiants
+l’étranger est le suivant&nbsp;: <strong>éléments</strong> — coordonnées de position approximative, ou l’adresse IP lorsque l’appareil ne parvient pas à déterminer sa position (vers WeatherAPI.com), coordonnées de position approximative (vers le service de géocodage de l’appareil, Apple ou Google), et adresse IP, identifiants
 d’appareil et identifiants publicitaires ainsi qu’interactions avec les
 publicités (vers Google)&nbsp;; <strong>moment et modalités</strong> — au moment
 où vous ouvrez l’application ou lorsqu’elle s’actualise, via une connexion
@@ -245,7 +241,7 @@ pouvez supprimer entièrement la publicité en achetant Supprimer les
 publicités.</p>
 <p><strong>Chine (continentale).</strong> Vos coordonnées sont envoyées par
 votre appareil directement à WeatherAPI.com, un service situé hors de Chine
-continentale, dans le seul but de récupérer les prévisions&nbsp;; en accordant
+continentale, dans le seul but de récupérer les prévisions, ainsi qu’au service de géocodage de votre appareil pour nommer votre ville&nbsp;; en accordant
 l’autorisation de position, vous consentez à cet envoi. Nous ne détenons
 aucune information personnelle d’aucun utilisateur. Les questions relatives
 aux informations personnelles peuvent être envoyées à l’adresse

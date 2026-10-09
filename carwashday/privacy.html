@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">CarWash Day, by Ostapenko Studio · Effective 13 September 2026</p>
+<p class="meta">CarWash Day, by Ostapenko Studio · Effective 9 October 2026</p>
 <p class="meta">This English text is the canonical version. Translations are provided for convenience; where a translation differs, this version applies to the extent local law allows.</p>
 
 <p>CarWash Day is a simple app: it reads the weather forecast and answers two
@@ -107,22 +107,31 @@ us.</p>
 location. Your coordinates are sent directly from your device to
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, a weather data
 service, for the sole purpose of fetching the forecast (temperature,
-wind, gusts, cloud, rain chance, rainfall, sunrise and sunset) used to work
-out the wash conditions for your area, and the outlook for the hours after a
-wash. WeatherAPI.com's handling of requests is
+humidity, wind, gusts, cloud, rain chance, rainfall, snow, sleet and
+freezing-rain signals, the weather condition, sunrise and sunset) used to
+work out the wash conditions for your area, and the outlook for the hours
+after a wash. WeatherAPI.com's handling of requests is
 described in its own
-<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>. The
-town or suburb name shown in the app is resolved on your device by the
-operating system's own geocoder. We never receive, store, or log your
-location, and the app does not track your movements or run location checks
-in the background.</p>
+<a href="https://www.weatherapi.com/privacy.aspx">privacy policy</a>.</p>
+<p>If you have allowed location but your device cannot find its position
+(as on a tablet with no location fix), the app asks WeatherAPI.com to place
+the forecast from the IP address of your internet connection instead. No
+coordinates are sent in that case; WeatherAPI.com estimates an area from the
+address the request comes from. If you decline the location permission, the
+app sends nothing and shows no forecast.</p>
+<p>The town or suburb name shown in the app is looked up through your device's
+own geocoding service — Apple's on iOS, Google's on Android — which sends
+the coordinates to that provider to resolve them, under its own privacy
+policy. The app does not send them anywhere else. We never receive, store,
+or log your location, and the app does not track your movements or run
+location checks in the background.</p>
 <p>The app asks only for <em>approximate</em> location and requests the lowest
 accuracy the operating system offers — not a precise fix. Under some laws,
 such as California's, "precise geolocation" means locating someone within
 about 1,850 feet; CarWash Day deliberately does not ask for that.</p>
 
 <h2>Data stored on your device</h2>
-<p>Your settings (whether you wash at home or at a commercial bay, whether you
+<p>Your settings (whether you wash at home or at a covered car wash, whether you
 need the car clean soon, how far ahead the outlook should look, the alert
 toggle, and whether you have purchased Remove Ads) and the most recent
 forecast are stored locally on your device only, so the app opens instantly.
@@ -166,7 +175,8 @@ information.</p>
 <h2>What is processed, why, and for how long</h2>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Who receives it</th><th>Retention</th></tr>
-<tr><td>Approximate location (coordinates)</td><td>Fetching the weather forecast for your area — the app cannot judge the washing weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
+<tr><td>Approximate location (coordinates) — or, when your device cannot find its position, the IP address of your connection</td><td>Fetching the weather forecast for your area — the app cannot judge the washing weather without it</td><td>WeatherAPI.com (directly from your device)</td><td>Not stored by us. WeatherAPI.com: see its privacy policy</td></tr>
+<tr><td>Approximate location (coordinates)</td><td>Showing the name of your town or suburb</td><td>Your device's geocoding service: Apple (iOS) or Google (Android), directly from your device</td><td>Not stored by us. Apple / Google: see their privacy policies</td></tr>
 <tr><td>Device information for advertising (IP address, device identifiers, invalid-traffic signals, ad interactions, and diagnostic data such as crashes and app performance — none of it used to personalise ads or to profile you)</td><td>Serving the single banner ad in the free version, in limited-ads mode, and Google's measurement and fraud prevention for that ad</td><td>Google AdMob</td><td>Not held by us. Google: see its privacy policy</td></tr>
 <tr><td>Settings and the latest forecast</td><td>Opening instantly on your last verdict</td><td>Nobody — stays on your device</td><td>Until you delete the app</td></tr>
 <tr><td>Scheduled wash alerts</td><td>Reminding you the evening before a day suited to washing, if you turn alerts on</td><td>Nobody — scheduled by your device's operating system</td><td>Until they fire, you turn alerts off, or you delete the app</td></tr>
@@ -234,7 +244,9 @@ handled, their purpose, the recipients and the retention period. We appoint no
 overseas processor of our own; WeatherAPI.com and Google receive data directly
 from your device, outside your country, under their own policies.</p>
 <p>For users in South Korea, the details of data sent overseas are:
-<strong>items</strong> — approximate location coordinates (to WeatherAPI.com),
+<strong>items</strong> — approximate location coordinates, or the IP address
+when the device cannot find its position (to WeatherAPI.com), approximate
+location coordinates (to the device's geocoding service, Apple or Google),
 and IP address, device and advertising identifiers and ad interactions (to
 Google); <strong>when and how</strong> — at the moment you open the app or it
 refreshes, over an encrypted HTTPS connection; <strong>recipients</strong> —
@@ -247,7 +259,8 @@ settings (the app then cannot give washing advice), and you may remove
 advertising entirely by purchasing Remove Ads.</p>
 <p><strong>China (mainland).</strong> Your coordinates are sent by your device
 directly to WeatherAPI.com, a service outside mainland China, solely to fetch
-the forecast; granting the location permission is how you agree to that. We
+the forecast, and to your device's own geocoding service to name your town;
+granting the location permission is how you agree to that. We
 hold no personal information of any user. Questions about personal
 information may be sent to the address below.</p>
 <p><strong>Russia.</strong> We store no personal data of any user, in Russia

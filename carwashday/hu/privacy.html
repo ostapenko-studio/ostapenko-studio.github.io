@@ -92,7 +92,7 @@
 <body>
 
 <h1>Adatvédelmi tájékoztató</h1>
-<p class="meta">CarWash Day, az Ostapenko Studio alkalmazása · Hatályos: 2026. szeptember 13.</p>
+<p class="meta">CarWash Day, az Ostapenko Studio alkalmazása · Hatályos: 2026. október 9.</p>
 <p class="meta">Az <a href="../privacy.html">angol nyelvű szöveg</a> a hiteles változat. A fordítások kényelmi célt szolgálnak; eltérés esetén a helyi jog által megengedett mértékben az angol változat az irányadó.</p>
 
 <p>A CarWash Day egyszerű alkalmazás: elolvassa az időjárás-előrejelzést, és két kérdésre válaszol az autómosással kapcsolatban — jó-e most az idő, és megéri-e a mosás az utána várható időjárás miatt. Úgy készült, hogy a lehető
@@ -104,12 +104,24 @@ alkalmazásban tesz, nem jut el hozzánk.</p>
 <p>Az Ön engedélyével az alkalmazás kiolvassa a készülék hozzávetőleges
 (durva) helyzetét. A koordinátái közvetlenül a készülékéről jutnak el a
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a> időjárási
-adatszolgáltatóhoz, kizárólag azzal a céllal, hogy lekérjük az Ön környékének mosási körülményeihez és a mosás utáni órák kilátásaihoz használt előrejelzést (hőmérséklet, szél, széllökések, felhőzet, csapadékvalószínűség,
-csapadékmennyiség, napkelte és napnyugta).
+adatszolgáltatóhoz, kizárólag azzal a céllal, hogy lekérjük az Ön környékének mosási körülményeihez és a mosás utáni órák kilátásaihoz használt előrejelzést (hőmérséklet, páratartalom, szél, széllökések, felhőzet, csapadékvalószínűség,
+csapadékmennyiség, a hó, a havas eső és az ónos eső jelzései, az időjárási
+állapot, napkelte és napnyugta).
 Azt, hogy a WeatherAPI.com hogyan kezeli a kéréseket, a saját
 <a href="https://www.weatherapi.com/privacy.aspx">adatvédelmi tájékoztatója</a>
-írja le. Az alkalmazásban megjelenő város- vagy városrésznév a készülékén,
-az operációs rendszer saját geokódolójával kerül feloldásra. Soha nem kapjuk
+írja le.</p>
+<p>Ha engedélyezte a helymeghatározást, de a készüléke nem tudja megállapítani
+a helyzetét (például egy helymeghatározás nélküli táblagépen), az alkalmazás
+ehelyett arra kéri a WeatherAPI.com-ot, hogy az internetkapcsolata IP-címe
+alapján helyezze el az előrejelzést. Ilyenkor semmilyen koordináta nem kerül
+elküldésre; a WeatherAPI.com abból a címből becsül meg egy területet,
+ahonnan a kérés érkezik. Ha elutasítja a helymeghatározási engedélyt, az
+alkalmazás semmit sem küld, és nem jelenít meg előrejelzést.</p>
+<p>Az alkalmazásban megjelenő város- vagy városrésznevet a készüléke saját
+geokódoló szolgáltatása keresi ki — iOS-en az Apple-é, Androidon a Google-é
+—, amely a feloldáshoz elküldi a koordinátákat az adott szolgáltatónak, annak
+saját adatvédelmi szabályai szerint. Az alkalmazás máshová nem küldi el
+azokat. Soha nem kapjuk
 meg, nem tároljuk és nem naplózzuk a helyzetét, és az alkalmazás nem követi
 a mozgását, és nem futtat helymeghatározást a háttérben.</p>
 <p>Az alkalmazás kizárólag <em>hozzávetőleges</em> helyzetet kér, és a
@@ -119,7 +131,7 @@ a „pontos helymeghatározás” azt jelenti, hogy valakit körülbelül 1850 l
 belül lokalizálnak; a CarWash Day szándékosan nem kér ilyet.</p>
 
 <h2>A készülékén tárolt adatok</h2>
-<p>A beállításai (az, hogy otthon vagy autómosóban mos-e, hogy hamar tiszta autóra van-e szüksége, hogy milyen messzire tekintsen előre a mosás utáni kilátás, az értesítési kapcsoló, valamint az, hogy megvásárolta-e a Hirdetések eltávolítása
+<p>A beállításai (az, hogy otthon vagy fedett autómosóban mos-e, hogy hamar tiszta autóra van-e szüksége, hogy milyen messzire tekintsen előre a mosás utáni kilátás, az értesítési kapcsoló, valamint az, hogy megvásárolta-e a Hirdetések eltávolítása
 funkciót) és a legutóbbi előrejelzés kizárólag helyben, a készülékén
 tárolódnak, hogy az alkalmazás azonnal megnyíljon. Az alkalmazás törlésével
 ezek az adatok is törlődnek.</p>
@@ -152,7 +164,8 @@ adatait vagy számlázási adatait.</p>
 <h2>Mit kezelünk, miért és meddig</h2>
 <table>
 <tr><th>Adat</th><th>Cél</th><th>Ki kapja meg</th><th>Megőrzés</th></tr>
-<tr><td>Hozzávetőleges helyzet (koordináták)</td><td>Az Ön környékére vonatkozó időjárás-előrejelzés lekérése — enélkül az alkalmazás nem tudja megítélni az autómosáshoz való időjárást</td><td>WeatherAPI.com (közvetlenül a készülékéről)</td><td>Mi nem tároljuk. WeatherAPI.com: lásd a saját adatvédelmi tájékoztatóját</td></tr>
+<tr><td>Hozzávetőleges helyzet (koordináták) — vagy, ha a készüléke nem tudja megállapítani a helyzetét, az internetkapcsolata IP-címe</td><td>Az Ön környékére vonatkozó időjárás-előrejelzés lekérése — enélkül az alkalmazás nem tudja megítélni az autómosáshoz való időjárást</td><td>WeatherAPI.com (közvetlenül a készülékéről)</td><td>Mi nem tároljuk. WeatherAPI.com: lásd a saját adatvédelmi tájékoztatóját</td></tr>
+<tr><td>Hozzávetőleges helyzet (koordináták)</td><td>Az Ön városa vagy városrésze nevének megjelenítése</td><td>A készüléke geokódoló szolgáltatása: Apple (iOS) vagy Google (Android), közvetlenül a készülékéről</td><td>Mi nem tároljuk. Apple / Google: lásd a saját adatvédelmi szabályzatukat</td></tr>
 <tr><td>Eszközinformációk hirdetéshez (IP-cím, eszközazonosítók, érvénytelen forgalom jelzései, hirdetési interakciók, valamint diagnosztikai adatok, például összeomlások és az alkalmazás teljesítménye — ezek egyikét sem használjuk hirdetések személyre szabására vagy az Önről készített profilhoz)</td><td>Az ingyenes verzió egyetlen bannerhirdetésének megjelenítése „korlátozott hirdetések” módban, valamint a Google által az adott hirdetéshez végzett mérés és csalásmegelőzés</td><td>Google AdMob</td><td>Mi nem őrizzük meg. Google: lásd a saját adatvédelmi irányelveit</td></tr>
 <tr><td>Beállítások és a legutóbbi előrejelzés</td><td>Azonnali megnyitás a legutóbbi értékeléssel</td><td>Senki — a készülékén marad</td><td>Az alkalmazás törléséig</td></tr>
 <tr><td>Ütemezett mosási jelzések</td><td>Emlékeztetés az autómosásra alkalmas nap előtti estén, ha bekapcsolja a jelzéseket</td><td>Senki — a készüléke operációs rendszere ütemezi</td><td>Amíg meg nem szólalnak, ki nem kapcsolja a jelzéseket, vagy nem törli az alkalmazást</td></tr>
@@ -216,8 +229,10 @@ adatfeldolgozót nem bízunk meg; a WeatherAPI.com és a Google közvetlenül
 az Ön készülékéről kapja az adatokat, az Ön országán kívül, a saját
 szabályzataik szerint.</p>
 <p>A dél-koreai felhasználók számára a külföldre továbbított adatok részletei
-a következők: <strong>adatkör</strong> — a hozzávetőleges helyzet koordinátái
-(a WeatherAPI.com részére), valamint IP-cím, készülék- és hirdetési
+a következők: <strong>adatkör</strong> — a hozzávetőleges helyzet koordinátái,
+vagy az IP-cím, ha a készülék nem tudja megállapítani a helyzetét (a
+WeatherAPI.com részére), a hozzávetőleges helyzet koordinátái (a készülék
+geokódoló szolgáltatása, az Apple vagy a Google részére), valamint IP-cím, készülék- és hirdetési
 azonosítók és hirdetési interakciók (a Google részére); <strong>időpont és
 mód</strong> — abban a pillanatban, amikor megnyitja az alkalmazást, vagy az
 frissül, titkosított HTTPS-kapcsolaton keresztül; <strong>címzettek</strong> —
@@ -231,7 +246,8 @@ alkalmazás nem tud autómosási tanácsot adni), a hirdetéseket pedig
 a Hirdetések eltávolítása megvásárlásával teljesen megszüntetheti.</p>
 <p><strong>Kína (szárazföld).</strong> A koordinátáit a készüléke
 közvetlenül a WeatherAPI.com részére küldi, amely a szárazföldi Kínán
-kívüli szolgáltatás, kizárólag az előrejelzés lekérése céljából; a
+kívüli szolgáltatás, kizárólag az előrejelzés lekérése céljából, valamint a készüléke saját
+geokódoló szolgáltatásának a városa nevének megállapításához; a
 helymeghatározási engedély megadásával járul hozzá ehhez. Egyetlen
 felhasználó személyes adatát sem tároljuk. A személyes adatokkal
 kapcsolatos kérdéseket az alábbi címre küldheti.</p>

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">CarWash Day, von Ostapenko Studio · Gültig ab 13. September 2026</p>
+<p class="meta">CarWash Day, von Ostapenko Studio · Gültig ab 9. Oktober 2026</p>
 <p class="meta">Die <a href="../privacy.html">englische Fassung</a> ist die maßgebliche Version. Übersetzungen dienen nur der Orientierung; weicht eine Übersetzung ab, gilt die englische Fassung, soweit das örtliche Recht dies zulässt.</p>
 
 <p>CarWash Day ist eine einfache App: Sie liest die Wettervorhersage und beantwortet
@@ -107,14 +107,25 @@ Server — nichts, was Sie in der App tun, wird an uns gesendet.</p>
 Geräts aus. Ihre Koordinaten werden direkt von Ihrem Gerät an
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, einen
 Wetterdatendienst, gesendet — ausschließlich zu dem Zweck, die Vorhersage
-(Temperatur, Wind, Böen, Bewölkung,
-Regenwahrscheinlichkeit, Niederschlagsmenge, Sonnenauf- und -untergang)
+(Temperatur, Luftfeuchtigkeit, Wind, Böen, Bewölkung,
+Regenwahrscheinlichkeit, Niederschlagsmenge, Hinweise auf Schnee, Schneeregen
+und gefrierenden Regen, Wetterlage, Sonnenauf- und -untergang)
 abzurufen, aus der die Waschbedingungen für Ihre Gegend und der Ausblick
 auf die Stunden nach einer Wäsche ermittelt werden. Wie WeatherAPI.com Anfragen verarbeitet,
 beschreibt dessen eigene
-<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>. Der
-in der App angezeigte Orts- oder Stadtteilname wird auf Ihrem Gerät vom
-Geocoder des Betriebssystems ermittelt. Wir erhalten, speichern oder
+<a href="https://www.weatherapi.com/privacy.aspx">Datenschutzerklärung</a>.</p>
+<p>Wenn Sie den Standortzugriff erlaubt haben, Ihr Gerät seine Position aber
+nicht ermitteln kann (etwa ein Tablet ohne Standortbestimmung), bittet die App
+WeatherAPI.com stattdessen, die Vorhersage anhand der IP-Adresse Ihrer
+Internetverbindung zu verorten. In diesem Fall werden keine Koordinaten
+gesendet; WeatherAPI.com schätzt ein Gebiet anhand der Adresse, von der die
+Anfrage kommt. Wenn Sie die Standortberechtigung ablehnen, sendet die App
+nichts und zeigt keine Vorhersage an.</p>
+<p>Der in der App angezeigte Orts- oder Stadtteilname wird über den eigenen
+Geocoding-Dienst Ihres Geräts ermittelt — den von Apple unter iOS, den von
+Google unter Android —, der die Koordinaten dazu an diesen Anbieter sendet,
+nach dessen eigener Datenschutzerklärung. Die App sendet sie nirgendwo sonst
+hin. Wir erhalten, speichern oder
 protokollieren Ihren Standort nie, und die App verfolgt weder Ihre
 Bewegungen noch führt sie Standortabfragen im Hintergrund durch.</p>
 <p>Die App fragt ausschließlich den <em>ungefähren</em> Standort ab und
@@ -124,7 +135,7 @@ genaue Ortung. Nach manchen Rechtsordnungen, etwa dem kalifornischen, bedeutet
 genau; CarWash Day fragt das bewusst nicht ab.</p>
 
 <h2>Auf Ihrem Gerät gespeicherte Daten</h2>
-<p>Ihre Einstellungen (ob Sie zu Hause oder in einer Waschanlage waschen,
+<p>Ihre Einstellungen (ob Sie zu Hause oder in einer überdachten Waschanlage waschen,
 ob das Auto bald sauber sein muss, wie weit der Ausblick vorausschauen soll,
 der Schalter für Benachrichtigungen und ob Sie
 „Werbung entfernen“ gekauft haben) sowie die zuletzt geladene Vorhersage
@@ -161,7 +172,8 @@ Zahlungsdaten oder Ihre Rechnungsinformationen.</p>
 <h2>Was verarbeitet wird, warum und wie lange</h2>
 <table>
 <tr><th>Daten</th><th>Zweck</th><th>Wer sie erhält</th><th>Speicherdauer</th></tr>
-<tr><td>Ungefährer Standort (Koordinaten)</td><td>Abruf der Wettervorhersage für Ihre Gegend — ohne ihn kann die App das Waschwetter nicht einschätzen</td><td>WeatherAPI.com (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. WeatherAPI.com: siehe dessen Datenschutzerklärung</td></tr>
+<tr><td>Ungefährer Standort (Koordinaten) — oder, wenn Ihr Gerät seine Position nicht ermitteln kann, die IP-Adresse Ihrer Verbindung</td><td>Abruf der Wettervorhersage für Ihre Gegend — ohne ihn kann die App das Waschwetter nicht einschätzen</td><td>WeatherAPI.com (direkt von Ihrem Gerät)</td><td>Von uns nicht gespeichert. WeatherAPI.com: siehe dessen Datenschutzerklärung</td></tr>
+<tr><td>Ungefährer Standort (Koordinaten)</td><td>Anzeige des Namens Ihres Orts oder Stadtteils</td><td>Der Geocoding-Dienst Ihres Geräts: Apple (iOS) oder Google (Android), direkt von Ihrem Gerät</td><td>Von uns nicht gespeichert. Apple / Google: siehe deren Datenschutzerklärungen</td></tr>
 <tr><td>Geräteinformationen für Werbung (IP-Adresse, Gerätekennungen, Signale zu ungültigem Traffic, Interaktionen mit Anzeigen und Diagnosedaten wie Abstürze und App-Leistung — nichts davon wird zur Personalisierung von Anzeigen oder zur Profilbildung über Sie genutzt)</td><td>Ausliefern der einzelnen Banneranzeige in der kostenlosen Version im Modus „eingeschränkte Anzeigen“ sowie Googles Messung und Betrugsprävention für diese Anzeige</td><td>Google AdMob</td><td>Von uns nicht gehalten. Google: siehe dessen Datenschutzerklärung</td></tr>
 <tr><td>Einstellungen und die letzte Vorhersage</td><td>Sofortiges Öffnen mit Ihrer letzten Einschätzung</td><td>Niemand — bleibt auf Ihrem Gerät</td><td>Bis Sie die App löschen</td></tr>
 <tr><td>Geplante Waschhinweise</td><td>Erinnerung am Abend vor einem Tag, der sich zum Waschen eignet, wenn Sie die Hinweise einschalten</td><td>Niemand — vom Betriebssystem Ihres Geräts geplant</td><td>Bis sie ausgelöst werden, Sie die Hinweise ausschalten oder die App löschen</td></tr>
@@ -226,8 +238,10 @@ beauftragen keinen eigenen Auftragsverarbeiter im Ausland; WeatherAPI.com
 und Google erhalten Daten direkt von Ihrem Gerät, außerhalb Ihres Landes,
 unter ihren eigenen Richtlinien.</p>
 <p>Für Nutzer in Südkorea gelten für die ins Ausland übermittelten Daten
-folgende Angaben: <strong>Daten</strong> — ungefähre Standortkoordinaten (an
-WeatherAPI.com) sowie IP-Adresse, Geräte- und Werbekennungen und Interaktionen
+folgende Angaben: <strong>Daten</strong> — ungefähre Standortkoordinaten oder, wenn
+das Gerät seine Position nicht ermitteln kann, die IP-Adresse (an
+WeatherAPI.com), ungefähre Standortkoordinaten (an den Geocoding-Dienst des
+Geräts, Apple oder Google) sowie IP-Adresse, Geräte- und Werbekennungen und Interaktionen
 mit Anzeigen (an Google); <strong>Zeitpunkt und Art der Übermittlung</strong>
 — in dem Moment, in dem Sie die App öffnen oder sie die Daten aktualisiert,
 über eine verschlüsselte HTTPS-Verbindung; <strong>Empfänger</strong> —
@@ -242,7 +256,8 @@ und Sie können die Werbung mit dem Kauf von „Werbung entfernen“ vollständi
 entfernen.</p>
 <p><strong>China (Festland).</strong> Ihre Koordinaten werden von Ihrem Gerät
 direkt an WeatherAPI.com gesendet, einen Dienst außerhalb des chinesischen
-Festlands, ausschließlich zum Abruf der Vorhersage; mit der Erteilung der
+Festlands, ausschließlich zum Abruf der Vorhersage, sowie an den eigenen
+Geocoding-Dienst Ihres Geräts, um Ihren Ort zu benennen; mit der Erteilung der
 Standortberechtigung stimmen Sie dem zu. Wir halten keine personenbezogenen
 Daten irgendeines Nutzers. Fragen zu personenbezogenen Daten können an die
 unten stehende Adresse gerichtet werden.</p>

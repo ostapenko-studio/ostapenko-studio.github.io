@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politica de confidențialitate</h1>
-<p class="meta">CarWash Day, de Ostapenko Studio · În vigoare de la 13 septembrie 2026</p>
+<p class="meta">CarWash Day, de Ostapenko Studio · În vigoare de la 9 octombrie 2026</p>
 <p class="meta">Textul în limba engleză este versiunea canonică. Traducerile sunt oferite pentru comoditate; acolo unde o traducere diferă, se aplică <a href="../privacy.html">versiunea engleză</a>, în măsura permisă de legea locală.</p>
 
 <p>CarWash Day este o aplicație simplă: citește prognoza meteo și răspunde la două întrebări despre spălarea mașinii
@@ -108,15 +108,25 @@ trimis.</p>
 (cu precizie redusă) a dispozitivului. Coordonatele dumneavoastră sunt
 trimise direct de pe dispozitiv către
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, un serviciu de
-date meteo, cu unicul scop de a obține prognoza (temperatura, vântul,
-rafalele de vânt, nebulozitatea, șansele de ploaie, precipitațiile, răsăritul
+date meteo, cu unicul scop de a obține prognoza (temperatura, umiditatea, vântul,
+rafalele de vânt, nebulozitatea, șansele de ploaie, precipitațiile, semnalele
+de ninsoare, lapoviță și ploaie înghețată, starea vremii, răsăritul
 și apusul soarelui) folosită pentru a determina condițiile de spălare din zona
 dumneavoastră și perspectiva pentru orele de după o spălare.
 Modul în care WeatherAPI.com gestionează cererile este descris în propria sa
-<a href="https://www.weatherapi.com/privacy.aspx">politică de confidențialitate</a>. Numele
-orașului sau al cartierului afișat în aplicație este determinat pe
-dispozitivul dumneavoastră, de geocodificatorul propriu al sistemului de
-operare. Nu primim, nu stocăm și nu înregistrăm niciodată locația
+<a href="https://www.weatherapi.com/privacy.aspx">politică de confidențialitate</a>.</p>
+<p>Dacă ați permis accesul la locație, dar dispozitivul dumneavoastră nu își
+poate determina poziția (ca în cazul unei tablete fără poziționare),
+aplicația îi cere în schimb serviciului WeatherAPI.com să stabilească locul
+prognozei după adresa IP a conexiunii dumneavoastră la internet. În acest caz
+nu se trimit coordonate; WeatherAPI.com estimează o zonă după adresa de la
+care vine cererea. Dacă refuzați permisiunea de localizare, aplicația nu
+trimite nimic și nu afișează nicio prognoză.</p>
+<p>Numele orașului sau al cartierului afișat în aplicație este căutat prin
+serviciul de geocodificare propriu al dispozitivului dumneavoastră — cel al
+Apple pe iOS, cel al Google pe Android —, care trimite coordonatele către
+acel furnizor pentru a le rezolva, conform propriei sale politici de
+confidențialitate. Aplicația nu le trimite nicăieri altundeva. Nu primim, nu stocăm și nu înregistrăm niciodată locația
 dumneavoastră, iar aplicația nu vă urmărește deplasările și nu verifică
 locația în fundal.</p>
 <p>Aplicația solicită doar locația <em>aproximativă</em> și cere cea mai
@@ -127,7 +137,7 @@ de picioare; CarWash Day nu solicită în mod deliberat acest lucru.</p>
 
 <h2>Date stocate pe dispozitivul dumneavoastră</h2>
 <p>Setările dumneavoastră (dacă spălați mașina acasă sau la o spălătorie
-auto, dacă aveți nevoie de mașina curată cât mai repede, cât de departe
+auto acoperită, dacă aveți nevoie de mașina curată cât mai repede, cât de departe
 trebuie să privească perspectiva de după spălare, comutatorul de alerte și dacă ați achiziționat „Elimină reclamele”) și cea mai recentă prognoză sunt stocate exclusiv local, pe
 dispozitivul dumneavoastră, astfel încât aplicația să se deschidă
 instantaneu. Ștergerea aplicației șterge aceste date.</p>
@@ -163,7 +173,8 @@ sau informațiile de facturare ale dumneavoastră.</p>
 <h2>Ce este prelucrat, de ce și pentru cât timp</h2>
 <table>
 <tr><th>Date</th><th>Scop</th><th>Cine le primește</th><th>Păstrare</th></tr>
-<tr><td>Locația aproximativă (coordonate)</td><td>Obținerea prognozei meteo pentru zona dumneavoastră — aplicația nu poate aprecia vremea de spălat fără ea</td><td>WeatherAPI.com (direct de pe dispozitivul dumneavoastră)</td><td>Nu sunt stocate de noi. WeatherAPI.com: consultați politica sa de confidențialitate</td></tr>
+<tr><td>Locația aproximativă (coordonate) — sau, când dispozitivul dumneavoastră nu își poate determina poziția, adresa IP a conexiunii dumneavoastră</td><td>Obținerea prognozei meteo pentru zona dumneavoastră — aplicația nu poate aprecia vremea de spălat fără ea</td><td>WeatherAPI.com (direct de pe dispozitivul dumneavoastră)</td><td>Nu sunt stocate de noi. WeatherAPI.com: consultați politica sa de confidențialitate</td></tr>
+<tr><td>Locația aproximativă (coordonate)</td><td>Afișarea numelui orașului sau al cartierului dumneavoastră</td><td>Serviciul de geocodificare al dispozitivului dumneavoastră: Apple (iOS) sau Google (Android), direct de pe dispozitivul dumneavoastră</td><td>Nu sunt stocate de noi. Apple / Google: consultați politicile lor de confidențialitate</td></tr>
 <tr><td>Informații despre dispozitiv pentru publicitate (adresă IP, identificatori de dispozitiv, semnale de trafic nevalid, interacțiuni cu anunțul și date de diagnosticare, cum ar fi blocările și performanța aplicației — niciuna dintre acestea nu este folosită pentru personalizarea anunțurilor sau pentru crearea unui profil al dumneavoastră)</td><td>Difuzarea singurului banner din versiunea gratuită, în modul „anunțuri limitate”, precum și măsurarea și prevenirea fraudei de către Google pentru acest anunț</td><td>Google AdMob</td><td>Nu sunt păstrate de noi. Google: vezi politica sa de confidențialitate</td></tr>
 <tr><td>Setările și cea mai recentă prognoză</td><td>Deschiderea instantanee cu ultimul verdict</td><td>Nimeni — rămân pe dispozitivul dumneavoastră</td><td>Până când ștergeți aplicația</td></tr>
 <tr><td>Alertele programate pentru spălat</td><td>Vă amintește în seara dinaintea unei zile potrivite pentru spălat, dacă activați alertele</td><td>Nimeni — sunt programate de sistemul de operare al dispozitivului dumneavoastră</td><td>Până când se declanșează, până când opriți alertele sau până când ștergeți aplicația</td></tr>
@@ -232,7 +243,9 @@ dumneavoastră, în afara țării dumneavoastră, în temeiul propriilor
 politici.</p>
 <p>Pentru utilizatorii din Coreea de Sud, detaliile datelor trimise în
 străinătate sunt: <strong>datele</strong> — coordonatele aproximative de
-locație (către WeatherAPI.com), precum și adresa IP, identificatorii
+locație sau adresa IP, când dispozitivul nu își poate determina poziția
+(către WeatherAPI.com), coordonatele aproximative de locație (către serviciul
+de geocodificare al dispozitivului, Apple sau Google), precum și adresa IP, identificatorii
 dispozitivului și cei publicitari și interacțiunile cu reclamele (către
 Google); <strong>când și cum</strong> — în momentul în care deschideți
 aplicația sau aceasta se actualizează, printr-o conexiune HTTPS criptată;
@@ -247,7 +260,8 @@ achiziționând „Elimină reclamele”.</p>
 <p><strong>China (continentală).</strong> Coordonatele dumneavoastră sunt
 trimise de dispozitivul dumneavoastră direct către WeatherAPI.com, un
 serviciu situat în afara Chinei continentale, exclusiv pentru a obține
-prognoza; acordarea permisiunii de localizare este modul în care vă exprimați
+prognoza, precum și către serviciul de geocodificare propriu al
+dispozitivului dumneavoastră, pentru a denumi orașul; acordarea permisiunii de localizare este modul în care vă exprimați
 acordul pentru acest lucru. Nu deținem informații personale ale niciunui
 utilizator. Întrebările privind informațiile personale pot fi trimise la
 adresa de mai jos.</p>

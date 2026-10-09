@@ -92,7 +92,7 @@
 <body>
 
 <h1>Patakaran sa Privacy</h1>
-<p class="meta">CarWash Day, ng Ostapenko Studio · May bisa mula 13 Setyembre 2026</p>
+<p class="meta">CarWash Day, ng Ostapenko Studio · May bisa mula 9 Oktubre 2026</p>
 <p class="meta">Ang <a href="../privacy.html">tekstong Ingles</a> ang opisyal na bersyon. Ang mga salin ay ibinibigay para sa kaginhawahan; kung may pagkakaiba ang salin, ang bersyong Ingles ang iiral hangga’t pinapayagan ng lokal na batas.</p>
 
 <p>Simpleng app ang CarWash Day: binabasa nito ang forecast ng panahon at sinasagot ang dalawang tanong tungkol sa paghuhugas ng kotse mo — kung magandang oras ba ngayon, at kung sulit ba ito batay sa panahon pagkatapos. Ginawa ito para mangolekta ng pinakakaunting datos hangga’t maaari.
@@ -103,11 +103,21 @@ pinapatakbong server — walang ginagawa mo sa app ang ipinapadala sa amin.</p>
 <p>Sa pahintulot mo, binabasa ng app ang tinatayang (coarse) lokasyon ng
 device mo. Ang coordinates mo ay ipinapadala nang direkta mula sa device mo
 papunta sa <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, isang
-serbisyo ng datos ng panahon, para lamang kunin ang forecast (temperatura, hangin, mga bugso ng hangin, ulap, tsansa ng ulan, dami ng ulan, pagsikat at paglubog ng araw) na ginagamit sa pagtantiya ng kondisyon para sa paghuhugas sa lugar mo, at ng tanaw para sa mga oras pagkatapos maghugas. Ang paghawak ng
+serbisyo ng datos ng panahon, para lamang kunin ang forecast (temperatura, halumigmig, hangin, mga bugso ng hangin, ulap, tsansa ng ulan, dami ng ulan, mga senyales ng niyebe, sleet at nagyeyelong ulan, ang kondisyon ng panahon, pagsikat at paglubog ng araw) na ginagamit sa pagtantiya ng kondisyon para sa paghuhugas sa lugar mo, at ng tanaw para sa mga oras pagkatapos maghugas. Ang paghawak ng
 WeatherAPI.com sa mga request ay inilalarawan sa sarili nitong
-<a href="https://www.weatherapi.com/privacy.aspx">patakaran sa privacy</a>.
-Ang pangalan ng bayan o lugar na ipinapakita sa app ay tinutukoy sa device mo
-ng sariling geocoder ng operating system. Hindi namin kailanman natatanggap,
+<a href="https://www.weatherapi.com/privacy.aspx">patakaran sa privacy</a>.</p>
+<p>Kung pinayagan mo ang lokasyon pero hindi mahanap ng device mo ang posisyon
+nito (gaya ng sa tablet na walang location fix), hihilingin ng app sa
+WeatherAPI.com na tukuyin ang lugar ng forecast mula sa IP address ng koneksyon
+mo sa internet. Walang coordinates na ipinapadala sa ganoong kaso; tinatantiya
+ng WeatherAPI.com ang isang lugar mula sa address na pinanggalingan ng request.
+Kung tatanggihan mo ang pahintulot sa lokasyon, walang ipinapadala ang app at
+walang forecast na ipinapakita.</p>
+<p>Ang pangalan ng bayan o lugar na ipinapakita sa app ay hinahanap sa
+pamamagitan ng sariling geocoding service ng device mo — ang sa Apple sa iOS,
+ang sa Google sa Android — na nagpapadala ng coordinates sa provider na iyon
+para matukoy ang pangalan, sa ilalim ng sarili nitong patakaran sa privacy.
+Hindi ipinapadala ng app ang mga ito saanman bukod doon. Hindi namin kailanman natatanggap,
 iniimbak, o nire-record ang lokasyon mo, at hindi sinusubaybayan ng app ang
 mga galaw mo o nagche-check ng lokasyon sa background.</p>
 <p>Ang app ay humihingi lamang ng <em>tinatayang</em> lokasyon at ng
@@ -117,7 +127,7 @@ geolocation" ay nangangahulugang matukoy ang isang tao sa loob ng humigit-
 kumulang 1,850 talampakan; sadyang hindi ito hinihingi ng CarWash Day.</p>
 
 <h2>Datos na nakaimbak sa device mo</h2>
-<p>Ang mga setting mo (kung sa bahay ka naghuhugas o sa carwash, kung kailangan mong malinis agad ang kotse, kung gaano kalayo ang tanaw pagkatapos maghugas, ang switch ng alerts, at kung nabili mo
+<p>Ang mga setting mo (kung sa bahay ka naghuhugas o sa carwash na may bubong, kung kailangan mong malinis agad ang kotse, kung gaano kalayo ang tanaw pagkatapos maghugas, ang switch ng alerts, at kung nabili mo
 na ang Alisin ang mga ad) at ang pinakabagong forecast ay nakaimbak lamang sa
 device mo, para agad na bumukas ang app. Ang pag-delete ng app ay
 nagbubura ng datos na ito.</p>
@@ -150,7 +160,8 @@ mo, mga detalye ng pagbabayad, o impormasyon sa billing.</p>
 <h2>Ano ang pinoproseso, bakit, at gaano katagal</h2>
 <table>
 <tr><th>Datos</th><th>Layunin</th><th>Sino ang tumatanggap</th><th>Pag-iimbak</th></tr>
-<tr><td>Tinatayang lokasyon (coordinates)</td><td>Pagkuha ng forecast ng panahon para sa lugar mo — hindi matatasa ng app ang panahon para sa paghuhugas nang wala ito</td><td>WeatherAPI.com (direkta mula sa device mo)</td><td>Hindi iniimbak namin. WeatherAPI.com: tingnan ang patakaran nito sa privacy</td></tr>
+<tr><td>Tinatayang lokasyon (coordinates) — o, kapag hindi mahanap ng device mo ang posisyon nito, ang IP address ng koneksyon mo</td><td>Pagkuha ng forecast ng panahon para sa lugar mo — hindi matatasa ng app ang panahon para sa paghuhugas nang wala ito</td><td>WeatherAPI.com (direkta mula sa device mo)</td><td>Hindi iniimbak namin. WeatherAPI.com: tingnan ang patakaran nito sa privacy</td></tr>
+<tr><td>Tinatayang lokasyon (coordinates)</td><td>Pagpapakita ng pangalan ng bayan o lugar mo</td><td>Ang geocoding service ng device mo: Apple (iOS) o Google (Android), direkta mula sa device mo</td><td>Hindi iniimbak namin. Apple / Google: tingnan ang kanilang mga patakaran sa privacy</td></tr>
 <tr><td>Impormasyon ng device para sa advertising (IP address, mga device identifier, mga senyas ng invalid na trapiko, pakikipag-ugnayan sa ad, at diagnostic data gaya ng mga crash at performance ng app — wala rito ang ginagamit upang i-personalize ang mga ad o gumawa ng profile mo)</td><td>Paghahatid ng nag-iisang banner ad sa libreng bersyon, sa «limitadong mga ad» na mode, at ang pagsukat at pag-iwas sa panloloko ng Google para sa ad na iyon</td><td>Google AdMob</td><td>Hindi hawak namin. Google: tingnan ang patakaran nito sa privacy</td></tr>
 <tr><td>Mga setting at ang pinakabagong forecast</td><td>Agad na pagbukas sa huling resulta mo</td><td>Walang sinuman — nananatili sa device mo</td><td>Hanggang i-delete mo ang app</td></tr>
 <tr><td>Mga naka-iskedyul na alerts sa araw ng paghuhugas</td><td>Pagpapaalala sa gabi bago ang araw na bagay sa paghuhugas, kung i-o-on mo ang alerts</td><td>Walang sinuman — iskinedyul ng operating system ng device mo</td><td>Hanggang tumunog ang mga ito, i-off mo ang alerts, o i-delete mo ang app</td></tr>
@@ -213,8 +224,10 @@ panahon ng pag-iimbak. Wala kaming itinatalagang sariling overseas processor;
 direktang tumatanggap ng datos ang WeatherAPI.com at Google mula sa device mo,
 sa labas ng bansa mo, sa ilalim ng sarili nilang mga patakaran.</p>
 <p>Para sa mga user sa South Korea, ito ang mga detalye ng datos na ipinapadala
-sa ibang bansa: <strong>mga item</strong> — tinatayang coordinates ng lokasyon
-(sa WeatherAPI.com), at IP address, mga device at advertising identifier at
+sa ibang bansa: <strong>mga item</strong> — tinatayang coordinates ng lokasyon,
+o ang IP address kapag hindi mahanap ng device ang posisyon nito (sa
+WeatherAPI.com), tinatayang coordinates ng lokasyon (sa geocoding service ng
+device, Apple o Google), at IP address, mga device at advertising identifier at
 mga interaksyon sa ad (sa Google); <strong>kailan at paano</strong> — sa
 sandaling buksan mo ang app o mag-refresh ito, sa pamamagitan ng naka-encrypt
 na koneksyong HTTPS; <strong>mga tumatanggap</strong> — WeatherAPI.com (United
@@ -227,7 +240,8 @@ anumang oras sa mga setting ng device mo (hindi na makapagbibigay ng payo sa pag
 ng pagbili ng Alisin ang mga ad.</p>
 <p><strong>China (mainland).</strong> Ang coordinates mo ay ipinapadala ng
 device mo nang direkta sa WeatherAPI.com, isang serbisyo sa labas ng mainland
-China, para lamang kunin ang forecast; ang pagbibigay mo ng pahintulot sa
+China, para lamang kunin ang forecast, at sa sariling geocoding service ng device mo
+para pangalanan ang bayan mo; ang pagbibigay mo ng pahintulot sa
 lokasyon ang paraan ng pagsang-ayon mo roon. Wala kaming hawak na personal na
 impormasyon ng sinumang user. Ang mga tanong tungkol sa personal na
 impormasyon ay maaaring ipadala sa address sa ibaba.</p>

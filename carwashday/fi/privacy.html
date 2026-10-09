@@ -92,7 +92,7 @@
 <body>
 
 <h1>Tietosuojakäytäntö</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Voimassa 13. syyskuuta 2026 alkaen</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Voimassa 9. lokakuuta 2026 alkaen</p>
 <p class="meta">Englanninkielinen teksti on virallinen versio. Käännökset tarjotaan käytön helpottamiseksi; jos käännös poikkeaa siitä, <a href="../privacy.html">englanninkielinen versio</a> pätee paikallisen lain sallimissa rajoissa.</p>
 
 <p>CarWash Day on yksinkertainen sovellus: se lukee sääennusteen ja vastaa kahteen auton pesua koskevaan kysymykseen — onko nyt hyvä hetki ja kannattaako pesu, kun ottaa huomioon sen jälkeisen sään. Se on rakennettu keräämään
@@ -104,14 +104,23 @@ sovelluksessa, ei lähetetä meille.</p>
 <p>Luvallasi sovellus lukee laitteesi likimääräisen (karkean) sijainnin.
 Koordinaattisi lähetetään suoraan laitteeltasi säätietopalvelu
 <a href="https://www.weatherapi.com/">WeatherAPI.comiin</a> ainoana
-tarkoituksena hakea sääennuste (lämpötila, tuuli,
-puuskat, pilvisyys, sateen todennäköisyys, sademäärä sekä auringonnousu ja
--lasku), jonka perusteella päätellään alueesi pesuolosuhteet ja pesun jälkeisten tuntien näkymät.
+tarkoituksena hakea sääennuste (lämpötila, ilmankosteus,
+tuuli, puuskat, pilvisyys, sateen todennäköisyys, sademäärä, lumen, räntäsateen
+ja jäätävän sateen merkit, sääolot sekä auringonnousu ja -lasku), jonka perusteella päätellään alueesi pesuolosuhteet ja pesun jälkeisten tuntien näkymät.
 WeatherAPI.comin tapa käsitellä
 pyyntöjä on kuvattu sen omassa
-<a href="https://www.weatherapi.com/privacy.aspx">tietosuojakäytännössä</a>.
-Sovelluksessa näkyvä paikkakunnan tai kaupunginosan nimi selvitetään
-laitteellasi käyttöjärjestelmän omalla geokoodauksella. Me emme koskaan
+<a href="https://www.weatherapi.com/privacy.aspx">tietosuojakäytännössä</a>.</p>
+<p>Jos olet sallinut sijainnin, mutta laitteesi ei löydä sijaintiaan (kuten
+tabletilla, jolla ei ole sijaintitietoa), sovellus pyytää WeatherAPI.comia
+sijoittamaan ennusteen sen sijaan internetyhteytesi IP-osoitteen perusteella.
+Silloin koordinaatteja ei lähetetä; WeatherAPI.com arvioi alueen sen osoitteen
+perusteella, josta pyyntö tulee. Jos kieltäydyt sijaintiluvasta, sovellus ei
+lähetä mitään eikä näytä ennustetta.</p>
+<p>Sovelluksessa näkyvä paikkakunnan tai kaupunginosan nimi haetaan laitteesi
+oman geokoodauspalvelun kautta — iOS:ssä Applen, Androidissa Googlen — joka
+lähettää koordinaatit kyseiselle palveluntarjoajalle nimen selvittämiseksi
+tämän oman tietosuojakäytännön mukaisesti. Sovellus ei lähetä niitä minnekään
+muualle. Me emme koskaan
 vastaanota, tallenna tai kirjaa sijaintiasi, eikä sovellus seuraa
 liikkeitäsi tai tee sijaintitarkistuksia taustalla.</p>
 <p>Sovellus pyytää vain <em>likimääräistä</em> sijaintia ja pyytää sitä
@@ -121,7 +130,7 @@ sijainti" tarkoittaa henkilön paikantamista noin 1 850 jalan säteellä;
 CarWash Day ei tarkoituksella pyydä sitä.</p>
 
 <h2>Laitteellesi tallennettavat tiedot</h2>
-<p>Asetuksesi (pesetkö kotona vai autopesulassa, tarvitsetko auton pian puhtaaksi, kuinka kauas eteenpäin pesun jälkeinen ennuste katsoo, ilmoituskytkin ja
+<p>Asetuksesi (pesetkö kotona vai katetussa autopesulassa, tarvitsetko auton pian puhtaaksi, kuinka kauas eteenpäin pesun jälkeinen ennuste katsoo, ilmoituskytkin ja
 tieto siitä, oletko ostanut Poista mainokset -ostoksen) sekä viimeisin
 ennuste tallennetaan vain paikallisesti laitteellesi, jotta sovellus
 avautuu heti. Sovelluksen poistaminen poistaa nämä tiedot.</p>
@@ -155,7 +164,8 @@ laskutustietojasi.</p>
 <h2>Mitä käsitellään, miksi ja kuinka kauan</h2>
 <table>
 <tr><th>Tiedot</th><th>Tarkoitus</th><th>Vastaanottaja</th><th>Säilytys</th></tr>
-<tr><td>Likimääräinen sijainti (koordinaatit)</td><td>Alueesi sääennusteen hakeminen — sovellus ei voi arvioida pesusäätä ilman sitä</td><td>WeatherAPI.com (suoraan laitteeltasi)</td><td>Me emme tallenna. WeatherAPI.com: ks. sen tietosuojakäytäntö</td></tr>
+<tr><td>Likimääräinen sijainti (koordinaatit) — tai, jos laitteesi ei löydä sijaintiaan, yhteytesi IP-osoite</td><td>Alueesi sääennusteen hakeminen — sovellus ei voi arvioida pesusäätä ilman sitä</td><td>WeatherAPI.com (suoraan laitteeltasi)</td><td>Me emme tallenna. WeatherAPI.com: ks. sen tietosuojakäytäntö</td></tr>
+<tr><td>Likimääräinen sijainti (koordinaatit)</td><td>Paikkakuntasi tai kaupunginosasi nimen näyttäminen</td><td>Laitteesi geokoodauspalvelu: Apple (iOS) tai Google (Android), suoraan laitteeltasi</td><td>Me emme tallenna. Apple / Google: ks. niiden tietosuojakäytännöt</td></tr>
 <tr><td>Laitetiedot mainontaa varten (IP-osoite, laitetunnisteet, virheellisen liikenteen signaalit, mainosvuorovaikutukset sekä diagnostiikkatiedot, kuten kaatumiset ja sovelluksen suorituskyky — mitään näistä ei käytetä mainosten personointiin eikä profiilin luomiseen sinusta)</td><td>Ilmaisversion yhden bannerimainoksen näyttäminen ”rajoitetut mainokset” -tilassa sekä Googlen suorittama kyseisen mainoksen mittaus ja petosten torjunta</td><td>Google AdMob</td><td>Me emme säilytä. Google: ks. sen tietosuojakäytäntö</td></tr>
 <tr><td>Asetukset ja viimeisin ennuste</td><td>Avautuminen heti viimeisimpään arvioon</td><td>Ei kukaan — pysyy laitteellasi</td><td>Kunnes poistat sovelluksen</td></tr>
 <tr><td>Ajastetut pesuilmoitukset</td><td>Muistutus edellisenä iltana ennen pesuun sopivaa päivää, jos otat ilmoitukset käyttöön</td><td>Ei kukaan — ajastaa laitteesi käyttöjärjestelmä</td><td>Kunnes ne laukeavat, otat ilmoitukset pois päältä tai poistat sovelluksen</td></tr>
@@ -219,7 +229,9 @@ Google vastaanottavat tiedot suoraan laitteeltasi, oman maasi ulkopuolella,
 omien käytäntöjensä mukaisesti.</p>
 <p>Etelä-Koreassa oleville käyttäjille ulkomaille lähetettävien tietojen
 tiedot ovat seuraavat: <strong>tiedot</strong> — likimääräiset
-sijaintikoordinaatit (WeatherAPI.comiin) sekä IP-osoite, laite- ja
+sijaintikoordinaatit tai IP-osoite, jos laite ei löydä sijaintiaan
+(WeatherAPI.comiin), likimääräiset sijaintikoordinaatit (laitteen
+geokoodauspalveluun, Applelle tai Googlelle) sekä IP-osoite, laite- ja
 mainostunnisteet ja mainosten käyttö (Googlelle); <strong>ajankohta ja
 tapa</strong> — sillä hetkellä, kun avaat sovelluksen tai se päivittää
 tiedot, salatun HTTPS-yhteyden yli; <strong>vastaanottajat</strong> —
@@ -233,7 +245,8 @@ sovellus ei voi antaa pesuneuvoja), ja voit poistaa mainonnan
 kokonaan ostamalla Poista mainokset -ostoksen.</p>
 <p><strong>Manner-Kiina.</strong> Laitteesi lähettää koordinaattisi suoraan
 WeatherAPI.comiin, joka on Manner-Kiinan ulkopuolella oleva palvelu, ainoana
-tarkoituksena hakea sääennuste; sijaintiluvan myöntäminen on tapa, jolla
+tarkoituksena hakea sääennuste, sekä laitteesi omaan geokoodauspalveluun
+paikkakuntasi nimeämiseksi; sijaintiluvan myöntäminen on tapa, jolla
 hyväksyt tämän. Meillä ei ole hallussamme kenenkään käyttäjän
 henkilötietoja. Henkilötietoja koskevat kysymykset voi lähettää alla olevaan
 osoitteeseen.</p>

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Gizlilik Politikası</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Yürürlük tarihi 13 Eylül 2026</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Yürürlük tarihi 9 Ekim 2026</p>
 <p class="meta">Bu metnin <a href="../privacy.html">İngilizce sürümü</a> esas (asıl) sürümdür. Çeviriler kolaylık sağlamak için sunulur; bir çeviri farklılık gösterdiğinde, yerel hukukun izin verdiği ölçüde İngilizce sürüm geçerlidir.</p>
 
 <p>CarWash Day basit bir uygulamadır: hava durumu tahminini okur ve
@@ -106,16 +106,26 @@ gönderilmez.</p>
 <p>İzninle, uygulama cihazının yaklaşık (kaba) konumunu okur.
 Koordinatların, bölgendeki yıkama koşullarını ve bir yıkamadan sonraki
 saatlerin görünümünü hesaplamakta kullanılan hava durumu tahminini (sıcaklık,
-rüzgâr, rüzgâr hamleleri, bulutluluk, yağış olasılığı, yağış miktarı, gün
+nem, rüzgâr, rüzgâr hamleleri, bulutluluk, yağış olasılığı, yağış miktarı,
+kar, karla karışık yağmur ve donan yağmur sinyalleri, hava durumu koşulu, gün
 doğumu ve gün batımı) almak
 amacıyla ve yalnızca bu amaçla, doğrudan
 cihazından bir hava durumu veri servisi olan
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>’a gönderilir.
 WeatherAPI.com’un istekleri nasıl işlediği kendi
 <a href="https://www.weatherapi.com/privacy.aspx">gizlilik politikasında</a>
-açıklanmıştır. Uygulamada gösterilen şehir ya da semt adı, işletim
-sisteminin kendi coğrafi kodlayıcısı tarafından cihazında çözümlenir.
-Konumunu asla almayız, saklamayız ya da kaydetmeyiz; uygulama
+açıklanmıştır.</p>
+<p>Konum iznini verdiysen ama cihazın konumunu bulamıyorsa (örneğin konum
+tespiti yapamayan bir tablette), uygulama bunun yerine WeatherAPI.com’dan
+tahmini internet bağlantının IP adresine göre konumlandırmasını ister. Bu
+durumda hiçbir koordinat gönderilmez; WeatherAPI.com, isteğin geldiği
+adresten bir bölge tahmin eder. Konum iznini reddedersen uygulama hiçbir şey
+göndermez ve tahmin göstermez.</p>
+<p>Uygulamada gösterilen şehir ya da semt adı, cihazının kendi coğrafi
+kodlama hizmeti aracılığıyla bulunur — iOS’ta Apple’ınki, Android’de
+Google’ınki — ve bu hizmet, koordinatları çözümlemek için kendi gizlilik
+politikası kapsamında o sağlayıcıya gönderir. Uygulama bunları başka hiçbir
+yere göndermez. Konumunu asla almayız, saklamayız ya da kaydetmeyiz; uygulama
 hareketlerini izlemez ve arka planda konum kontrolü yapmaz.</p>
 <p>Uygulama yalnızca <em>yaklaşık</em> konum ister ve işletim sisteminin
 sunduğu en düşük doğruluk düzeyini talep eder — kesin bir konum tespiti
@@ -125,7 +135,7 @@ konumlandırılması anlamına gelir;
 CarWash Day bunu bilerek istemez.</p>
 
 <h2>Cihazında saklanan veriler</h2>
-<p>Ayarların (arabanı evde mi yoksa oto yıkamada mı yıkadığın, arabanın
+<p>Ayarların (arabanı evde mi yoksa üstü kapalı oto yıkamada mı yıkadığın, arabanın
 yakında temiz olmasına ihtiyaç duyup duymadığın, yıkama sonrası görünümün ne
 kadar ileriye bakacağı, uyarı anahtarı
 ve «Reklamları kaldır» ürününü satın alıp almadığın) ile en son tahmin,
@@ -163,7 +173,8 @@ bilgilerini asla görmeyiz.</p>
 <h2>Ne işleniyor, neden ve ne kadar süreyle</h2>
 <table>
 <tr><th>Veri</th><th>Amaç</th><th>Kime gidiyor</th><th>Saklama süresi</th></tr>
-<tr><td>Yaklaşık konum (koordinatlar)</td><td>Bölgen için hava durumu tahmininin alınması — uygulama bu olmadan yıkama havasını değerlendiremez</td><td>WeatherAPI.com (doğrudan cihazından)</td><td>Bizde saklanmaz. WeatherAPI.com: kendi gizlilik politikasına bak</td></tr>
+<tr><td>Yaklaşık konum (koordinatlar) — ya da cihazın konumunu bulamadığında bağlantının IP adresi</td><td>Bölgen için hava durumu tahmininin alınması — uygulama bu olmadan yıkama havasını değerlendiremez</td><td>WeatherAPI.com (doğrudan cihazından)</td><td>Bizde saklanmaz. WeatherAPI.com: kendi gizlilik politikasına bak</td></tr>
+<tr><td>Yaklaşık konum (koordinatlar)</td><td>Şehrinin ya da semtinin adının gösterilmesi</td><td>Cihazının coğrafi kodlama hizmeti: Apple (iOS) ya da Google (Android), doğrudan cihazından</td><td>Bizde saklanmaz. Apple / Google: kendi gizlilik politikalarına bak</td></tr>
 <tr><td>Reklam için cihaz bilgileri (IP adresi, cihaz tanımlayıcıları, geçersiz trafik sinyalleri, reklam etkileşimleri ve çökmeler ile uygulama performansı gibi teşhis verileri — bunların hiçbiri reklamları kişiselleştirmek veya profilinizi oluşturmak için kullanılmaz)</td><td>Ücretsiz sürümdeki tek banner reklamın «sınırlı reklamlar» modunda sunulması ve Google'ın bu reklama yönelik ölçüm ve dolandırıcılık önleme işlemleri</td><td>Google AdMob</td><td>Bizde tutulmaz. Google: kendi gizlilik politikasına bakın</td></tr>
 <tr><td>Ayarlar ve en son tahmin</td><td>Son değerlendirmenle anında açılmak</td><td>Hiç kimse — cihazında kalır</td><td>Uygulamayı silene kadar</td></tr>
 <tr><td>Zamanlanmış yıkama uyarıları</td><td>Uyarıları açtıysan, yıkamaya uygun bir günden önceki akşam hatırlatmak</td><td>Hiç kimse — cihazının işletim sistemi tarafından zamanlanır</td><td>Uyarılar tetiklenene, sen uyarıları kapatana ya da uygulamayı silene kadar</td></tr>
@@ -230,7 +241,9 @@ yurt dışı bir veri işleyen atamıyoruz; WeatherAPI.com ve Google, verileri
 ülkenin dışında, kendi politikaları kapsamında doğrudan cihazından alır.</p>
 <p>Güney Kore’deki kullanıcılar için, yurt dışına gönderilen verilerin
 ayrıntıları şöyledir: <strong>aktarılan öğeler</strong> — yaklaşık konum
-koordinatları (WeatherAPI.com’a) ile IP adresi, cihaz ve reklam
+koordinatları ya da cihaz konumunu bulamadığında IP adresi (WeatherAPI.com’a),
+yaklaşık konum koordinatları (cihazın coğrafi kodlama hizmetine, Apple ya da
+Google) ile IP adresi, cihaz ve reklam
 tanımlayıcıları ve reklam etkileşimleri (Google’a); <strong>aktarımın
 zamanı ve yöntemi</strong> — uygulamayı açtığın ya da uygulama yenilendiği
 anda, şifreli bir HTTPS bağlantısı üzerinden; <strong>aktarılan
@@ -243,7 +256,8 @@ istediğin zaman cihaz ayarlarından reddedebilir ya da geri çekebilirsin (o
 durumda uygulama yıkama tavsiyesi veremez) ve «Reklamları kaldır» ürününü satın alarak reklamları tamamen kaldırabilirsin.</p>
 <p><strong>Çin (anakara).</strong> Koordinatların, yalnızca tahmini almak
 amacıyla, cihazın tarafından doğrudan Çin anakarasının dışındaki bir
-hizmet olan WeatherAPI.com’a gönderilir; konum iznini vermen, buna onay
+hizmet olan WeatherAPI.com’a ve şehrinin adını bulmak için cihazının kendi
+coğrafi kodlama hizmetine gönderilir; konum iznini vermen, buna onay
 verme biçimindir. Hiçbir kullanıcının kişisel bilgisini tutmuyoruz. Kişisel
 bilgilerle ilgili sorular aşağıdaki adrese gönderilebilir.</p>
 <p><strong>Rusya.</strong> Rusya’da ya da başka bir yerde hiçbir

@@ -92,7 +92,7 @@
 <body>
 
 <h1>Polityka prywatności</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Obowiązuje od 13 września 2026</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Obowiązuje od 9 października 2026</p>
 <p class="meta">Wersją wiążącą jest <a href="../privacy.html">tekst angielski</a>. Tłumaczenia udostępniamy dla wygody; w razie rozbieżności obowiązuje wersja angielska w zakresie dozwolonym przez prawo lokalne.</p>
 
 <p>CarWash Day to prosta aplikacja: czyta prognozę pogody i odpowiada na dwa
@@ -106,14 +106,26 @@ w aplikacji, nie jest do nas wysyłane.</p>
 <p>Za Twoją zgodą aplikacja odczytuje przybliżoną (zgrubną) lokalizację
 urządzenia. Twoje współrzędne są wysyłane bezpośrednio z urządzenia do
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, serwisu danych
-pogodowych, wyłącznie w celu pobrania prognozy (temperatura, wiatr,
-porywy wiatru, zachmurzenie, szansa opadów, opady, wschód i zachód słońca)
+pogodowych, wyłącznie w celu pobrania prognozy (temperatura, wilgotność,
+wiatr, porywy wiatru, zachmurzenie, szansa opadów, opady, sygnały śniegu,
+deszczu ze śniegiem i marznącego deszczu, rodzaj pogody, wschód i zachód
+słońca)
 używanej do oceny warunków do mycia w Twojej okolicy oraz prognozy na godziny
 po myciu. Sposób, w jaki WeatherAPI.com
 obsługuje zapytania, opisuje jego własna
-<a href="https://www.weatherapi.com/privacy.aspx">polityka prywatności</a>. Nazwa
-miejscowości lub dzielnicy wyświetlana w aplikacji jest ustalana na Twoim
-urządzeniu przez geokoder systemu operacyjnego. Nigdy nie otrzymujemy, nie
+<a href="https://www.weatherapi.com/privacy.aspx">polityka prywatności</a>.</p>
+<p>Jeśli zezwolisz na dostęp do lokalizacji, ale Twoje urządzenie nie może
+ustalić swojego położenia (jak na tablecie bez namiaru lokalizacji), aplikacja
+prosi WeatherAPI.com o określenie miejsca prognozy na podstawie adresu IP
+Twojego połączenia internetowego. W takim przypadku nie są wysyłane żadne
+współrzędne; WeatherAPI.com szacuje obszar na podstawie adresu, z którego
+pochodzi zapytanie. Jeśli odmówisz uprawnienia do lokalizacji, aplikacja nic
+nie wysyła i nie wyświetla prognozy.</p>
+<p>Nazwa miejscowości lub dzielnicy wyświetlana w aplikacji jest ustalana za
+pośrednictwem własnej usługi geokodowania Twojego urządzenia — Apple na iOS,
+Google na Androidzie — która w tym celu wysyła współrzędne do tego dostawcy,
+zgodnie z jego własną polityką prywatności. Aplikacja nie wysyła ich nigdzie
+indziej. Nigdy nie otrzymujemy, nie
 przechowujemy ani nie rejestrujemy Twojej lokalizacji, a aplikacja nie
 śledzi Twoich przemieszczeń i nie sprawdza lokalizacji w tle.</p>
 <p>Aplikacja prosi wyłącznie o <em>przybliżoną</em> lokalizację i żąda
@@ -123,7 +135,7 @@ namiaru. W świetle niektórych przepisów, na przykład kalifornijskich,
 do około 1850 stóp; CarWash Day celowo o to nie prosi.</p>
 
 <h2>Dane przechowywane na Twoim urządzeniu</h2>
-<p>Twoje ustawienia (to, czy myjesz samochód w domu, czy na myjni, czy
+<p>Twoje ustawienia (to, czy myjesz samochód w domu, czy w krytej myjni, czy
 samochód ma być czysty szybko, jak daleko naprzód ma sięgać prognoza po myciu,
 przełącznik powiadomień oraz informacja, czy kupiono „Usuń
 reklamy”) i ostatnia prognoza są przechowywane wyłącznie lokalnie na Twoim
@@ -159,7 +171,8 @@ danych płatniczych ani danych rozliczeniowych.</p>
 <h2>Co jest przetwarzane, w jakim celu i jak długo</h2>
 <table>
 <tr><th>Dane</th><th>Cel</th><th>Kto je otrzymuje</th><th>Okres przechowywania</th></tr>
-<tr><td>Przybliżona lokalizacja (współrzędne)</td><td>Pobranie prognozy pogody dla Twojej okolicy — bez niej aplikacja nie może ocenić pogody na mycie</td><td>WeatherAPI.com (bezpośrednio z Twojego urządzenia)</td><td>Nieprzechowywane przez nas. WeatherAPI.com: zob. jego politykę prywatności</td></tr>
+<tr><td>Przybliżona lokalizacja (współrzędne) — lub, gdy Twoje urządzenie nie może ustalić swojego położenia, adres IP Twojego połączenia</td><td>Pobranie prognozy pogody dla Twojej okolicy — bez niej aplikacja nie może ocenić pogody na mycie</td><td>WeatherAPI.com (bezpośrednio z Twojego urządzenia)</td><td>Nieprzechowywane przez nas. WeatherAPI.com: zob. jego politykę prywatności</td></tr>
+<tr><td>Przybliżona lokalizacja (współrzędne)</td><td>Wyświetlanie nazwy Twojej miejscowości lub dzielnicy</td><td>Usługa geokodowania Twojego urządzenia: Apple (iOS) lub Google (Android), bezpośrednio z Twojego urządzenia</td><td>Nieprzechowywane przez nas. Apple / Google: zob. ich polityki prywatności</td></tr>
 <tr><td>Informacje o urządzeniu na potrzeby reklam (adres IP, identyfikatory urządzenia, sygnały nieprawidłowego ruchu, interakcje z reklamą oraz dane diagnostyczne, takie jak awarie i wydajność aplikacji — nic z tego nie służy personalizacji reklam ani tworzeniu Twojego profilu)</td><td>Wyświetlanie jedynej reklamy banerowej w wersji darmowej w trybie „reklamy ograniczone” oraz prowadzone przez Google pomiary i zapobieganie oszustwom w odniesieniu do tej reklamy</td><td>Google AdMob</td><td>Nieprzechowywane przez nas. Google: zob. jego politykę prywatności</td></tr>
 <tr><td>Ustawienia i ostatnia prognoza</td><td>Natychmiastowe otwarcie na ostatnim werdykcie</td><td>Nikt — pozostają na Twoim urządzeniu</td><td>Do usunięcia aplikacji</td></tr>
 <tr><td>Zaplanowane powiadomienia o myciu</td><td>Przypomnienie wieczorem przed dniem odpowiednim na mycie, jeśli włączysz powiadomienia</td><td>Nikt — planuje je system operacyjny Twojego urządzenia</td><td>Do ich wyświetlenia, wyłączenia powiadomień lub usunięcia aplikacji</td></tr>
@@ -225,7 +238,9 @@ Google otrzymują dane bezpośrednio z Twojego urządzenia, poza Twoim krajem,
 na podstawie własnych polityk.</p>
 <p>W przypadku użytkowników w Korei Południowej szczegóły danych przesyłanych
 za granicę są następujące: <strong>zakres danych</strong> — współrzędne
-przybliżonej lokalizacji (do WeatherAPI.com) oraz adres IP, identyfikatory
+przybliżonej lokalizacji lub adres IP, gdy urządzenie nie może ustalić swojego
+położenia (do WeatherAPI.com), współrzędne przybliżonej lokalizacji (do usługi
+geokodowania urządzenia, Apple lub Google) oraz adres IP, identyfikatory
 urządzenia i identyfikatory reklamowe i interakcje z reklamami (do Google);
 <strong>termin i sposób</strong> — w chwili otwarcia aplikacji lub odświeżenia
 danych, szyfrowanym połączeniem HTTPS; <strong>odbiorcy</strong> —
@@ -239,7 +254,8 @@ urządzenia (aplikacja nie będzie wtedy mogła doradzać w sprawie mycia),
 a reklamy możesz usunąć całkowicie, kupując „Usuń reklamy”.</p>
 <p><strong>Chiny (kontynentalne).</strong> Twoje współrzędne są wysyłane przez
 Twoje urządzenie bezpośrednio do WeatherAPI.com, serwisu spoza Chin
-kontynentalnych, wyłącznie w celu pobrania prognozy; udzielenie uprawnienia
+kontynentalnych, wyłącznie w celu pobrania prognozy, oraz do własnej usługi geokodowania
+Twojego urządzenia w celu ustalenia nazwy Twojej miejscowości; udzielenie uprawnienia
 do lokalizacji jest sposobem, w jaki wyrażasz na to zgodę. Nie przechowujemy
 danych osobowych żadnego użytkownika. Pytania dotyczące danych osobowych
 można kierować na adres podany poniżej.</p>

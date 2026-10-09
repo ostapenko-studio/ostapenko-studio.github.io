@@ -92,7 +92,7 @@
 <body>
 
 <h1>Política de Privacidade</h1>
-<p class="meta">CarWash Day, por Ostapenko Studio · Em vigor desde 13 de setembro de 2026</p>
+<p class="meta">CarWash Day, por Ostapenko Studio · Em vigor desde 9 de outubro de 2026</p>
 <p class="meta">O texto em inglês (<a href="../privacy.html">../privacy.html</a>) é a versão canónica. As traduções são disponibilizadas por conveniência; em caso de divergência, prevalece a versão em inglês, na medida em que a lei local o permita.</p>
 
 <p>O CarWash Day é uma app simples: lê a previsão meteorológica e responde a
@@ -106,15 +106,13 @@ nos é enviado.</p>
 <p>Com a sua autorização, a app lê a localização aproximada do seu
 dispositivo. As suas coordenadas são enviadas diretamente do seu dispositivo
 para o <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, um serviço de
-dados meteorológicos, com a única finalidade de obter a previsão (temperatura,
-vento, rajadas, nebulosidade, probabilidade de
-chuva, quantidade de chuva, nascer e pôr do sol) usada para determinar as
+dados meteorológicos, com a única finalidade de obter a previsão (temperatura, humidade, vento, rajadas, nebulosidade, probabilidade de chuva, quantidade de chuva, sinais de neve, água-neve e chuva gelada, o estado do tempo, nascer e pôr do sol) usada para determinar as
 condições de lavagem na sua zona e a perspetiva para as horas depois de uma
 lavagem. O tratamento dos
 pedidos pelo WeatherAPI.com está descrito na sua própria
-<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>. O nome da
-localidade ou do bairro apresentado na app é determinado no seu dispositivo
-pelo geocodificador do próprio sistema operativo. Nunca recebemos, guardamos
+<a href="https://www.weatherapi.com/privacy.aspx">política de privacidade</a>.</p>
+<p>Se tiver permitido a localização, mas o seu dispositivo não conseguir determinar a posição (como num tablet sem localização disponível), a app pede ao WeatherAPI.com que situe a previsão a partir do endereço IP da sua ligação à internet. Nesse caso, não são enviadas coordenadas; o WeatherAPI.com estima uma zona a partir do endereço de onde provém o pedido. Se recusar a autorização de localização, a app não envia nada e não apresenta nenhuma previsão.</p>
+<p>O nome da localidade ou do bairro apresentado na app é obtido através do serviço de geocodificação do próprio dispositivo — o da Apple no iOS, o da Google no Android —, que envia as coordenadas a esse fornecedor para as determinar, ao abrigo da respetiva política de privacidade. A app não as envia para mais lado nenhum. Nunca recebemos, guardamos
 ou registamos a sua localização, e a app não segue as suas deslocações nem faz
 verificações de localização em segundo plano.</p>
 <p>A app pede apenas a localização <em>aproximada</em> e solicita a menor
@@ -124,7 +122,7 @@ localizar alguém num raio de cerca de 1850 pés; o CarWash Day não a pede,
 deliberadamente.</p>
 
 <h2>Dados guardados no seu dispositivo</h2>
-<p>As suas definições (se lava em casa ou numa lavagem comercial, se
+<p>As suas definições (se lava em casa ou num centro de lavagem coberto, se
 precisa do carro limpo em breve, até onde a perspetiva deve olhar, o
 interruptor dos alertas e se comprou Remover anúncios) e a
 previsão mais recente são guardadas apenas localmente no seu dispositivo,
@@ -158,7 +156,8 @@ pagamento nem as suas informações de faturação.</p>
 <h2>O que é tratado, porquê e durante quanto tempo</h2>
 <table>
 <tr><th>Dados</th><th>Finalidade</th><th>Quem os recebe</th><th>Conservação</th></tr>
-<tr><td>Localização aproximada (coordenadas)</td><td>Obter a previsão meteorológica para a sua zona — sem ela a app não consegue avaliar as condições de lavagem</td><td>WeatherAPI.com (diretamente do seu dispositivo)</td><td>Não guardada por nós. WeatherAPI.com: consulte a respetiva política de privacidade</td></tr>
+<tr><td>Localização aproximada (coordenadas) — ou, quando o seu dispositivo não consegue determinar a posição, o endereço IP da sua ligação</td><td>Obter a previsão meteorológica para a sua zona — sem ela a app não consegue avaliar as condições de lavagem</td><td>WeatherAPI.com (diretamente do seu dispositivo)</td><td>Não guardada por nós. WeatherAPI.com: consulte a respetiva política de privacidade</td></tr>
+<tr><td>Localização aproximada (coordenadas)</td><td>Mostrar o nome da sua localidade ou bairro</td><td>Serviço de geocodificação do seu dispositivo: Apple (iOS) ou Google (Android), diretamente do seu dispositivo</td><td>Não guardada por nós. Apple / Google: consulte as respetivas políticas de privacidade</td></tr>
 <tr><td>Informações do dispositivo para publicidade (endereço IP, identificadores do dispositivo, sinais de tráfego inválido, interações com o anúncio e dados de diagnóstico, como falhas e desempenho da aplicação — nada disso é utilizado para personalizar anúncios nem para criar um perfil seu)</td><td>Difundir o único banner da versão gratuita, no modo «anúncios limitados», e a medição e prevenção de fraude da Google para esse anúncio</td><td>Google AdMob</td><td>Não conservadas por nós. Google: consulte a respetiva política de privacidade</td></tr>
 <tr><td>Definições e a previsão mais recente</td><td>Abrir de imediato com o seu último veredicto</td><td>Ninguém — ficam no seu dispositivo</td><td>Até eliminar a app</td></tr>
 <tr><td>Alertas de lavagem agendados</td><td>Lembrá-lo na véspera de um dia adequado para lavar, se ativar os alertas</td><td>Ninguém — agendados pelo sistema operativo do seu dispositivo</td><td>Até dispararem, até desativar os alertas ou até eliminar a app</td></tr>
@@ -221,8 +220,7 @@ nomeamos nenhum subcontratante no estrangeiro por nossa conta; o
 WeatherAPI.com e a Google recebem os dados diretamente do seu dispositivo,
 fora do seu país, ao abrigo das suas próprias políticas.</p>
 <p>Para os utilizadores na Coreia do Sul, os detalhes dos dados enviados para o
-estrangeiro são: <strong>elementos</strong> — coordenadas de localização
-aproximada (para o WeatherAPI.com) e endereço IP, identificadores do
+estrangeiro são: <strong>elementos</strong> — coordenadas de localização aproximada, ou o endereço IP quando o dispositivo não consegue determinar a posição (para o WeatherAPI.com), coordenadas de localização aproximada (para o serviço de geocodificação do dispositivo, Apple ou Google) e endereço IP, identificadores do
 dispositivo e de publicidade e interações com anúncios (para a Google);
 <strong>quando e como</strong> — no momento em que abre a app ou esta se
 atualiza, através de uma ligação HTTPS encriptada; <strong>quem os
@@ -236,7 +234,7 @@ dispositivo (a app deixa então de conseguir dar conselhos de lavagem) e pode
 eliminar por completo a publicidade comprando Remover anúncios.</p>
 <p><strong>China (continental).</strong> As suas coordenadas são enviadas pelo
 seu dispositivo diretamente ao WeatherAPI.com, um serviço fora da China
-continental, apenas para obter a previsão; conceder a autorização de
+continental, apenas para obter a previsão, e ao serviço de geocodificação do próprio dispositivo para indicar o nome da sua localidade; conceder a autorização de
 localização é a forma de dar o seu acordo a isso. Não conservamos informações
 pessoais de nenhum utilizador. As questões sobre informações pessoais podem
 ser enviadas para o endereço abaixo.</p>

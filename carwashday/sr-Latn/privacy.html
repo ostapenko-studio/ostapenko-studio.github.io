@@ -92,7 +92,7 @@
 <body>
 
 <h1>Politika privatnosti</h1>
-<p class="meta">CarWash Day, Ostapenko Studio · Stupa na snagu 13. septembra 2026.</p>
+<p class="meta">CarWash Day, Ostapenko Studio · Stupa na snagu 9. oktobra 2026.</p>
 <p class="meta">Merodavna verzija je <a href="../privacy.html">izvorni engleski tekst</a>. Prevodi su dati radi lakšeg razumevanja; ako se prevod razlikuje, primenjuje se engleska verzija u meri u kojoj to dozvoljava lokalno pravo.</p>
 
 <p>CarWash Day je jednostavna aplikacija: čita vremensku prognozu i odgovara na dva pitanja o pranju vašeg automobila — da li je sada dobar trenutak i da li se isplati s obzirom na vreme koje sledi. Napravljena je tako
@@ -104,12 +104,22 @@ analitičkih alata za praćenje, a mi ne upravljamo nikakvim serverima — ništ
 <p>Uz vašu dozvolu aplikacija očitava približnu (grubu) lokaciju vašeg
 uređaja. Vaše koordinate se šalju direktno sa vašeg uređaja na
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, servis za vremenske
-podatke, isključivo radi preuzimanja prognoze (temperatura, vetar, udari vetra, oblačnost, verovatnoća padavina, količina
-padavina, izlazak i zalazak sunca) koja se koristi za procenu uslova za pranje na vašem području i izgleda za sate posle pranja. Način na koji WeatherAPI.com
+podatke, isključivo radi preuzimanja prognoze (temperatura, vlažnost, vetar, udari vetra, oblačnost, verovatnoća padavina, količina
+padavina, znaci snega, susnežice i ledene kiše, vremenske prilike, izlazak i zalazak sunca) koja se koristi za procenu uslova za pranje na vašem području i izgleda za sate posle pranja. Način na koji WeatherAPI.com
 obrađuje zahteve opisan je u njegovoj sopstvenoj
-<a href="https://www.weatherapi.com/privacy.aspx">politici privatnosti</a>.
-Naziv grada ili naselja prikazan u aplikaciji određuje se na vašem uređaju
-pomoću geokodera operativnog sistema. Mi nikada ne primamo, ne čuvamo niti
+<a href="https://www.weatherapi.com/privacy.aspx">politici privatnosti</a>.</p>
+<p>Ako ste dozvolili pristup lokaciji, ali vaš uređaj ne može da odredi svoj
+položaj (kao na tabletu bez određene lokacije), aplikacija umesto toga traži
+od WeatherAPI.com da mesto za prognozu odredi prema IP adresi vaše internet
+veze. U
+tom slučaju ne šalju se nikakve koordinate; WeatherAPI.com procenjuje područje
+prema adresi sa koje zahtev dolazi. Ako odbijete dozvolu za lokaciju,
+aplikacija ne šalje ništa i ne prikazuje prognozu.</p>
+<p>Naziv grada ili naselja prikazan u aplikaciji traži se preko sopstvenog
+servisa za geokodiranje vašeg uređaja — Apple-ovog na iOS-u, Google-ovog na
+Android-u — koji šalje koordinate tom dobavljaču da bi ih razrešio, prema
+sopstvenoj politici privatnosti. Aplikacija ih ne šalje nigde drugde. Mi
+nikada ne primamo, ne čuvamo niti
 beležimo vašu lokaciju, a aplikacija ne prati vaše kretanje i ne proverava
 lokaciju u pozadini.</p>
 <p>Aplikacija traži samo <em>približnu</em> lokaciju i zahteva najnižu
@@ -119,7 +129,7 @@ znači određivanje položaja osobe u krugu od oko 1.850 stopa; CarWash Day to
 namerno ne traži.</p>
 
 <h2>Podaci sačuvani na vašem uređaju</h2>
-<p>Vaša podešavanja (da li perete kod kuće ili u perionici, da li vam je automobil uskoro potreban čist, koliko daleko unapred treba da gledaju izgledi, prekidač obaveštenja i podatak da li ste kupili opciju Ukloni oglase) i najnovija
+<p>Vaša podešavanja (da li perete kod kuće ili u natkrivenoj perionici, da li vam je automobil uskoro potreban čist, koliko daleko unapred treba da gledaju izgledi, prekidač obaveštenja i podatak da li ste kupili opciju Ukloni oglase) i najnovija
 prognoza čuvaju se lokalno, isključivo na vašem uređaju, kako bi se
 aplikacija otvarala trenutno. Brisanjem aplikacije brišu se i ti podaci.</p>
 
@@ -152,7 +162,8 @@ podatke za naplatu.</p>
 <h2>Šta se obrađuje, zašto i koliko dugo</h2>
 <table>
 <tr><th>Podaci</th><th>Svrha</th><th>Ko ih prima</th><th>Čuvanje</th></tr>
-<tr><td>Približna lokacija (koordinate)</td><td>Preuzimanje vremenske prognoze za vaše područje — bez nje aplikacija ne može da proceni uslove za pranje</td><td>WeatherAPI.com (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. WeatherAPI.com: videti njegovu politiku privatnosti</td></tr>
+<tr><td>Približna lokacija (koordinate) — ili, kada vaš uređaj ne može da odredi svoj položaj, IP adresa vaše veze</td><td>Preuzimanje vremenske prognoze za vaše područje — bez nje aplikacija ne može da proceni uslove za pranje</td><td>WeatherAPI.com (direktno sa vašeg uređaja)</td><td>Mi ih ne čuvamo. WeatherAPI.com: videti njegovu politiku privatnosti</td></tr>
+<tr><td>Približna lokacija (koordinate)</td><td>Prikaz naziva vašeg grada ili naselja</td><td>Servis za geokodiranje vašeg uređaja: Apple (iOS) ili Google (Android), direktno sa vašeg uređaja</td><td>Mi ih ne čuvamo. Apple / Google: videti njihove politike privatnosti</td></tr>
 <tr><td>Informacije o uređaju za oglašavanje (IP adresa, identifikatori uređaja, signali nevažećeg saobraćaja, interakcije sa oglasom i dijagnostički podaci, kao što su padovi i performanse aplikacije — ništa od toga se ne koristi za personalizaciju oglasa niti za pravljenje vašeg profila)</td><td>Isporuka jedinog baner oglasa u besplatnoj verziji u režimu „ograničeni oglasi“, kao i Google-ovo merenje i sprečavanje prevara za taj oglas</td><td>Google AdMob</td><td>Mi ih ne čuvamo. Google: videti njegovu politiku privatnosti</td></tr>
 <tr><td>Podešavanja i najnovija prognoza</td><td>Trenutno otvaranje na vašoj poslednjoj proceni</td><td>Niko — ostaju na vašem uređaju</td><td>Dok ne obrišete aplikaciju</td></tr>
 <tr><td>Zakazana obaveštenja za pranje</td><td>Podsetnik uveče uoči dana pogodnog za pranje, ako uključite obaveštenja</td><td>Niko — zakazuje ih operativni sistem vašeg uređaja</td><td>Dok se ne oglase, dok ne isključite obaveštenja ili dok ne obrišete aplikaciju</td></tr>
@@ -216,7 +227,9 @@ obrađuju, njihovu svrhu, primaoce i period čuvanja. Ne imenujemo sopstvenog
 inostranog obrađivača; WeatherAPI.com i Google primaju podatke direktno sa
 vašeg uređaja, izvan vaše zemlje, prema sopstvenim politikama.</p>
 <p>Za korisnike u Južnoj Koreji podaci koji se šalju u inostranstvo su sledeći:
-<strong>stavke</strong> — približne koordinate lokacije (za WeatherAPI.com),
+<strong>stavke</strong> — približne koordinate lokacije ili IP adresa kada
+uređaj ne može da odredi svoj položaj (za WeatherAPI.com), približne
+koordinate lokacije (za servis za geokodiranje uređaja, Apple ili Google),
 kao i IP adresa, identifikatori uređaja i oglašivački identifikatori i
 interakcije sa oglasima (za Google); <strong>vreme i način</strong> — u
 trenutku kada otvorite aplikaciju ili kada ona osveži podatke, preko šifrovane
@@ -231,7 +244,8 @@ oglašavanje možete u potpunosti da uklonite kupovinom opcije Ukloni
 oglase.</p>
 <p><strong>Kina (kontinentalna).</strong> Vaše koordinate vaš uređaj šalje
 direktno na WeatherAPI.com, servis izvan kontinentalne Kine, isključivo radi
-preuzimanja prognoze; davanjem dozvole za lokaciju vi na to pristajete. Ne
+preuzimanja prognoze, kao i sopstvenom servisu za geokodiranje vašeg uređaja
+radi naziva vašeg grada; davanjem dozvole za lokaciju vi na to pristajete. Ne
 čuvamo podatke o ličnosti nijednog korisnika. Pitanja u vezi sa podacima o
 ličnosti možete da uputite na adresu navedenu u nastavku.</p>
 <p><strong>Rusija.</strong> Ne čuvamo podatke o ličnosti nijednog korisnika, ni

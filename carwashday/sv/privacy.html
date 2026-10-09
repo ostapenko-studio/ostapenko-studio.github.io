@@ -92,7 +92,7 @@
 <body>
 
 <h1>Integritetspolicy</h1>
-<p class="meta">CarWash Day, av Ostapenko Studio · Gäller från 13 september 2026</p>
+<p class="meta">CarWash Day, av Ostapenko Studio · Gäller från 9 oktober 2026</p>
 <p class="meta">Den engelska texten är den gällande versionen. Översättningar tillhandahålls för din bekvämlighet; om en översättning avviker gäller <a href="../privacy.html">den engelska versionen</a> i den utsträckning lokal lag tillåter.</p>
 
 <p>CarWash Day är en enkel app: den läser väderprognosen och svarar på två
@@ -107,14 +107,23 @@ i appen skickas till oss.</p>
 koordinater skickas direkt från din enhet till
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, en väderdatatjänst,
 enbart i syfte att hämta den prognos (temperatur,
-vind, byvindar, molnighet, risk för regn, nederbördsmängd, soluppgång och
-solnedgång) som används för att räkna ut tvättförhållandena i ditt område,
+luftfuktighet, vind, byvindar, molnighet, risk för regn, nederbördsmängd,
+signaler om snö, snöblandat regn och underkylt regn, väderläget, soluppgång
+och solnedgång) som används för att räkna ut tvättförhållandena i ditt område,
 och utsikterna för timmarna efter en tvätt.
 Hur WeatherAPI.com hanterar förfrågningar
 beskrivs i dess egen
-<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>. Namnet
-på orten eller stadsdelen som visas i appen tas fram på din enhet av
-operativsystemets egen geokodare. Vi tar aldrig emot, lagrar eller loggar din
+<a href="https://www.weatherapi.com/privacy.aspx">integritetspolicy</a>.</p>
+<p>Om du har tillåtit plats men din enhet inte kan hitta sin position (som
+på en surfplatta utan platsbestämning) ber appen i stället WeatherAPI.com att
+placera prognosen utifrån IP-adressen för din internetanslutning. Inga
+koordinater skickas då; WeatherAPI.com uppskattar ett område utifrån adressen
+som förfrågan kommer från. Om du avböjer platsbehörigheten skickar appen
+ingenting och visar ingen prognos.</p>
+<p>Namnet på orten eller stadsdelen som visas i appen slås upp via din enhets
+egen geokodningstjänst — Apples på iOS, Googles på Android — som skickar
+koordinaterna till den leverantören för att slå upp dem, enligt leverantörens
+egen integritetspolicy. Appen skickar dem ingen annanstans. Vi tar aldrig emot, lagrar eller loggar din
 plats, och appen spårar inte dina rörelser och gör inga platskontroller i
 bakgrunden.</p>
 <p>Appen ber bara om <em>ungefärlig</em> plats och begär den lägsta
@@ -124,7 +133,7 @@ geolokalisering" att kunna lokalisera någon inom omkring 1 850 fot; det ber
 CarWash Day medvetet inte om.</p>
 
 <h2>Data som lagras på din enhet</h2>
-<p>Dina inställningar (om du tvättar hemma eller i en biltvätt, om du
+<p>Dina inställningar (om du tvättar hemma eller i en biltvätt under tak, om du
 behöver ha bilen ren snart, hur långt fram utblicken ska titta, reglaget för
 notiser och om du har köpt Ta bort annonser)
 och den senaste prognosen lagras enbart lokalt på din enhet, så att appen
@@ -157,7 +166,8 @@ faktureringsinformation.</p>
 <h2>Vad som behandlas, varför och hur länge</h2>
 <table>
 <tr><th>Data</th><th>Syfte</th><th>Vem tar emot dem</th><th>Lagringstid</th></tr>
-<tr><td>Ungefärlig plats (koordinater)</td><td>Hämta väderprognosen för ditt område — appen kan inte bedöma tvättvädret utan den</td><td>WeatherAPI.com (direkt från din enhet)</td><td>Lagras inte av oss. WeatherAPI.com: se dess integritetspolicy</td></tr>
+<tr><td>Ungefärlig plats (koordinater) — eller, när din enhet inte kan hitta sin position, IP-adressen för din anslutning</td><td>Hämta väderprognosen för ditt område — appen kan inte bedöma tvättvädret utan den</td><td>WeatherAPI.com (direkt från din enhet)</td><td>Lagras inte av oss. WeatherAPI.com: se dess integritetspolicy</td></tr>
+<tr><td>Ungefärlig plats (koordinater)</td><td>Visa namnet på din ort eller stadsdel</td><td>Din enhets geokodningstjänst: Apple (iOS) eller Google (Android), direkt från din enhet</td><td>Lagras inte av oss. Apple / Google: se deras integritetspolicyer</td></tr>
 <tr><td>Enhetsinformation för annonsering (IP-adress, enhets-ID:n, signaler om ogiltig trafik, annonsinteraktioner och diagnostikdata som krascher och appens prestanda — inget av detta används för att personalisera annonser eller bygga en profil av dig)</td><td>Leverans av den enda bannerannonsen i gratisversionen, i läget ”begränsade annonser”, samt Googles mätning och förebyggande av bedrägerier för den annonsen</td><td>Google AdMob</td><td>Sparas inte av oss. Google: se dess integritetspolicy</td></tr>
 <tr><td>Inställningar och den senaste prognosen</td><td>Öppna direkt på din senaste bedömning</td><td>Ingen — stannar på din enhet</td><td>Tills du raderar appen</td></tr>
 <tr><td>Schemalagda notiser om biltvätt</td><td>Påminna dig kvällen före en dag som passar för biltvätt, om du slår på notiser</td><td>Ingen — schemaläggs av din enhets operativsystem</td><td>Tills de utlöses, du stänger av notiser eller raderar appen</td></tr>
@@ -216,8 +226,10 @@ som hanteras, deras syfte, mottagarna och lagringstiden. Vi anlitar inget
 eget utländskt personuppgiftsbiträde; WeatherAPI.com och Google tar emot data
 direkt från din enhet, utanför ditt land, enligt sina egna policyer.</p>
 <p>För användare i Sydkorea är uppgifterna om det som skickas utomlands
-dessa: <strong>uppgifter</strong> — ungefärliga platskoordinater (till
-WeatherAPI.com) samt IP-adress, enhets- och annonsidentifierare och
+dessa: <strong>uppgifter</strong> — ungefärliga platskoordinater, eller
+IP-adressen när enheten inte kan hitta sin position (till WeatherAPI.com),
+ungefärliga platskoordinater (till enhetens geokodningstjänst, Apple eller
+Google) samt IP-adress, enhets- och annonsidentifierare och
 annonsinteraktioner (till Google); <strong>när och hur</strong> — i det
 ögonblick du öppnar appen eller den uppdaterar, över en krypterad
 HTTPS-anslutning; <strong>mottagare</strong> — WeatherAPI.com
@@ -230,7 +242,8 @@ helst neka eller återkalla platsbehörigheten i din enhets inställningar
 genom att köpa Ta bort annonser.</p>
 <p><strong>Kina (fastlandet).</strong> Dina koordinater skickas av din enhet
 direkt till WeatherAPI.com, en tjänst utanför Kinas fastland, enbart för att
-hämta prognosen; genom att ge platsbehörigheten samtycker du till det. Vi
+hämta prognosen, och till din enhets egen geokodningstjänst för att ange
+namnet på din ort; genom att ge platsbehörigheten samtycker du till det. Vi
 lagrar inga personuppgifter om någon användare. Frågor om personuppgifter kan
 skickas till adressen nedan.</p>
 <p><strong>Ryssland.</strong> Vi lagrar inga personuppgifter om någon

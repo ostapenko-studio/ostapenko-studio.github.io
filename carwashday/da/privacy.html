@@ -92,7 +92,7 @@
 <body>
 
 <h1>Privatlivspolitik</h1>
-<p class="meta">CarWash Day, af Ostapenko Studio · Gældende fra 13. september 2026</p>
+<p class="meta">CarWash Day, af Ostapenko Studio · Gældende fra 9. oktober 2026</p>
 <p class="meta">Den engelske tekst er den gældende version. Oversættelser stilles til rådighed for nemheds skyld; hvor en oversættelse afviger, gælder <a href="../privacy.html">den engelske version</a> i det omfang, lokal lovgivning tillader det.</p>
 
 <p>CarWash Day er en enkel app: den læser vejrudsigten og svarer på to
@@ -107,13 +107,22 @@ sendes til os.</p>
 placering. Dine koordinater sendes direkte fra din enhed til
 <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, en
 vejrdatatjeneste, alene med det formål at hente den vejrudsigt
-(temperatur, vind, vindstød, skydække, risiko for
-nedbør, nedbørsmængde, solopgang og solnedgang), der bruges til at beregne
+(temperatur, luftfugtighed, vind, vindstød, skydække, risiko for
+nedbør, nedbørsmængde, signaler om sne, slud og isslag, vejrforholdene,
+solopgang og solnedgang), der bruges til at beregne
 vaskeforholdene i dit område og udsigten for timerne efter en vask.
 WeatherAPI.com's håndtering af forespørgsler er beskrevet i deres egen
-<a href="https://www.weatherapi.com/privacy.aspx">privatlivspolitik</a>.
-Navnet på byen eller bydelen, som vises i appen, slås op på din enhed af
-operativsystemets egen geokoder. Vi modtager, gemmer eller logger aldrig din
+<a href="https://www.weatherapi.com/privacy.aspx">privatlivspolitik</a>.</p>
+<p>Hvis du har tilladt placering, men din enhed ikke kan finde sin position
+(som på en tablet uden placeringsbestemmelse), beder appen i stedet
+WeatherAPI.com om at placere vejrudsigten ud fra IP-adressen på din
+internetforbindelse. I så fald sendes der ingen koordinater; WeatherAPI.com
+anslår et område ud fra den adresse, forespørgslen kommer fra. Hvis du afslår
+tilladelsen til placering, sender appen intet og viser ingen vejrudsigt.</p>
+<p>Navnet på byen eller bydelen, som vises i appen, slås op via din enheds
+egen geokodningstjeneste — Apples på iOS, Googles på Android — som sender
+koordinaterne til den udbyder for at slå dem op, under udbyderens egen
+privatlivspolitik. Appen sender dem ikke andre steder hen. Vi modtager, gemmer eller logger aldrig din
 placering, og appen sporer ikke dine bevægelser og foretager ikke
 placeringstjek i baggrunden.</p>
 <p>Appen beder kun om <em>omtrentlig</em> placering og anmoder om den laveste
@@ -157,7 +166,8 @@ faktureringsoplysninger.</p>
 <h2>Hvad der behandles, hvorfor og hvor længe</h2>
 <table>
 <tr><th>Data</th><th>Formål</th><th>Hvem modtager dem</th><th>Opbevaring</th></tr>
-<tr><td>Omtrentlig placering (koordinater)</td><td>Hente vejrudsigten for dit område — appen kan ikke vurdere vaskevejret uden den</td><td>WeatherAPI.com (direkte fra din enhed)</td><td>Gemmes ikke af os. WeatherAPI.com: se deres privatlivspolitik</td></tr>
+<tr><td>Omtrentlig placering (koordinater) — eller, når din enhed ikke kan finde sin position, IP-adressen på din forbindelse</td><td>Hente vejrudsigten for dit område — appen kan ikke vurdere vaskevejret uden den</td><td>WeatherAPI.com (direkte fra din enhed)</td><td>Gemmes ikke af os. WeatherAPI.com: se deres privatlivspolitik</td></tr>
+<tr><td>Omtrentlig placering (koordinater)</td><td>Vise navnet på din by eller bydel</td><td>Din enheds geokodningstjeneste: Apple (iOS) eller Google (Android), direkte fra din enhed</td><td>Gemmes ikke af os. Apple / Google: se deres privatlivspolitikker</td></tr>
 <tr><td>Enhedsoplysninger til annoncering (IP-adresse, enheds-id'er, signaler om ugyldig trafik, annonceinteraktioner og diagnostiske data såsom nedbrud og appens ydeevne — intet af det bruges til at personalisere annoncer eller til at profilere dig)</td><td>Levering af den enkelte bannerannonce i gratisversionen i tilstanden »begrænsede annoncer« samt Googles måling og forebyggelse af svindel for denne annonce</td><td>Google AdMob</td><td>Opbevares ikke af os. Google: se deres privatlivspolitik</td></tr>
 <tr><td>Indstillinger og den seneste vejrudsigt</td><td>Åbne med det samme på din seneste vurdering</td><td>Ingen — bliver på din enhed</td><td>Indtil du sletter appen</td></tr>
 <tr><td>Planlagte varsler om bilvask</td><td>Minde dig om det aftenen før en dag, der egner sig til bilvask, hvis du slår varsler til</td><td>Ingen — planlægges af din enheds operativsystem</td><td>Indtil de udløses, du slår varsler fra, eller du sletter appen</td></tr>
@@ -218,8 +228,10 @@ der behandles, deres formål, modtagerne og opbevaringsperioden. Vi udpeger
 ingen egen udenlandsk databehandler; WeatherAPI.com og Google modtager data
 direkte fra din enhed, uden for dit land, under deres egne politikker.</p>
 <p>For brugere i Sydkorea er oplysningerne om data, der sendes til udlandet,
-disse: <strong>oplysninger</strong> — omtrentlige placeringskoordinater (til
-WeatherAPI.com) samt IP-adresse, enheds- og reklame-id’er og
+disse: <strong>oplysninger</strong> — omtrentlige placeringskoordinater eller
+IP-adressen, når enheden ikke kan finde sin position (til WeatherAPI.com),
+omtrentlige placeringskoordinater (til enhedens geokodningstjeneste, Apple
+eller Google) samt IP-adresse, enheds- og reklame-id’er og
 reklameinteraktioner (til Google); <strong>tidspunkt og måde</strong> — i det
 øjeblik du åbner appen, eller den opdaterer, over en krypteret
 HTTPS-forbindelse; <strong>modtagere</strong> — WeatherAPI.com
@@ -232,7 +244,8 @@ indstillinger (så kan appen ikke give råd om bilvask), og du kan fjerne
 reklamer helt ved at købe Fjern reklamer.</p>
 <p><strong>Kina (fastlandet).</strong> Dine koordinater sendes af din enhed
 direkte til WeatherAPI.com, en tjeneste uden for det kinesiske fastland,
-alene for at hente vejrudsigten; ved at give tilladelse til placering
+alene for at hente vejrudsigten, og til din enheds egen
+geokodningstjeneste for at navngive din by; ved at give tilladelse til placering
 samtykker du i det. Vi opbevarer ingen personoplysninger om nogen bruger.
 Spørgsmål om personoplysninger kan sendes til adressen nedenfor.</p>
 <p><strong>Rusland.</strong> Vi opbevarer ingen personoplysninger om nogen

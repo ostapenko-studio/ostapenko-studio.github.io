@@ -92,7 +92,7 @@
 <body>
 
 <h1>Política de privadesa</h1>
-<p class="meta">CarWash Day, d’Ostapenko Studio · En vigor des del 13 de setembre de 2026</p>
+<p class="meta">CarWash Day, d’Ostapenko Studio · En vigor des del 9 d’octubre de 2026</p>
 <p class="meta">El <a href="../privacy.html">text en anglès</a> és la versió canònica. Les traduccions es faciliten per comoditat; si una traducció difereix, s’aplica la versió anglesa en la mesura que ho permeti la llei local.</p>
 
 <p>CarWash Day és una app senzilla: llegeix la previsió del temps i respon dues preguntes sobre rentar el cotxe — si ara és un bon moment, i si val la pena tenint en compte el temps que ve després. S’ha fet per recollir el mínim de
@@ -104,13 +104,12 @@ i no operem cap servidor — res del que fas a l’app ens arriba.</p>
 teu dispositiu. Les teves coordenades s’envien directament des del teu
 dispositiu a <a href="https://www.weatherapi.com/">WeatherAPI.com</a>, un
 servei de dades meteorològiques, amb l’única finalitat d’obtenir la previsió
-(temperatura, vent, ratxes de vent, nuvolositat,
-probabilitat de pluja, precipitació, sortida i posta de sol) que es fa servir
+(temperatura, humitat, vent, ratxes de vent, nuvolositat, probabilitat de pluja, precipitació, senyals de neu, aiguaneu i pluja glaçada, l’estat del temps, sortida i posta de sol) que es fa servir
 per calcular les condicions de rentat de la teva zona, i la perspectiva de les hores posteriors a un rentat. El tractament de les peticions per part de WeatherAPI.com es
 descriu a la seva pròpia
-<a href="https://www.weatherapi.com/privacy.aspx">política de privadesa</a>.
-El nom del municipi o barri que es mostra a l’app es resol al teu dispositiu
-amb el geocodificador del mateix sistema operatiu. Mai no rebem, emmagatzemem
+<a href="https://www.weatherapi.com/privacy.aspx">política de privadesa</a>.</p>
+<p>Si has permès la ubicació però el teu dispositiu no aconsegueix trobar la seva posició (com en una tauleta sense senyal d’ubicació), l’app demana a WeatherAPI.com que situï la previsió a partir de l’adreça IP de la teva connexió a internet. En aquest cas no s’envien coordenades; WeatherAPI.com estima una zona a partir de l’adreça des d’on arriba la petició. Si rebutges el permís d’ubicació, l’app no envia res i no mostra cap previsió.</p>
+<p>El nom del municipi o barri que es mostra a l’app es consulta mitjançant el servei de geocodificació del teu propi dispositiu —el d’Apple a iOS, el de Google a Android—, que envia les coordenades a aquest proveïdor per resoldre-les, d’acord amb la seva pròpia política de privadesa. L’app no les envia enlloc més. Mai no rebem, emmagatzemem
 ni registrem la teva ubicació, i l’app no fa seguiment dels teus moviments ni
 consulta la ubicació en segon pla.</p>
 <p>L’app només demana la ubicació <em>aproximada</em> i sol·licita la precisió
@@ -120,7 +119,7 @@ localitzar algú dins d’un radi d’uns 1.850 peus; CarWash Day, deliberadamen
 no demana això.</p>
 
 <h2>Dades desades al teu dispositiu</h2>
-<p>La teva configuració (si rentes a casa o en un rentat de cotxes, si necessites el cotxe net aviat, fins on ha de mirar la perspectiva de les hores de després, l’interruptor dels avisos i si has comprat Elimina
+<p>La teva configuració (si rentes a casa o en un centre de rentat cobert, si necessites el cotxe net aviat, fins on ha de mirar la perspectiva de les hores de després, l’interruptor dels avisos i si has comprat Elimina
 els anuncis) i la previsió més recent es desen només localment al teu
 dispositiu, perquè l’app s’obri a l’instant. Si suprimeixes l’app, se
 suprimeixen aquestes dades.</p>
@@ -155,7 +154,8 @@ ni la teva informació de facturació.</p>
 <h2>Què es tracta, per què i durant quant de temps</h2>
 <table>
 <tr><th>Dades</th><th>Finalitat</th><th>Qui les rep</th><th>Conservació</th></tr>
-<tr><td>Ubicació aproximada (coordenades)</td><td>Obtenir la previsió del temps per a la teva zona — sense això l’app no pot valorar el temps per rentar</td><td>WeatherAPI.com (directament des del teu dispositiu)</td><td>No les emmagatzemem nosaltres. WeatherAPI.com: consulta la seva política de privadesa</td></tr>
+<tr><td>Ubicació aproximada (coordenades) — o, quan el teu dispositiu no aconsegueix trobar la seva posició, l’adreça IP de la teva connexió</td><td>Obtenir la previsió del temps per a la teva zona — sense això l’app no pot valorar el temps per rentar</td><td>WeatherAPI.com (directament des del teu dispositiu)</td><td>No les emmagatzemem nosaltres. WeatherAPI.com: consulta la seva política de privadesa</td></tr>
+<tr><td>Ubicació aproximada (coordenades)</td><td>Mostrar el nom del teu municipi o barri</td><td>El servei de geocodificació del teu dispositiu: Apple (iOS) o Google (Android), directament des del teu dispositiu</td><td>No les emmagatzemem nosaltres. Apple / Google: consulta les seves polítiques de privadesa</td></tr>
 <tr><td>Informació del dispositiu per a publicitat (adreça IP, identificadors del dispositiu, senyals de trànsit no vàlid, interaccions amb l'anunci i dades de diagnòstic com ara bloquejos i rendiment de l'aplicació — res d'això no s'utilitza per personalitzar anuncis ni per elaborar un perfil teu)</td><td>Publicar l'únic bàner de la versió gratuïta, en mode «anuncis limitats», i la mesura i la prevenció del frau de Google per a aquest anunci</td><td>Google AdMob</td><td>No les conservem nosaltres. Google: vegeu la seva política de privadesa</td></tr>
 <tr><td>Configuració i la darrera previsió</td><td>Obrir a l’instant amb el teu darrer veredicte</td><td>Ningú — es queden al teu dispositiu</td><td>Fins que suprimeixis l’app</td></tr>
 <tr><td>Avisos de rentat programats</td><td>Recordar-te el vespre abans d’un dia adequat per rentar, si actives els avisos</td><td>Ningú — els programa el sistema operatiu del teu dispositiu</td><td>Fins que salten, desactives els avisos o suprimeixes l’app</td></tr>
@@ -215,8 +215,7 @@ conservació. No designem cap encarregat del tractament a l’estranger per
 compte nostre; WeatherAPI.com i Google reben les dades directament del teu
 dispositiu, fora del teu país, segons les seves pròpies polítiques.</p>
 <p>Per als usuaris de Corea del Sud, els detalls de les dades que s’envien a
-l’estranger són: <strong>elements</strong> — coordenades d’ubicació
-aproximada (a WeatherAPI.com), i adreça IP, identificadors del dispositiu i
+l’estranger són: <strong>elements</strong> — coordenades d’ubicació aproximada, o l’adreça IP quan el dispositiu no aconsegueix trobar la seva posició (a WeatherAPI.com), coordenades d’ubicació aproximada (al servei de geocodificació del dispositiu, Apple o Google), i adreça IP, identificadors del dispositiu i
 de publicitat i interaccions amb els anuncis (a Google);
 <strong>quan i com</strong> — en el moment en què obres l’app o aquesta
 s’actualitza, mitjançant una connexió HTTPS xifrada;
@@ -229,7 +228,7 @@ dispositiu (aleshores l’app no pot donar consells de rentat), i pots treure
 la publicitat del tot comprant Elimina els anuncis.</p>
 <p><strong>Xina (continental).</strong> Les teves coordenades les envia el teu
 dispositiu directament a WeatherAPI.com, un servei situat fora de la Xina
-continental, únicament per obtenir la previsió; concedir el permís d’ubicació
+continental, únicament per obtenir la previsió, i al servei de geocodificació del teu propi dispositiu per mostrar el nom del teu municipi; concedir el permís d’ubicació
 és la manera com hi dones el teu acord. No conservem cap informació personal
 de cap usuari. Les preguntes sobre informació personal es poden enviar a
 l’adreça de sota.</p>
