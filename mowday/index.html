@@ -20,13 +20,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #faf8f4;
+      --bg: #F4F6EE;
       --ink: #22201c;
       --muted: #6f6a61;
-      --line: #e7e2d9;
+      --line: #E1E5D7;
       --accent: #2C4A28;
       --link-underline: #8a7d68;
     }
@@ -34,7 +34,8 @@
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-feature-settings: "tnum";
       -webkit-font-smoothing: antialiased;
       line-height: 1.6;
     }
@@ -56,11 +57,9 @@
     }
     .hero > div { flex: 1 1 16rem; }
     h1 {
-      font-family: "Instrument Serif", Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
+      font-weight: 600;
       font-size: clamp(2.25rem, 7vw, 3rem);
-      letter-spacing: -0.01em;
+      letter-spacing: -0.03em;
       line-height: 1.1;
     }
     .tagline { color: var(--muted); font-size: 1.125rem; margin-top: 0.5rem; }
@@ -153,8 +152,11 @@
       <img src="/mowday-icon-216.png" alt="Mow Day app icon" width="72" height="72">
       <div>
         <h1>Mow Day</h1>
-        <p class="tagline">When can I mow the lawn — and does the whole job fit before the rain?</p>
-        <span class="status">Coming soon to the App&nbsp;Store and Google&nbsp;Play</span>
+        <p class="tagline">When can I mow the lawn? The next window with room for the whole mow, within the hours you have.</p>
+        <div class="store-links">
+          <a href="https://play.google.com/store/apps/details?id=studio.ostapenko.mowday"><img src="/badges/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
+          <span class="status">App&nbsp;Store: coming soon</span>
+        </div>
       </div>
     </header>
 
@@ -162,20 +164,28 @@
       <h2>The app</h2>
       <div class="shots" tabindex="0" role="group" aria-label="App screenshots">
         <figure>
-          <img src="shots/great.jpg" alt="Mow Day showing a clear day with the mowing window and the start-by time" width="560" height="1216" loading="lazy">
-          <figcaption>A clear stretch — the window, the start-by time, done.</figcaption>
+          <img src="shots/great.jpg" alt="Mow Day on a clear day: the next mowing window, the grass, rain and wind, and a start-by time" width="560" height="1216" loading="lazy">
+          <figcaption>One look at when a mow might fit.</figcaption>
         </figure>
         <figure>
-          <img src="shots/damp.jpg" alt="Mow Day showing a morning after rain, with the grass likely damp and the next window named" width="560" height="1216" loading="lazy">
-          <figcaption>Rain before dawn — honest about grass that has not dried off.</figcaption>
+          <img src="shots/days.jpg" alt="The Mowing days page: today and the next two days, each a patch of its own field, with the best day tagged" width="560" height="1216" loading="lazy">
+          <figcaption>Today, or one of the next two days?</figcaption>
         </figure>
         <figure>
-          <img src="shots/risky.jpg" alt="Mow Day showing a window that fits only just before rain arrives" width="560" height="1216" loading="lazy">
-          <figcaption>Rain close behind — the mow fits, only just.</figcaption>
+          <img src="shots/working.jpg" alt="How this is worked out: the forecast hour, the FAO-56 Penman–Monteith working and the water estimated on the blades" width="560" height="1216" loading="lazy">
+          <figcaption>The working behind every verdict.</figcaption>
         </figure>
         <figure>
-          <img src="shots/wait.jpg" alt="Mow Day showing a day of showers with no mowing window and the reason" width="560" height="1216" loading="lazy">
-          <figcaption>Showers all day — not the moment, and why.</figcaption>
+          <img src="shots/damp.jpg" alt="A morning after rain: the grass likely damp, with an estimate of when it should dry off" width="560" height="1216" loading="lazy">
+          <figcaption>Honest when the grass may still be wet.</figcaption>
+        </figure>
+        <figure>
+          <img src="shots/risky.jpg" alt="A short window with rain forecast close behind and an aim-to-start time" width="560" height="1216" loading="lazy">
+          <figcaption>Only just enough time — rain may follow.</figcaption>
+        </figure>
+        <figure>
+          <img src="shots/wait.jpg" alt="A rained-out day: not today, the reason, and the next chance tomorrow" width="560" height="1216" loading="lazy">
+          <figcaption>Some days it just says: not today.</figcaption>
         </figure>
       </div>
     </section>
@@ -185,12 +195,19 @@
       <ul>
         <li>A verdict in plain words — great time to mow, good time to mow, grass likely damp, rain close behind, or better to wait — with the reason in one sentence.</li>
         <li>The next estimated mowing window, sized to the mow you actually do: tell it how long a mow takes and which hours you are free, and it stops offering gaps you cannot use.</li>
-        <li>A start-by time, and what closes the door: rain, the light going, or the end of the hours you set.</li>
+        <li>An estimated start-by time, and what closes the door: rain, the light going, or the end of the hours you set.</li>
         <li>Whether the grass has had a chance to dry off — after rain, and after a heavy dew — with an estimate of when it should.</li>
         <li>The next three days as mowing advice, with the best day tagged.</li>
         <li>Quiet, optional alerts: a heads-up the evening before a good mowing day, and a nudge when the window opens. Nothing else, ever.</li>
         <li>Two things about your lawn that change the answer: shade, and ground that stays soft.</li>
+        <li>The working behind every verdict, one tap away.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Worked out, and shown</h2>
+      <p>Mow Day combines the published FAO-56 Penman–Monteith reference evapotranspiration calculation — the UN Food and Agriculture Organization's method for a clipped grass surface — with its own assumptions about water on the grass and in the topsoil. Each forecast hour's temperature, dew point, wind and solar radiation go into it, to estimate how quickly wet blades may dry, and a separate topsoil water balance estimates whether the ground is likely still soft.</p>
+      <p>Tap "How this is worked out" under any verdict and the app shows its working: the forecast for that hour, the equation with its numbers, and the water estimated on the blades and in the topsoil — every figure labelled as an estimate from a forecast.</p>
     </section>
 
     <section>
