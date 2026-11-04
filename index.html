@@ -37,8 +37,17 @@
       font-family: "Instrument Serif", Georgia, serif;
       font-style: italic;
       font-weight: 400;
-      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      font-size: clamp(2.25rem, 8vw, 3.5rem);
+      line-height: 1.2;
       letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.35em;
+    }
+    h1 .logo {
+      width: auto;
+      height: 0.85em;
+      flex-shrink: 0;
     }
     .tagline {
       color: var(--muted);
@@ -61,7 +70,7 @@
     .app {
       display: flex;
       gap: 1.25rem;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 1.75rem;
     }
     .app img {
@@ -92,7 +101,6 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    .person { align-items: flex-start; }
     .app img.portrait {
       border-radius: 50%;
       object-fit: cover;
@@ -128,7 +136,7 @@
 </head>
 <body>
   <main>
-    <h1>Ostapenko Studio</h1>
+    <h1><img class="logo" src="/logo.svg" alt="" width="52" height="56">Ostapenko Studio</h1>
     <p class="tagline">A small independent studio in Australia. We make calm, useful apps and web tools for everyday life — for teachers, parents, gardeners, dog walkers, and anyone who just needs one question answered. Each one does one thing well, works in your language, and then gets out of your way.</p>
 
     <section class="web">
