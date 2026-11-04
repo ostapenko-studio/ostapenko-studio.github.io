@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fifteenly — Sliding Number Puzzle | Ostapenko Studio</title>
+  <meta name="description" content="The classic 15 puzzle, made calm. Every scramble is solvable: 240 puzzles from 3×3 to 6×6, a daily puzzle, and hints that teach the method. Fully offline — no accounts, no tracking, no subscriptions.">
+  <link rel="canonical" href="https://ostapenko.studio/fifteenly/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ostapenko.studio/fifteenly/">
+  <meta property="og:title" content="Fifteenly — Sliding Number Puzzle">
+  <meta property="og:description" content="The classic 15 puzzle, made calm. Every scramble is solvable.">
+  <meta property="og:image" content="https://ostapenko.studio/fifteenly-icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Fifteenly app icon — numbered tiles in a 3×3 frame">
+  <meta property="og:site_name" content="Ostapenko Studio">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --ink: #22201c;
+      --muted: #6f6a61;
+      --line: #e7e2d9;
+      --accent: #5F4B8B;
+      --link-underline: #8a7d68;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .back { font-size: 0.875rem; margin-bottom: 3rem; }
+    .back a { color: var(--muted); text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+    .hero { display: flex; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap; }
+    .hero img {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    }
+    .hero > div { flex: 1 1 16rem; }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(2.25rem, 7vw, 3rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .tagline { color: var(--muted); font-size: 1.125rem; margin-top: 0.5rem; }
+    .status {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    section { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
+    section h2 {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    section p + p { margin-top: 1rem; }
+    ul { list-style: none; }
+    li { position: relative; padding-left: 1.25rem; margin-top: 0.875rem; }
+    li::before { content: "·"; position: absolute; left: 0.25rem; color: var(--muted); }
+    a { color: var(--ink); text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
+    a:hover { text-decoration-color: var(--ink); }
+    .legal { margin-top: 1rem; font-size: 0.8125rem; }
+    .legal a { color: var(--muted); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.875rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: space-between;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="back"><a href="/">← Ostapenko Studio</a></p>
+
+    <header class="hero">
+      <img src="/fifteenly-icon-216.png" alt="Fifteenly app icon" width="72" height="72">
+      <div>
+        <h1>Fifteenly</h1>
+        <p class="tagline">The classic 15 puzzle, made calm. Every scramble is solvable.</p>
+        <span class="status">Coming soon to Google&nbsp;Play and the App&nbsp;Store</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>What you get</h2>
+      <ul>
+        <li>The sliding number puzzle you know: slide tiles into the empty space until the numbers are back in order. Tap a tile, or swipe on the board.</li>
+        <li>Every scramble is solvable — each one is checked before it reaches you, so there is never a board that cannot be finished.</li>
+        <li>240 puzzles across six tiers, from a gentle 3×3 to a demanding 6×6, getting steadily harder within each tier.</li>
+        <li>A new daily puzzle, the same for everyone, that ramps up through the week.</li>
+        <li>Hints that show your next move, chosen by the real row-by-row method, and a How to play guide that teaches it in full.</li>
+        <li>A timer, a move counter and your best times, all kept on your device.</li>
+        <li>Light and dark themes, in 50 languages.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Quietly respectful</h2>
+      <p>Fully offline. No accounts, no sign-ups, no analytics and no leaderboards. Your progress and settings stay on your phone — we run no servers and collect nothing ourselves. Ads are never personalised.</p>
+      <p>Free to play, with a small banner and optional short videos if you would like a hint or a bonus puzzle. One inexpensive purchase removes the ads for good and makes hints and bonus puzzles free. No subscriptions, ever.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions, feedback, or support: <a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+      <p class="legal"><a href="privacy.html">Privacy</a></p>
+    </section>
+
+    <footer>
+      <span>© 2026 Ostapenko Studio · a trading name of I&nbsp;Ostapenko &amp; Y&nbsp;Ostapenko · ABN&nbsp;18&nbsp;901&nbsp;484&nbsp;459</span>
+      <nav><a href="/">All apps</a></nav>
+    </footer>
+  </main>
+</body>
+</html>
