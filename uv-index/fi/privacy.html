@@ -31,7 +31,7 @@
 <body>
 
 <h1>Tietosuojaseloste</h1>
-<p class="meta">UV Index, Ostapenko Studiolta · Voimassa 4. syyskuuta 2026 alkaen · Päivitetty viimeksi 7. syyskuuta 2026</p>
+<p class="meta">UV Index, Ostapenko Studiolta · Voimassa 4. syyskuuta 2026 alkaen · Päivitetty viimeksi 4. marraskuuta 2026</p>
 
 <h2>Lyhyt versio</h2>
 <p>UV Index näyttää nykyisen ja ennustetun UV-indeksin siellä, missä olet. Sovellus
@@ -43,8 +43,12 @@ on rakennettu keräämään mahdollisimman vähän tietoa.</p>
 <li>Laitteeltasi lähtee kolme asiaa, eikä yksikään niistä päädy meille:
   <strong>likimääräiset koordinaattisi</strong> menevät sääpalvelun tarjoajalle
   ennusteen hakemista varten ja puhelimesi käyttöjärjestelmälle, jotta niistä
-  saadaan paikkakunnan nimi; ja ilmaisversiossa <strong>laite- ja
-  mainostiedot</strong> menevät Googlelle bannerimainoksen näyttämistä varten.</li>
+  saadaan paikkakunnan nimi; ja ilmaisversiossa, kun mainokset palaavat
+  1. tammikuuta 2027, <strong>laite- ja mainostiedot</strong> menevät Googlelle
+  bannerimainoksen näyttämistä varten.</li>
+<li><strong>Mainokset ovat tauolla.</strong> 1. tammikuuta 2027 asti sovellus ei
+  näytä mainoksia, eikä mainos-SDK:ta käynnistetä lainkaan, joten Google AdMobille
+  ei lähetetä mitään.</li>
 <li>Pyöristämme koordinaattisi tarkoituksella <strong>kahteen desimaaliin (noin
   1,1 km)</strong>, ennen kuin lähetämme ne minnekään. UV vaihtelee kymmenien
   kilometrien mitassa, joten ylimääräisestä tarkkuudesta ei ole hyötyä emmekä
@@ -53,7 +57,7 @@ on rakennettu keräämään mahdollisimman vähän tietoa.</p>
   Googlen <strong>rajoitetun mainonnan</strong> tilaan ennen kuin yhtäkään
   mainosta voidaan ladata — ei personointia eikä mainostunnistetta, jolla sinusta
   muodostettaisiin profiili. Suostumuslomaketta ei ole, koska ei ole personointia,
-  johon suostua. Ostos <strong>Poista mainokset</strong> pysäyttää mainospyynnöt
+  johon suostua. Mikä tahansa <strong>tukiostos</strong> pysäyttää mainospyynnöt
   kokonaan.</li>
 <li>Asetuksesi, välimuistiin tallennettu ennuste, muistutuksesi ja aloitusnäytön
   widget pysyvät laitteessasi. Kun poistat sovelluksen, ne poistuvat.</li>
@@ -102,15 +106,15 @@ tapahdu.</p>
 </tr>
 <tr>
   <td>Laitetiedot, IP-osoite, mainostunniste</td>
-  <td>Ilmaisversion bannerimainoksen näyttämiseen ja mittaamiseen</td>
-  <td><strong>Oikeutettu etu</strong> — sovelluksen pitäminen maksuttomana niille, jotka eivät osta Poista mainokset -ostosta. Voit vastustaa sitä; Poista mainokset lopettaa sen kokonaan</td>
+  <td>Ilmaisversion bannerimainoksen näyttämiseen ja mittaamiseen 1. tammikuuta 2027 alkaen (mitään ei lähetetä, kun mainokset ovat tauolla)</td>
+  <td><strong>Oikeutettu etu</strong> — sovelluksen pitäminen maksuttomana niille, jotka eivät ole tehneet tukiostosta. Voit vastustaa sitä; mikä tahansa tukiostos lopettaa sen kokonaan</td>
   <td><a href="https://policies.google.com/privacy">Google AdMob</a></td>
   <td>Yhdysvallat ja muut maat, joissa Google toimii</td>
   <td>Me emme säilytä mitään. Katso Googlen seloste</td>
 </tr>
 <tr>
-  <td>Ostoksesi ”Poista mainokset”</td>
-  <td>Maksun vastaanottamiseen ja ostoksen palauttamiseen muihin laitteisiisi</td>
+  <td>Tukiostoksesi</td>
+  <td>Maksun vastaanottamiseen ja sovelluksen mainoksettomaksi tekevän ostoksen palauttamiseen muihin laitteisiisi</td>
   <td>Kauppasopimuksen täyttäminen</td>
   <td>Apple (App Store) tai Google (Google Play) myyjänä (merchant of record)</td>
   <td>Yhdysvallat ja muut maat, joissa Apple ja Google toimivat</td>
@@ -166,8 +170,12 @@ meistä, ei taulukossa nimetyistä kolmansista osapuolista, jotka saavat sen, mi
 taulukko sanoo niiden saavan, suoraan laitteeltasi.</p>
 
 <h2>Mainonta ja sen peruste</h2>
-<p>Ilmaisversio näyttää yhden ainoan bannerimainoksen, jonka toimittaa Google
-AdMob. Pyydämme mainokset <strong>ei-personoituina</strong>: emme pyydä mainoksia
+<p><strong>Mainokset ovat tauolla.</strong> 1. tammikuuta 2027 asti sovellus ei
+näytä mainoksia, eikä mainos-SDK:ta käynnistetä lainkaan, joten Google AdMobille
+ei lähetetä mitään. Siitä päivästä alkaen ilmaisversio näyttää yhden ainoan
+bannerimainoksen, kuten alla kuvataan.</p>
+<p>Kun mainokset palaavat, ilmaisversio näyttää yhden ainoan bannerimainoksen,
+jonka toimittaa Google AdMob. Pyydämme mainokset <strong>ei-personoituina</strong>: emme pyydä mainoksia
 kiinnostuksenkohteidesi tai sinusta muodostetun profiilin perusteella emmekä
 käytä sijaintiasi mainonnan kohdentamiseen.</p>
 <p>Lisäksi sovellus asettaa Googlen <strong>rajoitetun mainonnan</strong>
@@ -180,8 +188,8 @@ tai lukee tietoa laitteessasi ja saa laitetiedot ja IP-osoitteesi. Google
 tallentaa laitteeseen rajallisen määrän tietoa havaitakseen virheellistä ja
 petollista mainosliikennettä ja käyttää IP-osoitetta mainoksen toimittamiseen.
 Oikeusperusteemme tälle on <strong>oikeutettu etu</strong>: sovelluksen pitäminen
-maksuttomana niille, jotka eivät osta Poista mainokset -ostosta. Voit vastustaa
-sitä, ja Poista mainokset lopettaa sen kokonaan.</p>
+maksuttomana niille, jotka eivät ole tehneet tukiostosta. Voit vastustaa sitä,
+ja mikä tahansa tukiostos lopettaa sen kokonaan.</p>
 <p>Google kertoo myös voivansa arvioida yleisen sijaintisi IP-osoitteestasi
 mainontaa varten. Tuo arvio on Googlen oma, on erillinen yllä kuvatuista
 koordinaateista ja tapahtuu riippumatta siitä, oletko antanut sovellukselle
@@ -192,7 +200,7 @@ sijaintiluvan.</p>
   meille tämän selosteen lopussa olevilla yhteystiedoilla.</li>
 <li>Lisäksi pätevät laitteesi omat mainosasetukset (mainostunnisteen nollaaminen
   tai rajoittaminen).</li>
-<li>Ostos <strong>Poista mainokset</strong> pysäyttää mainospyynnöt kokonaan —
+<li>Mikä tahansa <strong>tukiostos</strong> pysäyttää mainospyynnöt kokonaan —
   mainos-SDK ei tee enää pyyntöjä, ja Googlen tiedonkeruu tämän sovelluksen
   kautta loppuu sen mukana.</li>
 </ul>
@@ -212,14 +220,18 @@ luovuttaisimme tietoja sinusta — saamme mainostuottoa.</strong></p>
 <p>Sovellus ei ole verkkoselain eikä saa selaimen ”Do Not Track” -signaalia, joten
 sellaista signaalia, johon vastata, ei ole. Emme seuraa sinua muissa sovelluksissa
 tai verkkosivustoilla. Hallintakeinot, jotka täällä oikeasti toimivat, ovat yllä
-luetellut: laitteesi mainosasetukset ja Poista mainokset.</p>
+luetellut: laitteesi mainosasetukset ja mikä tahansa tukiostos.</p>
 
 <h2>Ostokset</h2>
-<p>Kertaluonteisen ostoksen Poista mainokset käsittelee kokonaan Applen App Store
-tai Google Play, jotka ovat myyjä (merchant of record). Emme näe koskaan nimeäsi,
+<p>Asetuksissa on kolme vapaaehtoista tukiostosta: ”Pieni kiitos”, ”Kiitos” ja
+”Iso kiitos”. Jokainen on kertamaksu, ei tilaus. Ensimmäinen ostamasi, mikä
+tahansa kolmesta, pitää sovelluksen pysyvästi mainoksettomana niillä laitteilla,
+jotka on kirjattu samaan kaupan tiliin; sen jälkeen jokainen on vain uusi kiitos,
+joka ei avaa mitään lisää. Kaikki ne käsittelee kokonaan Applen App Store tai
+Google Play, jotka ovat myyjä (merchant of record). Emme näe koskaan nimeäsi,
 maksutietojasi emmekä laskutustietojasi. Kaupasta saamme vain vahvistuksen siitä,
-että ostos on olemassa, ja juuri se antaa sovelluksen piilottaa bannerin ja
-palauttaa ostoksesi muihin laitteisiisi.</p>
+että ostos on olemassa, ja juuri se antaa sovelluksen pysyä mainoksettomana ja
+palauttaa sen muihin laitteisiisi.</p>
 
 <h2>Ilmoitukset ja widget</h2>
 <p>Valinnaisen päivittäisen UV-muistutuksen ajastaa paikallisesti laitteessasi
@@ -496,6 +508,10 @@ ei ole analytiikka-SDK:ita, kaatumisraportointia, attribuutio-SDK:ita eikä mit�
 muuta kolmannen osapuolen koodia, joka saisi tietojasi.</p>
 
 <h2>Tämän selosteen muutokset</h2>
+<p><strong>4. marraskuuta 2026.</strong> Kolme vapaaehtoista tukiostosta korvaa
+Poista mainokset -ostoksen, ja niistä ensimmäinen pitää sovelluksen pysyvästi
+mainoksettomana; mainokset ovat tauolla 1. tammikuuta 2027 asti, eikä Google
+AdMobille lähetetä sillä välin mitään.</p>
 <p><strong>7. syyskuuta 2026.</strong> Kaksi korjausta, ei muutosta käytäntöön.
 Kohta ”Automaattiset päätökset” kuvasi ihotyypin mukaista UV-kaistan säätöä, jota
 sovellus ei enää tee — 4. syyskuuta lähtien kaista seuraa ennustettua lukua
