@@ -31,7 +31,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Moon Tonight, by Ostapenko Studio · Effective 1 October 2026</p>
+<p class="meta">Moon Tonight, by Ostapenko Studio · Effective 1 October 2026 · Updated 4 November 2026</p>
 
 <h2>The short version</h2>
 <p>Moon Tonight shows the Moon's phase tonight and for the nights ahead, for
@@ -46,8 +46,8 @@ data as possible.</p>
   provider to fetch moonrise and moonset times, and to your phone's operating
   system to turn into a town name; the <strong>town name you type</strong> into the place
   search goes to your phone's operating system to find its coordinates; and
-  in the free version, <strong>device and advertising information</strong> goes
-  to Google to serve a banner ad.</p>
+  in the free version, once ads return on 1 January 2027, <strong>device and
+  advertising information</strong> goes to Google to serve a banner ad.</p>
 <p>Your coordinates are deliberately <strong>rounded to two decimal places
   (about 1.1 km)</strong> before they are sent to the weather provider. Moonrise
   moves by seconds per kilometre, so the extra precision buys nothing and we do
@@ -55,8 +55,10 @@ data as possible.</p>
 <p>Ads are requested <strong>non-personalised</strong>, and the app puts
   Google into <strong>limited ads</strong> mode before any ad can load — no
   personalisation, and no advertising identifier used to profile you. There is
-  no consent form, because there is no personalisation to consent to. Buying
-<strong>Remove Ads</strong> stops ad requests entirely.</p>
+  no consent form, because there is no personalisation to consent to.
+<strong>Ads are paused</strong> until 1 January 2027, and until then the ad SDK
+  is not started at all. Any <strong>support purchase</strong> keeps the app
+  free of ads for good.</p>
 <p>Your settings, your saved places, your cached moonrise and moonset times and
   your reminders stay on your device. Deleting the app deletes them.</p>
 <p>The rest of this page sets all of that out in detail, including who receives
@@ -84,8 +86,8 @@ happen.</p>
 <tr><td>Approximate coordinates, rounded to 2 decimal places (~1.1 km), of your location or of a place you chose</td><td>To fetch moonrise and moonset times and the place's time zone</td><td>Performance of the service you asked for</td><td><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a>, operated by Zoomash Ltd</td><td>United Kingdom; Zoomash's own policy discloses possible onward transfer to the United States, Russia, Japan, China and India</td><td>We keep nothing. Zoomash states only that data "shall not be kept for longer than is necessary"</td></tr>
 <tr><td>Approximate coordinates</td><td>To turn coordinates into the town or suburb name shown on screen</td><td>Performance of the service you asked for</td><td>Your device's operating system vendor — <a href="https://www.apple.com/legal/privacy/">Apple</a> on iOS, <a href="https://policies.google.com/privacy">Google</a> on Android</td><td>United States and other countries where Apple and Google operate</td><td>We keep nothing. See Apple's and Google's policies</td></tr>
 <tr><td>The town or city name you type into the place search</td><td>To find that place's coordinates so you can save it</td><td>Performance of the service you asked for</td><td>Your device's operating system vendor — Apple on iOS, Google on Android</td><td>United States and other countries where Apple and Google operate</td><td>We keep nothing. See Apple's and Google's policies</td></tr>
-<tr><td>Device information, IP address, advertising identifier</td><td>To serve and measure the banner ad in the free version</td><td><strong>Legitimate interests</strong> — keeping the app free for people who do not buy Remove Ads. You can object; Remove Ads ends it outright</td><td><a href="https://policies.google.com/privacy">Google AdMob</a></td><td>United States and other countries where Google operates</td><td>We keep nothing. See Google's policy</td></tr>
-<tr><td>Your "Remove Ads" purchase</td><td>To take payment and to restore the purchase on your other devices</td><td>Performance of the contract of sale</td><td>Apple (App Store) or Google (Google Play), as merchant of record</td><td>United States and other countries where Apple and Google operate</td><td>Set by Apple or Google. We never see your name, payment details or billing information</td></tr>
+<tr><td>Device information, IP address, advertising identifier</td><td>To serve and measure the banner ad in the free version from 1 January 2027 (nothing is sent while ads are paused)</td><td><strong>Legitimate interests</strong> — keeping the app free for people who have not made a support purchase. You can object; any support purchase ends it outright</td><td><a href="https://policies.google.com/privacy">Google AdMob</a></td><td>United States and other countries where Google operates</td><td>We keep nothing. See Google's policy</td></tr>
+<tr><td>Your support purchases</td><td>To take payment and to restore the ad-free purchase on your other devices</td><td>Performance of the contract of sale</td><td>Apple (App Store) or Google (Google Play), as merchant of record</td><td>United States and other countries where Apple and Google operate</td><td>Set by Apple or Google. We never see your name, payment details or billing information</td></tr>
 <tr><td>Settings, saved places, cached moonrise/moonset times, reminders, time zone</td><td>So the app opens instantly and works offline</td><td>Not transmitted — no disclosure occurs</td><td>Nobody. This never leaves your device.</td><td>Your device only</td><td>Until you change it or delete the app. The cached times are overwritten on each refresh</td></tr>
 </table>
 </div>
@@ -125,10 +127,14 @@ is a statement about us, not about the third parties named in the table, who
 receive what the table says they receive, directly from your device.</p>
 
 <h2>Advertising, and the basis for it</h2>
-<p>The free version shows a single banner ad served by Google AdMob. Ads are
-requested <strong>non-personalised</strong>: we do not request ads based on your
-interests or on a profile of you, and we do not use your location to target
-advertising.</p>
+<p><strong>Ads are paused.</strong> Until 1 January 2027 the app shows no
+ads, and the advertising SDK is not started at all, so nothing is sent to
+Google AdMob. From that date the free version shows a single banner ad, as
+described below.</p>
+<p>When ads return, the free version shows a single banner ad served by Google
+AdMob. Ads are requested <strong>non-personalised</strong>: we do not request
+ads based on your interests or on a profile of you, and we do not use your
+location to target advertising.</p>
 <p>The app additionally puts Google into <strong>limited ads</strong> mode,
 natively, before any ad can load. No advertising identifier is used to build a
 profile of you, and <strong>no consent form is shown anywhere in the world</strong>,
@@ -138,7 +144,8 @@ on your device and receives device information and your IP address. Google store
 a limited amount on the device to detect invalid and fraudulent ad traffic, and
 uses the IP address to deliver the ad. Our legal basis for this is
 <strong>legitimate interests</strong>: keeping the app free for people who do not
-buy Remove Ads. You can object to it, and Remove Ads ends it outright.</p>
+make a support purchase. You can object to it, and any support purchase ends
+it outright.</p>
 <p>Google also states that it may estimate your general location from your IP
 address for advertising purposes. That estimation is Google's, is separate from
 the coordinates described above, and happens whether or not you have granted the
@@ -149,7 +156,7 @@ app location permission.</p>
   us using the details at the end of this policy.</li>
 <li>Your device's own advertising controls (reset or limit the advertising
   identifier) apply as well.</li>
-<li>Buying <strong>Remove Ads</strong> stops ad requests entirely — the ad SDK
+<li>Any <strong>support purchase</strong> stops ad requests for good — the ad SDK
   makes no further requests, and Google's collection through this app stops with
   it.</li>
 </ul>
@@ -171,14 +178,18 @@ you — we receive advertising revenue.</strong></p>
 <p>The app is not a web browser and receives no "Do Not Track" browser signal,
 so there is no such signal for it to respond to. We do not track you across
 other apps or websites. The controls that actually work here are the ones listed
-above: your device's advertising settings, and Remove Ads.</p>
+above: your device's advertising settings, and any support purchase.</p>
 
 <h2>Purchases</h2>
-<p>The one-time Remove Ads purchase is processed entirely by Apple's App Store
-or Google Play, who are the merchant of record. We never see your name, payment
-details or billing information. We receive from the store only a confirmation
-that the purchase exists, which is what lets the app hide the banner and restore
-your purchase on your other devices.</p>
+<p>Settings offers three optional support purchases — Small thank-you,
+Thank-you and Big thank-you. Each is a one-time payment, not a subscription.
+The first one you buy, at any of the three, keeps the app ad-free for good on
+devices signed in to the same store account; after that, each is a further
+thank-you that unlocks nothing extra. All of them are processed entirely by
+Apple's App Store or Google Play, who are the merchant of record. We never see
+your name, payment details or billing information. We receive from the store
+only a confirmation that a purchase exists, which is what lets the app keep the
+banner away and restore the ad-free purchase on your other devices.</p>
 
 <h2>Notifications</h2>
 <p>The optional full Moon and new Moon reminders are calculated in the app and
