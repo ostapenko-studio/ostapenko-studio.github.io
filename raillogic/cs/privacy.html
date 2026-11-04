@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany soukromí — Rail Logic</title>
+<style>
+  body {
+    background: #F2EFE9;
+    color: #3A3226;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  .meta { color: #716B60; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #2C627E; }
+  table { border-collapse: collapse; font-size: 0.9rem; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #D9D3C7; }
+<!-- l10n:css -->
+  .langs { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #D9D3C7; font-size: 0.85rem; line-height: 2; }
+  .langs h2 { font-size: 0.85rem; margin: 0 0 0.5rem; color: #716B60; font-weight: 600; }
+  .langs a { color: #716B60; text-decoration: none; margin-inline-end: 0.9rem; white-space: nowrap; }
+  .langs a:hover { color: #2C627E; text-decoration: underline; }
+  .langs a[aria-current] { color: #3A3226; font-weight: 600; }
+  <!-- /l10n:css -->
+</style>
+<link rel="canonical" href="https://ostapenko.studio/raillogic/cs/privacy.html">
+<link rel="alternate" hreflang="en" href="https://ostapenko.studio/raillogic/privacy.html">
+<link rel="alternate" hreflang="af" href="https://ostapenko.studio/raillogic/af/privacy.html">
+<link rel="alternate" hreflang="ar" href="https://ostapenko.studio/raillogic/ar/privacy.html">
+<link rel="alternate" hreflang="bg" href="https://ostapenko.studio/raillogic/bg/privacy.html">
+<link rel="alternate" hreflang="bn" href="https://ostapenko.studio/raillogic/bn/privacy.html">
+<link rel="alternate" hreflang="ca" href="https://ostapenko.studio/raillogic/ca/privacy.html">
+<link rel="alternate" hreflang="cs" href="https://ostapenko.studio/raillogic/cs/privacy.html">
+<link rel="alternate" hreflang="da" href="https://ostapenko.studio/raillogic/da/privacy.html">
+<link rel="alternate" hreflang="de" href="https://ostapenko.studio/raillogic/de/privacy.html">
+<link rel="alternate" hreflang="el" href="https://ostapenko.studio/raillogic/el/privacy.html">
+<link rel="alternate" hreflang="es" href="https://ostapenko.studio/raillogic/es/privacy.html">
+<link rel="alternate" hreflang="es-419" href="https://ostapenko.studio/raillogic/es-419/privacy.html">
+<link rel="alternate" hreflang="es-MX" href="https://ostapenko.studio/raillogic/es-MX/privacy.html">
+<link rel="alternate" hreflang="et" href="https://ostapenko.studio/raillogic/et/privacy.html">
+<link rel="alternate" hreflang="fa" href="https://ostapenko.studio/raillogic/fa/privacy.html">
+<link rel="alternate" hreflang="fi" href="https://ostapenko.studio/raillogic/fi/privacy.html">
+<link rel="alternate" hreflang="fil" href="https://ostapenko.studio/raillogic/fil/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://ostapenko.studio/raillogic/fr/privacy.html">
+<link rel="alternate" hreflang="fr-CA" href="https://ostapenko.studio/raillogic/fr-CA/privacy.html">
+<link rel="alternate" hreflang="gu" href="https://ostapenko.studio/raillogic/gu/privacy.html">
+<link rel="alternate" hreflang="he" href="https://ostapenko.studio/raillogic/he/privacy.html">
+<link rel="alternate" hreflang="hi" href="https://ostapenko.studio/raillogic/hi/privacy.html">
+<link rel="alternate" hreflang="hr" href="https://ostapenko.studio/raillogic/hr/privacy.html">
+<link rel="alternate" hreflang="hu" href="https://ostapenko.studio/raillogic/hu/privacy.html">
+<link rel="alternate" hreflang="id" href="https://ostapenko.studio/raillogic/id/privacy.html">
+<link rel="alternate" hreflang="it" href="https://ostapenko.studio/raillogic/it/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://ostapenko.studio/raillogic/ja/privacy.html">
+<link rel="alternate" hreflang="kn" href="https://ostapenko.studio/raillogic/kn/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://ostapenko.studio/raillogic/ko/privacy.html">
+<link rel="alternate" hreflang="lt" href="https://ostapenko.studio/raillogic/lt/privacy.html">
+<link rel="alternate" hreflang="lv" href="https://ostapenko.studio/raillogic/lv/privacy.html">
+<link rel="alternate" hreflang="ml" href="https://ostapenko.studio/raillogic/ml/privacy.html">
+<link rel="alternate" hreflang="mr" href="https://ostapenko.studio/raillogic/mr/privacy.html">
+<link rel="alternate" hreflang="ms" href="https://ostapenko.studio/raillogic/ms/privacy.html">
+<link rel="alternate" hreflang="nb" href="https://ostapenko.studio/raillogic/nb/privacy.html">
+<link rel="alternate" hreflang="nl" href="https://ostapenko.studio/raillogic/nl/privacy.html">
+<link rel="alternate" hreflang="pl" href="https://ostapenko.studio/raillogic/pl/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://ostapenko.studio/raillogic/pt-BR/privacy.html">
+<link rel="alternate" hreflang="pt-PT" href="https://ostapenko.studio/raillogic/pt-PT/privacy.html">
+<link rel="alternate" hreflang="ro" href="https://ostapenko.studio/raillogic/ro/privacy.html">
+<link rel="alternate" hreflang="ru" href="https://ostapenko.studio/raillogic/ru/privacy.html">
+<link rel="alternate" hreflang="sk" href="https://ostapenko.studio/raillogic/sk/privacy.html">
+<link rel="alternate" hreflang="sl" href="https://ostapenko.studio/raillogic/sl/privacy.html">
+<link rel="alternate" hreflang="sr" href="https://ostapenko.studio/raillogic/sr/privacy.html">
+<link rel="alternate" hreflang="sr-Latn" href="https://ostapenko.studio/raillogic/sr-Latn/privacy.html">
+<link rel="alternate" hreflang="sv" href="https://ostapenko.studio/raillogic/sv/privacy.html">
+<link rel="alternate" hreflang="sw" href="https://ostapenko.studio/raillogic/sw/privacy.html">
+<link rel="alternate" hreflang="ta" href="https://ostapenko.studio/raillogic/ta/privacy.html">
+<link rel="alternate" hreflang="te" href="https://ostapenko.studio/raillogic/te/privacy.html">
+<link rel="alternate" hreflang="th" href="https://ostapenko.studio/raillogic/th/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://ostapenko.studio/raillogic/tr/privacy.html">
+<link rel="alternate" hreflang="uk" href="https://ostapenko.studio/raillogic/uk/privacy.html">
+<link rel="alternate" hreflang="ur" href="https://ostapenko.studio/raillogic/ur/privacy.html">
+<link rel="alternate" hreflang="vi" href="https://ostapenko.studio/raillogic/vi/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://ostapenko.studio/raillogic/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://ostapenko.studio/raillogic/zh-Hant-HK/privacy.html">
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://ostapenko.studio/raillogic/zh-Hant-TW/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://ostapenko.studio/raillogic/privacy.html">
+</head>
+<body>
+
+<h1>Zásady ochrany soukromí</h1>
+<p class="meta">Rail Logic, Ostapenko Studio · Účinné od 4. listopadu 2026</p>
+<p class="meta">Závazné je <a href="../privacy.html">anglické znění</a>. Překlady poskytujeme pro usnadnění; pokud se překlad liší, platí anglické znění v rozsahu, který připouští místní právo.</p>
+
+<p>Rail Logic je logická hádanka: položíte jednu železniční trať z bodu A do
+bodu B tak, aby odpovídala číslům u každého řádku a sloupce. Je postavená tak,
+aby shromažďovala co nejméně dat. Nejsou tu žádné účty, žádné registrace,
+žádné analytické nástroje a neprovozujeme žádné servery — nic, co v aplikaci
+děláte, nám není odesíláno. Každá hádanka, včetně denní hádanky a bonusových
+úrovní, je uložená nebo generovaná ve vašem zařízení a hra plně funguje
+offline.</p>
+
+<h2>Data uložená ve vašem zařízení</h2>
+<p>Váš postup (které hádanky jste vyřešili, vaše nejlepší časy, rozehraná
+hrací plocha a její historie kroků zpět a kolik nápověd jste použili), vaše
+nastavení (zobrazení chyb, časovač, zvuk a haptika, vzhled) a informace, zda
+jste zakoupili Odstranit reklamy, jsou uloženy pouze místně ve vašem
+zařízení. My je nevidíme. Odstraněním aplikace — nebo v případě postupu volbou
+„Vymazat postup“ v Nastavení — se tato data smažou.</p>
+
+<h2>Reklama</h2>
+<p>Bezplatná verze aplikace zobrazuje bannerovou reklamu doručovanou službou
+Google AdMob a nabízí volitelná krátká videa s odměnou, rovněž od Google
+AdMob, která můžete zhlédnout výměnou za nápovědu nebo bonusovou úroveň.
+Video se přehraje pouze tehdy, když jeho spuštění sami klepnutím zahájíte.
+Reklamy běží v režimu Google
+<a href="https://support.google.com/admob/answer/10105530">omezené reklamy</a>:
+nejsou personalizované a k vytváření vašeho profilu se nepoužívá žádný
+reklamní identifikátor. Nikde na světě nežádáme o reklamy na základě vašich
+zájmů ani vašeho profilu. Viz
+<a href="https://policies.google.com/privacy">Zásady ochrany soukromí Google</a> a
+<a href="https://policies.google.com/technologies/partner-sites">Jak
+Google používá informace z webů nebo aplikací, které využívají jeho
+služby</a>.</p>
+<p>Protože se nic nepersonalizuje a k vytváření vašeho profilu se nepoužívá
+žádný reklamní identifikátor, aplikace nezobrazuje žádný formulář souhlasu
+s reklamou ani žádost o povolení sledování. Dvě věci se přesto dějí a raději
+je uvedeme přímo, než abychom je nechali objevit: Google používá IP adresu
+vašeho zařízení k doručení reklamy a může do zařízení uložit malé množství dat
+výhradně za účelem odhalování neplatného provozu a podvodů. Ani jedno
+neslouží k vytvoření vašeho profilu ani ke sledování napříč jinými aplikacemi
+či weby.</p>
+<p>Zakoupení možnosti Odstranit reklamy zcela odstraní reklamu — a s ní
+i shromažďování dat službou AdMob: reklamní SDK se vůbec nespustí. Reklamní
+identifikátor můžete také kdykoli resetovat nebo omezit v nastavení samotného
+zařízení (iOS: Nastavení → Soukromí a zabezpečení → Sledování / Reklama Apple;
+Android: Nastavení → Soukromí → Reklamy). Aplikace nereaguje na signály
+prohlížeče „Do Not Track“ (nesledovat), protože není webovou stránkou a nemá
+prohlížeč, od kterého by je mohla přijmout.</p>
+
+<h2>Nákupy</h2>
+<p>Jednorázový nákup Odstranit reklamy zpracovává výhradně App Store
+společnosti Apple nebo Google Play. Vaše jméno, platební údaje ani fakturační
+údaje nikdy nevidíme.</p>
+
+<h2>Co se zpracovává, proč a jak dlouho</h2>
+<table>
+<tr><th>Data</th><th>Účel</th><th>Kdo je přijímá</th><th>Doba uchování</th></tr>
+<tr><td>Informace o zařízení pro reklamu (IP adresa, identifikátory zařízení, signály neplatného provozu, interakce s reklamou a diagnostická data, jako jsou pády a výkon aplikace — nic z toho se nepoužívá k personalizaci reklam ani k vytváření vašeho profilu)</td><td>Doručování bannerové reklamy a videí s odměnou, která se v bezplatné verzi rozhodnete zhlédnout, v režimu omezených reklam, a dále měření a prevence podvodů ze strany společnosti Google u těchto reklam</td><td>Google AdMob</td><td>My neuchováváme. Google: viz jeho zásady ochrany soukromí</td></tr>
+<tr><td>Postup v hádankách, nejlepší časy, počty nápověd a nastavení</td><td>Abyste mohli pokračovat tam, kde jste skončili</td><td>Nikdo — zůstává ve vašem zařízení</td><td>Dokud postup nevymažete nebo aplikaci neodstraníte</td></tr>
+<tr><td>Stav nákupu Odstranit reklamy</td><td>Skrytí reklam po nákupu</td><td>Nákup zpracovává Apple / Google; aplikace ukládá jen příznak ano/ne</td><td>Dokud aplikaci neodstraníte; obchod vede vlastní záznam</td></tr>
+</table>
+<p>Reklamní služby Google zpracovávají data ve Spojených státech a v dalších
+zemích, kde Google působí. Google tato data dostává přímo z vašeho zařízení,
+nikoli od nás, a nakládá s nimi podle svých vlastních zásad ochrany soukromí,
+na které odkazujeme výše. Protože nic neuchováváme, sami žádné další předání
+neprovádíme.</p>
+<p>Osobní údaje neprodáváme a pro vlastní účely nepoužíváme analytiku, hlášení
+pádů ani reklamní identifikátory. Nedochází k žádnému automatizovanému
+rozhodování o vás.</p>
+
+<h2>Děti</h2>
+<p>Aplikace je vhodná pro širokou veřejnost a vědomě neshromažďuje osobní
+údaje od nikoho, včetně dětí.</p>
+
+<h2>Vaše práva</h2>
+<p>S osobními údaji nakládáme v souladu s australským zákonem o ochraně
+soukromí (Privacy Act 1988 (Cth)) a Australskými zásadami ochrany soukromí
+(Australian Privacy Principles). Protože o vás žádné osobní údaje
+neshromažďujeme ani neuchováváme, obvykle není co zpřístupnit, opravit nebo
+vymazat — pokud však máte jakékoli dotazy nebo obavy, opravdu je chceme
+slyšet. Nebudete-li s naší odpovědí spokojeni, můžete podat stížnost
+australskému Úřadu komisaře pro informace (Office of the Australian
+Information Commissioner, <a href="https://www.oaic.gov.au/">oaic.gov.au</a>).</p>
+
+<h2>Regionální informace</h2>
+<p><strong>Evropský hospodářský prostor, Spojené království a Švýcarsko.</strong>
+Kde se uplatní GDPR (obecné nařízení o ochraně osobních údajů) nebo UK GDPR,
+reklama v bezplatné verzi se opírá o náš oprávněný zájem na financování
+bezplatné aplikace (čl. 6 odst. 1 písm. f)). Proti tomuto zpracování můžete
+kdykoli vznést námitku a nákup Odstranit reklamy je zcela ukončí. Máte právo na
+přístup, opravu, výmaz, omezení zpracování, přenositelnost a námitku a právo
+podat stížnost u místního dozorového úřadu (ve Spojeném království ICO). Protože žádné osobní
+údaje neuchováváme, není co exportovat, opravit ani vymazat — napište nám
+však a my vám to potvrdíme.</p>
+<p><strong>Spojené státy.</strong> Osobní údaje neprodáváme a za osobní údaje
+kohokoli nedostáváme žádné peníze. Aplikace je nastavena tak, aby žádala
+o nepersonalizované reklamy, což není behaviorální reklama napříč kontexty,
+jak ji popisuje kalifornské právo. Obyvatelé Kalifornie a dalších
+států se zákony o ochraně soukromí mohou svá práva uplatnit tím, že nás
+kontaktují; za to nikoho neznevýhodňujeme.</p>
+<p><strong>Kanada.</strong> S osobními údaji nakládáme v souladu se zákonem
+PIPEDA. Dotazy a stížnosti lze směrovat také na Úřad komisaře pro ochranu
+soukromí Kanady (Office of the Privacy Commissioner of Canada).</p>
+<p><strong>Brazílie.</strong> Podle LGPD je právním základem pro reklamu
+oprávněný zájem (čl. 7, IX). Naším kontaktem pro záležitosti ochrany údajů je
+níže uvedená adresa. Stížnosti lze podat u ANPD. Podle článku 18 LGPD nás
+můžete požádat o potvrzení, zda vaše osobní údaje zpracováváme, a o přístup
+k nim, jejich opravu, anonymizaci, blokování, výmaz nebo přenos, o informaci
+o tom, s kým jsme je sdíleli, a o odvolání souhlasu. Jak ukazuje výše uvedená
+tabulka, o vás nic neuchováváme — takže odpovědí na žádost o přístup bude
+v praxi to, že není co vydat, a písemně vám to sdělíme.</p>
+<p><strong>Indie.</strong> Podle zákona Digital Personal Data Protection Act
+2023 lze dotazy a stížnosti týkající se osobních údajů zasílat na níže uvedený
+kontakt, který na ně odpoví jménem Ostapenko Studio; usilujeme o odpověď do
+30 dnů. Pokud nebudete spokojeni, můžete podat stížnost u Data Protection
+Board of India.</p>
+<p><strong>Japonsko a Jižní Korea.</strong> Výše uvedená tabulka uvádí
+zpracovávané položky, jejich účel, příjemce a dobu uchování. Nejmenujeme
+žádného vlastního zpracovatele v zahraničí; Google přijímá reklamní data
+přímo z vašeho zařízení, mimo vaši zemi, podle svých vlastních zásad.</p>
+<p>Pro uživatele v Jižní Koreji jsou podrobnosti o datech odesílaných do
+zahraničí tyto: <strong>položky</strong> — IP adresa, identifikátory zařízení
+a reklamní identifikátory a interakce s reklamou (společnosti Google);
+<strong>kdy a jak</strong> — když bezplatná verze požádá o reklamu,
+šifrovaným spojením HTTPS; <strong>příjemce</strong> — Google LLC (Spojené
+státy, viz policies.google.com); <strong>účel a doba uchování</strong> —
+zobrazování a měření reklam, uchovávání podle vlastních zásad společnosti
+Google; <strong>vaše právo odmítnout</strong> — videa s odměnou se přehrají
+jen tehdy, když si je sami zvolíte, a reklamu můžete zcela odstranit
+zakoupením možnosti Odstranit reklamy.</p>
+<p><strong>Čína (pevninská).</strong> Neuchováváme osobní údaje žádného
+uživatele. Reklamní data v bezplatné verzi odesílá vaše zařízení přímo
+společnosti Google, mimo pevninskou Čínu. Dotazy týkající se osobních údajů
+lze zasílat na níže uvedenou adresu.</p>
+<p><strong>Rusko.</strong> Neukládáme osobní údaje žádného uživatele, v Rusku
+ani jinde; aplikace neprovozuje žádné servery.</p>
+
+<h2>Změny</h2>
+<p>Datum v záhlaví této stránky je datem její účinnosti. Pokud se tyto zásady
+změní, aktualizované znění bude zveřejněno na této adrese s novým datem
+účinnosti. Provedeme-li podstatnou změnu, toto datum aktualizujeme, změnu
+uvedeme v poznámkách k vydání aplikace, a tam, kde se změna dotýká toho, co se
+shromažďuje, vám to sdělíme v aplikaci.</p>
+
+<h2>Kontakt</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>Osobu odpovědnou za ochranu osobních údajů v Ostapenko Studio lze zastihnout
+na této adrese — a pro účely právních předpisů, které tyto tituly používají, je
+naším pověřencem pro ochranu soukromí (<em>privacy officer</em>, Jižní Korea),
+osobou odpovědnou za ochranu osobních údajů
+(<em>responsable de la protection des renseignements personnels</em>, Quebec)
+a osobou, která odpoví na dotazy či stížnosti týkající se osobních údajů
+(Indie). Usilujeme o to, abychom na jakýkoli dotaz či stížnost ohledně
+soukromí odpověděli do 30 dnů, a sdělíme vám, jak jsme s ní naložili.</p>
+
+
+<!-- l10n:start -->
+<nav class="langs">
+<h2>Další jazyky</h2>
+<a href="https://ostapenko.studio/raillogic/privacy.html" hreflang="en" lang="en">English</a>
+<a href="https://ostapenko.studio/raillogic/af/privacy.html" hreflang="af" lang="af">Afrikaans</a>
+<a href="https://ostapenko.studio/raillogic/ar/privacy.html" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+<a href="https://ostapenko.studio/raillogic/bg/privacy.html" hreflang="bg" lang="bg">Български</a>
+<a href="https://ostapenko.studio/raillogic/bn/privacy.html" hreflang="bn" lang="bn">বাংলা</a>
+<a href="https://ostapenko.studio/raillogic/ca/privacy.html" hreflang="ca" lang="ca">Català</a>
+<a href="https://ostapenko.studio/raillogic/cs/privacy.html" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="https://ostapenko.studio/raillogic/da/privacy.html" hreflang="da" lang="da">Dansk</a>
+<a href="https://ostapenko.studio/raillogic/de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+<a href="https://ostapenko.studio/raillogic/el/privacy.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="https://ostapenko.studio/raillogic/es/privacy.html" hreflang="es" lang="es">Español (España)</a>
+<a href="https://ostapenko.studio/raillogic/es-419/privacy.html" hreflang="es-419" lang="es-419">Español (Latinoamérica)</a>
+<a href="https://ostapenko.studio/raillogic/es-MX/privacy.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="https://ostapenko.studio/raillogic/et/privacy.html" hreflang="et" lang="et">Eesti</a>
+<a href="https://ostapenko.studio/raillogic/fa/privacy.html" hreflang="fa" lang="fa" dir="rtl">فارسی</a>
+<a href="https://ostapenko.studio/raillogic/fi/privacy.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="https://ostapenko.studio/raillogic/fil/privacy.html" hreflang="fil" lang="fil">Filipino</a>
+<a href="https://ostapenko.studio/raillogic/fr/privacy.html" hreflang="fr" lang="fr">Français (France)</a>
+<a href="https://ostapenko.studio/raillogic/fr-CA/privacy.html" hreflang="fr-CA" lang="fr-CA">Français (Canada)</a>
+<a href="https://ostapenko.studio/raillogic/gu/privacy.html" hreflang="gu" lang="gu">ગુજરાતી</a>
+<a href="https://ostapenko.studio/raillogic/he/privacy.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+<a href="https://ostapenko.studio/raillogic/hi/privacy.html" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="https://ostapenko.studio/raillogic/hr/privacy.html" hreflang="hr" lang="hr">Hrvatski</a>
+<a href="https://ostapenko.studio/raillogic/hu/privacy.html" hreflang="hu" lang="hu">Magyar</a>
+<a href="https://ostapenko.studio/raillogic/id/privacy.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="https://ostapenko.studio/raillogic/it/privacy.html" hreflang="it" lang="it">Italiano</a>
+<a href="https://ostapenko.studio/raillogic/ja/privacy.html" hreflang="ja" lang="ja">日本語</a>
+<a href="https://ostapenko.studio/raillogic/kn/privacy.html" hreflang="kn" lang="kn">ಕನ್ನಡ</a>
+<a href="https://ostapenko.studio/raillogic/ko/privacy.html" hreflang="ko" lang="ko">한국어</a>
+<a href="https://ostapenko.studio/raillogic/lt/privacy.html" hreflang="lt" lang="lt">Lietuvių</a>
+<a href="https://ostapenko.studio/raillogic/lv/privacy.html" hreflang="lv" lang="lv">Latviešu</a>
+<a href="https://ostapenko.studio/raillogic/ml/privacy.html" hreflang="ml" lang="ml">മലയാളം</a>
+<a href="https://ostapenko.studio/raillogic/mr/privacy.html" hreflang="mr" lang="mr">मराठी</a>
+<a href="https://ostapenko.studio/raillogic/ms/privacy.html" hreflang="ms" lang="ms">Bahasa Melayu</a>
+<a href="https://ostapenko.studio/raillogic/nb/privacy.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="https://ostapenko.studio/raillogic/nl/privacy.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="https://ostapenko.studio/raillogic/pl/privacy.html" hreflang="pl" lang="pl">Polski</a>
+<a href="https://ostapenko.studio/raillogic/pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="https://ostapenko.studio/raillogic/pt-PT/privacy.html" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a>
+<a href="https://ostapenko.studio/raillogic/ro/privacy.html" hreflang="ro" lang="ro">Română</a>
+<a href="https://ostapenko.studio/raillogic/ru/privacy.html" hreflang="ru" lang="ru">Русский</a>
+<a href="https://ostapenko.studio/raillogic/sk/privacy.html" hreflang="sk" lang="sk">Slovenčina</a>
+<a href="https://ostapenko.studio/raillogic/sl/privacy.html" hreflang="sl" lang="sl">Slovenščina</a>
+<a href="https://ostapenko.studio/raillogic/sr/privacy.html" hreflang="sr" lang="sr">Српски</a>
+<a href="https://ostapenko.studio/raillogic/sr-Latn/privacy.html" hreflang="sr-Latn" lang="sr-Latn">Srpski</a>
+<a href="https://ostapenko.studio/raillogic/sv/privacy.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="https://ostapenko.studio/raillogic/sw/privacy.html" hreflang="sw" lang="sw">Kiswahili</a>
+<a href="https://ostapenko.studio/raillogic/ta/privacy.html" hreflang="ta" lang="ta">தமிழ்</a>
+<a href="https://ostapenko.studio/raillogic/te/privacy.html" hreflang="te" lang="te">తెలుగు</a>
+<a href="https://ostapenko.studio/raillogic/th/privacy.html" hreflang="th" lang="th">ไทย</a>
+<a href="https://ostapenko.studio/raillogic/tr/privacy.html" hreflang="tr" lang="tr">Türkçe</a>
+<a href="https://ostapenko.studio/raillogic/uk/privacy.html" hreflang="uk" lang="uk">Українська</a>
+<a href="https://ostapenko.studio/raillogic/ur/privacy.html" hreflang="ur" lang="ur" dir="rtl">اردو</a>
+<a href="https://ostapenko.studio/raillogic/vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hant-HK/privacy.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">繁體中文（香港）</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hant-TW/privacy.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文（台灣）</a>
+</nav>
+<!-- l10n:end -->
+
+</body>
+</html>

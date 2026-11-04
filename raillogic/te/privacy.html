@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>గోప్యతా విధానం — Rail Logic</title>
+<style>
+  body {
+    background: #F2EFE9;
+    color: #3A3226;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  .meta { color: #716B60; font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: #2C627E; }
+  table { border-collapse: collapse; font-size: 0.9rem; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #D9D3C7; }
+<!-- l10n:css -->
+  .langs { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #D9D3C7; font-size: 0.85rem; line-height: 2; }
+  .langs h2 { font-size: 0.85rem; margin: 0 0 0.5rem; color: #716B60; font-weight: 600; }
+  .langs a { color: #716B60; text-decoration: none; margin-inline-end: 0.9rem; white-space: nowrap; }
+  .langs a:hover { color: #2C627E; text-decoration: underline; }
+  .langs a[aria-current] { color: #3A3226; font-weight: 600; }
+  <!-- /l10n:css -->
+</style>
+<link rel="canonical" href="https://ostapenko.studio/raillogic/te/privacy.html">
+<link rel="alternate" hreflang="en" href="https://ostapenko.studio/raillogic/privacy.html">
+<link rel="alternate" hreflang="af" href="https://ostapenko.studio/raillogic/af/privacy.html">
+<link rel="alternate" hreflang="ar" href="https://ostapenko.studio/raillogic/ar/privacy.html">
+<link rel="alternate" hreflang="bg" href="https://ostapenko.studio/raillogic/bg/privacy.html">
+<link rel="alternate" hreflang="bn" href="https://ostapenko.studio/raillogic/bn/privacy.html">
+<link rel="alternate" hreflang="ca" href="https://ostapenko.studio/raillogic/ca/privacy.html">
+<link rel="alternate" hreflang="cs" href="https://ostapenko.studio/raillogic/cs/privacy.html">
+<link rel="alternate" hreflang="da" href="https://ostapenko.studio/raillogic/da/privacy.html">
+<link rel="alternate" hreflang="de" href="https://ostapenko.studio/raillogic/de/privacy.html">
+<link rel="alternate" hreflang="el" href="https://ostapenko.studio/raillogic/el/privacy.html">
+<link rel="alternate" hreflang="es" href="https://ostapenko.studio/raillogic/es/privacy.html">
+<link rel="alternate" hreflang="es-419" href="https://ostapenko.studio/raillogic/es-419/privacy.html">
+<link rel="alternate" hreflang="es-MX" href="https://ostapenko.studio/raillogic/es-MX/privacy.html">
+<link rel="alternate" hreflang="et" href="https://ostapenko.studio/raillogic/et/privacy.html">
+<link rel="alternate" hreflang="fa" href="https://ostapenko.studio/raillogic/fa/privacy.html">
+<link rel="alternate" hreflang="fi" href="https://ostapenko.studio/raillogic/fi/privacy.html">
+<link rel="alternate" hreflang="fil" href="https://ostapenko.studio/raillogic/fil/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://ostapenko.studio/raillogic/fr/privacy.html">
+<link rel="alternate" hreflang="fr-CA" href="https://ostapenko.studio/raillogic/fr-CA/privacy.html">
+<link rel="alternate" hreflang="gu" href="https://ostapenko.studio/raillogic/gu/privacy.html">
+<link rel="alternate" hreflang="he" href="https://ostapenko.studio/raillogic/he/privacy.html">
+<link rel="alternate" hreflang="hi" href="https://ostapenko.studio/raillogic/hi/privacy.html">
+<link rel="alternate" hreflang="hr" href="https://ostapenko.studio/raillogic/hr/privacy.html">
+<link rel="alternate" hreflang="hu" href="https://ostapenko.studio/raillogic/hu/privacy.html">
+<link rel="alternate" hreflang="id" href="https://ostapenko.studio/raillogic/id/privacy.html">
+<link rel="alternate" hreflang="it" href="https://ostapenko.studio/raillogic/it/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://ostapenko.studio/raillogic/ja/privacy.html">
+<link rel="alternate" hreflang="kn" href="https://ostapenko.studio/raillogic/kn/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://ostapenko.studio/raillogic/ko/privacy.html">
+<link rel="alternate" hreflang="lt" href="https://ostapenko.studio/raillogic/lt/privacy.html">
+<link rel="alternate" hreflang="lv" href="https://ostapenko.studio/raillogic/lv/privacy.html">
+<link rel="alternate" hreflang="ml" href="https://ostapenko.studio/raillogic/ml/privacy.html">
+<link rel="alternate" hreflang="mr" href="https://ostapenko.studio/raillogic/mr/privacy.html">
+<link rel="alternate" hreflang="ms" href="https://ostapenko.studio/raillogic/ms/privacy.html">
+<link rel="alternate" hreflang="nb" href="https://ostapenko.studio/raillogic/nb/privacy.html">
+<link rel="alternate" hreflang="nl" href="https://ostapenko.studio/raillogic/nl/privacy.html">
+<link rel="alternate" hreflang="pl" href="https://ostapenko.studio/raillogic/pl/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://ostapenko.studio/raillogic/pt-BR/privacy.html">
+<link rel="alternate" hreflang="pt-PT" href="https://ostapenko.studio/raillogic/pt-PT/privacy.html">
+<link rel="alternate" hreflang="ro" href="https://ostapenko.studio/raillogic/ro/privacy.html">
+<link rel="alternate" hreflang="ru" href="https://ostapenko.studio/raillogic/ru/privacy.html">
+<link rel="alternate" hreflang="sk" href="https://ostapenko.studio/raillogic/sk/privacy.html">
+<link rel="alternate" hreflang="sl" href="https://ostapenko.studio/raillogic/sl/privacy.html">
+<link rel="alternate" hreflang="sr" href="https://ostapenko.studio/raillogic/sr/privacy.html">
+<link rel="alternate" hreflang="sr-Latn" href="https://ostapenko.studio/raillogic/sr-Latn/privacy.html">
+<link rel="alternate" hreflang="sv" href="https://ostapenko.studio/raillogic/sv/privacy.html">
+<link rel="alternate" hreflang="sw" href="https://ostapenko.studio/raillogic/sw/privacy.html">
+<link rel="alternate" hreflang="ta" href="https://ostapenko.studio/raillogic/ta/privacy.html">
+<link rel="alternate" hreflang="te" href="https://ostapenko.studio/raillogic/te/privacy.html">
+<link rel="alternate" hreflang="th" href="https://ostapenko.studio/raillogic/th/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://ostapenko.studio/raillogic/tr/privacy.html">
+<link rel="alternate" hreflang="uk" href="https://ostapenko.studio/raillogic/uk/privacy.html">
+<link rel="alternate" hreflang="ur" href="https://ostapenko.studio/raillogic/ur/privacy.html">
+<link rel="alternate" hreflang="vi" href="https://ostapenko.studio/raillogic/vi/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://ostapenko.studio/raillogic/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://ostapenko.studio/raillogic/zh-Hant-HK/privacy.html">
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://ostapenko.studio/raillogic/zh-Hant-TW/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://ostapenko.studio/raillogic/privacy.html">
+</head>
+<body>
+
+<h1>గోప్యతా విధానం</h1>
+<p class="meta">Rail Logic, Ostapenko Studio · అమల్లోకి వచ్చే తేదీ 4 నవంబరు 2026</p>
+<p class="meta"><a href="../privacy.html">ఆంగ్ల పాఠమే</a> అధికారిక (canonical) వెర్షన్. అనువాదాలు సౌలభ్యం కోసం మాత్రమే; అనువాదం భిన్నంగా ఉన్నచోట, స్థానిక చట్టం అనుమతించిన మేరకు ఆంగ్ల వెర్షనే వర్తిస్తుంది.</p>
+
+<p>Rail Logic ఒక తర్కపు పజిల్: ప్రతి వరుస, ప్రతి నిలువు వరుస పక్కన ఉన్న సంఖ్యలకు సరిపోయేలా A నుంచి B వరకు ఒకే ఒక రైలు పట్టాను వేస్తారు. వీలైనంత తక్కువ డేటాను సేకరించేలా దీన్ని రూపొందించాం. ఖాతాలు లేవు, సైన్-అప్‌లు లేవు, అనలిటిక్స్ ట్రాకర్లు లేవు, మేం ఎలాంటి సర్వర్లనూ నడపం — యాప్‌లో మీరు చేసే ఏదీ మాకు పంపబడదు. రోజువారీ పజిల్, బోనస్ స్థాయిలతో సహా ప్రతి పజిల్ మీ పరికరంలోనే నిల్వ ఉంటుంది లేదా అక్కడే రూపొందుతుంది; గేమ్ ఇంటర్నెట్ లేకుండానే పూర్తిగా పనిచేస్తుంది.</p>
+
+<h2>మీ పరికరంలో నిల్వ ఉండే డేటా</h2>
+<p>మీ పురోగతి (మీరు ఏ పజిల్‌లు పరిష్కరించారు, మీ ఉత్తమ సమయాలు, మీరు ప్రస్తుతం ఆడుతున్న బోర్డు, దాని అన్‌డూ చరిత్ర, మీరు ఎన్ని సూచనలు ఉపయోగించారు), మీ సెట్టింగ్‌లు (తప్పులను చూపడం, టైమర్, శబ్దం మరియు వైబ్రేషన్, రూపం) మరియు మీరు «ప్రకటనలు తీసివేయండి» కొన్నారా అనేది మీ పరికరంలో మాత్రమే స్థానికంగా నిల్వ ఉంటాయి. వాటిని మేం చూడలేం. యాప్‌ను తొలగిస్తే — లేదా పురోగతి విషయంలో, సెట్టింగ్‌లలో «పురోగతిని రీసెట్ చేయండి» ఎంచుకుంటే — ఈ డేటా తొలగిపోతుంది.</p>
+
+<h2>ప్రకటనలు</h2>
+<p>యాప్ ఉచిత సంస్కరణ Google AdMob అందించే ఒక బ్యానర్ ప్రకటనను చూపుతుంది; అలాగే, ఒక సూచన లేదా ఒక బోనస్ స్థాయికి బదులుగా మీరు కావాలనుకుంటే చూడగలిగే ఐచ్ఛిక చిన్న రివార్డ్ వీడియోలను కూడా (అవీ Google AdMob నుంచే) అందిస్తుంది. మీరు నొక్కి ప్రారంభిస్తేనే వీడియో ప్లే అవుతుంది. ప్రకటనలు Google యొక్క <a href="https://support.google.com/admob/answer/10105530">«పరిమిత ప్రకటనలు»</a> మోడ్‌లో పనిచేస్తాయి: అవి వ్యక్తిగతీకరించబడవు మరియు మీ ప్రొఫైల్‌ను రూపొందించడానికి ఏ ప్రకటన గుర్తింపుదారు ఉపయోగించబడదు. ప్రపంచంలో ఎక్కడా మీ ఆసక్తులు లేదా మీ ప్రొఫైల్ ఆధారంగా మేము ప్రకటనలను అభ్యర్థించము. <a href="https://policies.google.com/privacy">Google గోప్యతా విధానం</a> మరియు <a href="https://policies.google.com/technologies/partner-sites">Google సేవలను ఉపయోగించే సైట్‌లు లేదా యాప్‌ల నుంచి Google సమాచారాన్ని ఎలా ఉపయోగిస్తుంది</a> చూడండి.</p>
+<p>ఏదీ వ్యక్తిగతీకరించబడనందున మరియు మీ ప్రొఫైల్‌ను రూపొందించడానికి ఏ ప్రకటన గుర్తింపుదారు ఉపయోగించబడనందున, యాప్ ఎటువంటి ప్రకటన సమ్మతి ఫారమ్‌నూ, ట్రాకింగ్ అనుమతి అభ్యర్థననూ చూపదు. అయినప్పటికీ రెండు విషయాలు జరుగుతాయి, వాటిని కనుగొననివ్వడం కంటే స్పష్టంగా చెప్పడాన్ని మేము ఇష్టపడతాము: ప్రకటనను అందించడానికి Google మీ పరికరం IP చిరునామాను ఉపయోగిస్తుంది, మరియు చెల్లని ట్రాఫిక్ మరియు మోసాన్ని గుర్తించే ఏకైక ప్రయోజనం కోసం పరికరంలో కొద్ది మొత్తంలో డేటాను నిల్వ చేయవచ్చు. వీటిలో ఏదీ మీ ప్రొఫైల్‌ను రూపొందించడానికి లేదా ఇతర యాప్‌లు లేదా వెబ్‌సైట్‌లలో మిమ్మల్ని అనుసరించడానికి ఉపయోగించబడదు.</p>
+<p>«ప్రకటనలు తీసివేయండి» కొనుగోలు చేస్తే ప్రకటనలు — మరియు వాటితో పాటు AdMob డేటా సేకరణ — పూర్తిగా తొలగిపోతాయి: ప్రకటనల SDK అసలు ప్రారంభమే కాదు. మీ పరికరం సొంత సెట్టింగ్‌లలో ప్రకటన ఐడెంటిఫయర్‌ను ఎప్పుడైనా రీసెట్ చేయవచ్చు లేదా పరిమితం చేయవచ్చు కూడా (iOS: Settings → Privacy &amp; Security → Tracking / Apple Advertising; Android: Settings → Privacy → Ads). బ్రౌజర్ "Do Not Track" సంకేతాలకు యాప్ స్పందించదు — ఎందుకంటే ఇది వెబ్‌సైట్ కాదు, వాటిని అందుకోవడానికి దీనికి బ్రౌజర్ కూడా లేదు.</p>
+
+<h2>కొనుగోళ్లు</h2>
+<p>ఒక్కసారి చెల్లించే «ప్రకటనలు తీసివేయండి» కొనుగోలు పూర్తిగా Apple యొక్క App Store లేదా Google Play ద్వారా ప్రాసెస్ అవుతుంది. మీ పేరు, చెల్లింపు వివరాలు లేదా బిల్లింగ్ సమాచారం మాకు ఎప్పుడూ కనిపించవు.</p>
+
+<h2>ఏమి ప్రాసెస్ అవుతుంది, ఎందుకు, ఎంతకాలం</h2>
+<table>
+<tr><th>డేటా</th><th>ఉద్దేశం</th><th>ఎవరు అందుకుంటారు</th><th>నిల్వ కాలం</th></tr>
+<tr><td>ప్రకటన కోసం పరికర సమాచారం (IP చిరునామా, పరికర గుర్తింపుదారులు, చెల్లని ట్రాఫిక్ సంకేతాలు, ప్రకటనతో పరస్పర చర్యలు, మరియు క్రాష్‌లు, యాప్ పనితీరు వంటి డయాగ్నస్టిక్ డేటా — వీటిలో దేనినీ ప్రకటనలను వ్యక్తిగతీకరించడానికి లేదా మీ ప్రొఫైల్‌ను రూపొందించడానికి ఉపయోగించరు)</td><td>ఉచిత సంస్కరణలో బ్యానర్ ప్రకటననూ, మీరు చూడాలని ఎంచుకునే రివార్డ్ వీడియోలనూ «పరిమిత ప్రకటనలు» మోడ్‌లో అందించడం, మరియు ఆ ప్రకటనల కోసం Google చేసే కొలత మరియు మోసాల నివారణ</td><td>Google AdMob</td><td>మా వద్ద ఉండదు. Google: దాని గోప్యతా విధానం చూడండి</td></tr>
+<tr><td>పజిల్ పురోగతి, ఉత్తమ సమయాలు, సూచనల సంఖ్య మరియు సెట్టింగ్‌లు</td><td>మీరు ఆపిన చోటు నుంచే కొనసాగించేలా చేయడం</td><td>ఎవరూ కాదు — మీ పరికరంలోనే ఉంటుంది</td><td>మీరు పురోగతిని రీసెట్ చేసే వరకు లేదా యాప్‌ను తొలగించే వరకు</td></tr>
+<tr><td>«ప్రకటనలు తీసివేయండి» కొనుగోలు స్థితి</td><td>కొన్న తర్వాత ప్రకటనలను దాచడం</td><td>Apple / Google కొనుగోలును ప్రాసెస్ చేస్తాయి; యాప్ అవును/కాదు అనే గుర్తును మాత్రమే నిల్వ చేస్తుంది</td><td>మీరు యాప్‌ను తొలగించే వరకు; స్టోర్ తన సొంత రికార్డు ఉంచుకుంటుంది</td></tr>
+</table>
+<p>Google ప్రకటన సేవలు అమెరికాలోనూ, Google కార్యకలాపాలు సాగించే ఇతర దేశాల్లోనూ డేటాను ప్రాసెస్ చేస్తాయి. Google ఆ డేటాను మా నుంచి కాకుండా మీ పరికరం నుంచి నేరుగా అందుకుని, పైన లింక్ ఇచ్చిన తన సొంత గోప్యతా విధానం ప్రకారం నిర్వహిస్తుంది. మా వద్ద ఏమీ ఉండనందున, మా తరఫున ఎలాంటి తదుపరి బదిలీ (onward transfer) చేయం.</p>
+<p>వ్యక్తిగత సమాచారాన్ని మేం అమ్మం; అనలిటిక్స్, క్రాష్ రిపోర్టింగ్ లేదా ప్రకటన ఐడెంటిఫయర్లను మా సొంత ఉద్దేశాల కోసం ఉపయోగించం. మీ గురించి ఆటోమేటెడ్ నిర్ణయాలు ఏవీ లేవు.</p>
+
+<h2>పిల్లలు</h2>
+<p>ఈ యాప్ సాధారణ ప్రేక్షకులకు తగినది; పిల్లలతో సహా ఎవరి నుంచీ తెలిసి వ్యక్తిగత సమాచారాన్ని సేకరించదు.</p>
+
+<h2>మీ హక్కులు</h2>
+<p>ఆస్ట్రేలియా గోప్యతా చట్టం 1988 (Privacy Act 1988 (Cth)) మరియు ఆస్ట్రేలియా గోప్యతా సూత్రాల (Australian Privacy Principles) ప్రకారం మేం వ్యక్తిగత సమాచారాన్ని నిర్వహిస్తాం. మీ గురించి వ్యక్తిగత సమాచారాన్ని మేం సేకరించడం లేదా ఉంచుకోవడం లేనందున, యాక్సెస్ చేయడానికీ సరిదిద్దడానికీ తొలగించడానికీ మా వద్ద సాధారణంగా ఏమీ ఉండదు — అయినా మీకు ఏవైనా ప్రశ్నలు లేదా ఆందోళనలు ఉంటే, వాటిని వినాలని మేం నిజంగా కోరుకుంటున్నాం. మా స్పందనతో సంతృప్తి చెందకపోతే, ఆస్ట్రేలియా సమాచార కమిషనర్ కార్యాలయానికి (Office of the Australian Information Commissioner —
+<a href="https://www.oaic.gov.au/">oaic.gov.au</a>) ఫిర్యాదు చేయవచ్చు.</p>
+
+<h2>ప్రాంతీయ సమాచారం</h2>
+<p><strong>యూరోపియన్ ఆర్థిక ప్రాంతం, యునైటెడ్ కింగ్‌డమ్, స్విట్జర్లాండ్.</strong>
+GDPR లేదా UK GDPR వర్తించే చోట, ఉచిత సంస్కరణలోని ప్రకటనలు ఒక ఉచిత యాప్‌కు నిధులు సమకూర్చుకోవడంలో మాకున్న చట్టబద్ధమైన ప్రయోజనాలపై (ఆర్టికల్ 6(1)(f)) ఆధారపడతాయి; ఈ డేటా ప్రాసెసింగ్‌కు మీరు ఎప్పుడైనా అభ్యంతరం చెప్పవచ్చు, «ప్రకటనలు తీసివేయండి» కొంటే ఇది పూర్తిగా ముగుస్తుంది. యాక్సెస్, సవరణ, తొలగింపు, పరిమితి, పోర్టబిలిటీ, అభ్యంతరం హక్కులు, అలాగే మీ స్థానిక పర్యవేక్షణ సంస్థకు (యునైటెడ్ కింగ్‌డమ్‌లో ICO) ఫిర్యాదు చేసే హక్కు మీకు ఉన్నాయి. మా వద్ద వ్యక్తిగత డేటా ఏదీ లేనందున, ఎగుమతి చేయడానికీ సరిదిద్దడానికీ తొలగించడానికీ ఏమీ లేదు — అయినా మాకు రాయండి, దాన్ని ధ్రువీకరిస్తాం.</p>
+<p><strong>అమెరికా.</strong> వ్యక్తిగత సమాచారాన్ని మేం అమ్మం; ఎవరి వ్యక్తిగత సమాచారానికీ మేం డబ్బు తీసుకోం. వ్యక్తిగతీకరించని ప్రకటనలను అభ్యర్థించేలా యాప్ కాన్ఫిగర్ చేయబడింది; కాలిఫోర్నియా చట్టం వర్ణించే "క్రాస్-కాంటెక్స్ట్ ప్రవర్తనా ప్రకటన" (cross-context behavioural advertising) ఇది కాదు. కాలిఫోర్నియా మరియు గోప్యతా చట్టాలు ఉన్న ఇతర రాష్ట్రాల నివాసులు మమ్మల్ని సంప్రదించి తమ హక్కులను వినియోగించుకోవచ్చు; అలా చేసినందుకు మేం వివక్ష చూపం.</p>
+<p><strong>కెనడా.</strong> PIPEDAకు అనుగుణంగా మేం వ్యక్తిగత సమాచారాన్ని నిర్వహిస్తాం. ప్రశ్నలు లేదా ఫిర్యాదులను కెనడా గోప్యతా కమిషనర్ కార్యాలయానికి (Office of the Privacy Commissioner of Canada) కూడా పంపవచ్చు.</p>
+<p><strong>బ్రెజిల్.</strong> LGPD కింద, ప్రకటనలకు చట్టపరమైన ఆధారం చట్టబద్ధమైన ప్రయోజనాలు (ఆర్టికల్ 7, IX). డేటా రక్షణ విషయాల కోసం మా సంప్రదింపు కింద ఉన్న చిరునామా. ఫిర్యాదులను ANPDకి చేయవచ్చు. LGPD ఆర్టికల్ 18 కింద, మీ వ్యక్తిగత డేటాను మేం ప్రాసెస్ చేస్తున్నామో లేదో ధ్రువీకరించమని, దాన్ని యాక్సెస్ చేయమని, సరిదిద్దమని, గుర్తు తెలియకుండా చేయమని, నిలిపివేయమని, తొలగించమని, పోర్ట్ చేయమని, ఎవరితో పంచుకున్నామో తెలపమని, సమ్మతిని ఉపసంహరించమని మమ్మల్ని అడగవచ్చు. పైన ఉన్న పట్టిక చూపినట్టు, మీ గురించి మా వద్ద ఏమీ లేదు — కాబట్టి ఆచరణలో యాక్సెస్ అభ్యర్థనకు సమాధానం, ఇవ్వడానికి ఏమీ లేదు అనేదే; దాన్ని రాతపూర్వకంగా తెలియజేస్తాం.</p>
+<p><strong>భారతదేశం.</strong> డిజిటల్ వ్యక్తిగత డేటా రక్షణ చట్టం, 2023 (Digital Personal Data Protection Act, 2023) కింద, వ్యక్తిగత డేటా గురించిన ప్రశ్నలనూ ఫిర్యాదులనూ కింద ఉన్న చిరునామాకు పంపవచ్చు; Ostapenko Studio తరఫున వారు సమాధానం ఇస్తారు. 30 రోజుల్లోగా స్పందించడమే మా లక్ష్యం. సంతృప్తి చెందకపోతే, భారత డేటా రక్షణ బోర్డుకు (Data Protection Board of India) ఫిర్యాదు చేయవచ్చు.</p>
+<p><strong>జపాన్, దక్షిణ కొరియా.</strong> పైన ఉన్న పట్టిక నిర్వహించే అంశాలు, వాటి ఉద్దేశం, గ్రహీతలు, నిల్వ కాలాన్ని జాబితా చేస్తుంది. మా సొంత విదేశీ ప్రాసెసర్‌ను మేం ఎవరినీ నియమించం; Google తన సొంత విధానం కింద, మీ దేశం బయట, మీ పరికరం నుంచి నేరుగా ప్రకటన డేటాను అందుకుంటుంది.</p>
+<p>దక్షిణ కొరియాలోని వినియోగదారుల కోసం, విదేశాలకు పంపే డేటా వివరాలు: <strong>అంశాలు</strong> — IP చిరునామా, పరికర మరియు ప్రకటన గుర్తింపుదారులు, ప్రకటనలతో పరస్పర చర్యలు (Googleకు); <strong>ఎప్పుడు, ఎలా</strong> — ఉచిత సంస్కరణలో ప్రకటనను అభ్యర్థించినప్పుడు, ఎన్‌క్రిప్ట్ చేసిన HTTPS కనెక్షన్ ద్వారా; <strong>గ్రహీత</strong> — Google LLC (అమెరికా, policies.google.com చూడండి); <strong>ఉద్దేశం, నిల్వ కాలం</strong> — ప్రకటనలను అందించడం, కొలవడం; Google సొంత విధానం ప్రకారం నిల్వ ఉంటుంది; <strong>నిరాకరించే హక్కు</strong> — రివార్డ్ వీడియోలు మీరు ఎంచుకున్నప్పుడు మాత్రమే ప్లే అవుతాయి; «ప్రకటనలు తీసివేయండి» కొనడం ద్వారా ప్రకటనలను పూర్తిగా తొలగించవచ్చు.</p>
+<p><strong>చైనా (ప్రధాన భూభాగం).</strong> ఏ వినియోగదారుడి వ్యక్తిగత సమాచారాన్నీ మేం ఉంచుకోం. ఉచిత సంస్కరణలోని ప్రకటన డేటాను మీ పరికరం నేరుగా, ప్రధాన చైనా బయట ఉన్న Googleకు పంపుతుంది. వ్యక్తిగత సమాచారం గురించిన ప్రశ్నలను కింద ఉన్న చిరునామాకు పంపవచ్చు.</p>
+<p><strong>రష్యా.</strong> రష్యాలో గానీ మరెక్కడా గానీ ఏ వినియోగదారుడి వ్యక్తిగత డేటానూ మేం నిల్వ చేయం; యాప్ ఎలాంటి సర్వర్లూ నడపదు.</p>
+
+<h2>మార్పులు</h2>
+<p>ఈ పేజీ పైన ఉన్న తేదీయే దాని అమలు తేదీ. ఈ విధానం మారితే, నవీకరించిన వెర్షన్ కొత్త అమలు తేదీతో ఇదే చిరునామాలో ప్రచురించబడుతుంది. ముఖ్యమైన మార్పు చేస్తే, ఆ తేదీని నవీకరిస్తాం, యాప్ విడుదల గమనికల్లో పేర్కొంటాం; సేకరించేదానిపై ఆ మార్పు ప్రభావం చూపితే, దాన్ని యాప్‌లోనే చెబుతాం.</p>
+
+<h2>సంప్రదింపు</h2>
+<p>Ostapenko Studio<br>
+<a href="mailto:support@ostapenko.studio">support@ostapenko.studio</a></p>
+<p>Ostapenko Studioలో వ్యక్తిగత సమాచార రక్షణకు బాధ్యత వహించే వ్యక్తిని అదే చిరునామాలో సంప్రదించవచ్చు — ఈ పేర్లను ఉపయోగించే చట్టాల ఉద్దేశాల కోసం, వారే మా గోప్యతా అధికారి (దక్షిణ కొరియా), వ్యక్తిగత సమాచార రక్షణ బాధ్యుడు (క్విబెక్), మరియు వ్యక్తిగత డేటా గురించిన ప్రశ్నలకూ ఫిర్యాదులకూ సమాధానం ఇచ్చే వ్యక్తి (భారతదేశం). ఏ గోప్యతా ప్రశ్నకైనా ఫిర్యాదుకైనా 30 రోజుల్లోగా స్పందించడమే మా లక్ష్యం; దాని గురించి మేం ఏం చేశామో కూడా తెలియజేస్తాం.</p>
+
+
+<!-- l10n:start -->
+<nav class="langs">
+<h2>ఇతర భాషలు</h2>
+<a href="https://ostapenko.studio/raillogic/privacy.html" hreflang="en" lang="en">English</a>
+<a href="https://ostapenko.studio/raillogic/af/privacy.html" hreflang="af" lang="af">Afrikaans</a>
+<a href="https://ostapenko.studio/raillogic/ar/privacy.html" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+<a href="https://ostapenko.studio/raillogic/bg/privacy.html" hreflang="bg" lang="bg">Български</a>
+<a href="https://ostapenko.studio/raillogic/bn/privacy.html" hreflang="bn" lang="bn">বাংলা</a>
+<a href="https://ostapenko.studio/raillogic/ca/privacy.html" hreflang="ca" lang="ca">Català</a>
+<a href="https://ostapenko.studio/raillogic/cs/privacy.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="https://ostapenko.studio/raillogic/da/privacy.html" hreflang="da" lang="da">Dansk</a>
+<a href="https://ostapenko.studio/raillogic/de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+<a href="https://ostapenko.studio/raillogic/el/privacy.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="https://ostapenko.studio/raillogic/es/privacy.html" hreflang="es" lang="es">Español (España)</a>
+<a href="https://ostapenko.studio/raillogic/es-419/privacy.html" hreflang="es-419" lang="es-419">Español (Latinoamérica)</a>
+<a href="https://ostapenko.studio/raillogic/es-MX/privacy.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="https://ostapenko.studio/raillogic/et/privacy.html" hreflang="et" lang="et">Eesti</a>
+<a href="https://ostapenko.studio/raillogic/fa/privacy.html" hreflang="fa" lang="fa" dir="rtl">فارسی</a>
+<a href="https://ostapenko.studio/raillogic/fi/privacy.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="https://ostapenko.studio/raillogic/fil/privacy.html" hreflang="fil" lang="fil">Filipino</a>
+<a href="https://ostapenko.studio/raillogic/fr/privacy.html" hreflang="fr" lang="fr">Français (France)</a>
+<a href="https://ostapenko.studio/raillogic/fr-CA/privacy.html" hreflang="fr-CA" lang="fr-CA">Français (Canada)</a>
+<a href="https://ostapenko.studio/raillogic/gu/privacy.html" hreflang="gu" lang="gu">ગુજરાતી</a>
+<a href="https://ostapenko.studio/raillogic/he/privacy.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+<a href="https://ostapenko.studio/raillogic/hi/privacy.html" hreflang="hi" lang="hi">हिन्दी</a>
+<a href="https://ostapenko.studio/raillogic/hr/privacy.html" hreflang="hr" lang="hr">Hrvatski</a>
+<a href="https://ostapenko.studio/raillogic/hu/privacy.html" hreflang="hu" lang="hu">Magyar</a>
+<a href="https://ostapenko.studio/raillogic/id/privacy.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="https://ostapenko.studio/raillogic/it/privacy.html" hreflang="it" lang="it">Italiano</a>
+<a href="https://ostapenko.studio/raillogic/ja/privacy.html" hreflang="ja" lang="ja">日本語</a>
+<a href="https://ostapenko.studio/raillogic/kn/privacy.html" hreflang="kn" lang="kn">ಕನ್ನಡ</a>
+<a href="https://ostapenko.studio/raillogic/ko/privacy.html" hreflang="ko" lang="ko">한국어</a>
+<a href="https://ostapenko.studio/raillogic/lt/privacy.html" hreflang="lt" lang="lt">Lietuvių</a>
+<a href="https://ostapenko.studio/raillogic/lv/privacy.html" hreflang="lv" lang="lv">Latviešu</a>
+<a href="https://ostapenko.studio/raillogic/ml/privacy.html" hreflang="ml" lang="ml">മലയാളം</a>
+<a href="https://ostapenko.studio/raillogic/mr/privacy.html" hreflang="mr" lang="mr">मराठी</a>
+<a href="https://ostapenko.studio/raillogic/ms/privacy.html" hreflang="ms" lang="ms">Bahasa Melayu</a>
+<a href="https://ostapenko.studio/raillogic/nb/privacy.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="https://ostapenko.studio/raillogic/nl/privacy.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="https://ostapenko.studio/raillogic/pl/privacy.html" hreflang="pl" lang="pl">Polski</a>
+<a href="https://ostapenko.studio/raillogic/pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="https://ostapenko.studio/raillogic/pt-PT/privacy.html" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a>
+<a href="https://ostapenko.studio/raillogic/ro/privacy.html" hreflang="ro" lang="ro">Română</a>
+<a href="https://ostapenko.studio/raillogic/ru/privacy.html" hreflang="ru" lang="ru">Русский</a>
+<a href="https://ostapenko.studio/raillogic/sk/privacy.html" hreflang="sk" lang="sk">Slovenčina</a>
+<a href="https://ostapenko.studio/raillogic/sl/privacy.html" hreflang="sl" lang="sl">Slovenščina</a>
+<a href="https://ostapenko.studio/raillogic/sr/privacy.html" hreflang="sr" lang="sr">Српски</a>
+<a href="https://ostapenko.studio/raillogic/sr-Latn/privacy.html" hreflang="sr-Latn" lang="sr-Latn">Srpski</a>
+<a href="https://ostapenko.studio/raillogic/sv/privacy.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="https://ostapenko.studio/raillogic/sw/privacy.html" hreflang="sw" lang="sw">Kiswahili</a>
+<a href="https://ostapenko.studio/raillogic/ta/privacy.html" hreflang="ta" lang="ta">தமிழ்</a>
+<a href="https://ostapenko.studio/raillogic/te/privacy.html" hreflang="te" lang="te" aria-current="page">తెలుగు</a>
+<a href="https://ostapenko.studio/raillogic/th/privacy.html" hreflang="th" lang="th">ไทย</a>
+<a href="https://ostapenko.studio/raillogic/tr/privacy.html" hreflang="tr" lang="tr">Türkçe</a>
+<a href="https://ostapenko.studio/raillogic/uk/privacy.html" hreflang="uk" lang="uk">Українська</a>
+<a href="https://ostapenko.studio/raillogic/ur/privacy.html" hreflang="ur" lang="ur" dir="rtl">اردو</a>
+<a href="https://ostapenko.studio/raillogic/vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hant-HK/privacy.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">繁體中文（香港）</a>
+<a href="https://ostapenko.studio/raillogic/zh-Hant-TW/privacy.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文（台灣）</a>
+</nav>
+<!-- l10n:end -->
+
+</body>
+</html>
