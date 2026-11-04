@@ -84,12 +84,30 @@
       font-size: 0.8125rem;
     }
     .app-legal a { color: var(--muted); }
-    .apps, .contact {
+    .team h2 {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .person { align-items: flex-start; }
+    .app img.portrait {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .role {
+      font-size: 0.8125rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .apps, .team, .contact {
       margin-top: 4rem;
       border-top: 1px solid var(--line);
       padding-top: 2.5rem;
     }
     .contact p { margin-top: 1rem; }
+    .team-note { color: var(--muted); margin-top: 2rem; }
     a { color: var(--ink); text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
     a:hover { text-decoration-color: var(--ink); }
     footer {
@@ -189,6 +207,27 @@
           <p class="app-legal"><a href="/moon-tonight/privacy.html">Privacy</a> · <a href="/moon-tonight/terms.html">Terms</a></p>
         </div>
       </div>
+    </section>
+
+    <section class="team">
+      <h2>Meet the team</h2>
+      <div class="app person">
+        <img class="portrait" src="/team-yury-216.jpg" alt="Yury Ostapenko" width="72" height="72">
+        <div>
+          <h3><a href="https://www.linkedin.com/in/yuryostapenko/">Yury Ostapenko</a></h3>
+          <span class="role">Co-founder · Engineering</span>
+          <p>Eighteen years of shipping production software across e-commerce, higher education and retail — at Aligent, The University of Queensland and Endeavour Group, and now as a Staff Software Engineer at Hutly. The common thread: turning messy, manual chores into software people quietly rely on. TypeScript, React, Node.js, AWS and, lately, LLM pipelines.</p>
+        </div>
+      </div>
+      <div class="app person">
+        <img class="portrait" src="/team-iuliia-216.jpg" alt="Iuliia Ostapenko" width="72" height="72">
+        <div>
+          <h3><a href="https://www.linkedin.com/in/iuliiaostapenko/">Iuliia Ostapenko</a></h3>
+          <span class="role">Co-founder · Front end &amp; design</span>
+          <p>A senior front-end engineer with more than a decade of building interfaces people use every day — Flinders University’s website, Deloitte’s internal tools, Compare the Market, the UQ Maps campus map, and now projects at IONYX. React, TypeScript, careful forms and maps that make sense.</p>
+        </div>
+      </div>
+      <p class="team-note">Both studied at Saint Petersburg State University, and both now live in Brisbane, where the apps are made.</p>
     </section>
 
     <section class="contact">
